@@ -12,7 +12,7 @@ import os
 
 
 def get_2d_coordinates(vectorized_text):
-	out = TSNE(
+	out = TSNE( 
 		n_components=2, 
 		random_state=42
 		).fit_transform(vectorized_text)
