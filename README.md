@@ -17,11 +17,11 @@ Below, you can find instructions on **how to contribute to the list of papers**!
 ## Add a new paper
 The list of papers is maintained through a Zotero group. You can join the group and help us keeping it updated (see next section).  
 
-If you don't want to join the group, you can simply open a Github issue to suggest us a new paper (or even more than one). We will take care of adding it to the wiki as soon as possible. 
+If you don't want to join the group, you can simply open a Github issue to suggest us a new paper (or even more than one). We will take care of adding it to the list as soon as possible. 
 
 1. Open a new Github issue.
 
-2. Attach your bib file containing the paper you want to include in the wiki. If you don't have a bib file, just provide us with the link to the paper. The link should point to a location where paper metadata can be appropriately retrieved by common reference managers.
+2. Attach your bib file containing the paper you want to include in the list. If you don't have a bib file, just provide us with the link to the paper. The link should point to a location where paper metadata can be appropriately retrieved by common reference managers.
 
 Alternatively, you can submit a Pull Request with a modification to the bibtex files directly!
 
@@ -41,7 +41,7 @@ You can give your contribution to the group by **adding new papers** or by helpi
 
 3. To **annotate** an existing paper
 
-	3.1. Check the list of existing tags in `tags.csv` file. If you want to add a new tag, please add it in there and submit a Pull Request (see `Contribute to the wiki` section).
+	3.1. Check the list of existing tags in `tags.csv` file. If you want to add a new tag, please add it in there and submit a Pull Request.
 
 	3.2. Add your tags in the `Tags` tab of Zotero. Please, remember to write the tag in square brackets e.g. `[mytag]`
 
