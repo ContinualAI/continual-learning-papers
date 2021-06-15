@@ -13,6 +13,8 @@ name: automaticpush
 
 on: 
   push:
+    branches:
+      - main
     paths:
       - '**.py'
       - '.github/workflows/automatic-push.yml'
