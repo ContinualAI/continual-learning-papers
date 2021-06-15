@@ -26,8 +26,8 @@ by the ContinualAI community through an open Mendeley group! Join our group [her
 
 <script>
     function get_papers_li() {
-      sec = document.getElementById("publicationsdiv");
-      li = sec.getElementsByTagName('li');
+      // sec = document.getElementById("publicationsdiv");
+      li = document.getElementsByTagName('li');
       return li;
     }
 </script>
