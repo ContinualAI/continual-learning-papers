@@ -1,0 +1,148 @@
+
+@inproceedings{davidson2020,
+  title = {Sequential Mastery of Multiple Visual Tasks: {{Networks}} Naturally Learn to Learn and Forget to Forget},
+  booktitle = {{{CVPR}}},
+  author = {Davidson, Guy and Mozer, Michael C},
+  year = {2020},
+  pages = {9282--9293},
+  url = {https://openaccess.thecvf.com/content_CVPR_2020/papers/Davidson_Sequential_Mastery_of_Multiple_Visual_Tasks_Networks_Naturally_Learn_to_CVPR_2020_paper.pdf},
+  abstract = {We explore the behavior of a standard convolutional neural net in a continual-learning setting that introduces visual classification tasks sequentially and requires the net to master new tasks while preserving mastery of previously learned tasks. This setting corresponds to that which human learners face as they acquire domain expertise serially, for example, as an individual studies a textbook. Through simulations involving sequences of ten related visual tasks, we find reason for optimism that nets will scale well as they advance from having a single skill to becoming multi-skill domain experts. We observe two key phenomena. First, forward facilitation-the accelerated learning of task n+1 having learned n previous tasks-grows with n. Second, backward interference-the forgetting of the n previous tasks when learning task n + 1-diminishes with n. Amplifying forward facilitation is the goal of research on metalearning, and attenuating backward interference is the goal of research on catastrophic forgetting. We find that both of these goals are attained simply through broader exposure to a domain.},
+  keywords = {[vision]}
+}
+
+@article{diaz-rodriguez2018,
+  title = {Don't Forget, There Is More than Forgetting: New Metrics for {{Continual Learning}}},
+  shorttitle = {Don't Forget, There Is More than Forgetting},
+  author = {{D{\'i}az-Rodr{\'i}guez}, Natalia and Lomonaco, Vincenzo and Filliat, David and Maltoni, Davide},
+  year = {2018},
+  url = {http://arxiv.org/abs/1810.13166},
+  abstract = {Continual learning consists of algorithms that learn from a stream of data/tasks continuously and adaptively thought time, enabling the incremental development of ever more complex knowledge and skills. The lack of consensus in evaluating continual learning algorithms and the almost exclusive focus on forgetting motivate us to propose a more comprehensive set of implementation independent metrics accounting for several factors we believe have practical implications worth considering in the deployment of real AI systems that learn continually: accuracy or performance over time, backward and forward knowledge transfer, memory overhead as well as computational efficiency. Drawing inspiration from the standard Multi-Attribute Value Theory (MAVT) we further propose to fuse these metrics into a single score for ranking purposes and we evaluate our proposal with five continual learning strategies on the iCIFAR-100 continual learning benchmark.},
+  journal = {arXiv},
+  keywords = {[cifar],[framework],68T05,Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Rec,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computi,cs.AI,cs.CV,cs.LG,cs.NE,stat.ML},
+  note = {arXiv: 1810.13166}
+}
+
+@article{french1999,
+  title = {Catastrophic Forgetting in Connectionist Networks},
+  author = {French, Robert},
+  year = {1999},
+  volume = {3},
+  pages = {128--135},
+  issn = {1364-6613, 1879-307X},
+  doi = {10.1016/S1364-6613(99)01294-2},
+  url = {https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(99)01294-2},
+  journal = {Trends in Cognitive Sciences},
+  keywords = {[sparsity],biology,Catastrophic forgetting,Connectionism,Connectionist networks,Interference,Learning,Memory,Neuroscience},
+  language = {English},
+  number = {4},
+  pmid = {10322466}
+}
+
+@article{grossberg1980,
+  title = {How Does a Brain Build a Cognitive Code?},
+  author = {Grossberg, Stephen},
+  year = {1980},
+  volume = {87},
+  pages = {1--51},
+  publisher = {{American Psychological Association}},
+  address = {{US}},
+  issn = {1939-1471(Electronic),0033-295X(Print)},
+  doi = {10.1037/0033-295X.87.1.1},
+  url = {https://psycnet.apa.org/record/1980-06768-001},
+  abstract = {Discusses how competition between afferent data and learned feedback expectancies can stabilize a developing code by buffering committed populations of detectors against continual erosion by new environmental demands. The gating phenomena that result lead to dynamically maintained critical periods and to attentional phenomena such as overshadowing in the adult. The functional unit of cognitive coding is suggested to be an adaptive resonance, or amplification and prolongation of neural activity, that occurs when afferent data and efferent expectancies reach consensus through a matching process. The resonant state embodies the perceptual event, and its amplified and sustained activities are capable of driving slow changes of long-term memory. These mechanisms help to explain and predict (a) positive and negative aftereffects, the McCollough effect, spatial frequency adaptation, monocular rivalry, binocular rivalry and hysteresis, pattern completion, and Gestalt switching; (b) analgesia, partial reinforcement acquisition effect, conditioned reinforcers, underaroused vs overaroused depression; (c) the contingent negative variation, P300, and pontogeniculo-occipital waves; and (d) olfactory coding, corticogeniculate feedback, matching of proprioceptive and terminal motor maps, and cerebral dominance. (125 ref) (PsycINFO Database Record (c) 2016 APA, all rights reserved)},
+  journal = {Psychological Review},
+  keywords = {Attention,Cognitive Processes,Electrical Activity,Expectations,Human Information Storage,Neurophysiology},
+  note = {It introduces the stability-plasticity dilemma related to the catastrophic forgetting.},
+  number = {1}
+}
+
+@article{lesort2021,
+  title = {Understanding {{Continual Learning Settings}} with {{Data Distribution Drift Analysis}}},
+  author = {Lesort, Timoth{\'e}e and Caccia, Massimo and Rish, Irina},
+  year = {2021},
+  url = {http://arxiv.org/abs/2104.01678},
+  urldate = {2021-04-11},
+  abstract = {Classical machine learning algorithms often assume that the data are drawn i.i.d. from a stationary probability distribution. Recently, continual learning emerged as a rapidly growing area of machine learning where this assumption is relaxed, namely, where the data distribution is non-stationary, i.e., changes over time. However, data distribution drifts may interfere with the learning process and erase previously learned knowledge; thus, continual learning algorithms must include specialized mechanisms to deal with such distribution drifts. A distribution drift may change the class labels distribution, the input distribution, or both. Moreover, distribution drifts might be abrupt or gradual. In this paper, we aim to identify and categorize different types of data distribution drifts and potential assumptions about them, to better characterize various continual-learning scenarios. Moreover, we propose to use the distribution drift framework to provide more precise definitions of several terms commonly used in the continual learning field.},
+  archiveprefix = {arXiv},
+  eprint = {2104.01678},
+  eprinttype = {arxiv},
+  journal = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning}
+}
+
+@article{lesort2021a,
+  ids = {lesort2021b},
+  title = {Continual {{Learning}} in {{Deep Networks}}: An {{Analysis}} of the {{Last Layer}}},
+  shorttitle = {Continual {{Learning}} in {{Deep Networks}}},
+  author = {Lesort, Timoth{\'e}e and George, Thomas and Rish, Irina},
+  year = {2021},
+  url = {http://arxiv.org/abs/2106.01834},
+  urldate = {2021-06-04},
+  abstract = {We study how different output layer types of a deep neural network learn and forget in continual learning settings. We describe the three factors affecting catastrophic forgetting in the output layer: (1) weights modifications, (2) interferences, and (3) projection drift. Our goal is to provide more insights into how different types of output layers can address (1) and (2). We also propose potential solutions and evaluate them on several benchmarks. We show that the best-performing output layer type depends on the data distribution drifts or the amount of data available. In particular, in some cases where a standard linear layer would fail, it is sufficient to change the parametrization and get significantly better performance while still training with SGD. Our results and analysis shed light on the dynamics of the output layer in continual learning scenarios and help select the best-suited output layer for a given scenario.},
+  archiveprefix = {arXiv},
+  eprint = {2106.01834},
+  eprinttype = {arxiv},
+  journal = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning}
+}
+
+@article{mermillod2013,
+  title = {The Stability-Plasticity Dilemma: Investigating the Continuum from Catastrophic Forgetting to Age-Limited Learning Effects},
+  author = {Mermillod, Martial and Bugaiska, Aur{\'e}lia and Bonin, Patrick},
+  year = {2013},
+  volume = {4},
+  pages = {504},
+  issn = {1664-1078},
+  doi = {10.3389/fpsyg.2013.00504},
+  url = {http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3732997%7B%5C&%7Dtool=pmcentrez%7B%5C&%7Drendertype=abstract http://journal.frontiersin.org/article/10.3389/fpsyg.2013.00504/abstract},
+  journal = {Frontiers in Psychology},
+  keywords = {Mermillod2013a},
+  number = {August},
+  pmid = {23935590}
+}
+
+@article{nguyen2019a,
+  title = {Toward {{Understanding Catastrophic Forgetting}} in {{Continual Learning}}},
+  author = {Nguyen, Cuong V and Achille, Alessandro and Lam, Michael and Hassner, Tal and Mahadevan, Vijay and Soatto, Stefano},
+  year = {2019},
+  url = {http://arxiv.org/abs/1908.01091},
+  abstract = {We study the relationship between catastrophic forgetting and properties of task sequences. In particular, given a sequence of tasks, we would like to understand which properties of this sequence influence the error rates of continual learning algorithms trained on the sequence. To this end, we propose a new procedure that makes use of recent developments in task space modeling as well as correlation analysis to specify and analyze the properties we are interested in. As an application, we apply our procedure to study two properties of a task sequence: (1) total complexity and (2) sequential heterogeneity. We show that error rates are strongly and positively correlated to a task sequence's total complexity for some state-of-the-art algorithms. We also show that, surprisingly, the error rates have no or even negative correlations in some cases to sequential heterogeneity. Our findings suggest directions for improving continual learning benchmarks and methods.},
+  annotation = {\_eprint: 1908.01091},
+  journal = {arXiv},
+  keywords = {[cifar],[mnist]}
+}
+
+@article{nguyen2020,
+  title = {Dissecting {{Catastrophic Forgetting}} in {{Continual Learning}} by {{Deep Visualization}}},
+  author = {Nguyen, Giang and Chen, Shuan and Do, Thao and Jun, Tae Joon and Choi, Ho-Jin and Kim, Daeyoung},
+  year = {2020},
+  url = {http://arxiv.org/abs/2001.01578},
+  abstract = {Interpreting the behaviors of Deep Neural Networks (usually considered as a black box) is critical especially when they are now being widely adopted over diverse aspects of human life. Taking the advancements from Explainable Artificial Intelligent, this paper proposes a novel technique called Auto DeepVis to dissect catastrophic forgetting in continual learning. A new method to deal with catastrophic forgetting named critical freezing is also introduced upon investigating the dilemma by Auto DeepVis. Experiments on a captioning model meticulously present how catastrophic forgetting happens, particularly showing which components are forgetting or changing. The effectiveness of our technique is then assessed; and more precisely, critical freezing claims the best performance on both previous and coming tasks over baselines, proving the capability of the investigation. Our techniques could not only be supplementary to existing solutions for completely eradicating catastrophic forgetting for life-long learning but also explainable.},
+  annotation = {\_eprint: 2001.01578},
+  journal = {arXiv},
+  keywords = {[vision]}
+}
+
+@inproceedings{toneva2019,
+  title = {An {{Empirical Study}} of {{Example Forgetting}} during {{Deep Neural Network Learning}}},
+  booktitle = {International {{Conference}} on {{Learning Representations}}},
+  author = {Toneva, Mariya and Sordoni, Alessandro and {des Combes}, Remi Tachet and Trischler, Adam and Bengio, Yoshua and Gordon, Geoffrey J},
+  year = {2019},
+  url = {https://openreview.net/forum?id=BJlxm30cKm},
+  abstract = {Inspired by the phenomenon of catastrophic forgetting, we investigate the learning dynamics of neural networks as they train on single classification tasks. Our goal is to understand whether a...},
+  keywords = {[cifar],[mnist]},
+  note = {An interesting aspect of this paper is related to the study of unforgettable patterns and how they influence performance in terms of forgetting.}
+}
+
+@article{wiewel2019,
+  title = {Localizing {{Catastrophic Forgetting}} in {{Neural Networks}}},
+  author = {Wiewel, Felix and Yang, Bin},
+  year = {2019},
+  url = {http://arxiv.org/abs/1906.02568},
+  abstract = {Artificial neural networks (ANNs) suffer from catastrophic forgetting when trained on a sequence of tasks. While this phenomenon was studied in the past, there is only very limited recent research on this phenomenon. We propose a method for determining the contribution of individual parameters in an ANN to catastrophic forgetting. The method is used to analyze an ANNs response to three different continual learning scenarios.},
+  annotation = {\_eprint: 1906.02568},
+  journal = {arXiv},
+  keywords = {[mnist]}
+}
+
+

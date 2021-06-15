@@ -1,0 +1,295 @@
+
+@article{bapna2019,
+  title = {Non-{{Parametric Adaptation}} for {{Neural Machine Translation}}},
+  author = {Bapna, Ankur and Firat, Orhan},
+  year = {2019},
+  url = {http://arxiv.org/abs/1903.00058},
+  abstract = {Neural Networks trained with gradient descent are known to be susceptible to catastrophic forgetting caused by parameter shift during the training process. In the context of Neural Machine Translation (NMT) this results in poor performance on heterogeneous datasets and on sub-tasks like rare phrase translation. On the other hand, non-parametric approaches are immune to forgetting, perfectly complementing the generalization ability of NMT. However, attempts to combine non-parametric or retrieval based approaches with NMT have only been successful on narrow domains, possibly due to over-reliance on sentence level retrieval. We propose a novel n-gram level retrieval approach that relies on local phrase level similarities, allowing us to retrieve neighbors that are useful for translation even when overall sentence similarity is low. We complement this with an expressive neural network, allowing our model to extract information from the noisy retrieved context. We evaluate our semi-parametric NMT approach on a heterogeneous dataset composed of WMT, IWSLT, JRC-Acquis and OpenSubtitles, and demonstrate gains on all 4 evaluation sets. The semi-parametric nature of our approach opens the door for non-parametric domain adaptation, demonstrating strong inference-time adaptation performance on new domains without the need for any parameter updates.},
+  annotation = {\_eprint: 1903.00058},
+  journal = {arXiv},
+  keywords = {[nlp]}
+}
+
+@inproceedings{barrault2020,
+  title = {Findings of the {{First Shared Task}} on {{Lifelong Learning Machine Translation}}},
+  booktitle = {Proceedings of the {{Fifth Conference}} on {{Machine Translation}}},
+  author = {Barrault, Lo{\"i}c and Biesialska, Magdalena and {Costa-juss{\`a}}, Marta R. and Bougares, Fethi and Galibert, Olivier},
+  year = {2020},
+  pages = {56--64},
+  publisher = {{Association for Computational Linguistics}},
+  address = {{Online}},
+  url = {https://www.aclweb.org/anthology/2020.wmt-1.2},
+  urldate = {2021-02-03},
+  abstract = {A lifelong learning system can adapt to new data without forgetting previously acquired knowledge. In this paper, we introduce the first benchmark for lifelong learning machine translation. For this purpose, we provide training, lifelong and test data sets for two language pairs: English-German and English-French. Additionally, we report the results of our baseline systems, which we make available to the public. The goal of this shared task is to encourage research on the emerging topic of lifelong learning machine translation.},
+  keywords = {[framework],[nlp],Active Learning,Continual Learning,Lifelong Learning,workshop}
+}
+
+@article{baweja2018,
+  title = {Towards Continual Learning in Medical Imaging},
+  author = {Baweja, Chaitanya and Glocker, Ben and Kamnitsas, Konstantinos},
+  year = {2018},
+  pages = {1--4},
+  doi = {arXiv:1811.02496v1},
+  url = {http://arxiv.org/abs/1811.02496},
+  abstract = {This work investigates continual learning of two segmentation tasks in brain MRI with neural networks. To explore in this context the capabilities of current methods for countering catastrophic forgetting of the first task when a new one is learned, we investigate elastic weight consolidation, a recently proposed method based on Fisher information, originally evaluated on reinforcement learning of Atari games. We use it to sequentially learn segmentation of normal brain structures and then segmentation of white matter lesions. Our findings show this recent method reduces catastrophic forgetting, while large room for improvement exists in these challenging settings for continual learning.},
+  annotation = {\_eprint: 1811.02496},
+  journal = {NeurIPS Workshop on Continual Learning},
+  keywords = {[vision]}
+}
+
+@article{campo2020,
+  title = {Continual {{Learning}} of {{Predictive Models}} in {{Video Sequences}} via {{Variational Autoencoders}}},
+  author = {Campo, Damian and Slavic, Giulia and Baydoun, Mohamad and Marcenaro, Lucio and Regazzoni, Carlo},
+  year = {2020},
+  url = {http://arxiv.org/abs/2006.01945},
+  abstract = {This paper proposes a method for performing continual learning of predictive models that facilitate the inference of future frames in video sequences. For a first given experience, an initial Variational Autoencoder, together with a set of fully connected neural networks are utilized to respectively learn the appearance of video frames and their dynamics at the latent space level. By employing an adapted Markov Jump Particle Filter, the proposed method recognizes new situations and integrates them as predictive models avoiding catastrophic forgetting of previously learned tasks. For evaluating the proposed method, this article uses video sequences from a vehicle that performs different tasks in a controlled environment.},
+  annotation = {\_eprint: 2006.01945},
+  journal = {arXiv},
+  keywords = {[vision]}
+}
+
+@inproceedings{dautume2019,
+  title = {Episodic {{Memory}} in {{Lifelong Language Learning}}},
+  booktitle = {{{NeurIPS}}},
+  author = {D'Autume, Cyprien de Masson and Ruder, Sebastian and Kong, Lingpeng and Yogatama, Dani},
+  year = {2019},
+  url = {http://arxiv.org/abs/1906.01076},
+  abstract = {We introduce a lifelong language learning setup where a model needs to learn from a stream of text examples without any dataset identifier. We propose an episodic memory model that performs sparse experience replay and local adaptation to mitigate catastrophic forgetting in this setup. Experiments on text classification and question answering demonstrate the complementary benefits of sparse experience replay and local adaptation to allow the model to continuously learn from new datasets. We also show that the space complexity of the episodic memory module can be reduced significantly ({$\sim$}50-90\%) by randomly choosing which examples to store in memory with a minimal decrease in performance. We consider an episodic memory component as a crucial building block of general linguistic intelligence and see our model as a first step in that direction.},
+  annotation = {\_eprint: 1906.01076},
+  keywords = {[nlp]}
+}
+
+@article{delange2020,
+  title = {Unsupervised {{Model Personalization}} While {{Preserving Privacy}} and {{Scalability}}: {{An Open Problem}}},
+  author = {De Lange, Matthias and Jia, Xu and Parisot, Sarah and Leonardis, Ales and Slabaugh, Gregory and Tuytelaars, Tinne},
+  year = {2020},
+  pages = {14451--14460},
+  doi = {10.1109/cvpr42600.2020.01447},
+  url = {http://arxiv.org/abs/2003.13296},
+  abstract = {This work investigates the task of unsupervised model personalization, adapted to continually evolving, unlabeled local user images. We consider the practical scenario where a high capacity server interacts with a myriad of resource-limited edge devices, imposing strong requirements on scalability and local data privacy. We aim to address this challenge within the continual learning paradigm and provide a novel Dual User-Adaptation framework (DUA) to explore the problem. This framework flexibly disentangles user-adaptation into model personalization on the server and local data regularization on the user device, with desirable properties regarding scalability and privacy constraints. First, on the server, we introduce incremental learning of task-specific expert models, subsequently aggregated using a concealed unsupervised user prior. Aggregation avoids retraining, whereas the user prior conceals sensitive raw user data, and grants unsupervised adaptation. Second, local user-adaptation incorporates a domain adaptation point of view, adapting regularizing batch normalization parameters to the user data. We explore various empirical user configurations with different priors in categories and a tenfold of transforms for MIT Indoor Scene recognition, and classify numbers in a combined MNIST and SVHN setup. Extensive experiments yield promising results for data-driven local adaptation and elicit user priors for server adaptation to depend on the model rather than user data. Hence, although user-adaptation remains a challenging open problem, the DUA framework formalizes a principled foundation for personalizing both on server and user device, while maintaining privacy and scalability.},
+  annotation = {\_eprint: 2003.13296},
+  journal = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  keywords = {[framework],[mnist],[vision]}
+}
+
+@article{fu2020,
+  title = {Incremental {{Learning}} for {{End}}-to-{{End Automatic Speech Recognition}}},
+  author = {Fu, Li and Li, Xiaoxiao and Zi, Libo},
+  year = {2020},
+  url = {https://arxiv.org/abs/2005.04288},
+  abstract = {\textdagger{} We propose an incremental learning for end-to-end Automatic Speech Recognition (ASR) to extend the model's capacity on a new task while retaining the performance on existing ones. The proposed method is effective without accessing to the old dataset to address the issues of high training cost and old dataset unavailability. To achieve this, knowledge distillation is applied as a guidance to retain the recognition ability from the previous model, which is then combined with the new ASR task for model optimization. With an ASR model pre-trained on 12,000h Mandarin speech, we test our proposed method on 300h new scenario task and 1h new named entities task. Experiments show that our method yields 3.25\% and 0.88\% absolute Character Error Rate (CER) reduction on the new scenario, when compared with the pre-trained model and the full-data retraining baseline, respectively. It even yields a surprising 0.37\% absolute CER reduction on the new scenario than the fine-tuning. For the new named entities task, our method significantly improves the accuracy compared with the pre-trained model, i.e. 16.95\% absolute CER reduction. For both of the new task adaptions, the new models still maintain a same accuracy with the baseline on the old tasks.},
+  journal = {arXiv},
+  keywords = {[audio],end-to-end,incremental learning,Index Terms: automatic speech recognition,knowledge distillation}
+}
+
+@inproceedings{gupta2020,
+  title = {Neural {{Topic Modeling}} with {{Continual Lifelong Learning}}},
+  booktitle = {{{ICML}}},
+  author = {Gupta, Pankaj and Chaudhary, Yatin and Runkler, Thomas and Sch{\"u}tze, Hinrich},
+  year = {2020},
+  url = {http://arxiv.org/abs/2006.10909},
+  abstract = {Lifelong learning has recently attracted attention in building machine learning systems that continually accumulate and transfer knowledge to help future learning. Unsupervised topic modeling has been popularly used to discover topics from document collections. However, the application of topic modeling is challenging due to data sparsity, e.g., in a small collection of (short) documents and thus, generate incoherent topics and sub-optimal document representations. To address the problem, we propose a lifelong learning framework for neural topic modeling that can continuously process streams of document collections, accumulate topics and guide future topic modeling tasks by knowledge transfer from several sources to better deal with the sparse data. In the lifelong process, we particularly investigate jointly: (1) sharing generative homologies (latent topics) over lifetime to transfer prior knowledge, and (2) minimizing catastrophic forgetting to retain the past learning via novel selective data augmentation, co-training and topic regularization approaches. Given a stream of document collections, we apply the proposed Lifelong Neural Topic Modeling (LNTM) framework in modeling three sparse document collections as future tasks and demonstrate improved performance quantified by perplexity, topic coherence and information retrieval task.},
+  annotation = {\_eprint: 2006.10909},
+  keywords = {[nlp]}
+}
+
+@inproceedings{hawkins2019,
+  title = {Continual Adaptation for Efficient Machine Communication},
+  booktitle = {Proceedings of the {{ICML Workshop}} on {{Adaptive}} \& {{Multitask Learning}}: {{Algorithms}} \& {{Systems}}},
+  author = {Hawkins, Robert D and Kwon, Minae and Sadigh, Dorsa and Goodman, Noah D},
+  year = {2019},
+  url = {http://arxiv.org/abs/1911.09896},
+  abstract = {To communicate with new partners in new contexts, humans rapidly form new linguistic conventions. Recent language models trained with deep neural networks are able to comprehend and produce the existing conventions present in their training data, but are not able to flexibly and interactively adapt those conventions on the fly as humans do. We introduce a repeated reference task as a benchmark for models of adaptation in communication and propose a regularized continual learning framework that allows an artificial agent initialized with a generic language model to more accurately and efficiently communicate with a partner over time. We evaluate this framework through simulations on COCO and in real-time reference game experiments with human partners.},
+  annotation = {\_eprint: 1911.09896}
+}
+
+@incollection{kapoor2009,
+  title = {Principles of {{Lifelong Learning}} for {{Predictive User Modeling}}},
+  booktitle = {User {{Modeling}} 2007},
+  author = {Kapoor, Ashish and Horvitz, Eric},
+  year = {2009},
+  pages = {37--46},
+  publisher = {{Springer Berlin Heidelberg}},
+  address = {{Berlin, Heidelberg}},
+  issn = {03029743},
+  doi = {10.1007/978-3-540-73078-1_7},
+  url = {http://link.springer.com/10.1007/978-3-540-73078-1_7},
+  isbn = {978-3-540-73077-4},
+  pmid = {16717005}
+}
+
+@article{kiyasseh2020,
+  title = {{{CLOPS}}: {{Continual Learning}} of {{Physiological Signals}}},
+  author = {Kiyasseh, Dani and Zhu, Tingting and Clifton, David A},
+  year = {2020},
+  url = {http://arxiv.org/abs/2004.09578},
+  abstract = {Deep learning algorithms are known to experience destructive interference when instances violate the assumption of being independent and identically distributed (i.i.d). This violation, however, is ubiquitous in clinical settings where data are streamed temporally and from a multitude of physiological sensors. To overcome this obstacle, we propose CLOPS, a healthcare-specific replay-based continual learning strategy. In three continual learning scenarios based on three publically-available datasets, we show that CLOPS can outperform its multi-task learning counterpart. Moreover, we propose end-to-end trainable parameters, which we term task-instance parameters, that can be used to quantify task difficulty and similarity. This quantification yields insights into both network interpretability and clinical applications, where task difficulty is poorly quantified.},
+  annotation = {\_eprint: 2004.09578},
+  journal = {arXiv}
+}
+
+@article{lee2018,
+  title = {Toward {{Continual Learning}} for {{Conversational Agents}}},
+  author = {Lee, Sungjin},
+  year = {2018},
+  url = {http://arxiv.org/abs/1712.09943},
+  abstract = {While end-to-end neural conversation models have led to promising advances in reducing hand-crafted features and errors induced by the traditional complex system architecture, they typically require an enormous amount of data due to the lack of modularity. Previous studies adopted a hybrid approach with knowledge-based components either to abstract out domain-specific information or to augment data to cover more diverse patterns. On the contrary, we propose to directly address the problem using recent developments in the space of continual learning for neural models. Specifically, we adopt a domain-independent neural conversational model and introduce a novel neural continual learning algorithm that allows a conversational agent to accumulate skills across different tasks in a data-efficient way. To the best of our knowledge, this is the first work that applies continual learning to conversation systems. We verified the efficacy of our method through a conversational skill transfer from either synthetic dialogs or human-human dialogs to human-computer conversations in a customer support domain.},
+  journal = {arXiv},
+  keywords = {[nlp],chatbot,Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Human-Computer Interaction,conversation,conversational agent,ewc,lstm},
+  note = {arXiv: 1712.09943}
+}
+
+@article{lee2020,
+  title = {Clinical Applications of Continual Learning Machine Learning},
+  author = {Lee, Cecilia S and Lee, Aaron Y},
+  year = {2020},
+  volume = {2},
+  pages = {e279--e281},
+  issn = {25897500},
+  doi = {10.1016/S2589-7500(20)30102-3},
+  url = {https://linkinghub.elsevier.com/retrieve/pii/S2589750020301023},
+  journal = {The Lancet Digital Health},
+  number = {6}
+}
+
+@article{lenga2020,
+  title = {Continual {{Learning}} for {{Domain Adaptation}} in {{Chest X}}-Ray {{Classification}}},
+  author = {Lenga, Matthias and Schulz, Heinrich and Saalbach, Axel},
+  year = {2020},
+  pages = {1--11},
+  url = {http://arxiv.org/abs/2001.05922},
+  abstract = {Over the last years, Deep Learning has been successfully applied to a broad range of medical applications. Especially in the context of chest X-ray classification, results have been reported which are on par, or even superior to experienced radiologists. Despite this success in controlled experimental environments, it has been noted that the ability of Deep Learning models to generalize to data from a new domain (with potentially different tasks) is often limited. In order to address this challenge, we investigate techniques from the field of Continual Learning (CL) including Joint Training (JT), Elastic Weight Consolidation (EWC) and Learning Without Forgetting (LWF). Using the ChestX-ray14 and the MIMIC-CXR datasets, we demonstrate empirically that these methods provide promising options to improve the performance of Deep Learning models on a target domain and to mitigate effectively catastrophic forgetting for the source domain. To this end, the best overall performance was obtained using JT, while for LWF competitive results could be achieved - even without accessing data from the source domain.},
+  annotation = {\_eprint: 2001.05922},
+  journal = {arXiv},
+  keywords = {[vision],catastrophic forgetting,chest x-ray,chestx-ray14,continual learning,convolutional neural networks,elastic weight consolidation,joint training,learning without forgetting,mimic-cxr}
+}
+
+@inproceedings{liu2019,
+  title = {Continual {{Learning}} for {{Sentence Representations Using Conceptors}}},
+  booktitle = {{{NAACL}}},
+  author = {Liu, Tianlin and Ungar, Lyle and Sedoc, Jo{\~a}o},
+  year = {2019},
+  url = {http://arxiv.org/abs/1904.09187},
+  abstract = {Distributed representations of sentences have become ubiquitous in natural language processing tasks. In this paper, we consider a continual learning scenario for sentence representations: Given a sequence of corpora, we aim to optimize the sentence encoder with respect to the new corpus while maintaining its accuracy on the old corpora. To address this problem, we propose to initialize sentence encoders with the help of corpus-independent features, and then sequentially update sentence encoders using Boolean operations of conceptor matrices to learn corpus-dependent features. We evaluate our approach on semantic textual similarity tasks and show that our proposed sentence encoder can continually learn features from new corpora while retaining its competence on previously encountered corpora.},
+  annotation = {\_eprint: 1904.09187},
+  keywords = {[nlp]}
+}
+
+@article{madasu2020,
+  title = {Sequential {{Domain Adaptation}} through {{Elastic Weight Consolidation}} for {{Sentiment Analysis}}},
+  author = {Madasu, Avinash and Rao, Vijjini Anvesh},
+  year = {2020},
+  url = {http://arxiv.org/abs/2007.01189},
+  urldate = {2021-01-08},
+  abstract = {Elastic Weight Consolidation (EWC) is a technique used in overcoming catastrophic forgetting between successive tasks trained on a neural network. We use this phenomenon of information sharing between tasks for domain adaptation. Training data for tasks such as sentiment analysis (SA) may not be fairly represented across multiple domains. Domain Adaptation (DA) aims to build algorithms that leverage information from source domains to facilitate performance on an unseen target domain. We propose a model-independent framework - Sequential Domain Adaptation (SDA). SDA draws on EWC for training on successive source domains to move towards a general domain solution, thereby solving the problem of domain adaptation. We test SDA on convolutional, recurrent, and attention-based architectures. Our experiments show that the proposed framework enables simple architectures such as CNNs to outperform complex state-of-the-art models in domain adaptation of SA. In addition, we observe that the effectiveness of a harder first Anti-Curriculum ordering of source domains leads to maximum performance.},
+  archiveprefix = {arXiv},
+  eprint = {2007.01189},
+  eprinttype = {arxiv},
+  journal = {arXiv},
+  keywords = {[nlp],[rnn],Computer Science - Computation and Language},
+  note = {Comment: Accepted at 25th International Conference on Pattern Recognition, January 2021, Milan, Italy}
+}
+
+@inproceedings{mazumder2019,
+  title = {Lifelong and {{Interactive Learning}} of {{Factual Knowledge}} in {{Dialogues}}},
+  booktitle = {Proceedings of the 20th {{Annual SIGdial Meeting}} on {{Discourse}} and {{Dialogue}}},
+  author = {Mazumder, Sahisnu and Liu, Bing and Wang, Shuai and Ma, Nianzu},
+  year = {2019},
+  pages = {21--31},
+  publisher = {{Association for Computational Linguistics}},
+  address = {{Stroudsburg, PA, USA}},
+  doi = {10.18653/v1/W19-5903},
+  url = {http://arxiv.org/abs/1907.13295 https://www.aclweb.org/anthology/W19-5903},
+  abstract = {Dialogue systems are increasingly using knowledge bases (KBs) storing real-world facts to help generate quality responses. However, as the KBs are inherently incomplete and remain fixed during conversation, it limits dialogue systems' ability to answer questions and to handle questions involving entities or relations that are not in the KB. In this paper, we make an attempt to propose an engine for Continuous and Interactive Learning of Knowledge (CILK) for dialogue systems to give them the ability to continuously and interactively learn and infer new knowledge during conversations. With more knowledge accumulated over time, they will be able to learn better and answer more questions. Our empirical evaluation shows that CILK is promising.},
+  annotation = {\_eprint: 1907.13295},
+  keywords = {[nlp]}
+}
+
+@article{ozgun2020,
+  title = {Importance {{Driven Continual Learning}} for {{Segmentation Across Domains}}},
+  author = {{\"O}zg{\"u}n, Sinan {\"O}zg{\"u}r and Rickmann, Anne-Marie and Roy, Abhijit Guha and Wachinger, Christian},
+  year = {2020},
+  pages = {1--10},
+  url = {http://arxiv.org/abs/2005.00079},
+  abstract = {The ability of neural networks to continuously learn and adapt to new tasks while retaining prior knowledge is crucial for many applications. However, current neural networks tend to forget previously learned tasks when trained on new ones, i.e., they suffer from Catastrophic Forgetting (CF). The objective of Continual Learning (CL) is to alleviate this problem, which is particularly relevant for medical applications, where it may not be feasible to store and access previously used sensitive patient data. In this work, we propose a Continual Learning approach for brain segmentation, where a single network is consecutively trained on samples from different domains. We build upon an importance driven approach and adapt it for medical image segmentation. Particularly, we introduce learning rate regularization to prevent the loss of the network's knowledge. Our results demonstrate that directly restricting the adaptation of important network parameters clearly reduces Catastrophic Forgetting for segmentation across domains.},
+  annotation = {\_eprint: 2005.00079},
+  journal = {arXiv},
+  keywords = {[vision]}
+}
+
+@article{philps2019,
+  title = {Making {{Good}} on {{LSTMs}}' {{Unfulfilled Promise}}},
+  author = {Philps, Daniel and d'Avila Garcez, Artur and Weyde, Tillman},
+  year = {2019},
+  url = {http://arxiv.org/abs/1911.04489},
+  urldate = {2021-01-08},
+  abstract = {LSTMs promise much to financial time-series analysis, temporal and cross-sectional inference, but we find that they do not deliver in a real-world financial management task. We examine an alternative called Continual Learning (CL), a memory-augmented approach, which can provide transparent explanations, i.e. which memory did what and when. This work has implications for many financial applications including credit, time-varying fairness in decision making and more. We make three important new observations. Firstly, as well as being more explainable, time-series CL approaches outperform LSTMs as well as a simple sliding window learner using feed-forward neural networks (FFNN). Secondly, we show that CL based on a sliding window learner (FFNN) is more effective than CL based on a sequential learner (LSTM). Thirdly, we examine how real-world, time-series noise impacts several similarity approaches used in CL memory addressing. We provide these insights using an approach called Continual Learning Augmentation (CLA) tested on a complex real-world problem, emerging market equities investment decision making. CLA provides a test-bed as it can be based on different types of time-series learners, allowing testing of LSTM and FFNN learners side by side. CLA is also used to test several distance approaches used in a memory recall-gate: Euclidean distance (ED), dynamic time warping (DTW), auto-encoders (AE) and a novel hybrid approach, warp-AE. We find that ED under-performs DTW and AE but warp-AE shows the best overall performance in a real-world financial task.},
+  archiveprefix = {arXiv},
+  eprint = {1911.04489},
+  eprinttype = {arxiv},
+  journal = {arXiv},
+  keywords = {[rnn],Computer Science - Machine Learning,Quantitative Finance - Computational Finance,Quantitative Finance - Portfolio Management,Statistics - Machine Learning},
+  note = {Comment: 33rd Conference on Neural Information Processing Systems (NeurIPS 2019), Vancouver, Canada. arXiv admin note: text overlap with arXiv:1812.02340}
+}
+
+@article{shao2021,
+  title = {The {{Traffic Flow Prediction Method Using}} the {{Incremental Learning}}-{{Based CNN}}-{{LTSM Model}}: {{The Solution}} of {{Mobile Application}}},
+  shorttitle = {The {{Traffic Flow Prediction Method Using}} the {{Incremental Learning}}-{{Based CNN}}-{{LTSM Model}}},
+  author = {Shao, Yanli and Zhao, Yiming and Yu, Feng and Zhu, Huawei and Fang, Jinglong},
+  year = {2021},
+  volume = {2021},
+  pages = {e5579451},
+  publisher = {{Hindawi}},
+  issn = {1574-017X},
+  doi = {10.1155/2021/5579451},
+  url = {https://www.hindawi.com/journals/misy/2021/5579451/},
+  urldate = {2021-06-05},
+  abstract = {With the acceleration of urbanization and the increase in the number of motor vehicles, more and more social problems such as traffic congestion have emerged. Accordingly, efficient and accurate traffic flow prediction has become a research hot spot in the field of intelligent transportation. However, traditional machine learning algorithms cannot further optimize the model with the increase of the data scale, and the deep learning algorithms perform poorly in mobile application or real-time application; how to train and update deep learning models efficiently and accurately is still an urgent problem since they require huge computation resources and time costs. Therefore, an incremental learning-based CNN-LTSM model, IL-TFNet, is proposed for traffic flow prediction in this study. The lightweight convolution neural network-based model architecture is designed to process spatiotemporal and external environment features simultaneously to improve the prediction performance and prediction efficiency of the model. Especially, the K-means clustering algorithm is applied as an uncertainty feature to extract unknown traffic accident information. During the model training, instead of the traditional batch learning algorithm, the incremental learning algorithm is applied to reduce the cost of updating the model and satisfy the requirements of high real-time performance and low computational overhead in short-term traffic prediction. Furthermore, the idea of combining incremental learning with active learning is proposed to fine-tune the prediction model to improve prediction accuracy in special situations. Experiments have proved that compared with other traffic flow prediction models, the IL-TFNet model performs well in short-term traffic flow prediction.},
+  journal = {Mobile Information Systems},
+  keywords = {[experimental]},
+  language = {en}
+}
+
+@inproceedings{sun2020,
+  title = {{{LAMOL}}: {{LAnguage MOdeling}} for {{Lifelong Language Learning}}},
+  shorttitle = {{{LAMOL}}},
+  booktitle = {{{ICLR}}},
+  author = {Sun, Fan-Keng and Ho, Cheng-Hao and Lee, Hung-Yi},
+  year = {2020},
+  url = {https://openreview.net/forum?id=Skgxcn4YDS},
+  abstract = {Most research on lifelong learning applies to images or games, but not language. We present LAMOL, a simple yet effective method for lifelong language learning (LLL) based on language...},
+  keywords = {[nlp]}
+}
+
+@inproceedings{thompson2019a,
+  title = {Overcoming {{Catastrophic Forgetting During Domain Adaptation}} of {{Neural Machine Translation}}},
+  booktitle = {Proceedings of the 2019 {{Conference}} of the {{North American Chapter}} of the {{Association}} for {{Computational Linguistics}}: {{Human Language Technologies}}, {{Volume}} 1 ({{Long}} and {{Short Papers}})},
+  author = {Thompson, Brian and Gwinnup, Jeremy and Khayrallah, Huda and Duh, Kevin and Koehn, Philipp},
+  year = {2019},
+  pages = {2062--2068},
+  publisher = {{Association for Computational Linguistics}},
+  address = {{Minneapolis, Minnesota}},
+  doi = {10.18653/v1/N19-1209},
+  url = {https://www.aclweb.org/anthology/N19-1209},
+  urldate = {2021-01-08},
+  abstract = {Continued training is an effective method for domain adaptation in neural machine translation. However, in-domain gains from adaptation come at the expense of general-domain performance. In this work, we interpret the drop in general-domain performance as catastrophic forgetting of general-domain knowledge. To mitigate it, we adapt Elastic Weight Consolidation (EWC)\textemdash a machine learning method for learning a new task without forgetting previous tasks. Our method retains the majority of general-domain performance lost in continued training without degrading in-domain performance, outperforming the previous state-of-the-art. We also explore the full range of general-domain performance available when some in-domain degradation is acceptable.},
+  keywords = {[nlp],[rnn]}
+}
+
+@article{zhai2019,
+  title = {Lifelong {{Learning}} for {{Scene Recognition}} in {{Remote Sensing Images}}},
+  author = {Zhai, Min and Liu, Huaping and Sun, Fuchun},
+  year = {2019},
+  volume = {16},
+  pages = {1472--1476},
+  publisher = {{IEEE}},
+  issn = {1545-598X},
+  doi = {10.1109/LGRS.2019.2897652},
+  url = {https://ieeexplore.ieee.org/document/8662768/},
+  abstract = {The development of visual sensing technologies has made it possible to obtain some high resolution and to gather many high-resolution satellite images. To make the best use of these images, it is essential to be able to recognize and retrieve their intrinsic scene information. The problem of scene recognition in remote sensing images has recently aroused considerable interest, mainly due to the great success achieved by deep learning methods in generic image classification. Nevertheless, such methods usually require large amounts of labeled data. By contrast, remote sensing images are relatively scarce and expensive to obtain. Moreover, data sets from different aerospace research institutions exhibit large disparities. In order to address these problems, we propose a model based on a meta-learning method with the ability of learning a classifier from just few-shot samples. With the proposed model, the knowledge learned from one data set can be easily adapted to a new data set, which, in turn, would serve in the lifelong few-shot learning. Scene-level image recognition experiments, on public high-resolution remote sensing image data sets, validate our proposed lifelong few-shot learning model.},
+  journal = {IEEE Geoscience and Remote Sensing Letters},
+  keywords = {[vision]},
+  number = {9}
+}
+
+

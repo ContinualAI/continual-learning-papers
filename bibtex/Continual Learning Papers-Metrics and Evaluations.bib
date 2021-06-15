@@ -1,0 +1,90 @@
+
+@article{caccia2020,
+  title = {Online {{Fast Adaptation}} and {{Knowledge Accumulation}}: A {{New Approach}} to {{Continual Learning}}},
+  author = {Caccia, Massimo and Rodriguez, Pau and Ostapenko, Oleksiy and Normandin, Fabrice and Lin, Min and Caccia, Lucas and Laradji, Issam and Rish, Irina and Lacoste, Alexande and Vazquez, David and Charlin, Laurent},
+  year = {2020},
+  url = {http://arxiv.org/abs/2003.05856},
+  abstract = {Learning from non-stationary data remains a great challenge for machine learning. Continual learning addresses this problem in scenarios where the learning agent faces a stream of changing tasks. In these scenarios, the agent is expected to retain its highest performance on previous tasks without revisiting them while adapting well to the new tasks. Two new recent continual-learning scenarios have been proposed. In meta-continual learning, the model is pre-trained to minimize catastrophic forgetting when trained on a sequence of tasks. In continual-meta learning, the goal is faster remembering, i.e., focusing on how quickly the agent recovers performance rather than measuring the agent's performance without any adaptation. Both scenarios have the potential to propel the field forward. Yet in their original formulations, they each have limitations. As a remedy, we propose a more general scenario where an agent must quickly solve (new) out-of-distribution tasks, while also requiring fast remembering. We show that current continual learning, meta learning, meta-continual learning, and continual-meta learning techniques fail in this new scenario. Accordingly, we propose a strong baseline: Continual-MAML, an online extension of the popular MAML algorithm. In our empirical experiments, we show that our method is better suited to the new scenario than the methodologies mentioned above, as well as standard continual learning and meta learning approaches.},
+  annotation = {\_eprint: 2003.05856},
+  journal = {arXiv},
+  keywords = {[fashion],[framework],[mnist],Computer Science - Artificial Intelligence,Computer Science - Machine Learning,continual meta learning,framework,MAML,meta continual learning,OSAKA},
+  note = {arXiv: 2003.05856}
+}
+
+@incollection{elkhatib2019,
+  title = {Strategies for {{Improving Single}}-{{Head Continual Learning Performance}}},
+  booktitle = {Lecture {{Notes}} in {{Computer Science}} (Including Subseries {{Lecture Notes}} in {{Artificial Intelligence}} and {{Lecture Notes}} in {{Bioinformatics}})},
+  author = {El Khatib, Alaa and Karray, Fakhri},
+  year = {2019},
+  volume = {11662 LNCS},
+  pages = {452--460},
+  publisher = {{Springer Verlag}},
+  issn = {16113349},
+  doi = {10.1007/978-3-030-27202-9_41},
+  url = {http://link.springer.com/10.1007/978-3-030-27202-9_41},
+  abstract = {Catastrophic forgetting has long been seen as the main obstacle to building continual learning models. We argue in this paper that an equally challenging characteristic of the continual learning framework is that data are never completely available at the same time, making it difficult to learn joint conditional distributions over them. This is most evident in the usually large gap between single-head and multi-head performance of continual learning models. We propose in this paper two strategies to improve performance of continual learning models, particularly in the single-head framework and for image classification tasks. First, we argue that learning multiple binary classifiers, rather than a single multi-class classifier, for each presentation of data is more consistent with the single-head framework. Moreover, we argue that auxiliary, unlabelled data can be used in tandem with this approach to slow the decay in performance of these binary classifiers over time.},
+  isbn = {978-3-030-27201-2},
+  keywords = {[cifar],[mnist],Catastrophic forgetting,Continual learning}
+}
+
+@inproceedings{farquhar2019,
+  title = {Towards {{Robust Evaluations}} of {{Continual Learning}}},
+  booktitle = {Privacy in {{Machine Learning}} and {{Artificial Intelligence}} Workshop, {{ICML}}},
+  author = {Farquhar, Sebastian and Gal, Yarin},
+  year = {2019},
+  url = {http://arxiv.org/abs/1805.09733},
+  abstract = {Experiments used in current continual learning research do not faithfully assess fundamental challenges of learning continually. Instead of assessing performance on challenging and representative experiment designs, recent research has focused on increased dataset difficulty, while still using flawed experiment set-ups. We examine standard evaluations and show why these evaluations make some continual learning approaches look better than they are. We introduce desiderata for continual learning evaluations and explain why their absence creates misleading comparisons. Based on our desiderata we then propose new experiment designs which we demonstrate with various continual learning approaches and datasets. Our analysis calls for a reprioritization of research effort by the community.},
+  keywords = {[fashion],[framework],Computer Science - Machine Learning,critique,evaluation,metrics,Statistics - Machine Learning},
+  note = {arXiv: 1805.09733}
+}
+
+@inproceedings{knoblauch2020,
+  title = {Optimal {{Continual Learning}} Has {{Perfect Memory}} and Is {{NP}}-{{HARD}}},
+  booktitle = {{{ICML}}},
+  author = {Knoblauch, Jeremias and Husain, Hisham and Diethe, Tom},
+  year = {2020},
+  url = {https://proceedings.icml.cc/paper/2020/file/274ad4786c3abca69fa097b85867d9a4-Paper.pdf},
+  abstract = {Continual Learning (CL) algorithms incremen-tally learn a predictor or representation across multiple sequentially observed tasks. Designing CL algorithms that perform reliably and avoid so-called catastrophic forgetting has proven a persistent challenge. The current paper develops a theoretical approach that explains why. In particular , we derive the computational properties which CL algorithms would have to possess in order to avoid catastrophic forgetting. Our main finding is that such optimal CL algorithms generally solve an NP-HARD problem and will require perfect memory to do so. The findings are of theoretical interest, but also explain the excellent performance of CL algorithms using experience replay, episodic memory and core sets relative to regularization-based approaches.},
+  keywords = {[theoretical]},
+  note = {In this paper optimal continual learning which perfectly solves all tasks without forgetting is proofed to be NP-hard. Also, memorization of previous information is necessary, thus establishing superiority of replay based strategies against regularization based strategies.}
+}
+
+@article{lesort2020b,
+  title = {Regularization {{Shortcomings}} for {{Continual Learning}}},
+  author = {Lesort, Timoth{\'e}e and Stoian, Andrei and Filliat, David},
+  year = {2020},
+  url = {http://arxiv.org/abs/1912.03049},
+  abstract = {In most machine learning algorithms, training data are assumed independent and identically distributed (iid). Otherwise, the algorithms' performances are challenged. A famous phenomenon with non-iid data distribution is known as \$\textbackslash backslash\$say\{catastrophic forgetting\}. Algorithms dealing with it are gathered in the \$\textbackslash backslash\$textit\{Continual Learning\} research field. In this article, we study the \$\textbackslash backslash\$textit\{regularization\} based approaches to continual learning. We show that those approaches can not learn to discriminate classes from different tasks in an elemental continual benchmark: class-incremental setting. We make theoretical reasoning to prove this shortcoming and illustrate it with examples and experiments.},
+  journal = {arXiv},
+  keywords = {[fashion],[mnist],class incremental,Computer Science - Machine Learning,regularization,Statistics - Machine Learning},
+  note = {arXiv: 1912.03049}
+}
+
+@article{lesort2021a,
+  ids = {lesort2021b},
+  title = {Continual {{Learning}} in {{Deep Networks}}: An {{Analysis}} of the {{Last Layer}}},
+  shorttitle = {Continual {{Learning}} in {{Deep Networks}}},
+  author = {Lesort, Timoth{\'e}e and George, Thomas and Rish, Irina},
+  year = {2021},
+  url = {http://arxiv.org/abs/2106.01834},
+  urldate = {2021-06-04},
+  abstract = {We study how different output layer types of a deep neural network learn and forget in continual learning settings. We describe the three factors affecting catastrophic forgetting in the output layer: (1) weights modifications, (2) interferences, and (3) projection drift. Our goal is to provide more insights into how different types of output layers can address (1) and (2). We also propose potential solutions and evaluate them on several benchmarks. We show that the best-performing output layer type depends on the data distribution drifts or the amount of data available. In particular, in some cases where a standard linear layer would fail, it is sufficient to change the parametrization and get significantly better performance while still training with SGD. Our results and analysis shed light on the dynamics of the output layer in continual learning scenarios and help select the best-suited output layer for a given scenario.},
+  archiveprefix = {arXiv},
+  eprint = {2106.01834},
+  eprinttype = {arxiv},
+  journal = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning}
+}
+
+@inproceedings{vandeven2018a,
+  title = {Three Scenarios for Continual Learning},
+  booktitle = {Continual {{Learning Workshop NeurIPS}}},
+  author = {{van de Ven}, Gido M and Tolias, Andreas S},
+  year = {2018},
+  url = {http://arxiv.org/abs/1904.07734},
+  abstract = {Standard artificial neural networks suffer from the well-known issue of catastrophic forgetting, making continual or lifelong learning difficult for machine learning. In recent years, numerous methods have been proposed for continual learning, but due to differences in evaluation protocols it is difficult to directly compare their performance. To enable more structured comparisons, we describe three continual learning scenarios based on whether at test time task identity is provided and\textendash in case it is not\textendash whether it must be inferred. Any sequence of well-defined tasks can be performed according to each scenario. Using the split and permuted MNIST task protocols, for each scenario we carry out an extensive comparison of recently proposed continual learning methods. We demonstrate substantial differences between the three scenarios in terms of difficulty and in terms of how efficient different methods are. In particular, when task identity must be inferred (i.e., class incremental learning), we find that regularization-based approaches (e.g., elastic weight consolidation) fail and that replaying representations of previous experiences seems required for solving this scenario.},
+  keywords = {[framework],[mnist],Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Rec,Computer Science - Machine Learning,Statistics - Machine Learning},
+  note = {The authors clearly show how regularization approaches fail to perform well on Class-IL scenarios. They used a MLP for all experiments.}
+}
+
+

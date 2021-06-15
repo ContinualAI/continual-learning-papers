@@ -1,0 +1,207 @@
+
+@inproceedings{aljundi2019b,
+  title = {Online {{Continual Learning}} with {{Maximal Interfered Retrieval}}},
+  booktitle = {Advances in {{Neural Information Processing Systems}} 32},
+  author = {Aljundi, Rahaf and Belilovsky, Eugene and Tuytelaars, Tinne and Charlin, Laurent and Caccia, Massimo and Lin, Min and {Page-Caccia}, Lucas},
+  editor = {Wallach, H and Larochelle, H and Beygelzimer, A and {d\${\textbackslash}backslash\$textquotesingle Alch{\'e}-Buc}, F and Fox, E and Garnett, R},
+  year = {2019},
+  pages = {11849--11860},
+  publisher = {{Curran Associates, Inc.}},
+  url = {http://papers.nips.cc/paper/9357-online-continual-learning-with-maximal-interfered-retrieval.pdf},
+  abstract = {Continual learning, the setting where a learning agent is faced with a never ending stream of data, continues to be a great challenge for modern machine learning systems. In particular the online or "single-pass through the data" setting has gained attention recently as a natural setting that is difficult to tackle. Methods based on replay, either generative or from a stored memory, have been shown to be effective approaches for continual learning, matching or exceeding the state of the art in a number of standard benchmarks. These approaches typically rely on randomly selecting samples from the replay memory or from a generative model, which is suboptimal. In this work we consider a controlled sampling of memories for replay. We retrieve the samples which are most interfered, i.e. whose prediction will be most negatively impacted by the foreseen parameters update. We show a formulation for this sampling criterion in both the generative replay and the experience replay setting, producing consistent gains in performance and greatly reduced forgetting. We release an implementation of our method at https://github.com/optimass/Maximally\_Interfered\_Retrieval},
+  keywords = {[cifar],[mnist]}
+}
+
+@inproceedings{ans2002,
+  title = {Preventing {{Catastrophic Interference}} in  {{MultipleSequence Learning Using Coupled Reverberating Elman Networks}}},
+  booktitle = {Proceedings of the 24th {{Annual Conference}} of the {{Cognitive Science Society}}},
+  author = {Ans, Bernard and Rousset, Stephane and French, Robert M. and Musca, Serban C.},
+  year = {2002},
+  url = {http://leadserv.u-bourgogne.fr/IMG/pdf/CogSci2002.Rsrn.pdf},
+  abstract = {Everyone agrees that real cognition requires much more than static pattern recognition. In particular, it requires the ability to learn sequences of patterns (or actions) But learning sequences really means being able to learn multiple sequences, one after the other, wi thout the most recently learned ones erasing the previously learned ones. But if catastrophic interference is a problem for the sequential learning of individual patterns, the problem is amplified many times over when multiple sequences of patterns have to be learned consecutively, because each new sequence consists of many linked patterns. In this paper we will present a connectionist architecture that would seem to solve the problem of multiple sequence learning using pseudopatterns. Introduction Building a robot that could unfailingly recognize and respond to hundreds of objects in the world \textendash{} apples, mice, telephones and paper napkins, among them \textendash{} would unquestionably constitute a major artificial intelligence tour de force. But everyone agrees that real cognition requires much more than static pattern recognition. In particular, it requires the ability to learn sequences of patterns (or actions). This was the primary reason for the development of the simple recurrent network (SRN, Elman, 1990) and the many variants of this architecture. But learning sequences means more than being able to learn a single, isolated sequence of patterns: it means being able to learn multiple sequences, one after the other, without the most recently learned ones erasing the previously learned ones. But if catastrophic interference \textendash{} the phenomenon whereby new learning completely erases old learning \textendash{} is a problem with static pattern learning (McCloskey \& Cohen, 1989; Ratcliff, 1990), the problem is amplified many times over when multiple sequences of patterns have to be learned consecutively, because each sequence consists of many new linked patterns. What hope is there for a previously learned sequence of patterns to survive after the network has learned a new sequence consisting of many individual patterns? In this paper, we will present a connectionist architecture that solves the problem of multiple sequence learning. Catastrophic interference The problem of catastrophic interference (or forgetting) has been with the connectionist community for well over a decade now (McCloskey \& Cohen, 1989; Ratcliff, 1990; for a review see Sharkey \& Sharkey, 1995). Catastrophic forgetting occurs when newly learned information suddenly and completely erases information that was previously learned by the network, a phenomenon that is not only implausible cognitively, but disastrous for most practical applications. The problem has been studied by numerous authors over the past decade (see French, 1999 for a review). The problem is that the very property \textendash{} a single set of weights to encode information \textendash{} that gives connectionist networks their remarkable abilities of generalization and graceful degradation in the presence of incomplete information are also the root cause of catastrophic interference (see, for example, French, 1992). Various authors (Ans \& Rousset, 1997, 2000; French, 1997; Robins, 1995) have developed systems that rehearse on pseudo-episodes (or pseudopatterns), rather than on the real items that were previously learned. The basic principle of this mechanism is when learning new external patterns to interleave them with internally-generated pseudopatterns. These latter patterns, self-generated by the network from random activation, reflect (but are not identical to) the previously learned information. It has now been established that this pseudopattern rehearsal method effectively eliminates catastrophic forgetting. A serious problem remains, however, and that is this: cognition involves more than being able to sequentially learn a series of "static" (non-temporal) patterns without interference. It is of equal importance to be able to serially learn many of temporal sequences of patterns. We will propose an pseudopattern-based architecture that can effectively learn multiple temporal pat terns consecutively. The key insight of this paper is this: Once an SRN has learned a particular sequence, each pseudopattern generated by that network reflects the entire sequence (or set of sequences) that has been learned .},
+  keywords = {[rnn],Catastrophic interference,Connectionism,Dual,Elegant degradation,ENCODE,Fault tolerance,Generalization (Psychology),Greater Than,Interference (communication),Memory Disorders,Network architecture,Pattern Recognition,Pseudo brand of pseudoephedrine,Recurrent neural network,reverberating,rnn,Robin bird,Telephone}
+}
+
+@article{arumae2020,
+  title = {{{CALM}}: {{Continuous Adaptive Learning}} for {{Language Modeling}}},
+  author = {Arumae, Kristjan and Bhatia, Parminder},
+  year = {2020},
+  url = {http://arxiv.org/abs/2004.03794},
+  abstract = {Training large language representation models has become a standard in the natural language processing community. This allows for fine tuning on any number of specific tasks, however, these large high capacity models can continue to train on domain specific unlabeled data to make initialization even more robust for supervised tasks. We demonstrate that in practice these pre-trained models present performance deterioration in the form of catastrophic forgetting when evaluated on tasks from a general domain such as GLUE. In this work we propose CALM, Continuous Adaptive Learning for Language Modeling: techniques to render models which retain knowledge across multiple domains. With these methods, we are able to reduce the performance gap across supervised tasks introduced by task specific models which we demonstrate using a continual learning setting in biomedical and clinical domains.},
+  annotation = {\_eprint: 2004.03794},
+  journal = {arXiv},
+  keywords = {[nlp]}
+}
+
+@article{chaudhry2019a,
+  title = {On {{Tiny Episodic Memories}} in {{Continual Learning}}},
+  author = {Chaudhry, Arslan and Rohrbach, Marcus and Elhoseiny, Mohamed and Ajanthan, Thalaiyasingam and Dokania, Puneet K and Torr, Philip H S and Ranzato, Marc'Aurelio},
+  year = {2019},
+  url = {https://github.com/facebookresearch/agem http://arxiv.org/abs/1902.10486},
+  abstract = {In continual learning (CL), an agent learns from a stream of tasks leveraging prior experience to transfer knowledge to future tasks. It is an ideal framework to decrease the amount of supervision in the existing learning algorithms. But for a successful knowledge transfer, the learner needs to remember how to perform previous tasks. One way to endow the learner the ability to perform tasks seen in the past is to store a small memory, dubbed episodic memory, that stores few examples from previous tasks and then to replay these examples when training for future tasks. In this work, we empirically analyze the effectiveness of a very small episodic memory in a CL setup where each training example is only seen once. Surprisingly, across four rather different supervised learning benchmarks adapted to CL, a very simple baseline, that jointly trains on both examples from the current task as well as examples stored in the episodic memory, significantly outperforms specifically designed CL approaches with and without episodic memory. Interestingly, we find that repetitive training on even tiny memories of past tasks does not harm generalization, on the contrary, it improves it, with gains between 7\$\textbackslash backslash\$\% and 17\$\textbackslash backslash\$\% when the memory is populated with a single example per class.},
+  annotation = {\_eprint: 1902.10486},
+  journal = {arXiv},
+  keywords = {[cifar],[imagenet],[mnist]},
+  note = {Training directly on past examples with very small replay memories enhances performances beyond the size of the replay memory.}
+}
+
+@article{chen2019,
+  title = {Facilitating {{Bayesian Continual Learning}} by {{Natural Gradients}} and {{Stein Gradients}}},
+  author = {Chen, Yu and Diethe, Tom and Lawrence, Neil},
+  year = {2019},
+  url = {http://arxiv.org/abs/1904.10644},
+  abstract = {Continual learning aims to enable machine learning models to learn a general solution space for past and future tasks in a sequential manner. Conventional models tend to forget the knowledge of previous tasks while learning a new task, a phenomenon known as catastrophic forgetting. When using Bayesian models in continual learning, knowledge from previous tasks can be retained in two ways: 1). posterior distributions over the parameters, containing the knowledge gained from inference in previous tasks, which then serve as the priors for the following task; 2). coresets, containing knowledge of data distributions of previous tasks. Here, we show that Bayesian continual learning can be facilitated in terms of these two means through the use of natural gradients and Stein gradients respectively.},
+  annotation = {\_eprint: 1904.10644},
+  journal = {arXiv},
+  keywords = {[bayes]}
+}
+
+@article{hayes2018,
+  title = {Memory {{Efficient Experience Replay}} for {{Streaming Learning}}},
+  author = {Hayes, Tyler L and Cahill, Nathan D and Kanan, Christopher},
+  year = {2018},
+  url = {https://github.com/tyler-hayes/ExStream. http://arxiv.org/abs/1809.05922},
+  abstract = {In supervised machine learning, an agent is typically trained once and then deployed. While this works well for static settings, robots often operate in changing environments and must quickly learn new things from data streams. In this paradigm, known as streaming learning, a learner is trained online, in a single pass, from a data stream that cannot be assumed to be independent and identically distributed (iid). Streaming learning will cause conventional deep neural networks (DNNs) to fail for two reasons: 1) they need multiple passes through the entire dataset; and 2) non-iid data will cause catastrophic forgetting. An old fix to both of these issues is rehearsal. To learn a new example, rehearsal mixes it with previous examples, and then this mixture is used to update the DNN. Full rehearsal is slow and memory intensive because it stores all previously observed examples, and its effectiveness for preventing catastrophic forgetting has not been studied in modern DNNs. Here, we describe the ExStream algorithm for memory efficient rehearsal and compare it to alternatives. We find that full rehearsal can eliminate catastrophic forgetting in a variety of streaming learning settings, with ExStream performing well using far less memory and computation.},
+  annotation = {\_eprint: 1809.05922},
+  journal = {IEEE International Conference on Robotics and Automation (ICRA)},
+  keywords = {[core50]},
+  note = {The replay memory is of very small size due to the online update of class-representative centroids.}
+}
+
+@inproceedings{hayes2020a,
+  title = {{{REMIND Your Neural Network}} to {{Prevent Catastrophic Forgetting}}},
+  booktitle = {Proceedings of the 2020 {{ECCV}}},
+  author = {Hayes, Tyler L. and Kafle, Kushal and Shrestha, Robik and Acharya, Manoj and Kanan, Christopher},
+  year = {2020},
+  url = {http://arxiv.org/abs/1910.02509},
+  urldate = {2021-03-26},
+  abstract = {People learn throughout life. However, incrementally updating conventional neural networks leads to catastrophic forgetting. A common remedy is replay, which is inspired by how the brain consolidates memory. Replay involves fine-tuning a network on a mixture of new and old instances. While there is neuroscientific evidence that the brain replays compressed memories, existing methods for convolutional networks replay raw images. Here, we propose REMIND, a brain-inspired approach that enables efficient replay with compressed representations. REMIND is trained in an online manner, meaning it learns one example at a time, which is closer to how humans learn. Under the same constraints, REMIND outperforms other methods for incremental class learning on the ImageNet ILSVRC-2012 dataset. We probe REMIND's robustness to data ordering schemes known to induce catastrophic forgetting. We demonstrate REMIND's generality by pioneering online learning for Visual Question Answering (VQA).},
+  archiveprefix = {arXiv},
+  eprint = {1910.02509},
+  eprinttype = {arxiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing},
+  note = {Comment: To appear in the European Conference on Computer Vision (ECCV-2020)}
+}
+
+@article{isele2018,
+  title = {Selective {{Experience Replay}} for {{Lifelong Learning}}},
+  author = {Isele, David and Cosgun, Akansel},
+  year = {2018},
+  pages = {3302--3309},
+  url = {http://arxiv.org/abs/1802.10269},
+  abstract = {Deep reinforcement learning has emerged as a powerful tool for a variety of learning tasks, however deep nets typically exhibit forgetting when learning multiple tasks in sequence. To mitigate forgetting, we propose an experience replay process that augments the standard FIFO buffer and selectively stores experiences in a long-term memory. We explore four strategies for selecting which experiences will be stored: favoring surprise, favoring reward, matching the global training distribution, and maximizing coverage of the state space. We show that distribution matching successfully prevents catastrophic forgetting, and is consistently the best approach on all domains tested. While distribution matching has better and more consistent performance, we identify one case in which coverage maximization is beneficial - when tasks that receive less trained are more important. Overall, our results show that selective experience replay, when suitable selection algorithms are employed, can prevent catastrophic forgetting.},
+  annotation = {\_eprint: 1802.10269},
+  journal = {Thirty-Second AAAI Conference on Artificial Intelligence},
+  keywords = {Natural Language Processing and Machine Learning T}
+}
+
+@article{kiyasseh2020,
+  title = {{{CLOPS}}: {{Continual Learning}} of {{Physiological Signals}}},
+  author = {Kiyasseh, Dani and Zhu, Tingting and Clifton, David A},
+  year = {2020},
+  url = {http://arxiv.org/abs/2004.09578},
+  abstract = {Deep learning algorithms are known to experience destructive interference when instances violate the assumption of being independent and identically distributed (i.i.d). This violation, however, is ubiquitous in clinical settings where data are streamed temporally and from a multitude of physiological sensors. To overcome this obstacle, we propose CLOPS, a healthcare-specific replay-based continual learning strategy. In three continual learning scenarios based on three publically-available datasets, we show that CLOPS can outperform its multi-task learning counterpart. Moreover, we propose end-to-end trainable parameters, which we term task-instance parameters, that can be used to quantify task difficulty and similarity. This quantification yields insights into both network interpretability and clinical applications, where task difficulty is poorly quantified.},
+  annotation = {\_eprint: 2004.09578},
+  journal = {arXiv}
+}
+
+@inproceedings{kurle2020,
+  title = {Continual {{Learning}} with {{Bayesian Neural Networks}} for {{Non}}-{{Stationary Data}}},
+  booktitle = {Eighth {{International Conference}} on {{Learning Representations}}},
+  author = {Kurle, Richard and Cseke, Botond and Klushyn, Alexej and van der Smagt, Patrick and G{\"u}nnemann, Stephan},
+  year = {2020},
+  url = {https://iclr.cc/virtual_2020/poster_SJlsFpVtDB.html},
+  urldate = {2021-01-01},
+  abstract = {This work addresses continual learning for non-stationary data, using Bayesian neural networks and memory-based online variational Bayes. We represent the posterior approximation of the network weights by a diagonal Gaussian distribution and a complementary memory of raw data. This raw data corresponds to likelihood terms that cannot be well approximated by the Gaussian. We introduce a novel method for sequentially updating both components of the posterior approximation. Furthermore, we propose Bayesian forgetting and a Gaussian diffusion process for adapting to non-stationary data. The experimental results show that our update method improves on existing approaches for streaming data. Additionally, the adaptation methods lead to better predictive performance for non-stationary data.},
+  keywords = {[bayes]},
+  language = {en}
+}
+
+@inproceedings{prabhu2020,
+  title = {{{GDumb}}: {{A Simple Approach}} That {{Questions Our Progress}} in {{Continual Learning}}},
+  shorttitle = {{{GDumb}}},
+  booktitle = {Computer {{Vision}} \textendash{} {{ECCV}} 2020},
+  author = {Prabhu, Ameya and Torr, Philip H. S. and Dokania, Puneet K.},
+  editor = {Vedaldi, Andrea and Bischof, Horst and Brox, Thomas and Frahm, Jan-Michael},
+  year = {2020},
+  pages = {524--540},
+  publisher = {{Springer International Publishing}},
+  address = {{Cham}},
+  doi = {10.1007/978-3-030-58536-5_31},
+  abstract = {We discuss a general formulation for the Continual Learning (CL) problem for classification\textemdash a learning task where a stream provides samples to a learner and the goal of the learner, depending on the samples it receives, is to continually upgrade its knowledge about the old classes and learn new ones. Our formulation takes inspiration from the open-set recognition problem where test scenarios do not necessarily belong to the training distribution. We also discuss various quirks and assumptions encoded in recently proposed approaches for CL. We argue that some oversimplify the problem to an extent that leaves it with very little practical importance, and makes it extremely easy to perform well on. To validate this, we propose GDumb that (1) greedily stores samples in memory as they come and; (2) at test time, trains a model from scratch using samples only in the memory. We show that even though GDumb is not specifically designed for CL problems, it obtains state-of-the-art accuracies (often with large margins) in almost all the experiments when compared to a multitude of recently proposed algorithms. Surprisingly, it outperforms approaches in CL formulations for which they were specifically designed. This, we believe, raises concerns regarding our progress in CL for classification. Overall, we hope our formulation, characterizations and discussions will help in designing realistically useful CL algorithms, and GDumb will serve as a strong contender for the same.},
+  isbn = {978-3-030-58536-5},
+  language = {en},
+  series = {Lecture {{Notes}} in {{Computer Science}}}
+}
+
+@inproceedings{rolnick2019,
+  title = {Experience {{Replay}} for {{Continual Learning}}},
+  booktitle = {{{NeurIPS}}},
+  author = {Rolnick, David and Ahuja, Arun and Schwarz, Jonathan and Lillicrap, Timothy P and Wayne, Greg},
+  year = {2019},
+  pages = {350--360},
+  url = {http://papers.nips.cc/paper/8327-experience-replay-for-continual-learning.pdf},
+  abstract = {Interacting with a complex world involves continual learning, in which tasks and data distributions change over time. A continual learning system should demonstrate both plasticity (acquisition of new knowledge) and stability (preservation of old knowledge). Catastrophic forgetting is the failure of stability, in which new experience overwrites previous experience. In the brain, replay of past experience is widely believed to reduce forgetting, yet it has been largely overlooked as a solution to forgetting in deep reinforcement learning. Here, we introduce CLEAR, a replay-based method that greatly reduces catastrophic forgetting in multi-task reinforcement learning. CLEAR leverages off-policy learning and behavioral cloning from replay to enhance stability, as well as on-policy learning to preserve plasticity. We show that CLEAR performs better than state-of-the-art deep learning techniques for mitigating forgetting, despite being significantly less complicated and not requiring any knowledge of the individual tasks being learned.}
+}
+
+@inproceedings{tang2020,
+  title = {Graph-{{Based Continual Learning}}},
+  booktitle = {International {{Conference}} on {{Learning Representations}}},
+  author = {Tang, Binh and Matteson, David S.},
+  year = {2020},
+  url = {https://openreview.net/forum?id=HHSEKOnPvaO},
+  urldate = {2021-01-16},
+  abstract = {Despite significant advances, continual learning models still suffer from catastrophic forgetting when exposed to incrementally available data from non-stationary distributions. Rehearsal...},
+  language = {en}
+}
+
+@article{vandeven2020,
+  title = {Brain-Inspired Replay for Continual Learning with Artificial Neural Networks},
+  author = {{van de Ven}, Gido M. and Siegelmann, Hava T. and Tolias, Andreas S.},
+  year = {2020},
+  volume = {11},
+  doi = {10.1038/s41467-020-17866-2},
+  url = {https://www.nature.com/articles/s41467-020-17866-2},
+  abstract = {Artificial neural networks suffer from catastrophic forgetting. Unlike humans, when these networks are trained on something new, they rapidly forget what was learned before. In the brain, a mechanism thought to be important for protecting memories is the reactivation of neuronal activity patterns representing those memories. In artificial neural networks, such memory replay can be implemented as `generative replay', which can successfully \textendash{} and surprisingly efficiently \textendash{} prevent catastrophic forgetting on toy examples even in a class-incremental learning scenario. However, scaling up generative replay to complicated problems with many tasks or complex inputs is challenging. We propose a new, brain-inspired variant of replay in which internal or hidden representations are replayed that are generated by the network's own, context-modulated feedback connections. Our method achieves state-of-the-art performance on challenging continual learning benchmarks (e.g., class-incremental learning on CIFAR-100) without storing data, and it provides a novel model for replay in the brain.},
+  journal = {Nature Communications},
+  keywords = {[cifar],[framework],[generative],[mnist]},
+  note = {The paper shows a generative form of replay in which a VAE, conditioned on the current task, is able to generate pseudosamples and, when used as a classifier, to address new tasks. The idea is that the generative model is inspired by the hyppocampus, which sits hierarchically on top of the cortex (often thought as the classifier). In this way, replay is fed-back by the same model used to predict the class. Forgetting is prevented both on VAE and on the classification component through replay. It also shows that regularization approaches fail in class-incremental setting.}
+}
+
+@inproceedings{vonoswald2020,
+  title = {Continual Learning with Hypernetworks},
+  booktitle = {International {{Conference}} on {{Learning Representations}}},
+  author = {{von Oswald}, Johannes and Henning, Christian and Sacramento, Jo{\~a}o and Grewe, Benjamin F},
+  year = {2020},
+  url = {https://openreview.net/forum?id=SJgwNerKvB},
+  abstract = {Artificial neural networks suffer from catastrophic forgetting when they are sequentially trained on multiple tasks. To overcome this problem, we present a novel approach based on task-conditioned...},
+  keywords = {[cifar],[mnist]}
+}
+
+@article{yoon2021,
+  title = {Online {{Coreset Selection}} for {{Rehearsal}}-Based {{Continual Learning}}},
+  author = {Yoon, Jaehong and Madaan, Divyam and Yang, Eunho and Hwang, Sung Ju},
+  year = {2021},
+  url = {http://arxiv.org/abs/2106.01085},
+  urldate = {2021-06-07},
+  abstract = {A dataset is a shred of crucial evidence to describe a task. However, each data point in the dataset does not have the same potential, as some of the data points can be more representative or informative than others. This unequal importance among the data points may have a large impact in rehearsal-based continual learning, where we store a subset of the training examples (coreset) to be replayed later to alleviate catastrophic forgetting. In continual learning, the quality of the samples stored in the coreset directly affects the model's effectiveness and efficiency. The coreset selection problem becomes even more important under realistic settings, such as imbalanced continual learning or noisy data scenarios. To tackle this problem, we propose Online Coreset Selection (OCS), a simple yet effective method that selects the most representative and informative coreset at each iteration and trains them in an online manner. Our proposed method maximizes the model's adaptation to a target dataset while selecting high-affinity samples to past tasks, which directly inhibits catastrophic forgetting. We validate the effectiveness of our coreset selection mechanism over various standard, imbalanced, and noisy datasets against strong continual learning baselines, demonstrating that it improves task adaptation and prevents catastrophic forgetting in a sample-efficient manner.},
+  archiveprefix = {arXiv},
+  eprint = {2106.01085},
+  eprinttype = {arxiv},
+  journal = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning}
+}
+
+@article{zhang2019,
+  title = {Prototype {{Reminding}} for {{Continual Learning}}},
+  author = {Zhang, Mengmi and Wang, Tao and Lim, Joo Hwee and Feng, Jiashi},
+  year = {2019},
+  pages = {1--10},
+  url = {http://arxiv.org/abs/1905.09447},
+  abstract = {Continual learning is a critical ability of continually acquiring and transferring knowledge without catastrophically forgetting previously learned knowledge. However, enabling continual learning for AI remains a long-standing challenge. In this work, we propose a novel method, Prototype Reminding, that efficiently embeds and recalls previously learnt knowledge to tackle catastrophic forgetting issue. In particular, we consider continual learning in classification tasks. For each classification task, our method learns a metric space containing a set of prototypes where embedding of the samples from the same class cluster around prototypes and class-representative prototypes are separated apart. To alleviate catastrophic forgetting, our method preserves the embedding function from the samples to the previous metric space, through our proposed prototype reminding from previous tasks. Specifically, the reminding process is implemented by replaying a small number of samples from previous tasks and correspondingly matching their embedding to their nearest class-representative prototypes. Compared with recent continual learning methods, our contributions are fourfold: first, our method achieves the best memory retention capability while adapting quickly to new tasks. Second, our method uses metric learning for classification, and does not require adding in new neurons given new object classes. Third, our method is more memory efficient since only class-representative prototypes need to be recalled. Fourth, our method suggests a promising solution for few-shot continual learning. Without tampering with the performance on initial tasks, our method learns novel concepts given a few training examples of each class in new tasks.},
+  annotation = {\_eprint: 1905.09447},
+  journal = {arXiv},
+  keywords = {[bayes],[cifar],[imagenet],[mnist]}
+}
+
+

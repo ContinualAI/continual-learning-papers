@@ -1,0 +1,77 @@
+
+@article{antoniou2020,
+  title = {Defining {{Benchmarks}} for {{Continual Few}}-{{Shot Learning}}},
+  author = {Antoniou, Antreas and Patacchiola, Massimiliano and Ochal, Mateusz and Storkey, Amos},
+  year = {2020},
+  url = {http://arxiv.org/abs/2004.11967},
+  abstract = {Both few-shot and continual learning have seen substantial progress in the last years due to the introduction of proper benchmarks. That being said, the field has still to frame a suite of benchmarks for the highly desirable setting of continual few-shot learning, where the learner is presented a number of few-shot tasks, one after the other, and then asked to perform well on a validation set stemming from all previously seen tasks. Continual few-shot learning has a small computational footprint and is thus an excellent setting for efficient investigation and experimentation. In this paper we first define a theoretical framework for continual few-shot learning, taking into account recent literature, then we propose a range of flexible benchmarks that unify the evaluation criteria and allows exploring the problem from multiple perspectives. As part of the benchmark, we introduce a compact variant of ImageNet, called SlimageNet64, which retains all original 1000 classes but only contains 200 instances of each one (a total of 200K data-points) downscaled to 64 x 64 pixels. We provide baselines for the proposed benchmarks using a number of popular few-shot learning algorithms, as a result, exposing previously unknown strengths and weaknesses of those algorithms in continual and data-limited settings.},
+  annotation = {\_eprint: 2004.11967},
+  journal = {arXiv},
+  keywords = {[imagenet]}
+}
+
+@article{kruszewski2020a,
+  title = {Evaluating {{Online Continual Learning}} with {{CALM}}},
+  author = {Kruszewski, Germ{\'a}n and Sorodoc, Ionut-Teodor and Mikolov, Tomas},
+  year = {2020},
+  url = {https://arxiv.org/abs/2004.03340v2},
+  urldate = {2021-02-05},
+  abstract = {Online Continual Learning (OCL) studies learning over a continuous data stream without observing any single example more than once, a setting that is closer to the experience of humans and systems that must learn "on-the-wild". Yet, commonly available benchmarks are far from these real-world conditions, because they explicitly signal different tasks, lack latent similarity structure or assume temporal independence between different examples. Here, we propose a new benchmark for OCL based on language modelling in which input alternates between different languages and domains without any explicit delimitation. Additionally, we propose new metrics to study catastrophic forgetting in this setting and evaluate multiple baseline models based on compositions of experts. Finally, we introduce a simple gating technique that learns the latent similarities between different inputs, improving the performance of a Products of Experts model.},
+  journal = {arXiv},
+  keywords = {[nlp],[rnn]},
+  language = {en}
+}
+
+@inproceedings{lomonaco2017,
+  title = {{{CORe50}}: A {{New Dataset}} and {{Benchmark}} for {{Continuous Object Recognition}}},
+  booktitle = {Proceedings of the 1st {{Annual Conference}} on {{Robot Learning}}},
+  author = {Lomonaco, Vincenzo and Maltoni, Davide},
+  editor = {Levine, Sergey and Vanhoucke, Vincent and Goldberg, Ken},
+  year = {2017},
+  volume = {78},
+  pages = {17--26},
+  publisher = {{PMLR}},
+  url = {http://proceedings.mlr.press/v78/lomonaco17a.html},
+  abstract = {Continuous/Lifelong learning of high-dimensional data streams is a challenging research problem. In fact, fully retraining models each time new data become available is infeasible, due to computational and storage issues, while na\"ive incremental strategies have been shown to suffer from catastrophic forgetting. In the context of real-world object recognition applications (e.g., robotic vision), where continuous learning is crucial, very few datasets and benchmarks are available to evaluate and compare emerging techniques. In this work we propose a new dataset and benchmark CORe50, specifically designed for continuous object recognition, and introduce baseline approaches for different continuous learning scenarios.},
+  keywords = {[vision]},
+  series = {Proceedings of {{Machine Learning Research}}}
+}
+
+@inproceedings{lomonaco2020,
+  title = {Continual {{Reinforcement Learning}} in {{3D Non}}-{{Stationary Environments}}},
+  booktitle = {Proceedings of the {{IEEE}}/{{CVF Conference}} on {{Computer Vision}} and {{Pattern Recognition Workshops}}},
+  author = {Lomonaco, Vincenzo and Desai, Karan and Culurciello, Eugenio and Maltoni, Davide},
+  year = {2020},
+  pages = {248--249},
+  url = {https://openaccess.thecvf.com/content_CVPRW_2020/html/w15/Lomonaco_Continual_Reinforcement_Learning_in_3D_Non-Stationary_Environments_CVPRW_2020_paper.html},
+  abstract = {High-dimensional always-changing environments constitute a hard challenge for current reinforcement learning techniques. Artificial agents, nowadays, are often trained off-line in very static and controlled conditions in simulation such that training observations can be thought as sampled i.i.d. from the entire observations space. However, in real world settings, the environment is often non-stationary and subject to unpredictable, frequent changes. In this paper we propose and openly release CRLMaze, a new benchmark for learning continually through reinforcement in a complex 3D non-stationary task based on ViZDoom and subject to several environmental changes. Then, we introduce an end-to-end model-free continual reinforcement learning strategy showing competitive results with respect to four different baselines and not requiring any access to additional supervised signals, previously encountered environmental conditions or observations.}
+}
+
+@article{she2019,
+  title = {{{OpenLORIS}}-{{Object}}: {{A Robotic Vision Dataset}} and {{Benchmark}} for {{Lifelong Deep Learning}}},
+  author = {She, Qi and Feng, Fan and Hao, Xinyue and Yang, Qihan and Lan, Chuanlin and Lomonaco, Vincenzo and Shi, Xuesong and Wang, Zhengwei and Guo, Yao and Zhang, Yimin and Qiao, Fei and Chan, Rosa H M},
+  year = {2019},
+  pages = {1--8},
+  url = {http://arxiv.org/abs/1911.06487},
+  abstract = {The recent breakthroughs in computer vision have benefited from the availability of large representative datasets (e.g. ImageNet and COCO) for training. Yet, robotic vision poses unique challenges for applying visual algorithms developed from these standard computer vision datasets due to their implicit assumption over non-varying distributions for a fixed set of tasks. Fully retraining models each time a new task becomes available is infeasible due to computational, storage and sometimes privacy issues, while na\$\textbackslash backslash\$"\{i\}ve incremental strategies have been shown to suffer from catastrophic forgetting. It is crucial for the robots to operate continuously under open-set and detrimental conditions with adaptive visual perceptual systems, where lifelong learning is a fundamental capability. However, very few datasets and benchmarks are available to evaluate and compare emerging techniques. To fill this gap, we provide a new lifelong robotic vision dataset ("OpenLORIS-Object") collected via RGB-D cameras. The dataset embeds the challenges faced by a robot in the real-life application and provides new benchmarks for validating lifelong object recognition algorithms. Moreover, we have provided a testbed of \$9\$ state-of-the-art lifelong learning algorithms. Each of them involves \$48\$ tasks with \$4\$ evaluation metrics over the OpenLORIS-Object dataset. The results demonstrate that the object recognition task in the ever-changing difficulty environments is far from being solved and the bottlenecks are at the forward/backward transfer designs. Our dataset and benchmark are publicly available at at \$\textbackslash backslash\$href\{https://lifelong-robotic-vision.github.io/dataset/object\}\{\$\textbackslash backslash\$underline\{https://lifelong-robotic-vision.github.io/dataset/object\}\}.},
+  annotation = {\_eprint: 1911.06487},
+  journal = {arXiv},
+  keywords = {[vision]}
+}
+
+@inproceedings{veniat2021,
+  title = {Efficient {{Continual Learning}} with {{Modular Networks}} and {{Task}}-{{Driven Priors}}},
+  booktitle = {{{ICLR}}},
+  author = {Veniat, Tom and Denoyer, Ludovic and Ranzato, Marc'Aurelio},
+  year = {2021},
+  url = {http://arxiv.org/abs/2012.12631},
+  urldate = {2021-04-11},
+  abstract = {Existing literature in Continual Learning (CL) has focused on overcoming catastrophic forgetting, the inability of the learner to recall how to perform tasks observed in the past. There are however other desirable properties of a CL system, such as the ability to transfer knowledge from previous tasks and to scale memory and compute sub-linearly with the number of tasks. Since most current benchmarks focus only on forgetting using short streams of tasks, we first propose a new suite of benchmarks to probe CL algorithms across these new axes. Finally, we introduce a new modular architecture, whose modules represent atomic skills that can be composed to perform a certain task. Learning a task reduces to figuring out which past modules to re-use, and which new modules to instantiate to solve the current task. Our learning algorithm leverages a task-driven prior over the exponential search space of all possible ways to combine modules, enabling efficient learning on long streams of tasks. Our experiments show that this modular architecture and learning algorithm perform competitively on widely used CL benchmarks while yielding superior performance on the more challenging benchmarks we introduce in this work.},
+  archiveprefix = {arXiv},
+  eprint = {2012.12631},
+  eprinttype = {arxiv},
+  keywords = {Computer Science - Machine Learning},
+  note = {Ctrl benchmark for Continual Learning}
+}
+
+
