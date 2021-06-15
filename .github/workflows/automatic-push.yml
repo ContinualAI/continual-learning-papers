@@ -1,0 +1,77 @@
+################################################################################
+# Copyright (c) 2021 ContinualAI.                                              #
+# Copyrights licensed under the MIT License.                                   #
+# See the accompanying LICENSE file for terms.                                 #
+#                                                                              #
+# Date: 12-05-2021                                                             #
+# Author(s): Andrea Cossu                                                      #
+# E-mail: contact@continualai.org                                              #
+# Website: avalanche.continualai.org                                           #
+################################################################################
+
+name: automaticpush
+
+on: 
+  push:
+    branches:
+      - master
+    paths:
+      - '**.py'
+      - '.github/workflows/automatic-push.yml'
+      - '**.bib'
+      - 'embedding-plot.html'
+      - 'papers_template.md'
+
+jobs:
+  automaticpush:
+    name: automaticpush
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -l {0}
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: actions/setup-python@v2
+        with:
+         python-version: '3.7'
+      - run: python -m pip install bibtexparser numpy sklearn plotly
+      - run: python bibtex2md.py
+      - run: python embeddings.py
+      - name: commit papers
+        run: |
+          git add embedding-plot.html embeddings.json papers.md
+          git commit -m "Updated papers files" -a || true
+      - name: push to papers
+        uses: ad-m/github-push-action@master
+        with:
+          branch: master
+          github_token: ${{ secrets.GITHUB_TOKEN }} 
+      - name: clone website repository
+        uses: actions/checkout@v2
+        with:
+          repository: ContinualAI/website
+          path: website
+          token: ${{ secrets.REPORT_TOKEN }}
+          persist-credentials: false
+          fetch-depth: 0
+      - name: commit changes
+        run: |
+          cp embedding-plot.html website/_includes
+          cp papers.md website/
+          cd website/
+          git config --local user.email ${{ secrets.EMAIL }}
+          git config --local user.name ${{ secrets.NAME }}
+          git pull
+          git add .
+          git commit -m "Update papers files" -a || true
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          repository: ContinualAI/website
+          branch: master
+          directory: website
+          github_token: ${{ secrets.REPORT_TOKEN }} 
