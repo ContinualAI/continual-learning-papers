@@ -11,8 +11,6 @@ You can browse the list in this file or interactively on the [ContinualAI websit
 [Join our community](https://continualai.herokuapp.com/) on Slack to stay updated with the latest Continual Learning news.  
 Visit the Continua AI wiki &rarr; http://wiki.continualai.org/
 
-Below, you can find instructions on **how to contribute to the list of papers**!
-
 ## Table of contents
 [Add a new paper](https://github.com/ContinualAI/continual-learning-papers#add-a-new-paper)  
 [Join the ContinualAI Zotero group](https://github.com/ContinualAI/continual-learning-papers#join-the-continualai-zotero-group)  
