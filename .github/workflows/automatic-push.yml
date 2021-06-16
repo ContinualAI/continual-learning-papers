@@ -21,6 +21,7 @@ on:
       - '**.bib'
       - 'embedding-plot.html'
       - 'papers_template.md'
+      - 'README_template.md'
 
 jobs:
   automaticpush:

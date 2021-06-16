@@ -4,13 +4,40 @@
   <img src="https://www.continualai.org/images/continualai_logo_name_black.png" alt="ContinualAI logo"/ width="300px" align="center">
 </p>
 
-Continual Learning papers list, curated by ContinualAI. We currently list <PAPER_COUNT> papers. 
-You can browse the list in the [ContinualAI website](https://www.continualai.org/papers/).
+Continual Learning papers list, curated by ContinualAI. <PAPER_COUNT>
+ 
+You can browse the list in this file or interactively on the [ContinualAI website](https://www.continualai.org/papers/).
 
 [Join our community](https://continualai.herokuapp.com/) on Slack to stay updated with the latest Continual Learning news.  
 Visit the Continua AI wiki &rarr; http://wiki.continualai.org/
 
 Below, you can find instructions on **how to contribute to the list of papers**!
+
+## Table of contents
+[Add a new paper](https://github.com/ContinualAI/continual-learning-papers#add-a-new-paper)  
+[Join the ContinualAI Zotero group](https://github.com/ContinualAI/continual-learning-papers#join-the-continualai-zotero-group)  
+* [List of papers](https://github.com/ContinualAI/continual-learning-papers#list-of-papers)  
+    - [Applications](https://github.com/ContinualAI/continual-learning-papers#applications)
+    - [Architectural methods](https://github.com/ContinualAI/continual-learning-papers#architectural-methods)
+    - [Benchmarks](https://github.com/ContinualAI/continual-learning-papers#benchmarks)
+    - [Bio-inspired methods](https://github.com/ContinualAI/continual-learning-papers#bioinspired-methods)
+    - [Catastrophic Forgetting studies](https://github.com/ContinualAI/continual-learning-papers#catastrophic-forgetting-studies)
+    - [Classics](https://github.com/ContinualAI/continual-learning-papers#classics)
+    - [Continual Few-shot learning](https://github.com/ContinualAI/continual-learning-papers#continual-few-shot-learning)
+    - [Continual Meta Learning](https://github.com/ContinualAI/continual-learning-papers#continual-meta-learning)
+    - [Continual Reinforcement Learning](https://github.com/ContinualAI/continual-learning-papers#continual-reinforcement-learning)
+    - [Continual Sequential Learning](https://github.com/ContinualAI/continual-learning-papers#continual-sequential-learning)
+    - [Dissertation and theses](https://github.com/ContinualAI/continual-learning-papers#dissertation-and-theses)
+    - [Generative Replay methods](https://github.com/ContinualAI/continual-learning-papers#generative-replay-methods)
+    - [Hybrid methods](https://github.com/ContinualAI/continual-learning-papers#hybrid-methods)
+    - [Meta Continual Learning](https://github.com/ContinualAI/continual-learning-papers#meta-continual-learning)
+    - [Metrics and Evaluation](https://github.com/ContinualAI/continual-learning-papers#metrics-and-evaluations)
+    - [Neuroscience](https://github.com/ContinualAI/continual-learning-papers#neuroscience)
+    - [Others](https://github.com/ContinualAI/continual-learning-papers#others)
+    - [Regularization methods](https://github.com/ContinualAI/continual-learning-papers#regularization-methods)
+    - [Rehearsal methods](https://github.com/ContinualAI/continual-learning-papers#rehearsal-methods)
+    - [Review papers and books](https://github.com/ContinualAI/continual-learning-papers#review-papers-and-books)
+    - [Robotics](https://github.com/ContinualAI/continual-learning-papers#robotics)
 
 ---------------------------------------------------
 
@@ -49,7 +76,7 @@ You can give your contribution to the group by **adding new papers** or by helpi
 
 We will periodically export the bibtex to keep the list updated. In case we forgot, join the [ContinualAI Slack](https://continualai.herokuapp.com/) and complain about our behavior in the `#wiki` channel.
 
-#### Advices to add new papers in Zotero
+### Advices to add new papers in Zotero
 
 * Check if the paper already exist by using the `Citation Key` or the title in Zotero search bar.
 
@@ -61,11 +88,6 @@ We will periodically export the bibtex to keep the list updated. In case we forg
 
 ----------------------------
 
-## About ContinualAI
-
-**[ContinualAI](https://continualai.org)** is an open research community on the topic of Continual Learning and AI!
-We are a community of CL researchers and enthusiasts! Join us today **[on slack](https://continualai.herokuapp.com)**!
-
-----------------------------
+## List of papers
 
 <TAG>
