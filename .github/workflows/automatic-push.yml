@@ -36,7 +36,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           persist-credentials: false
           fetch-depth: 0
-          ref: 'main'
       - uses: actions/setup-python@v2
         with:
          python-version: '3.7'
