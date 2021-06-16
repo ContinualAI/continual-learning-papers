@@ -48,7 +48,7 @@ jobs:
           git add embedding-plot.html embeddings.json papers.md README.md
           git commit -m "Updated papers files" -a || true
       - name: push to papers
-        uses: ad-m/github-push-action@main
+        uses: ad-m/github-push-action@master
         with:
           branch: main
           github_token: ${{ secrets.GITHUB_TOKEN }}
