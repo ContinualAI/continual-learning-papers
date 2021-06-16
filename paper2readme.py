@@ -28,31 +28,17 @@ import os
 random.seed(1)
 
 
-def generate_hsl():
-    H = random.randint(0, 359)
-    S = random.randint(60, 100)
-    L = random.randint(40, 80)
-    color_string = "HSL({}, {}%, {}%)".format(H, S, L)
-
-    return color_string
-
-
 def build_tags_string(tag2c):
     output = ""
     for tagname, color in tag2c.items():
-        output += create_colored_tag(tagname, color)
+        output += create_tag(tagname)
         output += "  "
 
     return output
 
 
-def create_colored_tag(tagname, tagcolor):
-    output = "<span " \
-        "style='background-color:{}; padding: " \
-        "2px; border-radius:4px; border: 1px " \
-        "solid black;'>[{}]" \
-        "</span> ".format(tagcolor, tagname)
-
+def create_tag(tagname):
+    output = "[{}] ".format(tagname)
     return output
 
 
@@ -251,11 +237,6 @@ with open('tags.csv', 'r') as f:
     n_tags = len(tags_list)
     print("Read " + str(n_tags) + " tags.")
 
-    # generate random HSL colors for tags (light colors only)
-    colors = [generate_hsl() for _ in range(n_tags)]
-
-tags2color = dict(zip(tags_list, colors))
-
 # ------------------------------------------------------------------------------
 
 remove_mendeley_notice_from_files(os.path.join(bibtex_path, full_bib_db))
@@ -300,7 +281,8 @@ for i, bibfile in enumerate(bib_files):
             # print(cur_tags)
 
             for tag in cur_tags:
-                str2inject_tags += create_colored_tag(tag, tags2color[tag])
+                assert tag in tags_list
+                str2inject_tags += create_tag(tag)
 
         str2inject += "- " + get_title(item) + \
                       " by " + get_author(item) + \
