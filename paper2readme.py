@@ -6,14 +6,12 @@
 # Copyrights licensed under the MIT License.                                   #
 # See the accompanying LICENSE file for terms.                                 #
 #                                                                              #
-# Date: 1-05-2020                                                              #
-# Author(s): Vincenzo Lomonaco                                                 #
+# Date: 16-06-2021                                                             #
+# Author(s): Andrea Cossu                                                      #
 # E-mail: contact@continualai.org                                              #
 # Website: www.continualai.org                                                 #
 ################################################################################
 
-""" Simple script to generate the papers.md file loading references from
-    a bibtex. """
 
 # Python 2-3 compatible
 from __future__ import print_function
@@ -28,77 +26,6 @@ import copy
 import os
 
 random.seed(1)
-
-showbib_template = """
-<script>
-    function [PAPERID][SECTION]Function() {
-      var moreText = document.getElementById("[PAPERID][SECTION]_more");
-      var moreText2 = document.getElementById("[PAPERID][SECTION]_more2");
-      var moreText3 = document.getElementById("[PAPERID][SECTION]_more3");
-      var btnText = document.getElementById("[PAPERID][SECTION]_btt");
-
-      if (moreText.style.display === "none") {
-        btnText.innerHTML = "Bib";
-        moreText.style.display = "inline";
-      } else {
-        btnText.innerHTML = "Bib";
-        moreText.style.display = "none";
-      }
-      moreText2.style.display = "none";
-      moreText3.style.display = "none";
-    }
-</script>
-<script>
-    function [PAPERID][SECTION]Function2() {
-      var moreText = document.getElementById("[PAPERID][SECTION]_more2");
-      var moreText1 = document.getElementById("[PAPERID][SECTION]_more");
-      var moreText3 = document.getElementById("[PAPERID][SECTION]_more3");
-      var btnText = document.getElementById("[PAPERID][SECTION]_btt2");
-
-      if (moreText.style.display === "none") {
-        btnText.innerHTML = "Abstract";
-        moreText.style.display = "inline";
-      } else {
-        btnText.innerHTML = "Abstract";
-        moreText.style.display = "none";
-      }
-      moreText1.style.display = "none";
-      moreText3.style.display = "none";
-    }
-</script>
-<script>
-    function [PAPERID][SECTION]Function3() {
-      var moreText = document.getElementById("[PAPERID][SECTION]_more3");
-      var moreText1 = document.getElementById("[PAPERID][SECTION]_more");
-      var moreText2 = document.getElementById("[PAPERID][SECTION]_more2");
-      var btnText = document.getElementById("[PAPERID][SECTION]_btt3");
-
-      if (moreText.style.display === "none") {
-        btnText.innerHTML = "Notes";
-        moreText.style.display = "inline";
-      } else {
-        btnText.innerHTML = "Notes";
-        moreText.style.display = "none";
-      }
-      moreText1.style.display = "none";
-      moreText2.style.display = "none";
-    }
-</script>
-<button style="font-size:75%; line-height:15px" onclick="[PAPERID][SECTION]Function()" id="[PAPERID][SECTION]_btt">Bib</button>
-<button style="font-size:75%; line-height:15px" onclick="[PAPERID][SECTION]Function2()" id="[PAPERID][SECTION]_btt2">Abstract</button>
-<button style="font-size:75%; line-height:15px" onclick="[PAPERID][SECTION]Function3()" id="[PAPERID][SECTION]_btt3">Notes</button>
-
-<p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="[PAPERID][SECTION]_more" style="display: none">
-    [BIBTEX]
-</span></p>
-<p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="[PAPERID][SECTION]_more2" style="display: none">
-    [ABSTRACT]
-</span></p>
-<p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="[PAPERID][SECTION]_more3" style="display: none">
-    [NOTE]
-</span></p>
-<span id="[PAPERID][SECTION]_year" class="yearSpan" style="display: none">[YEAR]</span>
-"""
 
 
 def generate_hsl():
@@ -242,11 +169,10 @@ def get_title(item):
 bibtex_path = "bibtex"
 full_bib_db = "Continual Learning Papers.bib"
 full_bib_db_path = full_bib_db
-template_file_path = "papers_template.md"
+template_file_path = "README_template.md"
 tag2fill = "<TAG>"
 papercount2fill = "<PAPER_COUNT>"
-taglist2fill = "<TAGLIST>"
-output_filename = "papers.md"
+output_filename = "README.md"
 # this respect also the order of the sections
 bib_files = [
     "Continual Learning Papers-Applications.bib",
@@ -345,7 +271,6 @@ with open(os.path.join(bibtex_path, full_bib_db)) as bibtex_file:
     full_bib_db = bibtexparser.load(bibtex_file, parser=parser)
 
 str2inject = ""
-#rst_end_str = ""
 for i, bibfile in enumerate(bib_files):
 
     sec_title = bibfile.split("-")[1][:-4]
@@ -384,28 +309,6 @@ for i, bibfile in enumerate(bib_files):
                       ", " + item['year'] + ". " + \
                       str2inject_tags + "\n"
 
-        # Add bib file button
-        bib_str = showbib_template.replace(
-            "[BIBTEX]", bibtex_string2html(
-                extract_bibtex(full_bib_db, item["ID"])
-            )
-        )
-        bib_str = bib_str.replace("[PAPERID]", item["ID"].replace("-", ""))
-        if "abstract" in item.keys():
-            bib_str = bib_str.replace("[ABSTRACT]", item["abstract"])
-        else:
-            bib_str = bib_str.replace("[ABSTRACT]", "N.A.")
-        if "annote" in item.keys():
-            bib_str = bib_str.replace("[NOTE]", item["annote"].replace(
-                "\n", "\n\t\t"))
-        else:
-            bib_str = bib_str.replace("[NOTE]", "N.A.")
-        bib_str = bib_str.replace("[SECTION]", sec_title.replace(" ", "_"))
-        bib_str = bib_str.replace("[YEAR]", item["year"])
-        
-        str2inject += bib_str
-        #rst_end_str += bib_str
-
     if i != len(os.listdir(bibtex_path)) - 1:
         str2inject += "\n"
     else:
@@ -416,10 +319,6 @@ template_str = template_str.replace(papercount2fill,
                                     "**Search among " +
                                     str(count_current_papers(bibtex_path,
                                                              full_bib_db_path)) + " papers!**"
-                                    )
-
-template_str = template_str.replace(taglist2fill,
-                                    build_tags_string(tags2color)
                                     )
 
 template_str = template_str.replace(tag2fill, str2inject) #+ rst_end_str

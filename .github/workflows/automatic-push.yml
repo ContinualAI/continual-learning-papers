@@ -40,6 +40,7 @@ jobs:
          python-version: '3.7'
       - run: python -m pip install bibtexparser numpy sklearn plotly
       - run: python bibtex2md.py
+      - run: python paper2readme.py
       - run: python embeddings.py
       - name: commit papers
         run: |
