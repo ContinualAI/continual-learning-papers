@@ -16,7 +16,7 @@ import re
 import nltk
 nltk.download('stopwords')
 
-model = SentenceTransformer('model_weights/')
+model = SentenceTransformer('BogdanKuloren/continual-learning-paper-embeddings-model')
 model.max_seq_length = 512
 
 def remove_stopwords(word_list: str) -> str:
