@@ -39,7 +39,7 @@ jobs:
       - uses: actions/setup-python@v2
         with:
          python-version: '3.7'
-      - run: python -m pip install bibtexparser numpy sklearn plotly
+      - run: python -m pip install bibtexparser numpy sklearn plotly nltk sentence-transformers
       - run: python bibtex2md.py
       - run: python paper2readme.py
       - run: python embeddings.py
