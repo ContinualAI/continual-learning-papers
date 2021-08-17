@@ -3,40 +3,36 @@
   title = {Online {{Fast Adaptation}} and {{Knowledge Accumulation}}: A {{New Approach}} to {{Continual Learning}}},
   author = {Caccia, Massimo and Rodriguez, Pau and Ostapenko, Oleksiy and Normandin, Fabrice and Lin, Min and Caccia, Lucas and Laradji, Issam and Rish, Irina and Lacoste, Alexande and Vazquez, David and Charlin, Laurent},
   year = {2020},
+  journal = {arXiv},
   url = {http://arxiv.org/abs/2003.05856},
   abstract = {Learning from non-stationary data remains a great challenge for machine learning. Continual learning addresses this problem in scenarios where the learning agent faces a stream of changing tasks. In these scenarios, the agent is expected to retain its highest performance on previous tasks without revisiting them while adapting well to the new tasks. Two new recent continual-learning scenarios have been proposed. In meta-continual learning, the model is pre-trained to minimize catastrophic forgetting when trained on a sequence of tasks. In continual-meta learning, the goal is faster remembering, i.e., focusing on how quickly the agent recovers performance rather than measuring the agent's performance without any adaptation. Both scenarios have the potential to propel the field forward. Yet in their original formulations, they each have limitations. As a remedy, we propose a more general scenario where an agent must quickly solve (new) out-of-distribution tasks, while also requiring fast remembering. We show that current continual learning, meta learning, meta-continual learning, and continual-meta learning techniques fail in this new scenario. Accordingly, we propose a strong baseline: Continual-MAML, an online extension of the popular MAML algorithm. In our empirical experiments, we show that our method is better suited to the new scenario than the methodologies mentioned above, as well as standard continual learning and meta learning approaches.},
-  annotation = {\_eprint: 2003.05856},
-  journal = {arXiv},
   keywords = {[fashion],[framework],[mnist],Computer Science - Artificial Intelligence,Computer Science - Machine Learning,continual meta learning,framework,MAML,meta continual learning,OSAKA},
-  note = {arXiv: 2003.05856}
+  annotation = {\_eprint: 2003.05856}
 }
 
 @article{harrison2019,
   title = {Continuous Meta-Learning without Tasks},
   author = {Harrison, James and Sharma, Apoorva and Finn, Chelsea and Pavone, Marco},
   year = {2019},
+  journal = {arXiv},
   url = {https://arxiv.org/abs/1912.08866},
   abstract = {Meta-learning is a promising strategy for learning to efficiently learn within new tasks, using data gathered from a distribution of tasks. However, the meta-learning literature thus far has focused on the task segmented setting, where at train-time, offline data is assumed to be split according to the underlying task, and at test-time, the algorithms are optimized to learn in a single task. In this work, we enable the application of generic meta-learning algorithms to settings where this task segmentation is unavailable, such as continual online learning with a time-varying task. We present meta-learning via online changepoint analysis (MOCA), an approach which augments a meta-learning algorithm with a differentiable Bayesian changepoint detection scheme. The framework allows both training and testing directly on time series data without segmenting it into discrete tasks. We demonstrate the utility of this approach on a nonlinear meta-regression benchmark as well as two meta-image-classification benchmarks.},
-  annotation = {\_eprint: 1912.08866},
-  journal = {arXiv},
-  keywords = {[imagenet],[mnist]}
+  keywords = {[imagenet],[mnist]},
+  annotation = {\_eprint: 1912.08866}
 }
 
 @book{he2019,
   title = {Task {{Agnostic Continual Learning}} via {{Meta Learning}}},
   author = {He, Xu and Sygnowski, Jakub and Galashov, Alexandre and Rusu, Andrei A and Teh, Yee Whye and Pascanu, Razvan},
   year = {2019},
+  journal = {arXiv:1906.05201 [cs, stat]},
+  eprint = {1906.05201},
+  eprinttype = {arxiv},
+  primaryclass = {cs, stat},
   url = {http://arxiv.org/abs/1906.05201},
   abstract = {While neural networks are powerful function approximators, they suffer from catastrophic forgetting when the data distribution is not stationary. One particular formalism that studies learning under non-stationary distribution is provided by continual learning, where the non-stationarity is imposed by a sequence of distinct tasks. Most methods in this space assume, however, the knowledge of task boundaries, and focus on alleviating catastrophic forgetting. In this work, we depart from this view and move the focus towards faster remembering \textendash{} i.e measuring how quickly the network recovers performance rather than measuring the network's performance without any adaptation. We argue that in many settings this can be more effective and that it opens the door to combining meta-learning and continual learning techniques, leveraging their complementary advantages. We propose a framework specific for the scenario where no information about task boundaries or task identity is given. It relies on a separation of concerns into what task is being solved and how the task should be solved. This framework is implemented by differentiating task specific parameters from task agnostic parameters, where the latter are optimized in a continual meta learning fashion, without access to multiple tasks at the same time. We showcase this framework in a supervised learning scenario and discuss the implication of the proposed formalism.},
   archiveprefix = {arXiv},
-  eprint = {1906.05201},
-  eprinttype = {arxiv},
-  journal = {arXiv:1906.05201 [cs, stat]},
-  keywords = {[mnist],Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computi,Statistics - Machine Learning},
-  note = {arXiv: 1906.05201
-\par
-arXiv: 1906.05201},
-  primaryclass = {cs, stat}
+  keywords = {[mnist],Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computi,Statistics - Machine Learning}
 }
 
 @inproceedings{jerfel2019,
