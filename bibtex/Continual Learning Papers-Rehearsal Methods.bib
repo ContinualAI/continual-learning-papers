@@ -53,7 +53,8 @@
   url = {https://github.com/facebookresearch/agem http://arxiv.org/abs/1902.10486},
   abstract = {In continual learning (CL), an agent learns from a stream of tasks leveraging prior experience to transfer knowledge to future tasks. It is an ideal framework to decrease the amount of supervision in the existing learning algorithms. But for a successful knowledge transfer, the learner needs to remember how to perform previous tasks. One way to endow the learner the ability to perform tasks seen in the past is to store a small memory, dubbed episodic memory, that stores few examples from previous tasks and then to replay these examples when training for future tasks. In this work, we empirically analyze the effectiveness of a very small episodic memory in a CL setup where each training example is only seen once. Surprisingly, across four rather different supervised learning benchmarks adapted to CL, a very simple baseline, that jointly trains on both examples from the current task as well as examples stored in the episodic memory, significantly outperforms specifically designed CL approaches with and without episodic memory. Interestingly, we find that repetitive training on even tiny memories of past tasks does not harm generalization, on the contrary, it improves it, with gains between 7\$\textbackslash backslash\$\% and 17\$\textbackslash backslash\$\% when the memory is populated with a single example per class.},
   keywords = {[cifar],[imagenet],[mnist]},
-  annotation = {\_eprint: 1902.10486}
+  annotation = {\_eprint: 1902.10486},
+  note = {Training directly on past examples with very small replay memories enhances performances beyond the size of the replay memory.}
 }
 
 @article{chen2019,
@@ -86,7 +87,8 @@
   url = {https://github.com/tyler-hayes/ExStream. http://arxiv.org/abs/1809.05922},
   abstract = {In supervised machine learning, an agent is typically trained once and then deployed. While this works well for static settings, robots often operate in changing environments and must quickly learn new things from data streams. In this paradigm, known as streaming learning, a learner is trained online, in a single pass, from a data stream that cannot be assumed to be independent and identically distributed (iid). Streaming learning will cause conventional deep neural networks (DNNs) to fail for two reasons: 1) they need multiple passes through the entire dataset; and 2) non-iid data will cause catastrophic forgetting. An old fix to both of these issues is rehearsal. To learn a new example, rehearsal mixes it with previous examples, and then this mixture is used to update the DNN. Full rehearsal is slow and memory intensive because it stores all previously observed examples, and its effectiveness for preventing catastrophic forgetting has not been studied in modern DNNs. Here, we describe the ExStream algorithm for memory efficient rehearsal and compare it to alternatives. We find that full rehearsal can eliminate catastrophic forgetting in a variety of streaming learning settings, with ExStream performing well using far less memory and computation.},
   keywords = {[core50]},
-  annotation = {\_eprint: 1809.05922}
+  annotation = {\_eprint: 1809.05922},
+  note = {The replay memory is of very small size due to the online update of class-representative centroids.}
 }
 
 @inproceedings{hayes2020a,
@@ -100,7 +102,8 @@
   urldate = {2021-03-26},
   abstract = {People learn throughout life. However, incrementally updating conventional neural networks leads to catastrophic forgetting. A common remedy is replay, which is inspired by how the brain consolidates memory. Replay involves fine-tuning a network on a mixture of new and old instances. While there is neuroscientific evidence that the brain replays compressed memories, existing methods for convolutional networks replay raw images. Here, we propose REMIND, a brain-inspired approach that enables efficient replay with compressed representations. REMIND is trained in an online manner, meaning it learns one example at a time, which is closer to how humans learn. Under the same constraints, REMIND outperforms other methods for incremental class learning on the ImageNet ILSVRC-2012 dataset. We probe REMIND's robustness to data ordering schemes known to induce catastrophic forgetting. We demonstrate REMIND's generality by pioneering online learning for Visual Question Answering (VQA).},
   archiveprefix = {arXiv},
-  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing}
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing},
+  note = {Comment: To appear in the European Conference on Computer Vision (ECCV-2020)}
 }
 
 @article{isele2018,
@@ -194,7 +197,8 @@
   doi = {10.1038/s41467-020-17866-2},
   url = {https://www.nature.com/articles/s41467-020-17866-2},
   abstract = {Artificial neural networks suffer from catastrophic forgetting. Unlike humans, when these networks are trained on something new, they rapidly forget what was learned before. In the brain, a mechanism thought to be important for protecting memories is the reactivation of neuronal activity patterns representing those memories. In artificial neural networks, such memory replay can be implemented as `generative replay', which can successfully \textendash{} and surprisingly efficiently \textendash{} prevent catastrophic forgetting on toy examples even in a class-incremental learning scenario. However, scaling up generative replay to complicated problems with many tasks or complex inputs is challenging. We propose a new, brain-inspired variant of replay in which internal or hidden representations are replayed that are generated by the network's own, context-modulated feedback connections. Our method achieves state-of-the-art performance on challenging continual learning benchmarks (e.g., class-incremental learning on CIFAR-100) without storing data, and it provides a novel model for replay in the brain.},
-  keywords = {[cifar],[framework],[generative],[mnist]}
+  keywords = {[cifar],[framework],[generative],[mnist]},
+  note = {The paper shows a generative form of replay in which a VAE, conditioned on the current task, is able to generate pseudosamples and, when used as a classifier, to address new tasks. The idea is that the generative model is inspired by the hyppocampus, which sits hierarchically on top of the cortex (often thought as the classifier). In this way, replay is fed-back by the same model used to predict the class. Forgetting is prevented both on VAE and on the classification component through replay. It also shows that regularization approaches fail in class-incremental setting.}
 }
 
 @inproceedings{vonoswald2020,

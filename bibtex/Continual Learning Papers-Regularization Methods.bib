@@ -107,7 +107,10 @@
   pages = {3521--3526},
   url = {http://arxiv.org/abs/1612.00796},
   abstract = {The ability to learn tasks in a sequential fashion is crucial to the development of artificial intelligence. Neural networks are not, in general, capable of this and it has been widely thought that catastrophic forgetting is an inevitable feature of connectionist models. We show that it is possible to overcome this limitation and train networks that can maintain expertise on tasks which they have not experienced for a long time. Our approach remembers old tasks by selectively slowing down learning on the weights important for those tasks. We demonstrate our approach is scalable and effective by solving a set of classification tasks based on the MNIST hand written digit dataset and by learning several Atari 2600 games sequentially.},
-  keywords = {[mnist],annotated,Computer Science - Artificial Intelligence,Computer Science - Machine Learning,ewc,Statistics - Machine Learning}
+  keywords = {[mnist],annotated,Computer Science - Artificial Intelligence,Computer Science - Machine Learning,ewc,Statistics - Machine Learning},
+  note = {arXiv: 1612.00796
+\par
+arXiv: 1612.00796}
 }
 
 @inproceedings{lee2017,
@@ -121,7 +124,8 @@
   url = {http://arxiv.org/abs/1703.08475},
   abstract = {Catastrophic forgetting is a problem of neural networks that loses the information of the first task after training the second task. Here, we propose a method, i.e. incremental moment matching (IMM), to resolve this problem. IMM incrementally matches the moment of the posterior distribution of the neural network which is trained on the first and the second task, respectively. To make the search space of posterior parameter smooth, the IMM procedure is complemented by various transfer learning techniques including weight transfer, L2-norm of the old and the new parameter, and a variant of dropout with the old parameter. We analyze our approach on a variety of datasets including the MNIST, CIFAR-10, Caltech-UCSD-Birds, and Lifelog datasets. The experimental results show that IMM achieves state-of-the-art performance by balancing the information between an old and a new network.},
   keywords = {[bayes],[cifar],[mnist]},
-  annotation = {\_eprint: 1703.08475}
+  annotation = {\_eprint: 1703.08475},
+  note = {IMM is tested on Disjoint MNIST (2 tasks only), and Shuffled (i.e. permuted) MNIST (3 tasks only). The authors show that EWC does not work in Split (Disjoint) settings.}
 }
 
 @inproceedings{li2016,
@@ -134,7 +138,8 @@
   url = {http://arxiv.org/abs/1606.09282},
   abstract = {When building a unified vision system or gradually adding new capabilities to a system, the usual assumption is that training data for all tasks is always available. However, as the number of tasks grows, storing and retraining on such data becomes infeasible. A new problem arises where we add new capabilities to a Convolutional Neural Network (CNN), but the training data for its existing capabilities are unavailable. We propose our Learning without Forgetting method, which uses only new task data to train the network while preserving the original capabilities. Our method performs favorably compared to commonly used feature extraction and fine-tuning adaption techniques and performs similarly to multitask learning that uses original task data we assume unavailable. A more surprising observation is that Learning without Forgetting may be able to replace fine-tuning with similar old and new task datasets for improved new task performance.},
   language = {en},
-  keywords = {[imagenet],Computer Science - Computer Vision and Pattern Rec,Computer Science - Machine Learning,Statistics - Machine Learning}
+  keywords = {[imagenet],Computer Science - Computer Vision and Pattern Rec,Computer Science - Machine Learning,Statistics - Machine Learning},
+  note = {Comment: Conference version appears in ECCV 2016; updated with journal version arXiv: 1606.09282}
 }
 
 @inproceedings{liu2018,
@@ -149,7 +154,8 @@
   url = {https://ieeexplore.ieee.org/document/8545895/},
   abstract = {In this paper we propose an approach to avoiding catastrophic forgetting in sequential task learning scenarios. Our technique is based on a network reparameterization that approximately diagonalizes the Fisher Information Matrix of the network parameters. This reparameterization takes the form of a factorized rotation of parameter space which, when used in conjunction with Elastic Weight Consolidation (which assumes a diagonal Fisher Information Matrix), leads to significantly better performance on lifelong learning of sequential tasks. Experimental results on the MNIST, CIFAR-100, CUB-200 and Stanford-40 datasets demonstrate that we significantly improve the results of standard elastic weight consolidation, and that we obtain competitive results when compared to the state-of-the-art in lifelong learning without forgetting.},
   isbn = {978-1-5386-3788-3},
-  keywords = {[cifar],[mnist],Computer vision,Data models,ewc,fisher,Fisher Information Matrix,image classification,learning (artificial intelligence),matrix algebra,network parameters,network reparameterization,Neural networks,sequential tasks,standard elastic weight consolidation,Standards,Stanford-40 datasets,Task analysis,Training,Training data}
+  keywords = {[cifar],[mnist],Computer vision,Data models,ewc,fisher,Fisher Information Matrix,image classification,learning (artificial intelligence),matrix algebra,network parameters,network reparameterization,Neural networks,sequential tasks,standard elastic weight consolidation,Standards,Stanford-40 datasets,Task analysis,Training,Training data},
+  note = {ISSN: 1051-4651}
 }
 
 @inproceedings{michieli2019,
