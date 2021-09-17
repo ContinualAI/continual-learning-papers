@@ -6,6 +6,7 @@
   year = {2019},
   pages = {362--365},
   doi = {10.1145},
+  url = {https://dl.acm.org/doi/pdf/10.1145/3297001.3297062},
   abstract = {Continual learning broadly refers to the algorithms which aim to learn continuously over time across varying domains, tasks or data distributions. This is in contrast to algorithms restricted to learning a fixed number of tasks in a given domain, assuming a static data distribution. In this survey we aim to discuss a wide breadth of challenges faced in a continual learning setup and review existing work in the area. We discuss parameter regularization techniques to avoid catastrophic forgetting in neural networks followed by memory based approaches and the role of generative models in assisting continual learning algorithms. We discuss how dynamic neural networks assist continual learning by endowing neural networks with a new capacity to learn further. We conclude by discussing possible future directions.}
 }
 
@@ -19,6 +20,8 @@
   publisher = {{International Committee on Computational Linguistics}},
   address = {{Barcelona, Spain (Online)}},
   doi = {10.18653/v1/2020.coling-main.574},
+  url = {https://www.aclweb.org/anthology/2020.coling-main.574},
+  urldate = {2021-02-09},
   abstract = {Continual learning (CL) aims to enable information systems to learn from a continuous data stream across time. However, it is difficult for existing deep learning architectures to learn a new task without largely forgetting previously acquired knowledge. Furthermore, CL is particularly challenging for language learning, as natural language is ambiguous: it is discrete, compositional, and its meaning is context-dependent. In this work, we look at the problem of CL through the lens of various NLP tasks. Our survey discusses major challenges in CL and current methods applied in neural network models. We also provide a critical review of the existing CL evaluation methods and datasets in NLP. Finally, we present our outlook on future research directions.},
   keywords = {[nlp],Catastrophic Forgetting,Continual Learning,Lifelong Learning,Review}
 }
@@ -32,6 +35,7 @@
   publisher = {{Morgan \& Claypool Publishers LLC}},
   issn = {1939-4608},
   doi = {10.2200/s00832ed1v01y201802aim037},
+  url = {https://www.cs.uic.edu/ liub/lifelong-machine-learning.html},
   abstract = {Lifelong Machine Learning or Lifelong Learning (LL) is an advanced machine learning (ML) paradigm that learns continuously, accumulates the knowledge learned in the past, and uses/adapts it to help future learning and problem solving. In the process, the learner becomes more and more knowledgeable and better and better at learning. This continuous learning ability is one of the hallmarks of human intelligence. However, the current dominant ML paradigm learns in isolation: given a training dataset, it runs a ML algorithm only on the dataset to produce a model. It makes no attempt to retain the learned knowledge and use it in subsequent learning. Although this isolated ML paradigm, primarily based on data-driven optimization, has been very successful, it requires a large number of training examples, and is only suitable for well-defined and narrow tasks in closed environments. In contrast, we humans learn effectively with a few examples and in the dynamic and open world or environment in a self-supervised manner because our learning is also very much knowledge-driven: the knowledge learned in the past helps us learn new things with little data or effort and adapt to new/unseen situations. This self-suprevised (or self-aware) learning also enables us to learn on the job in the interaction with others and with the real-world environment with no external supervision. LL aims to achieve all these capabilities. Applications such as chatbots, s elf-driving cars, or any AI systems that interact with humans/physical environments are calling for these capabilities because they need to cope with their dynamic and open environments which leave them with no choice but to continuously learn new things in order to function well. Without the LL ability, an AI system cannot be considered truly intelligent, i.e., LL is necessary for intelligence or AGI (artificial general intelligence)}
 }
 
@@ -45,6 +49,8 @@
   pages = {607--627},
   issn = {0893-6080},
   doi = {10.1016/j.neunet.2021.07.021},
+  url = {https://www.sciencedirect.com/science/article/pii/S0893608021002847},
+  urldate = {2021-08-12},
   abstract = {Learning continuously during all model lifetime is fundamental to deploy machine learning solutions robust to drifts in the data distribution. Advances in Continual Learning (CL) with recurrent neural networks could pave the way to a large number of applications where incoming data is non stationary, like natural language processing and robotics. However, the existing body of work on the topic is still fragmented, with approaches which are application-specific and whose assessment is based on heterogeneous learning protocols and datasets. In this paper, we organize the literature on CL for sequential data processing by providing a categorization of the contributions and a review of the benchmarks. We propose two new benchmarks for CL with sequential data based on existing datasets, whose characteristics resemble real-world applications. We also provide a broad empirical evaluation of CL and Recurrent Neural Networks in class-incremental scenario, by testing their ability to mitigate forgetting with a number of different strategies which are not specific to sequential data processing. Our results highlight the key role played by the sequence length and the importance of a clear specification of the CL scenario.},
   language = {en},
   keywords = {[rnn],Benchmarks,Continual learning,Evaluation,Recurrent neural networks}
@@ -72,6 +78,7 @@
   pages = {12--25},
   issn = {1556-603X},
   doi = {10.1109/MCI.2015.2471196},
+  url = {http://ieeexplore.ieee.org/document/7296710/},
   abstract = {The prevalence of mobile phones, the internet-of-things technology, and networks of sensors has led to an enormous and ever increasing amount of data that are now more commonly available in a streaming fashion [1]-[5]. Often, it is assumed - either implicitly or explicitly - that the process generating such a stream of data is stationary, that is, the data are drawn from a fixed, albeit unknown probability distribution. In many real-world scenarios, however, such an assumption is simply not true, and the underlying process generating the data stream is characterized by an intrinsic nonstationary (or evolving or drifting) phenomenon. The nonstationarity can be due, for example, to seasonality or periodicity effects, changes in the users' habits or preferences, hardware or software faults affecting a cyber-physical system, thermal drifts or aging effects in sensors. In such nonstationary environments, where the probabilistic properties of the data change over time, a non-adaptive model trained under the false stationarity assumption is bound to become obsolete in time, and perform sub-optimally at best, or fail catastrophically at worst.},
   language = {en}
 }
@@ -83,6 +90,7 @@
   journal = {Trends in Cognitive Sciences},
   issn = {13646613},
   doi = {10.1016/j.tics.2020.09.004},
+  url = {https://doi.org/10.1016/j.tics.2020.09.004},
   abstract = {Artificial intelligence research has seen enormous progress over the past few decades, but it predominantly relies on fixed datasets and stationary environments. Continual learning is an increasingly relevant area of study that asks how artificial systems might learn sequentially, as biological systems do, from a continuous stream of correlated data. In the present review, we relate continual learning to the learning dynamics of neural networks, highlighting the potential it has to considerably improve data efficiency. We further consider the many new biologically inspired approaches that have emerged in recent years, focusing on those that utilize regularization, modularity, memory, and meta-learning, and highlight some of the most promising and impactful directions.},
   keywords = {artificial intelligence,lifelong,memory,meta-learning,non-stationary},
   note = {A CL review which highlights the problem of a tug-of-war dynamics in gradient-based learning and credit assignment. It also points to meta-learning as a valuable solution to continually learn while being data efficient.}
@@ -99,6 +107,7 @@
   publisher = {{Elsevier Ltd}},
   issn = {13646613},
   doi = {10.1016/j.tics.2017.04.001},
+  url = {https://linkinghub.elsevier.com/retrieve/pii/S1364661317300736},
   abstract = {Humans regularly perform new learning without losing memory for previous information, but neural network models suffer from the phenomenon of catastrophic forgetting in which new learning impairs prior function. A recent article presents an algorithm that spares learning at synapses important for previously learned function, reducing catastrophic forgetting.},
   keywords = {hasselmo2017a}
 }
@@ -135,6 +144,7 @@
   year = {2018},
   journal = {Proceedings of the International Joint Conference on Neural Networks},
   doi = {10.1109/IJCNN.2019.8851986},
+  url = {http://arxiv.org/abs/1812.09111},
   abstract = {Which generative model is the most suitable for Continual Learning? This paper aims at evaluating and comparing generative models on disjoint sequential image generation tasks. We investigate how several models learn and forget, considering various strategies: rehearsal, regularization, generative replay and fine-tuning. We used two quantitative metrics to estimate the generation quality and memory ability. We experiment with sequential tasks on three commonly used benchmarks for Continual Learning (MNIST, Fashion MNIST and CIFAR10). We found that among all models, the original GAN performs best and among Continual Learning strategies, generative replay outperforms all other methods. Even if we found satisfactory combinations on MNIST and Fashion MNIST, training generative models sequentially on CIFAR10 is particularly instable, and remains a challenge. Our code is available online \$\textbackslash backslash\$footnote\{\$\textbackslash backslash\$url\{https://github.com/TLESORT/Generative\$\textbackslash backslash\$\_Continual\$\textbackslash backslash\$\_Learning\}\}.},
   isbn = {9781728119854},
   keywords = {[cifar],[generative],[mnist]},
@@ -151,6 +161,7 @@
   pages = {52--68},
   issn = {1566-2535},
   doi = {10.1016/j.inffus.2019.12.004},
+  url = {http://www.sciencedirect.com/science/article/pii/S1566253519307377},
   abstract = {Continual learning (CL) is a particular machine learning paradigm where the data distribution and learning objective change through time, or where all the training data and objective criteria are never available at once. The evolution of the learning process is modeled by a sequence of learning experiences where the goal is to be able to learn new skills all along the sequence without forgetting what has been previously learned. CL can be seen as an online learning where knowledge fusion needs to take place in order to learn from streams of data presented sequentially in time. Continual learning also aims at the same time at optimizing the memory, the computation power and the speed during the learning process. An important challenge for machine learning is not necessarily finding solutions that work in the real world but rather finding stable algorithms that can learn in real world. Hence, the ideal approach would be tackling the real world in a embodied platform: an autonomous agent. Continual learning would then be effective in an autonomous agent or robot, which would learn autonomously through time about the external world, and incrementally develop a set of complex skills and knowledge.Robotic agents have to learn to adapt and interact with their environment using a continuous stream of observations. Some recent approaches aim at tackling continual learning for robotics, but most recent papers on continual learning only experiment approaches in simulation or with static datasets. Unfortunately, the evaluation of those algorithms does not provide insights on whether their solutions may help continual learning in the context of robotics. This paper aims at reviewing the existing state of the art of continual learning, summarizing existing benchmarks and metrics, and proposing a framework for presenting and evaluating both robotics and non robotics approaches in a way that makes transfer between both fields easier. We put light on continual learning in the context of robotics to create connections between fields and normalize approaches.},
   language = {en},
   keywords = {[framework],Catastrophic Forgetting,Continual Learning,Deep Learning,Lifelong Learning,Reinforcement Learning,Robotics},
@@ -167,7 +178,8 @@
   number = {3},
   pages = {359--361},
   issn = {2095-2236},
-  doi = {10.1007/s11704-016-6903-6}
+  doi = {10.1007/s11704-016-6903-6},
+  url = {https://doi.org/10.1007/s11704-016-6903-6}
 }
 
 @article{losing2018,
@@ -180,6 +192,7 @@
   publisher = {{Elsevier B.V.}},
   issn = {18728286},
   doi = {10.1016/j.neucom.2017.06.084},
+  url = {https://doi.org/10.1016/j.neucom.2017.06.084},
   abstract = {Recently, incremental and on-line learning gained more attention especially in the context of big data and learning from data streams, conflicting with the traditional assumption of complete data availability. Even though a variety of different methods are available, it often remains unclear which of them is suitable for a specific task and how they perform in comparison to each other. We analyze the key properties of eight popular incremental methods representing different algorithm classes. Thereby, we evaluate them with regards to their on-line classification error as well as to their behavior in the limit. Further, we discuss the often neglected issue of hyperparameter optimization specifically for each method and test how robustly it can be done based on a small set of examples. Our extensive evaluation on data sets with different characteristics gives an overview of the performance with respect to accuracy, convergence speed as well as model complexity, facilitating the choice of the best method for a given application.},
   keywords = {Data streams,Hyperparameter optimization,Incremental learning,Model selection,On-line learning}
 }
@@ -194,6 +207,7 @@
   pages = {2302--2310},
   issn = {0001-0782},
   doi = {10.1145/3191513},
+  url = {https://dl.acm.org/doi/10.1145/3191513},
   abstract = {Whereas people learn many different types of knowledge from diverse experiences over many years, and become better learners over time, most current machine learning systems are much more narrow, learning just a single func-tion or data model based on statistical analysis of a single data set. We suggest that people learn better than comput-ers precisely because of this difference, and we suggest a key direction for machine learning research is to develop software architectures that enable intelligent agents to also learn many types of knowledge, continuously over many years, and to become better learners over time. In this paper we defi ne more precisely this never-ending learning paradigm for machine learning, and we present one case study: the Never-Ending Language Learner (NELL), which achieves a number of the desired properties of a never-end-ing learner. NELL has been learning to read the Web 24hrs/ day since January 2010, and so far has acquired a knowledge base with 120mn diverse, confi dence-weighted beliefs (e.g., servedWith(tea,biscuits)), while learning thousands of interrelated functions that continually improve its reading competence over time. NELL has also learned to reason over its knowledge base to infer new beliefs it has not yet read from those it has, and NELL is inventing new relational pred-icates to extend the ontology it uses to represent beliefs. We describe the design of NELL, experimental results illustrat-ing its behavior, and discuss both its successes and short-comings as a case study in never-ending learning. NELL can be tracked online at http://rtw.ml.cmu.edu, and followed on Twitter at @CMUNELL. 1. INTRODUCTION Machine learning is a highly successful branch of Artifi cial Intelligence (AI), and is now widely used for tasks from spam fi ltering, to speech recognition, to credit card fraud detec-tion, to face recognition. Despite these successes, the ways in which computers learn today remain surprisingly narrow when compared to human learning. This paper explores an alternative paradigm for machine learning that more closely models the diversity, competence and cumulative nature of human learning. We call this alternative paradigm never-ending learning. To illustrate, note that in each of the above machine learning applications, the computer learns only a single function to perform a single task in isolation, usually from human labeled training examples of inputs and outputs of that function. In spam fi ltering, for instance, training examples consist of specifi c emails and spam or not-spam labels for each. This style of learning is often called super-vised function approximation, because the abstract learning problem is to approximate some unknown function f : X \textrightarrow{} Y},
   isbn = {9781577357018},
   pmid = {15003161},
@@ -223,6 +237,7 @@
   pages = {54--71},
   issn = {0893-6080},
   doi = {10.1016/j.neunet.2019.01.012},
+  url = {http://www.sciencedirect.com/science/article/pii/S0893608019300231},
   abstract = {Humans and animals have the ability to continually acquire, fine-tune, and transfer knowledge and skills throughout their lifespan. This ability, referred to as lifelong learning, is mediated by a rich set of neurocognitive mechanisms that together contribute to the development and specialization of our sensorimotor skills as well as to long-term memory consolidation and retrieval. Consequently, lifelong learning capabilities are crucial for computational learning systems and autonomous agents interacting in the real world and processing continuous streams of information. However, lifelong learning remains a long-standing challenge for machine learning and neural network models since the continual acquisition of incrementally available information from non-stationary data distributions generally leads to catastrophic forgetting or interference. This limitation represents a major drawback for state-of-the-art deep neural network models that typically learn representations from stationary batches of training data, thus without accounting for situations in which information becomes incrementally available over time. In this review, we critically summarize the main challenges linked to lifelong learning for artificial learning systems and compare existing neural network approaches that alleviate, to different extents, catastrophic forgetting. Although significant advances have been made in domain-specific learning with neural networks, extensive research efforts are required for the development of robust lifelong learning on autonomous agents and robots. We discuss well-established and emerging research motivated by lifelong learning factors in biological systems such as structural plasticity, memory replay, curriculum and transfer learning, intrinsic motivation, and multisensory integration.},
   language = {en},
   keywords = {[framework],Catastrophic forgetting,Continual Learning,Developmental systems,Lifelong Learning,Memory consolidation},
@@ -249,6 +264,7 @@
   pages = {123--146},
   issn = {0954-0091, 1360-0494},
   doi = {10.1080/09540099550039318},
+  url = {http://www.tandfonline.com/doi/abs/10.1080/09540099550039318},
   abstract = {This paper reviews the problem of catastrophic forgetting (the loss or disruption of previously learned information when new information is learned) in neural networks, and explores rehearsal mechanisms (the retraining of some of the previously learned information as the new information is added) as a potential solution. W e replicate some of the experiments described by Ratcliff (1990), including those relating to a simple `recency' based rehearsal regime. We then develop further rehearsal regimes which are more effective than recency rehearsal. In particular, `sweep rehearsal' is very successful at minimizing catastrophic forgetting. One possible limitation of rehearsal in general, however, is that previously learned information may not be available for retraining. W e describe a solution to this problem, `pseudorehearsal' , a method which provides the advantages of rehearsal without actually requiring any access to the previously learned information (the original training population) itself. We then suggest an interpretation of these rehearsal mechanisms in the context of a function approximation based account of neural network learning. Both rehearsal and pseudorehearsal may have practical applications, allowing new information to be integrated into an existing network with minimum disruption of old informa tion.},
   language = {en},
   keywords = {[dual]},
@@ -266,6 +282,7 @@
   publisher = {{Institute of Electrical and Electronics Engineers Inc.}},
   issn = {1556-603X},
   doi = {10.1109/MCI.2020.2998231},
+  url = {https://ieeexplore.ieee.org/document/9141463/},
   abstract = {Dataset shifts are present in many real-world applications, since data generation is not always fully controlled and is subject to noise, degradation, and other natural variations. In machine learning, the lack of regularity in data can degrade performance by breaching error constraints. Different methods have been proposed to solve shifting problems; however, shifts in off-line learning mode are not as well examined. Off-line shifts consist of problems where drifts occur only with unlabeled data. Most methods aimed at dataset shifts consider that new labeled data can be received after training, which is not always the case. Here, a review on dataset shift characteristics and causes is presented as a tool for the analysis and implementation of machine learning methods targeting off-line mode dataset shift problems. In this context, a relationship between statistical learning risk functions and error degradation due to variation in data distribution was straightforwardly derived. Moreover, this paper provides a consistent survey of recent popular machine learning methods that address off-line mode dataset shift problems, focusing on the main characteristics of unlabeled data shifts.}
 }
 

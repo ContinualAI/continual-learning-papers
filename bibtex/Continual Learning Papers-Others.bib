@@ -116,6 +116,7 @@
   pages = {335--340},
   publisher = {{Routledge}},
   doi = {10.4324/9781315789354-58},
+  url = {https://www.taylorfrancis.com/books/9781317729266/chapters/10.4324/9781315789354-58},
   abstract = {It is well known that when a connectionist network is trained on one set of patterns and then attempts to add new patterns to its repertoire, catastrophic interference may result. The use of sparse, orthogonal hidden-layer representations has been shown to reduce catastrophic interference. The author demonstrates that the use of sparse representations may, in certain cases, actually result in worse performance on catastrophic interference. This paper argues for the necessity of maintaining hidden-layer representations that are both as highly distributed and as highly orthogonal as possible. The author presents a learning algorithm, called context-biasing, that dynamically solves the problem of constraining hiddenlayer representations to simultaneously produce good orthogonality and distributedness. On the data tested for this study, context-biasing is shown to reduce catastrophic interference by more than 50\% compared to standard backpropagation. In particular, this technique succeeds in reducing catastrophic interference on data where sparse, orthogonal distributions failed to produce any improvement.},
   isbn = {978-1-315-78935-4},
   language = {en},
@@ -162,6 +163,7 @@
   year = {2016},
   issn = {16113349},
   doi = {10.1007/978-3-319-54526-4_43},
+  url = {http://link.springer.com/10.1007/978-3-319-54526-4_43},
   abstract = {The revival of deep neural networks and the availability of ImageNet laid the foundation for recent success in highly complex recognition tasks. However, ImageNet does not cover all visual concepts of all possible application scenarios. Hence, application experts still record new data constantly and expect the data to be used upon its availability. In this paper, we follow this observation and apply the classical concept of fine-tuning deep neural networks to scenarios where data from known or completely new classes is continuously added. Besides a straightforward realization of continuous fine-tuning, we empirically analyze how computational burdens of training can be further reduced. Finally, we visualize how the network's attention maps evolve over time which allows for visually investigating what the network learned during continuous fine-tuning.},
   isbn = {978-3-319-54525-7},
   keywords = {[imagenet]}
@@ -200,6 +202,7 @@
   publisher = {{Institute of Electrical and Electronics Engineers Inc.}},
   issn = {15505499},
   doi = {10.1109/ICCV.2019.00040},
+  url = {http://arxiv.org/abs/1903.12648},
   abstract = {Lifelong learning with deep neural networks is well-known to suffer from catastrophic forgetting: The performance on previous tasks drastically degrades when learning a new task. To alleviate this effect, we propose to leverage a large stream of unlabeled data easily obtainable in the wild. In particular, we design a novel class-incremental learning scheme with (a) a new distillation loss, termed global distillation, (b) a learning strategy to avoid overfitting to the most recent task, and (c) a confidence-based sampling method to effectively leverage unlabeled external data. Our experimental results on various datasets, including CIFAR and ImageNet, demonstrate the superiority of the proposed methods over prior methods, particularly when a stream of unlabeled data is accessible: Our method shows up to 15.8\% higher accuracy and 46.5\% less forgetting compared to the state-of-the-art method. The code is available at https://github.com/kibok90/iccv2019-inc.},
   isbn = {978-1-72814-803-8},
   annotation = {\_eprint: 1903.12648}
@@ -269,6 +272,7 @@
   publisher = {{Springer Verlag}},
   issn = {16113349},
   doi = {10.1007/978-3-030-01225-0_5},
+  url = {https://doi.org/10.1007/978-3-030-01225-0_5},
   abstract = {This work presents a method for adapting a single, fixed deep neural network to multiple tasks without affecting performance on already learned tasks. By building upon ideas from network quantization and pruning, we learn binary masks that ``piggyback'' on an existing network, or are applied to unmodified weights of that network to provide good performance on a new task. These masks are learned in an end-to-end differentiable fashion, and incur a low overhead of 1 bit per network parameter, per task. Even though the underlying network is fixed, the ability to mask individual weights allows for the learning of a large number of filters. We show performance comparable to dedicated fine-tuned networks for a variety of classification tasks, including those with large domain shifts from the initial task (ImageNet), and a variety of network architectures. Our performance is agnostic to task ordering and we do not suffer from catastrophic forgetting or competition between tasks.},
   isbn = {978-3-030-01224-3},
   keywords = {[imagenet],Binary networks,Incremental learning},
@@ -284,6 +288,7 @@
   pages = {180--189},
   issn = {16113349},
   doi = {10.1007/978-3-030-11012-3_14},
+  url = {http://arxiv.org/abs/1805.11119},
   abstract = {Visual recognition algorithms are required today to exhibit adaptive abilities. Given a deep model trained on a specific, given task, it would be highly desirable to be able to adapt incrementally to new tasks, preserving scalability as the number of new tasks increases, while at the same time avoiding catastrophic forgetting issues. Recent work has shown that masking the internal weights of a given original conv-net through learned binary variables is a promising strategy. We build upon this intuition and take into account more elaborated affine transformations of the convolutional weights that include learned binary masks. We show that with our generalization it is possible to achieve significantly higher levels of adaptation to new tasks, enabling the approach to compete with fine tuning strategies by requiring slightly more than 1 bit per network parameter per additional task. Experiments on two popular benchmarks showcase the power of our approach, that achieves the new state of the art on the Visual Decathlon Challenge.},
   isbn = {9783030110116},
   keywords = {[sparsity],[vision],Incremental learning,Multi-task learning},
@@ -402,6 +407,7 @@
   publisher = {{Institute of Electrical and Electronics Engineers Inc.}},
   issn = {15505499},
   doi = {10.1109/ICCV.2017.148},
+  url = {http://arxiv.org/abs/1704.01920 http://dx.doi.org/10.1109/ICCV.2017.148},
   abstract = {This paper introduces a new lifelong learning solution where a single model is trained for a sequence of tasks. The main challenge that vision systems face in this context is catastrophic forgetting: as they tend to adapt to the most recently seen task, they lose performance on the tasks that were learned previously. Our method aims at preserving the knowledge of the previous tasks while learning a new one by using autoencoders. For each task, an under-complete autoencoder is learned, capturing the features that are crucial for its achievement. When a new task is presented to the system, we prevent the reconstructions of the features with these autoencoders from changing, which has the effect of preserving the information on which the previous tasks are mainly relying. At the same time, the features are given space to adjust to the most recent environment as only their projection into a low dimension submanifold is controlled. The proposed system is evaluated on image classification tasks and shows a reduction of forgetting over the state-of-the-art},
   isbn = {9781538610329},
   keywords = {[imagenet],[vision]},
@@ -444,6 +450,7 @@
   publisher = {{Institute of Electrical and Electronics Engineers Inc.}},
   issn = {2169-3536},
   doi = {10.1109/ACCESS.2019.2904614},
+  url = {https://ieeexplore.ieee.org/document/8666123/},
   abstract = {With the development of deep convolutional neural networks in recent years, the network structure has become more and more complicated and varied, and there are very good results in pattern recognition, image classification, scene classification, and target tracking. This end-to-end learning model relies on the initial large dataset. However, many data are gradually obtained in practical situations, which contradict the deep learning of one-time batch learning. There is an urgent need for an incremental learning approach that can continuously learn new knowledge from new data while retaining what has already been learned. This paper proposes an incremental learning algorithm based on convolutional neural network and support vector data description. CNN and AM-Softmax loss function are used to represent and continuously learn image features. Support vector data description is used to construct multiple hyperspheres for new and old classes of images. Class-incremental learning is achieved by the increment of hyperspheres. The experimental results show that the incremental learning method proposed in this paper can effectively extract the latent features of the image and adapt it to the learning situation of the class-increment. The recognition accuracy is close to batch learning.},
   keywords = {[cifar],[mnist],feature extraction,incremental learning,loss function,One-class classifier}
 }
