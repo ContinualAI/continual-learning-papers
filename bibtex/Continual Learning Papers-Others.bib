@@ -116,7 +116,6 @@
   pages = {335--340},
   publisher = {{Routledge}},
   doi = {10.4324/9781315789354-58},
-  url = {https://www.taylorfrancis.com/books/9781317729266/chapters/10.4324/9781315789354-58},
   abstract = {It is well known that when a connectionist network is trained on one set of patterns and then attempts to add new patterns to its repertoire, catastrophic interference may result. The use of sparse, orthogonal hidden-layer representations has been shown to reduce catastrophic interference. The author demonstrates that the use of sparse representations may, in certain cases, actually result in worse performance on catastrophic interference. This paper argues for the necessity of maintaining hidden-layer representations that are both as highly distributed and as highly orthogonal as possible. The author presents a learning algorithm, called context-biasing, that dynamically solves the problem of constraining hiddenlayer representations to simultaneously produce good orthogonality and distributedness. On the data tested for this study, context-biasing is shown to reduce catastrophic interference by more than 50\% compared to standard backpropagation. In particular, this technique succeeds in reducing catastrophic interference on data where sparse, orthogonal distributions failed to produce any improvement.},
   isbn = {978-1-315-78935-4},
   language = {en},
@@ -134,7 +133,7 @@
   note = {Comment: 12 pages, 5 figures, 3 tables arXiv: 1903.04476}
 }
 
-@inproceedings{hayes2020,
+@inproceedings{hayes2020a,
   title = {Lifelong {{Machine Learning}} with {{Deep Streaming Linear Discriminant Analysis}}},
   booktitle = {{{CLVision Workshop}} at {{CVPR}} 2020},
   author = {Hayes, Tyler L and Kanan, Christopher},
@@ -163,7 +162,6 @@
   year = {2016},
   issn = {16113349},
   doi = {10.1007/978-3-319-54526-4_43},
-  url = {http://link.springer.com/10.1007/978-3-319-54526-4_43},
   abstract = {The revival of deep neural networks and the availability of ImageNet laid the foundation for recent success in highly complex recognition tasks. However, ImageNet does not cover all visual concepts of all possible application scenarios. Hence, application experts still record new data constantly and expect the data to be used upon its availability. In this paper, we follow this observation and apply the classical concept of fine-tuning deep neural networks to scenarios where data from known or completely new classes is continuously added. Besides a straightforward realization of continuous fine-tuning, we empirically analyze how computational burdens of training can be further reduced. Finally, we visualize how the network's attention maps evolve over time which allows for visually investigating what the network learned during continuous fine-tuning.},
   isbn = {978-3-319-54525-7},
   keywords = {[imagenet]}
@@ -202,7 +200,6 @@
   publisher = {{Institute of Electrical and Electronics Engineers Inc.}},
   issn = {15505499},
   doi = {10.1109/ICCV.2019.00040},
-  url = {http://arxiv.org/abs/1903.12648},
   abstract = {Lifelong learning with deep neural networks is well-known to suffer from catastrophic forgetting: The performance on previous tasks drastically degrades when learning a new task. To alleviate this effect, we propose to leverage a large stream of unlabeled data easily obtainable in the wild. In particular, we design a novel class-incremental learning scheme with (a) a new distillation loss, termed global distillation, (b) a learning strategy to avoid overfitting to the most recent task, and (c) a confidence-based sampling method to effectively leverage unlabeled external data. Our experimental results on various datasets, including CIFAR and ImageNet, demonstrate the superiority of the proposed methods over prior methods, particularly when a stream of unlabeled data is accessible: Our method shows up to 15.8\% higher accuracy and 46.5\% less forgetting compared to the state-of-the-art method. The code is available at https://github.com/kibok90/iccv2019-inc.},
   isbn = {978-1-72814-803-8},
   annotation = {\_eprint: 1903.12648}
@@ -219,17 +216,6 @@
   annotation = {\_eprint: 1910.04112}
 }
 
-@article{li2020,
-  title = {Continual {{Learning Using Task Conditional Neural Networks}}},
-  author = {Li, Honglin and Barnaghi, Payam and Enshaeifar, Shirin and Ganz, Frieder},
-  year = {2020},
-  journal = {arXiv},
-  url = {http://arxiv.org/abs/2005.05080},
-  abstract = {Conventional deep learning models have limited capacity in learning multiple tasks sequentially. The issue of forgetting the previously learned tasks in continual learning is known as catastrophic forgetting or interference. When the input data or the goal of learning change, a continual model will learn and adapt to the new status. However, the model will not remember or recognise any revisits to the previous states. This causes performance reduction and re-training curves in dealing with periodic or irregularly reoccurring changes in the data or goals. The changes in goals or data are referred to as new tasks in a continual learning model. Most of the continual learning methods have a task-known setup in which the task identities are known in advance to the learning model. We propose Task Conditional Neural Networks (TCNN) that does not require to known the reoccurring tasks in advance. We evaluate our model on standard datasets using MNIST and CIFAR10, and also a real-world dataset that we have collected in a remote healthcare monitoring study (i.e. TIHM dataset). The proposed model outperforms the state-of-the-art solutions in continual learning and adapting to new tasks that are not defined in advance.},
-  keywords = {[cifar],[mnist]},
-  annotation = {\_eprint: 2005.05080}
-}
-
 @article{li2020a,
   title = {Energy-{{Based Models}} for {{Continual Learning}}},
   author = {Li, Shuang and Du, Yilun and {van de Ven}, Gido M. and Torralba, Antonio and Mordatch, Igor},
@@ -242,17 +228,18 @@
   note = {The paper introduces Energy-Based models for classification in single incremental task + new classes (i.e. class incremental) scenarios. The model does not require task labels at test time, nor task boundaries at training time. It does not make use of replay.}
 }
 
-@article{liu2020,
-  title = {Continual {{Universal Object Detection}}},
-  author = {Liu, Xialei and Yang, Hao and Ravichandran, Avinash and Bhotika, Rahul and Soatto, Stefano},
+@article{li2020b,
+  title = {Continual {{Learning Using Task Conditional Neural Networks}}},
+  author = {Li, Honglin and Barnaghi, Payam and Enshaeifar, Shirin and Ganz, Frieder},
   year = {2020},
   journal = {arXiv},
-  url = {http://arxiv.org/abs/2002.05347},
-  abstract = {Object detection has improved significantly in recent years on multiple challenging benchmarks. However, most existing detectors are still domain-specific, where the models are trained and tested on a single domain. When adapting these detectors to new domains, they often suffer from catastrophic forgetting of previous knowledge. In this paper, we propose a continual object detector that can learn sequentially from different domains without forgetting. First, we explore learning the object detector continually in different scenarios across various domains and categories. Learning from the analysis, we propose attentive feature distillation leveraging both bottom-up and top-down attentions to mitigate forgetting. It takes advantage of attention to ignore the noisy background information and feature distillation to provide strong supervision. Finally, for the most challenging scenarios, we propose an adaptive exemplar sampling method to leverage exemplars from previous tasks for less forgetting effectively. The experimental results show the excellent performance of our proposed method in three different scenarios across seven different object detection datasets.},
-  annotation = {\_eprint: 2002.05347}
+  url = {http://arxiv.org/abs/2005.05080},
+  abstract = {Conventional deep learning models have limited capacity in learning multiple tasks sequentially. The issue of forgetting the previously learned tasks in continual learning is known as catastrophic forgetting or interference. When the input data or the goal of learning change, a continual model will learn and adapt to the new status. However, the model will not remember or recognise any revisits to the previous states. This causes performance reduction and re-training curves in dealing with periodic or irregularly reoccurring changes in the data or goals. The changes in goals or data are referred to as new tasks in a continual learning model. Most of the continual learning methods have a task-known setup in which the task identities are known in advance to the learning model. We propose Task Conditional Neural Networks (TCNN) that does not require to known the reoccurring tasks in advance. We evaluate our model on standard datasets using MNIST and CIFAR10, and also a real-world dataset that we have collected in a remote healthcare monitoring study (i.e. TIHM dataset). The proposed model outperforms the state-of-the-art solutions in continual learning and adapting to new tasks that are not defined in advance.},
+  keywords = {[cifar],[mnist]},
+  annotation = {\_eprint: 2005.05080}
 }
 
-@article{liu2020a,
+@article{liu2020,
   title = {Mnemonics {{Training}}: {{Multi}}-{{Class Incremental Learning}} without {{Forgetting}}},
   author = {Liu, Yaoyao and Liu, An-An and Su, Yuting and Schiele, Bernt and Sun, Qianru},
   year = {2020},
@@ -261,6 +248,16 @@
   abstract = {Multi-Class Incremental Learning (MCIL) aims to learn new concepts by incrementally updating a model trained on previous concepts. However, there is an inherent trade-off to effectively learning new concepts without catastrophic forgetting of previous ones. To alleviate this issue, it has been proposed to keep around a few examples of the previous concepts but the effectiveness of this approach heavily depends on the representativeness of these examples. This paper proposes a novel and automatic framework we call mnemonics, where we parameterize exemplars and make them optimizable in an end-to-end manner. We train the framework through bilevel optimizations, i.e., model-level and exemplar-level. We conduct extensive experiments on three MCIL benchmarks, CIFAR-100, ImageNet-Subset and ImageNet, and show that using mnemonics exemplars can surpass the state-of-the-art by a large margin. Interestingly and quite intriguingly, the mnemonics exemplars tend to be on the boundaries between different classes.},
   keywords = {[cifar],[imagenet]},
   annotation = {\_eprint: 2002.10211}
+}
+
+@article{liu2020a,
+  title = {Continual {{Universal Object Detection}}},
+  author = {Liu, Xialei and Yang, Hao and Ravichandran, Avinash and Bhotika, Rahul and Soatto, Stefano},
+  year = {2020},
+  journal = {arXiv},
+  url = {http://arxiv.org/abs/2002.05347},
+  abstract = {Object detection has improved significantly in recent years on multiple challenging benchmarks. However, most existing detectors are still domain-specific, where the models are trained and tested on a single domain. When adapting these detectors to new domains, they often suffer from catastrophic forgetting of previous knowledge. In this paper, we propose a continual object detector that can learn sequentially from different domains without forgetting. First, we explore learning the object detector continually in different scenarios across various domains and categories. Learning from the analysis, we propose attentive feature distillation leveraging both bottom-up and top-down attentions to mitigate forgetting. It takes advantage of attention to ignore the noisy background information and feature distillation to provide strong supervision. Finally, for the most challenging scenarios, we propose an adaptive exemplar sampling method to leverage exemplars from previous tasks for less forgetting effectively. The experimental results show the excellent performance of our proposed method in three different scenarios across seven different object detection datasets.},
+  annotation = {\_eprint: 2002.05347}
 }
 
 @inproceedings{mallya2018,
@@ -272,7 +269,6 @@
   publisher = {{Springer Verlag}},
   issn = {16113349},
   doi = {10.1007/978-3-030-01225-0_5},
-  url = {https://doi.org/10.1007/978-3-030-01225-0_5},
   abstract = {This work presents a method for adapting a single, fixed deep neural network to multiple tasks without affecting performance on already learned tasks. By building upon ideas from network quantization and pruning, we learn binary masks that ``piggyback'' on an existing network, or are applied to unmodified weights of that network to provide good performance on a new task. These masks are learned in an end-to-end differentiable fashion, and incur a low overhead of 1 bit per network parameter, per task. Even though the underlying network is fixed, the ability to mask individual weights allows for the learning of a large number of filters. We show performance comparable to dedicated fine-tuned networks for a variety of classification tasks, including those with large domain shifts from the initial task (ImageNet), and a variety of network architectures. Our performance is agnostic to task ordering and we do not suffer from catastrophic forgetting or competition between tasks.},
   isbn = {978-3-030-01224-3},
   keywords = {[imagenet],Binary networks,Incremental learning},
@@ -288,7 +284,6 @@
   pages = {180--189},
   issn = {16113349},
   doi = {10.1007/978-3-030-11012-3_14},
-  url = {http://arxiv.org/abs/1805.11119},
   abstract = {Visual recognition algorithms are required today to exhibit adaptive abilities. Given a deep model trained on a specific, given task, it would be highly desirable to be able to adapt incrementally to new tasks, preserving scalability as the number of new tasks increases, while at the same time avoiding catastrophic forgetting issues. Recent work has shown that masking the internal weights of a given original conv-net through learned binary variables is a promising strategy. We build upon this intuition and take into account more elaborated affine transformations of the convolutional weights that include learned binary masks. We show that with our generalization it is possible to achieve significantly higher levels of adaptation to new tasks, enabling the approach to compete with fine tuning strategies by requiring slightly more than 1 bit per network parameter per additional task. Experiments on two popular benchmarks showcase the power of our approach, that achieves the new state of the art on the Visual Decathlon Challenge.},
   isbn = {9783030110116},
   keywords = {[sparsity],[vision],Incremental learning,Multi-task learning},
@@ -299,10 +294,9 @@
   title = {Representation {{Memorization}} for {{Fast Learning New Knowledge}} without {{Forgetting}}},
   author = {Mi, Fei and Lin, Tao and Faltings, Boi},
   year = {2021},
-  journal = {arXiv:2108.12596 [cs]},
+  journal = {arXiv},
   eprint = {2108.12596},
   eprinttype = {arxiv},
-  primaryclass = {cs},
   url = {http://arxiv.org/abs/2108.12596},
   urldate = {2021-08-31},
   abstract = {The ability to quickly learn new knowledge (e.g. new classes or data distributions) is a big step towards human-level intelligence. In this paper, we consider scenarios that require learning new classes or data distributions quickly and incrementally over time, as it often occurs in real-world dynamic environments. We propose "Memory-based Hebbian Parameter Adaptation" (Hebb) to tackle the two major challenges (i.e., catastrophic forgetting and sample efficiency) towards this goal in a unified framework. To mitigate catastrophic forgetting, Hebb augments a regular neural classifier with a continuously updated memory module to store representations of previous data. To improve sample efficiency, we propose a parameter adaptation method based on the well-known Hebbian theory, which directly "wires" the output network's parameters with similar representations retrieved from the memory. We empirically verify the superior performance of Hebb through extensive experiments on a wide range of learning tasks (image classification, language model) and learning scenarios (continual, incremental, online). We demonstrate that Hebb effectively mitigates catastrophic forgetting, and it indeed learns new knowledge better and faster than the current state-of-the-art.},
@@ -353,18 +347,7 @@
   keywords = {[cifar],[imagenet],[mnist]}
 }
 
-@article{saha2020,
-  title = {Structured {{Compression}} and {{Sharing}} of {{Representational Space}} for {{Continual Learning}}},
-  author = {Saha, Gobinda and Garg, Isha and Ankit, Aayush and Roy, Kaushik},
-  year = {2020},
-  journal = {arXiv},
-  url = {http://arxiv.org/abs/2001.08650},
-  abstract = {Humans are skilled at learning adaptively and efficiently throughout their lives, but learning tasks incrementally causes artificial neural networks to overwrite relevant information learned about older tasks, resulting in 'Catastrophic Forgetting'. Efforts to overcome this phenomenon suffer from poor utilization of resources in many ways, such as through the need to save older data or parametric importance scores, or to grow the network architecture. We propose an algorithm that enables a network to learn continually and efficiently by partitioning the representational space into a Core space, that contains the condensed information from previously learned tasks, and a Residual space, which is akin to a scratch space for learning the current task. The information in the Residual space is then compressed using Principal Component Analysis and added to the Core space, freeing up parameters for the next task. We evaluate our algorithm on P-MNIST, CIFAR-10 and CIFAR-100 datasets. We achieve comparable accuracy to state-of-the-art methods while overcoming the problem of catastrophic forgetting completely. Additionally, we get up to 4.5x improvement in energy efficiency during inference due to the structured nature of the resulting architecture.},
-  keywords = {[cifar],[mnist]},
-  annotation = {\_eprint: 2001.08650}
-}
-
-@inproceedings{saha2020a,
+@inproceedings{saha2020,
   title = {Gradient {{Projection Memory}} for {{Continual Learning}}},
   booktitle = {International {{Conference}} on {{Learning Representations}}},
   author = {Saha, Gobinda and Roy, Kaushik},
@@ -373,6 +356,17 @@
   urldate = {2021-01-17},
   abstract = {The ability to learn continually without forgetting the past tasks is a desired attribute for artificial learning systems. Existing approaches to enable such learning in artificial neural networks...},
   language = {en}
+}
+
+@article{saha2020a,
+  title = {Structured {{Compression}} and {{Sharing}} of {{Representational Space}} for {{Continual Learning}}},
+  author = {Saha, Gobinda and Garg, Isha and Ankit, Aayush and Roy, Kaushik},
+  year = {2020},
+  journal = {arXiv},
+  url = {http://arxiv.org/abs/2001.08650},
+  abstract = {Humans are skilled at learning adaptively and efficiently throughout their lives, but learning tasks incrementally causes artificial neural networks to overwrite relevant information learned about older tasks, resulting in 'Catastrophic Forgetting'. Efforts to overcome this phenomenon suffer from poor utilization of resources in many ways, such as through the need to save older data or parametric importance scores, or to grow the network architecture. We propose an algorithm that enables a network to learn continually and efficiently by partitioning the representational space into a Core space, that contains the condensed information from previously learned tasks, and a Residual space, which is akin to a scratch space for learning the current task. The information in the Residual space is then compressed using Principal Component Analysis and added to the Core space, freeing up parameters for the next task. We evaluate our algorithm on P-MNIST, CIFAR-10 and CIFAR-100 datasets. We achieve comparable accuracy to state-of-the-art methods while overcoming the problem of catastrophic forgetting completely. Additionally, we get up to 4.5x improvement in energy efficiency during inference due to the structured nature of the resulting architecture.},
+  keywords = {[cifar],[mnist]},
+  annotation = {\_eprint: 2001.08650}
 }
 
 @article{swaroop2019,
@@ -408,7 +402,6 @@
   publisher = {{Institute of Electrical and Electronics Engineers Inc.}},
   issn = {15505499},
   doi = {10.1109/ICCV.2017.148},
-  url = {http://arxiv.org/abs/1704.01920 http://dx.doi.org/10.1109/ICCV.2017.148},
   abstract = {This paper introduces a new lifelong learning solution where a single model is trained for a sequence of tasks. The main challenge that vision systems face in this context is catastrophic forgetting: as they tend to adapt to the most recently seen task, they lose performance on the tasks that were learned previously. Our method aims at preserving the knowledge of the previous tasks while learning a new one by using autoencoders. For each task, an under-complete autoencoder is learned, capturing the features that are crucial for its achievement. When a new task is presented to the system, we prevent the reconstructions of the features with these autoencoders from changing, which has the effect of preserving the information on which the previous tasks are mainly relying. At the same time, the features are given space to adjust to the most recent environment as only their projection into a low dimension submanifold is controlled. The proposed system is evaluated on image classification tasks and shows a reduction of forgetting over the state-of-the-art},
   isbn = {9781538610329},
   keywords = {[imagenet],[vision]},
@@ -451,7 +444,6 @@
   publisher = {{Institute of Electrical and Electronics Engineers Inc.}},
   issn = {2169-3536},
   doi = {10.1109/ACCESS.2019.2904614},
-  url = {https://ieeexplore.ieee.org/document/8666123/},
   abstract = {With the development of deep convolutional neural networks in recent years, the network structure has become more and more complicated and varied, and there are very good results in pattern recognition, image classification, scene classification, and target tracking. This end-to-end learning model relies on the initial large dataset. However, many data are gradually obtained in practical situations, which contradict the deep learning of one-time batch learning. There is an urgent need for an incremental learning approach that can continuously learn new knowledge from new data while retaining what has already been learned. This paper proposes an incremental learning algorithm based on convolutional neural network and support vector data description. CNN and AM-Softmax loss function are used to represent and continuously learn image features. Support vector data description is used to construct multiple hyperspheres for new and old classes of images. Class-incremental learning is achieved by the increment of hyperspheres. The experimental results show that the incremental learning method proposed in this paper can effectively extract the latent features of the image and adapt it to the learning situation of the class-increment. The recognition accuracy is close to batch learning.},
   keywords = {[cifar],[mnist],feature extraction,incremental learning,loss function,One-class classifier}
 }

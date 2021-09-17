@@ -1,5 +1,5 @@
 
-@inproceedings{chaudhry2019,
+@inproceedings{chaudhry2019a,
   title = {Efficient {{Lifelong Learning}} with {{A}}-{{GEM}}},
   booktitle = {{{ICLR}}},
   author = {Chaudhry, Arslan and Ranzato, Marc'Aurelio and Rohrbach, Marcus and Elhoseiny, Mohamed},
@@ -19,7 +19,6 @@
   number = {2},
   pages = {1629--1636},
   doi = {10.1109/ICMLA.2019.00267},
-  url = {http://arxiv.org/abs/1905.11550},
   abstract = {There is an increasing need of continual learning in dynamic systems, such as the self-driving vehicle, the surveillance drone, and the robotic system. Such a system requires learning from the data stream, training the model to preserve previous information and adapt to a new task, and generating a single-headed vector for future inference. Different from previous approaches with dynamic structures, this work focuses on a single network and model segmentation to prevent catastrophic forgetting. Leveraging the redundant capacity of a single network, model parameters for each task are separated into two groups: one important group which is frozen to preserve current knowledge, and secondary group to be saved (not pruned) for a future learning. A fixed-size memory containing a small amount of previously seen data is further adopted to assist the training. Without additional regularization, the simple yet effective approach of PST successfully incorporates multiple tasks and achieves the state-of-the-art accuracy in the single-head evaluation on CIFAR-10 and CIFAR-100 datasets. Moreover, the segmented training significantly improves computation efficiency in continual learning.},
   isbn = {9781728145501},
   keywords = {[cifar]},
@@ -33,13 +32,12 @@
   year = {2018},
   issn = {16113349},
   doi = {10.1007/978-3-030-01219-9_27},
-  url = {http://link.springer.com/10.1007/978-3-030-01219-9_27},
   abstract = {Lifelong learning aims at adapting a learned model to new tasks while retaining the knowledge gained earlier. A key challenge for lifelong learning is how to strike a balance between the preservation on old tasks and the adaptation to a new one within a given model. Approaches that combine both objectives in training have been explored in previous works. Yet the performance still suffers from considerable degradation in a long sequence of tasks. In this work, we propose a novel approach to lifelong learning, which tries to seek a better balance between preservation and adaptation via two techniques: Distillation and Retrospection. Specifically, the target model adapts to the new task by knowledge distillation from an intermediate expert, while the previous knowledge is more effectively preserved by caching a small subset of data for old tasks. The combination of Distillation and Retrospection leads to a more gentle learning curve for the target model, and extensive experiments demonstrate that our approach can bring consistent improvements on both old and new tasks.},
   isbn = {978-3-030-01218-2},
   keywords = {[imagenet],[vision],Knowledge distillation,Lifelong learning,Retrospection}
 }
 
-@inproceedings{lomonaco2020a,
+@inproceedings{lomonaco2020,
   title = {Rehearsal-{{Free Continual Learning}} over {{Small Non}}-{{I}}.{{I}}.{{D}}. {{Batches}}},
   booktitle = {{{CVPR Workshop}} on {{Continual Learning}} for {{Computer Vision}}},
   author = {Lomonaco, Vincenzo and Maltoni, Davide and Pellegrini, Lorenzo},
@@ -75,7 +73,7 @@
   note = {Comment: 26 pages, 13 figures; v3: major revision (e.g. added Sec. 4.4), several typos and minor mistakes corrected arXiv: 1806.08568}
 }
 
-@article{mirzadeh2020,
+@article{mirzadeh2020a,
   title = {Linear {{Mode Connectivity}} in {{Multitask}} and {{Continual Learning}}},
   author = {Mirzadeh, Seyed Iman and Farajtabar, Mehrdad and Gorur, Dilan and Pascanu, Razvan and Ghasemzadeh, Hassan},
   year = {2020},
@@ -113,8 +111,6 @@ The authors observe how minima of CL and Multitask algorithms lie in a linear su
   publisher = {{MIT Press}},
   issn = {0899-7667},
   doi = {10.1162/neco_a_01246},
-  url = {https://doi.org/10.1162/neco_a_01246},
-  urldate = {2021-01-06},
   abstract = {Catastrophic forgetting and capacity saturation are the central challenges of any parametric lifelong learning system. In this work, we study these challenges in the context of sequential supervised learning with an emphasis on recurrent neural networks. To evaluate the models in the lifelong learning setting, we propose a curriculum-based, simple, and intuitive benchmark where the models are trained on tasks with increasing levels of difficulty. To measure the impact of catastrophic forgetting, the model is tested on all the previous tasks as it completes any task. As a step toward developing true lifelong learning systems, we unify gradient episodic memory (a catastrophic forgetting alleviation approach) and Net2Net (a capacity expansion approach). Both models are proposed in the context of feedforward networks, and we evaluate the feasibility of using them for recurrent networks. Evaluation on the proposed benchmark shows that the unified model is more suitable than the constituent models for lifelong learning setting.},
   keywords = {[rnn]}
 }

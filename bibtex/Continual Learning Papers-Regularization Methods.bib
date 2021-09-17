@@ -151,7 +151,6 @@ arXiv: 1612.00796}
   pages = {2262--2268},
   publisher = {{IEEE}},
   doi = {10.1109/ICPR.2018.8545895},
-  url = {https://ieeexplore.ieee.org/document/8545895/},
   abstract = {In this paper we propose an approach to avoiding catastrophic forgetting in sequential task learning scenarios. Our technique is based on a network reparameterization that approximately diagonalizes the Fisher Information Matrix of the network parameters. This reparameterization takes the form of a factorized rotation of parameter space which, when used in conjunction with Elastic Weight Consolidation (which assumes a diagonal Fisher Information Matrix), leads to significantly better performance on lifelong learning of sequential tasks. Experimental results on the MNIST, CIFAR-100, CUB-200 and Stanford-40 datasets demonstrate that we significantly improve the results of standard elastic weight consolidation, and that we obtain competitive results when compared to the state-of-the-art in lifelong learning without forgetting.},
   isbn = {978-1-5386-3788-3},
   keywords = {[cifar],[mnist],Computer vision,Data models,ewc,fisher,Fisher Information Matrix,image classification,learning (artificial intelligence),matrix algebra,network parameters,network reparameterization,Neural networks,sequential tasks,standard elastic weight consolidation,Standards,Stanford-40 datasets,Task analysis,Training,Training data},
@@ -166,7 +165,6 @@ arXiv: 1612.00796}
   pages = {3205--3212},
   publisher = {{Institute of Electrical and Electronics Engineers Inc.}},
   doi = {10.1109/ICCVW.2019.00400},
-  url = {http://arxiv.org/abs/1907.13372},
   abstract = {Deep learning architectures exhibit a critical drop of performance due to catastrophic forgetting when they are required to incrementally learn new tasks. Contemporary incremental learning frameworks focus on image classification and object detection while in this work we formally introduce the incremental learning problem for semantic segmentation in which a pixel-wise labeling is considered. To tackle this task we propose to distill the knowledge of the previous model to retain the information about previously learned classes, whilst updating the current model to learn the new ones. We propose various approaches working both on the output logits and on intermediate features. In opposition to some recent frameworks, we do not store any image from previously learned classes and only the last model is needed to preserve high accuracy on these classes. The experimental evaluation on the Pascal VOC2012 dataset shows the effectiveness of the proposed approaches.},
   isbn = {978-1-72815-023-9},
   keywords = {Catastrophic forgetting,Incremental learning,Knowledge distillation,Knowledge transfer,Semantic segmentation},
@@ -191,7 +189,6 @@ arXiv: 1612.00796}
   journal = {Neurocomputing},
   issn = {0925-2312},
   doi = {10.1016/j.neucom.2020.01.093},
-  url = {http://www.sciencedirect.com/science/article/pii/S092523122030151X},
   abstract = {Continual learning of deep neural networks is a key requirement for scaling them up to more complex applicative scenarios and for achieving real lifelong learning of these architectures. Previous approaches to the problem have considered either the progressive increase in the size of the networks, or have tried to regularize the network behavior to equalize it with respect to previously observed tasks. In the latter case, it is essential to understand what type of information best represents this past behavior. Common techniques include regularizing the past outputs, gradients, or individual weights. In this work, we propose a new, relatively simple and efficient method to perform continual learning by regularizing instead the network internal embeddings. To make the approach scalable, we also propose a dynamic sampling strategy to reduce the memory footprint of the required external storage. We show that our method performs favorably with respect to state-of-the-art approaches in the literature, while requiring significantly less space in memory and computational time. In addition, inspired by to recent works, we evaluate the impact of selecting a more flexible model for the activation functions inside the network, evaluating the impact of catastrophic forgetting on the activation functions themselves.},
   language = {en},
   keywords = {[cifar],[mnist],Catastrophic forgetting,Continual learning,Embedding,Regularization,Trainable activation functions}
@@ -253,7 +250,6 @@ arXiv: 1612.00796}
   publisher = {{Institute of Electrical and Electronics Engineers Inc.}},
   issn = {15505499},
   doi = {10.1109/ICCV.2017.368},
-  url = {http://arxiv.org/abs/1708.06977},
   abstract = {Despite their success for object detection, convolutional neural networks are ill-equipped for incremental learning, i.e., adapting the original model trained on a set of classes to additionally detect objects of new classes, in the absence of the initial training data. They suffer from "catastrophic forgetting" - an abrupt degradation of performance on the original set of classes, when the training objective is adapted to the new classes. We present a method to address this issue, and learn object detectors incrementally, when neither the original training data nor annotations for the original classes in the new training set are available. The core of our proposed solution is a loss function to balance the interplay between predictions on the new classes and a new distillation loss which minimizes the discrepancy between responses for old classes from the original and the updated networks. This incremental learning can be performed multiple times, for a new set of classes in each step, with a moderate drop in performance compared to the baseline network trained on the ensemble of data. We present object detection results on the PASCAL VOC 2007 and COCO datasets, along with a detailed empirical analysis of the approach.},
   isbn = {9781538610329},
   annotation = {\_eprint: 1708.06977}

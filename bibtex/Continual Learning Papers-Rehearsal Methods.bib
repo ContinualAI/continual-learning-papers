@@ -1,17 +1,5 @@
 
 @inproceedings{aljundi2019a,
-  title = {Gradient Based Sample Selection for Online Continual Learning},
-  booktitle = {Advances in {{Neural Information Processing Systems}} 32},
-  author = {Aljundi, Rahaf and Lin, Min and Goujaud, Baptiste and Bengio, Yoshua},
-  editor = {Wallach, H and Larochelle, H and Beygelzimer, A and {d\${\textbackslash}backslash\$textquotesingle Alch{\'e}-Buc}, F and Fox, E and Garnett, R},
-  year = {2019},
-  pages = {11816--11825},
-  publisher = {{Curran Associates, Inc.}},
-  url = {http://papers.nips.cc/paper/9354-gradient-based-sample-selection-for-online-continual-learning.pdf},
-  keywords = {[cifar],[mnist]}
-}
-
-@inproceedings{aljundi2019b,
   title = {Online {{Continual Learning}} with {{Maximal Interfered Retrieval}}},
   booktitle = {Advances in {{Neural Information Processing Systems}} 32},
   author = {Aljundi, Rahaf and Belilovsky, Eugene and Tuytelaars, Tinne and Charlin, Laurent and Caccia, Massimo and Lin, Min and {Page-Caccia}, Lucas},
@@ -21,6 +9,18 @@
   publisher = {{Curran Associates, Inc.}},
   url = {http://papers.nips.cc/paper/9357-online-continual-learning-with-maximal-interfered-retrieval.pdf},
   abstract = {Continual learning, the setting where a learning agent is faced with a never ending stream of data, continues to be a great challenge for modern machine learning systems. In particular the online or "single-pass through the data" setting has gained attention recently as a natural setting that is difficult to tackle. Methods based on replay, either generative or from a stored memory, have been shown to be effective approaches for continual learning, matching or exceeding the state of the art in a number of standard benchmarks. These approaches typically rely on randomly selecting samples from the replay memory or from a generative model, which is suboptimal. In this work we consider a controlled sampling of memories for replay. We retrieve the samples which are most interfered, i.e. whose prediction will be most negatively impacted by the foreseen parameters update. We show a formulation for this sampling criterion in both the generative replay and the experience replay setting, producing consistent gains in performance and greatly reduced forgetting. We release an implementation of our method at https://github.com/optimass/Maximally\_Interfered\_Retrieval},
+  keywords = {[cifar],[mnist]}
+}
+
+@inproceedings{aljundi2019c,
+  title = {Gradient Based Sample Selection for Online Continual Learning},
+  booktitle = {Advances in {{Neural Information Processing Systems}} 32},
+  author = {Aljundi, Rahaf and Lin, Min and Goujaud, Baptiste and Bengio, Yoshua},
+  editor = {Wallach, H and Larochelle, H and Beygelzimer, A and {d\${\textbackslash}backslash\$textquotesingle Alch{\'e}-Buc}, F and Fox, E and Garnett, R},
+  year = {2019},
+  pages = {11816--11825},
+  publisher = {{Curran Associates, Inc.}},
+  url = {http://papers.nips.cc/paper/9354-gradient-based-sample-selection-for-online-continual-learning.pdf},
   keywords = {[cifar],[mnist]}
 }
 
@@ -45,7 +45,7 @@
   annotation = {\_eprint: 2004.03794}
 }
 
-@article{chaudhry2019a,
+@article{chaudhry2019,
   title = {On {{Tiny Episodic Memories}} in {{Continual Learning}}},
   author = {Chaudhry, Arslan and Rohrbach, Marcus and Elhoseiny, Mohamed and Ajanthan, Thalaiyasingam and Dokania, Puneet K and Torr, Philip H S and Ranzato, Marc'Aurelio},
   year = {2019},
@@ -68,7 +68,7 @@
   annotation = {\_eprint: 1904.10644}
 }
 
-@article{delange2020a,
+@article{delange2020,
   title = {Continual {{Prototype Evolution}}: {{Learning Online}} from {{Non}}-{{Stationary Data Streams}}},
   author = {De Lange, Matthias and Tuytelaars, Tinne},
   year = {2020},
@@ -76,7 +76,8 @@
   url = {https://arxiv.org/abs/2009.00919},
   abstract = {Attaining prototypical features to represent class distributions is well established in representation learning. However, learning prototypes online from streams of data proves a challenging endeavor as they rapidly become outdated, caused by an ever-changing parameter space in the learning process. Additionally, continual learning does not assume the data stream to be stationary, typically resulting in catastrophic forgetting of previous knowledge. As a first, we introduce a system addressing both problems, where prototypes evolve continually in a shared latent space, enabling learning and prediction at any point in time. In contrast to the major body of work in continual learning, data streams are processed in an online fashion, without additional task-information, and an efficient memory scheme provides robustness to imbalanced data streams. Besides nearest neighbor based prediction, learning is facilitated by a novel objective function, encouraging cluster density about the class prototype and increased inter-class variance. Furthermore, the latent space quality is elevated by pseudo-prototypes in each batch, constituted by replay of exemplars from memory. We generalize the existing paradigms in continual learning to incorporate data incremental learning from data streams by formalizing a two-agent learner-evaluator framework, and obtain state-of-the-art performance by a significant margin on eight benchmarks, including three highly imbalanced data streams.},
   keywords = {[cifar],[framework],[mnist],[vision]},
-  annotation = {\_eprint: 2009.00919}
+  annotation = {\_eprint: 2009.00919},
+  note = {Definition of the data-incremental continual learning scenario}
 }
 
 @article{hayes2018,
@@ -91,7 +92,7 @@
   note = {The replay memory is of very small size due to the online update of class-representative centroids.}
 }
 
-@inproceedings{hayes2020a,
+@inproceedings{hayes2020,
   title = {{{REMIND Your Neural Network}} to {{Prevent Catastrophic Forgetting}}},
   booktitle = {Proceedings of the 2020 {{ECCV}}},
   author = {Hayes, Tyler L. and Kafle, Kushal and Shrestha, Robik and Acharya, Manoj and Kanan, Christopher},
@@ -152,7 +153,6 @@
   publisher = {{Springer International Publishing}},
   address = {{Cham}},
   doi = {10.1007/978-3-030-58536-5_31},
-  url = {https://link.springer.com/chapter/10.1007%2F978-3-030-58536-5_31},
   abstract = {We discuss a general formulation for the Continual Learning (CL) problem for classification\textemdash a learning task where a stream provides samples to a learner and the goal of the learner, depending on the samples it receives, is to continually upgrade its knowledge about the old classes and learn new ones. Our formulation takes inspiration from the open-set recognition problem where test scenarios do not necessarily belong to the training distribution. We also discuss various quirks and assumptions encoded in recently proposed approaches for CL. We argue that some oversimplify the problem to an extent that leaves it with very little practical importance, and makes it extremely easy to perform well on. To validate this, we propose GDumb that (1) greedily stores samples in memory as they come and; (2) at test time, trains a model from scratch using samples only in the memory. We show that even though GDumb is not specifically designed for CL problems, it obtains state-of-the-art accuracies (often with large margins) in almost all the experiments when compared to a multitude of recently proposed algorithms. Surprisingly, it outperforms approaches in CL formulations for which they were specifically designed. This, we believe, raises concerns regarding our progress in CL for classification. Overall, we hope our formulation, characterizations and discussions will help in designing realistically useful CL algorithms, and GDumb will serve as a strong contender for the same.},
   isbn = {978-3-030-58536-5},
   language = {en}
@@ -177,6 +177,22 @@
   abstract = {Interacting with a complex world involves continual learning, in which tasks and data distributions change over time. A continual learning system should demonstrate both plasticity (acquisition of new knowledge) and stability (preservation of old knowledge). Catastrophic forgetting is the failure of stability, in which new experience overwrites previous experience. In the brain, replay of past experience is widely believed to reduce forgetting, yet it has been largely overlooked as a solution to forgetting in deep reinforcement learning. Here, we introduce CLEAR, a replay-based method that greatly reduces catastrophic forgetting in multi-task reinforcement learning. CLEAR leverages off-policy learning and behavioral cloning from replay to enhance stability, as well as on-policy learning to preserve plasticity. We show that CLEAR performs better than state-of-the-art deep learning techniques for mitigating forgetting, despite being significantly less complicated and not requiring any knowledge of the individual tasks being learned.}
 }
 
+@inproceedings{rosasco2021,
+  title = {Distilled {{Replay}}: {{Overcoming Forgetting}} through {{Synthetic Samples}}},
+  shorttitle = {Distilled {{Replay}}},
+  booktitle = {1st {{International Workshop}} on {{Continual Semi}}-{{Supervised Learning}} ({{CSSL}}) at {{IJCAI}}},
+  author = {Rosasco, Andrea and Carta, Antonio and Cossu, Andrea and Lomonaco, Vincenzo and Bacciu, Davide},
+  year = {2021},
+  eprint = {2103.15851},
+  eprinttype = {arxiv},
+  url = {http://arxiv.org/abs/2103.15851},
+  urldate = {2021-08-01},
+  abstract = {Replay strategies are Continual Learning techniques which mitigate catastrophic forgetting by keeping a buffer of patterns from previous experiences, which are interleaved with new data during training. The amount of patterns stored in the buffer is a critical parameter which largely influences the final performance and the memory footprint of the approach. This work introduces Distilled Replay, a novel replay strategy for Continual Learning which is able to mitigate forgetting by keeping a very small buffer (1 pattern per class) of highly informative samples. Distilled Replay builds the buffer through a distillation process which compresses a large dataset into a tiny set of informative examples. We show the effectiveness of our Distilled Replay against popular replay-based strategies on four Continual Learning benchmarks.},
+  archiveprefix = {arXiv},
+  copyright = {All rights reserved},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning}
+}
+
 @inproceedings{tang2020,
   title = {Graph-{{Based Continual Learning}}},
   booktitle = {International {{Conference}} on {{Learning Representations}}},
@@ -188,14 +204,13 @@
   language = {en}
 }
 
-@article{vandeven2020,
+@article{vandeven2020a,
   title = {Brain-Inspired Replay for Continual Learning with Artificial Neural Networks},
   author = {{van de Ven}, Gido M. and Siegelmann, Hava T. and Tolias, Andreas S.},
   year = {2020},
   journal = {Nature Communications},
   volume = {11},
   doi = {10.1038/s41467-020-17866-2},
-  url = {https://www.nature.com/articles/s41467-020-17866-2},
   abstract = {Artificial neural networks suffer from catastrophic forgetting. Unlike humans, when these networks are trained on something new, they rapidly forget what was learned before. In the brain, a mechanism thought to be important for protecting memories is the reactivation of neuronal activity patterns representing those memories. In artificial neural networks, such memory replay can be implemented as `generative replay', which can successfully \textendash{} and surprisingly efficiently \textendash{} prevent catastrophic forgetting on toy examples even in a class-incremental learning scenario. However, scaling up generative replay to complicated problems with many tasks or complex inputs is challenging. We propose a new, brain-inspired variant of replay in which internal or hidden representations are replayed that are generated by the network's own, context-modulated feedback connections. Our method achieves state-of-the-art performance on challenging continual learning benchmarks (e.g., class-incremental learning on CIFAR-100) without storing data, and it provides a novel model for replay in the brain.},
   keywords = {[cifar],[framework],[generative],[mnist]},
   note = {The paper shows a generative form of replay in which a VAE, conditioned on the current task, is able to generate pseudosamples and, when used as a classifier, to address new tasks. The idea is that the generative model is inspired by the hyppocampus, which sits hierarchically on top of the cortex (often thought as the classifier). In this way, replay is fed-back by the same model used to predict the class. Forgetting is prevented both on VAE and on the classification component through replay. It also shows that regularization approaches fail in class-incremental setting.}

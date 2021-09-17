@@ -32,7 +32,6 @@
   pages = {128--135},
   issn = {1364-6613, 1879-307X},
   doi = {10.1016/S1364-6613(99)01294-2},
-  url = {https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(99)01294-2},
   language = {English},
   pmid = {10322466},
   keywords = {[sparsity],biology,Catastrophic forgetting,Connectionism,Connectionist networks,Interference,Learning,Memory,Neuroscience}
@@ -50,7 +49,6 @@
   address = {{US}},
   issn = {1939-1471(Electronic),0033-295X(Print)},
   doi = {10.1037/0033-295X.87.1.1},
-  url = {https://psycnet.apa.org/record/1980-06768-001},
   abstract = {Discusses how competition between afferent data and learned feedback expectancies can stabilize a developing code by buffering committed populations of detectors against continual erosion by new environmental demands. The gating phenomena that result lead to dynamically maintained critical periods and to attentional phenomena such as overshadowing in the adult. The functional unit of cognitive coding is suggested to be an adaptive resonance, or amplification and prolongation of neural activity, that occurs when afferent data and efferent expectancies reach consensus through a matching process. The resonant state embodies the perceptual event, and its amplified and sustained activities are capable of driving slow changes of long-term memory. These mechanisms help to explain and predict (a) positive and negative aftereffects, the McCollough effect, spatial frequency adaptation, monocular rivalry, binocular rivalry and hysteresis, pattern completion, and Gestalt switching; (b) analgesia, partial reinforcement acquisition effect, conditioned reinforcers, underaroused vs overaroused depression; (c) the contingent negative variation, P300, and pontogeniculo-occipital waves; and (d) olfactory coding, corticogeniculate feedback, matching of proprioceptive and terminal motor maps, and cerebral dominance. (125 ref) (PsycINFO Database Record (c) 2016 APA, all rights reserved)},
   keywords = {Attention,Cognitive Processes,Electrical Activity,Expectations,Human Information Storage,Neurophysiology},
   note = {It introduces the stability-plasticity dilemma related to the catastrophic forgetting.}
@@ -72,20 +70,6 @@
 }
 
 @article{lesort2021,
-  title = {Understanding {{Continual Learning Settings}} with {{Data Distribution Drift Analysis}}},
-  author = {Lesort, Timoth{\'e}e and Caccia, Massimo and Rish, Irina},
-  year = {2021},
-  journal = {arXiv},
-  eprint = {2104.01678},
-  eprinttype = {arxiv},
-  url = {http://arxiv.org/abs/2104.01678},
-  urldate = {2021-04-11},
-  abstract = {Classical machine learning algorithms often assume that the data are drawn i.i.d. from a stationary probability distribution. Recently, continual learning emerged as a rapidly growing area of machine learning where this assumption is relaxed, namely, where the data distribution is non-stationary, i.e., changes over time. However, data distribution drifts may interfere with the learning process and erase previously learned knowledge; thus, continual learning algorithms must include specialized mechanisms to deal with such distribution drifts. A distribution drift may change the class labels distribution, the input distribution, or both. Moreover, distribution drifts might be abrupt or gradual. In this paper, we aim to identify and categorize different types of data distribution drifts and potential assumptions about them, to better characterize various continual-learning scenarios. Moreover, we propose to use the distribution drift framework to provide more precise definitions of several terms commonly used in the continual learning field.},
-  archiveprefix = {arXiv},
-  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning}
-}
-
-@article{lesort2021a,
   ids = {lesort2021b},
   title = {Continual {{Learning}} in {{Deep Networks}}: An {{Analysis}} of the {{Last Layer}}},
   shorttitle = {Continual {{Learning}} in {{Deep Networks}}},
@@ -101,6 +85,20 @@
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning}
 }
 
+@article{lesort2021a,
+  title = {Understanding {{Continual Learning Settings}} with {{Data Distribution Drift Analysis}}},
+  author = {Lesort, Timoth{\'e}e and Caccia, Massimo and Rish, Irina},
+  year = {2021},
+  journal = {arXiv},
+  eprint = {2104.01678},
+  eprinttype = {arxiv},
+  url = {http://arxiv.org/abs/2104.01678},
+  urldate = {2021-04-11},
+  abstract = {Classical machine learning algorithms often assume that the data are drawn i.i.d. from a stationary probability distribution. Recently, continual learning emerged as a rapidly growing area of machine learning where this assumption is relaxed, namely, where the data distribution is non-stationary, i.e., changes over time. However, data distribution drifts may interfere with the learning process and erase previously learned knowledge; thus, continual learning algorithms must include specialized mechanisms to deal with such distribution drifts. A distribution drift may change the class labels distribution, the input distribution, or both. Moreover, distribution drifts might be abrupt or gradual. In this paper, we aim to identify and categorize different types of data distribution drifts and potential assumptions about them, to better characterize various continual-learning scenarios. Moreover, we propose to use the distribution drift framework to provide more precise definitions of several terms commonly used in the continual learning field.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning}
+}
+
 @article{mermillod2013,
   title = {The Stability-Plasticity Dilemma: Investigating the Continuum from Catastrophic Forgetting to Age-Limited Learning Effects},
   author = {Mermillod, Martial and Bugaiska, Aur{\'e}lia and Bonin, Patrick},
@@ -111,9 +109,22 @@
   pages = {504},
   issn = {1664-1078},
   doi = {10.3389/fpsyg.2013.00504},
-  url = {http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3732997%7B%5C&%7Dtool=pmcentrez%7B%5C&%7Drendertype=abstract http://journal.frontiersin.org/article/10.3389/fpsyg.2013.00504/abstract},
   pmid = {23935590},
   keywords = {Mermillod2013a}
+}
+
+@article{mirzadeh2020,
+  title = {Understanding the {{Role}} of {{Training Regimes}} in {{Continual Learning}}},
+  author = {Mirzadeh, Seyed Iman and Farajtabar, Mehrdad and Pascanu, Razvan and Ghasemzadeh, Hassan},
+  year = {2020},
+  journal = {arXiv},
+  eprint = {2006.06958},
+  eprinttype = {arxiv},
+  url = {http://arxiv.org/abs/2006.06958},
+  urldate = {2021-09-15},
+  abstract = {Catastrophic forgetting affects the training of neural networks, limiting their ability to learn multiple tasks sequentially. From the perspective of the well established plasticity-stability dilemma, neural networks tend to be overly plastic, lacking the stability necessary to prevent the forgetting of previous knowledge, which means that as learning progresses, networks tend to forget previously seen tasks. This phenomenon coined in the continual learning literature, has attracted much attention lately, and several families of approaches have been proposed with different degrees of success. However, there has been limited prior work extensively analyzing the impact that different training regimes -- learning rate, batch size, regularization method-- can have on forgetting. In this work, we depart from the typical approach of altering the learning algorithm to improve stability. Instead, we hypothesize that the geometrical properties of the local minima found for each task play an important role in the overall degree of forgetting. In particular, we study the effect of dropout, learning rate decay, and batch size, on forming training regimes that widen the tasks' local minima and consequently, on helping it not to forget catastrophically. Our study provides practical insights to improve stability via simple yet effective techniques that outperform alternative baselines.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing,Statistics - Machine Learning}
 }
 
 @article{nguyen2019a,
