@@ -4,7 +4,7 @@
   <img src="https://www.continualai.org/images/continualai_logo_name_black.png" alt="ContinualAI logo"/ width="300px" align="center">
 </p>
 
-Continual Learning papers list, curated by ContinualAI. **Search among 280 papers!**
+Continual Learning papers list, curated by ContinualAI. **Search among 282 papers!**
  
 You can browse the list in this file or interactively on the [ContinualAI website](https://www.continualai.org/papers/).
 
@@ -90,7 +90,7 @@ We will periodically export the bibtex to keep the list updated. In case we forg
 
 ### Applications
 
-**24 papers**
+**25 papers**
 
 In this section we maintain a list of all applicative papers produced on continual learning and related topics.
 
@@ -104,6 +104,7 @@ In this section we maintain a list of all applicative papers produced on continu
 - [Clinical Applications of Continual Learning Machine Learning](https://linkinghub.elsevier.com/retrieve/pii/S2589750020301023) by Cecilia S Lee and Aaron Y Lee. *The Lancet Digital Health*, e279--e281, 2020. 
 - [Continual Learning for Domain Adaptation in Chest X-Ray Classification](http://arxiv.org/abs/2001.05922) by Matthias Lenga, Heinrich Schulz and Axel Saalbach. *arXiv*, 1--11, 2020. [vision] 
 - [Sequential Domain Adaptation through Elastic Weight Consolidation for Sentiment Analysis](http://arxiv.org/abs/2007.01189) by Avinash Madasu and Vijjini Anvesh Rao. *arXiv*, 2020. [nlp] [rnn] 
+- [RATT: Recurrent Attention to Transient Tasks for Continual Image Captioning](https://proceedings.neurips.cc/paper/2020/file/c2964caac096f26db222cb325aa267cb-Paper.pdf) by Riccardo Del Chiaro, Bartłomiej Twardowski, Andrew Bagdanov and Joost van de Weijer. *Advances in Neural Information Processing Systems*, 16736--16748, 2020. [nlp] 
 - [Importance Driven Continual Learning for Segmentation Across Domains](http://arxiv.org/abs/2005.00079) by Sinan Özgür Özgün, Anne-Marie Rickmann, Abhijit Guha Roy and Christian Wachinger. *arXiv*, 1--10, 2020. [vision] 
 - [LAMOL: LAnguage MOdeling for Lifelong Language Learning](https://openreview.net/forum?id=Skgxcn4YDS) by Fan-Keng Sun, Cheng-Hao Ho and Hung-Yi Lee. *ICLR*, 2020. [nlp] 
 - [Non-Parametric Adaptation for Neural Machine Translation](http://arxiv.org/abs/1903.00058) by Ankur Bapna and Orhan Firat. *arXiv*, 2019. [nlp] 
@@ -201,7 +202,7 @@ In this section we list all the papers related to bioinspired continual learning
 
 ### Catastrophic Forgetting Studies
 
-**13 papers**
+**14 papers**
 
 In this section we list all the major contributions trying to understand catastrophic forgetting and its implication in machines that learn continually.
 
@@ -212,6 +213,7 @@ In this section we list all the major contributions trying to understand catastr
 - [Understanding the Role of Training Regimes in Continual Learning](http://arxiv.org/abs/2006.06958) by Seyed Iman Mirzadeh, Mehrdad Farajtabar, Razvan Pascanu and Hassan Ghasemzadeh. *arXiv*, 2020. 
 - [Dissecting Catastrophic Forgetting in Continual Learning by Deep Visualization](http://arxiv.org/abs/2001.01578) by Giang Nguyen, Shuan Chen, Thao Do, Tae Joon Jun, Ho-Jin Choi and Daeyoung Kim. *arXiv*, 2020. [vision] 
 - [Toward Understanding Catastrophic Forgetting in Continual Learning](http://arxiv.org/abs/1908.01091) by Cuong V Nguyen, Alessandro Achille, Michael Lam, Tal Hassner, Vijay Mahadevan and Stefano Soatto. *arXiv*, 2019. [cifar] [mnist] 
+- [A Study on Catastrophic Forgetting in Deep LSTM Networks](http://link.springer.com/10.1007/978-3-030-30484-3_56) by Monika Schak and Alexander Gepperth. *Artificial Neural Networks and Machine Learning – ICANN 2019: Deep Learning*, 714--728, 2019. [rnn] 
 - [An Empirical Study of Example Forgetting during Deep Neural Network Learning](https://openreview.net/forum?id=BJlxm30cKm) by Mariya Toneva, Alessandro Sordoni, Remi Tachet des Combes, Adam Trischler, Yoshua Bengio and Geoffrey J Gordon. *International Conference on Learning Representations*, 2019. [cifar] [mnist] 
 - [Localizing Catastrophic Forgetting in Neural Networks](http://arxiv.org/abs/1906.02568) by Felix Wiewel and Bin Yang. *arXiv*, 2019. [mnist] 
 - [Don't Forget, There Is More than Forgetting: New Metrics for Continual Learning](http://arxiv.org/abs/1810.13166) by Natalia Díaz-Rodr\ǵuez, Vincenzo Lomonaco, David Filliat and Davide Maltoni. *arXiv*, 2018. [cifar] [framework] 
@@ -292,7 +294,7 @@ In this section we list all the papers related to the continual Reinforcement Le
 
 ### Continual Sequential Learning
 
-**12 papers**
+**11 papers**
 
 Here we maintain a list of all the papers related to the continual learning at the intersection with sequential learning.
 
@@ -303,7 +305,6 @@ Here we maintain a list of all the papers related to the continual learning at t
 - [Meta-Consolidation for Continual Learning](http://arxiv.org/abs/2010.00352) by K J Joseph and Vineeth N Balasubramanian. *NeurIPS*, 2020. [bayes] [cifar] [imagenet] [mnist] 
 - [Compositional Language Continual Learning](https://iclr.cc/virtual_2020/poster_rklnDgHtDS.html) by Yuanpeng Li, Liang Zhao, Kenneth Church and Mohamed Elhoseiny. *Eighth International Conference on Learning Representations*, 2020. [nlp] [rnn] 
 - [Online Continual Learning on Sequences](http://arxiv.org/abs/2003.09114) by German I Parisi and Vincenzo Lomonaco. *arXiv*, 2020. [framework] 
-- [A Study on Catastrophic Forgetting in Deep LSTM Networks](http://link.springer.com/10.1007/978-3-030-30484-3_56) by Monika Schak and Alexander Gepperth. *Artificial Neural Networks and Machine Learning – ICANN 2019: Deep Learning*, 714--728, 2019. [rnn] 
 - [Unsupervised Progressive Learning and the STAM Architecture](http://arxiv.org/abs/1904.02021) by James Smith, Seth Baer, Cameron Taylor and Constantine Dovrolis. *arXiv*, 2019. [mnist] 
 - [Toward Training Recurrent Neural Networks for Lifelong Learning](https://doi.org/10.1162/neco_a_01246) by Shagun Sodhani, Sarath Chandar and Yoshua Bengio. *Neural Computation*, 1--35, 2019. [rnn] 
 - [Self-Refreshing Memory in Artificial Neural Networks: Learning Temporal Sequences without Catastrophic Forgetting](https://doi.org/10.1080/09540090412331271199) by Bernard Ans, Stéphane Rousset, Robert M. French and Serban Musca. *Connection Science*, 71--99, 2004. [rnn] 
@@ -396,7 +397,7 @@ In this section we maintain a list of all Neuroscience papers that can be relate
 
 ### Others
 
-**38 papers**
+**39 papers**
 
 In this section we list all the other papers not appearing in at least one of the above sections.
 
@@ -405,6 +406,7 @@ In this section we list all the other papers not appearing in at least one of th
 - [Continual Backprop: Stochastic Gradient Descent with Persistent Randomness](http://arxiv.org/abs/2108.06325) by Shibhansh Dohare, A. Rupam Mahmood and Richard S. Sutton. *arXiv*, 2021. 
 - [Continuum: Simple Management of Complex Continual Learning Scenarios](https://arxiv.org/abs/2102.06253) by Arthur Douillard and Timothée Lesort. *arXiv*, 2021. 
 - [Representation Memorization for Fast Learning New Knowledge without Forgetting](http://arxiv.org/abs/2108.12596) by Fei Mi, Tao Lin and Boi Faltings. *arXiv*, 2021. [hebbian] [rnn] 
+- [Neural Architecture Search of Deep Priors: Towards Continual Learning Without Catastrophic Interference](https://openaccess.thecvf.com/content/CVPR2021W/CLVision/html/Mundt_Neural_Architecture_Search_of_Deep_Priors_Towards_Continual_Learning_Without_CVPRW_2021_paper.html) by Martin Mundt, Iuliia Pliushch and Visvanathan Ramesh. *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition*, 3523--3532, 2021. 
 - [Long Live the Lottery: The Existence of Winning Tickets in Lifelong Learning](https://openreview.net/forum?id=LXMSvPmsm0g) by Tianlong Chen, Zhenyu Zhang, Sijia Liu, Shiyu Chang and Zhangyang Wang. *International Conference on Learning Representations*, 2020. 
 - [Lifelong Machine Learning with Deep Streaming Linear Discriminant Analysis](http://arxiv.org/abs/1909.01520) by Tyler L Hayes and Christopher Kanan. *CLVision Workshop at CVPR 2020*, 1--15, 2020. [core50] [imagenet] 
 - [Continual Learning with Bayesian Neural Networks for Non-Stationary Data](https://iclr.cc/virtual_2020/poster_SJlsFpVtDB.html) by Richard Kurle, Botond Cseke, Alexej Klushyn, Patrick van der Smagt and Stephan Günnemann. *Eighth International Conference on Learning Representations*, 2020. [bayes] 
