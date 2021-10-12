@@ -17,7 +17,7 @@
   journal = {arXiv},
   url = {http://arxiv.org/abs/2011.07035},
   abstract = {Neurons in real brains are enormously complex computational units. Among other things, they're responsible for transforming inbound electro-chemical vectors into outbound action potentials, updating the strengths of intermediate synapses, regulating their own internal states, and modulating the behavior of other nearby neurons. One could argue that these cells are the only things exhibiting any semblance of real intelligence. It is odd, therefore, that the machine learning community has, for so long, relied upon the assumption that this complexity can be reduced to a simple sum and fire operation. We ask, might there be some benefit to substantially increasing the computational power of individual neurons in artificial systems? To answer this question, we introduce Deep Artificial Neurons (DANs), which are themselves realized as deep neural networks. Conceptually, we embed DANs inside each node of a traditional neural network, and we connect these neurons at multiple synaptic sites, thereby vectorizing the connections between pairs of cells. We demonstrate that it is possible to meta-learn a single parameter vector, which we dub a neuronal phenotype, shared by all DANs in the network, which facilitates a meta-objective during deployment. Here, we isolate continual learning as our meta-objective, and we show that a suitable neuronal phenotype can endow a single network with an innate ability to update its synapses with minimal forgetting, using standard backpropagation, without experience replay, nor separate wake/sleep phases. We demonstrate this ability on sequential non-linear regression tasks.},
-  keywords = {[experimental]},
+  keywords = {[experimental],⛔ No DOI found},
   annotation = {\_eprint: 2011.07035},
   note = {The authors replace each neuron of a standard feedforward network with a small neural network with its own parameters, meta-learned and shared throughout the whole network. They experiment with regression on sine waves.}
 }
@@ -29,7 +29,7 @@
   year = {2019},
   url = {http://proceedings.mlr.press/v97/finn19a/finn19a.pdf},
   abstract = {A central capability of intelligent systems is the ability to continuously build upon previous experiences to speed up and enhance learning of new tasks. Two distinct research paradigms have studied this question. Meta-learning views this problem as learning a prior over model parameters that is amenable for fast adaptation on a new task, but typically assumes the tasks are available together as a batch. In contrast, online (regret based) learning considers a setting where tasks are revealed one after the other, but conventionally trains a single model without task-specific adaptation. This work introduces an online meta-learning setting, which merges ideas from both paradigms to better capture the spirit and practice of continual lifelong learning. We propose the follow the meta leader (FTML) algorithm which extends the MAML algorithm to this setting. Theoretically, this work provides an O(log T) regret guarantee with one additional higher order smoothness assumption (in comparison to the standard online setting). Our experimental evaluation on three different large-scale problems suggest that the proposed algorithm significantly outperforms alternatives based on traditional online learning approaches.},
-  keywords = {[experimental],[mnist]},
+  keywords = {[experimental],[mnist],⛔ No DOI found},
   note = {This paper focuses on meta learning a stream of tasks. As for most of the online learning literature the focus is not on catastrophic forgetting, which is not taken into consideration, but on forward / backward transfer and few-shot learning. It stores a replay buffer for each task in order to meta-optimize in the outer loop.}
 }
 
@@ -57,7 +57,7 @@ arXiv: 1906.05201}
   year = {2019},
   url = {http://papers.nips.cc/paper/8458-meta-learning-representations-for-continual-learning},
   abstract = {A continual learning agent should be able to build on top of existing knowledge to learn on new data quickly while minimizing forgetting. Current intelligent systems based on neural network function approximators arguably do the opposite-they are highly prone to forgetting and rarely trained to facilitate future learning. One reason for this poor behavior is that they learn from a representation that is not explicitly trained for these two goals. In this paper, we propose OML, an objective that directly minimizes catastrophic interference by learning representations that accelerate future learning and are robust to forgetting under online updates in continual learning. We show that it is possible to learn naturally sparse representations that are more effective for online updating. Moreover, our algorithm is complementary to existing continual learning strategies, such as MER and GEM. Finally, we demonstrate that a basic online updating strategy on representations learned by OML is competitive with rehearsal based methods for continual learning. 1},
-  keywords = {[omniglot]}
+  keywords = {[omniglot],⛔ No DOI found}
 }
 
 @inproceedings{joseph2020,
@@ -81,7 +81,7 @@ The authors leverage a bayesian framework in which the parameters of a model are
   journal = {arXiv},
   url = {https://arxiv.org/abs/2008.02219},
   abstract = {Meta-continual learning algorithms seek to rapidly train a model when faced with similar tasks sampled sequentially from a task distribution. Although impressive strides have been made in this area, there is no theoretical framework that enables systematic analysis of key learning challenges, such as generalization and catastrophic forgetting. We introduce a new theoretical framework for meta-continual learning using dynamic programming, analyze generalization and catastrophic forgetting, and establish conditions of optimality. We show that existing meta-continual learning methods can be derived from the proposed dynamic programming framework. Moreover, we develop a new dynamic-programming-based meta-continual approach that adopts stochastic-gradient-driven alternating optimization method. We show that, on meta-continual learning benchmark data sets, our theoretically grounded meta-continual learning approach is better than or comparable to the purely empirical strategies adopted by the existing state-of-the-art methods.},
-  keywords = {[omniglot]},
+  keywords = {[omniglot],⛔ No DOI found},
   annotation = {\_eprint: 2008.02219}
 }
 
@@ -102,7 +102,7 @@ The authors leverage a bayesian framework in which the parameters of a model are
   journal = {arXiv},
   url = {https://arxiv.org/abs/1806.06928},
   abstract = {Using neural networks in practical settings would benefit from the ability of the networks to learn new tasks throughout their lifetimes without forgetting the previous tasks. This ability is limited in the current deep neural networks by a problem called catastrophic forgetting, where training on new tasks tends to severely degrade performance on previous tasks. One way to lessen the impact of the forgetting problem is to constrain parameters that are important to previous tasks to stay close to the optimal parameters. Recently, multiple competitive approaches for computing the importance of the parameters with respect to the previous tasks have been presented. In this paper, we propose a learning to optimize algorithm for mitigating catastrophic forgetting. Instead of trying to formulate a new constraint function ourselves, we propose to train another neural network to predict parameter update steps that respect the importance of parameters to the previous tasks. In the proposed meta-training scheme, the update predictor is trained to minimize loss on a combination of current and past tasks. We show experimentally that the proposed approach works in the continual learning setting.},
-  keywords = {[mnist]},
+  keywords = {[mnist],⛔ No DOI found},
   annotation = {\_eprint: 1806.06928}
 }
 

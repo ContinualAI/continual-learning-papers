@@ -10,7 +10,7 @@
   urldate = {2021-06-07},
   abstract = {A long-standing challenge in artificial intelligence is lifelong learning. In lifelong learning, many tasks are presented in sequence and learners must efficiently transfer knowledge between tasks while avoiding catastrophic forgetting over long lifetimes. On these problems, policy reuse and other multi-policy reinforcement learning techniques can learn many tasks. However, they can generate many temporary or permanent policies, resulting in memory issues. Consequently, there is a need for lifetime-scalable methods that continually refine a policy library of a pre-defined size. This paper presents a first approach to lifetime-scalable policy reuse. To pre-select the number of policies, a notion of task capacity, the maximal number of tasks that a policy can accurately solve, is proposed. To evaluate lifetime policy reuse using this method, two state-of-the-art single-actor base-learners are compared: 1) a value-based reinforcement learner, Deep Q-Network (DQN) or Deep Recurrent Q-Network (DRQN); and 2) an actor-critic reinforcement learner, Proximal Policy Optimisation (PPO) with or without Long Short-Term Memory layer. By selecting the number of policies based on task capacity, D(R)QN achieves near-optimal performance with 6 policies in a 27-task MDP domain and 9 policies in an 18-task POMDP domain; with fewer policies, catastrophic forgetting and negative transfer are observed. Due to slow, monotonic improvement, PPO requires fewer policies, 1 policy for the 27-task domain and 4 policies for the 18-task domain, but it learns the tasks with lower accuracy than D(R)QN. These findings validate lifetime-scalable policy reuse and suggest using D(R)QN for larger and PPO for smaller library sizes.},
   archiveprefix = {arXiv},
-  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing}
+  keywords = {⛔ No DOI found,Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing}
 }
 
 @article{early2019,
@@ -20,6 +20,7 @@
   journal = {arXiv},
   url = {http://arxiv.org/abs/1904.03178},
   abstract = {A key stepping stone in the development of an artificial general intelligence (a machine that can perform any task), is the production of agents that can perform multiple tasks at once instead of just one. Unfortunately, canonical methods are very prone to catastrophic forgetting (CF) - the act of overwriting previous knowledge about a task when learning a new task. Recent efforts have developed techniques for overcoming CF in learning systems, but no attempt has been made to apply these new techniques to evolutionary systems. This research presents a novel technique, weight protection, for reducing CF in evolutionary systems by adapting a method from learning systems. It is used in conjunction with other evolutionary approaches for overcoming CF and is shown to be effective at alleviating CF when applied to a suite of reinforcement learning tasks. It is speculated that this work could indicate the potential for a wider application of existing learning-based approaches to evolutionary systems and that evolutionary techniques may be competitive with or better than learning systems when it comes to reducing CF.},
+  keywords = {⛔ No DOI found},
   annotation = {\_eprint: 1904.03178}
 }
 
@@ -30,7 +31,8 @@
   year = {2019},
   pages = {5691--5700},
   url = {https://papers.nips.cc/paper/8806-a-meta-mdp-approach-to-exploration-for-lifelong-reinforcement-learning.pdf},
-  abstract = {In this paper we consider the problem of how a reinforcement learning agent that is tasked with solving a sequence of reinforcement learning problems (a sequence of Markov decision processes) can use knowledge acquired early in its lifetime to improve its ability to solve new problems. We argue that previous experience with similar problems can provide an agent with information about how it should explore when facing a new but related problem. We show that the search for an optimal exploration strategy can be formulated as a reinforcement learning problem itself and demonstrate that such strategy can leverage patterns found in the structure of related problems. We conclude with experiments that show the benefits of optimizing an exploration strategy using our proposed framework.}
+  abstract = {In this paper we consider the problem of how a reinforcement learning agent that is tasked with solving a sequence of reinforcement learning problems (a sequence of Markov decision processes) can use knowledge acquired early in its lifetime to improve its ability to solve new problems. We argue that previous experience with similar problems can provide an agent with information about how it should explore when facing a new but related problem. We show that the search for an optimal exploration strategy can be formulated as a reinforcement learning problem itself and demonstrate that such strategy can leverage patterns found in the structure of related problems. We conclude with experiments that show the benefits of optimizing an exploration strategy using our proposed framework.},
+  keywords = {⛔ No DOI found}
 }
 
 @inproceedings{he2021,
@@ -59,7 +61,7 @@
   pages = {3302--3309},
   url = {http://arxiv.org/abs/1802.10269},
   abstract = {Deep reinforcement learning has emerged as a powerful tool for a variety of learning tasks, however deep nets typically exhibit forgetting when learning multiple tasks in sequence. To mitigate forgetting, we propose an experience replay process that augments the standard FIFO buffer and selectively stores experiences in a long-term memory. We explore four strategies for selecting which experiences will be stored: favoring surprise, favoring reward, matching the global training distribution, and maximizing coverage of the state space. We show that distribution matching successfully prevents catastrophic forgetting, and is consistently the best approach on all domains tested. While distribution matching has better and more consistent performance, we identify one case in which coverage maximization is beneficial - when tasks that receive less trained are more important. Overall, our results show that selective experience replay, when suitable selection algorithms are employed, can prevent catastrophic forgetting.},
-  keywords = {Natural Language Processing and Machine Learning T},
+  keywords = {⛔ No DOI found,Natural Language Processing and Machine Learning T},
   annotation = {\_eprint: 1802.10269}
 }
 
@@ -80,6 +82,7 @@
   journal = {ICML},
   url = {http://arxiv.org/abs/1902.00255},
   abstract = {We propose a method for tackling catastrophic forgetting in deep reinforcement learning that is \$\textbackslash backslash\$textit\{agnostic\} to the timescale of changes in the distribution of experiences, does not require knowledge of task boundaries, and can adapt in \$\textbackslash backslash\$textit\{continuously\} changing environments. In our \$\textbackslash backslash\$textit\{policy consolidation\} model, the policy network interacts with a cascade of hidden networks that simultaneously remember the agent's policy at a range of timescales and regularise the current policy by its own history, thereby improving its ability to learn without forgetting. We find that the model improves continual learning relative to baselines on a number of continuous control tasks in single-task, alternating two-task, and multi-agent competitive self-play settings.},
+  keywords = {⛔ No DOI found},
   annotation = {\_eprint: 1902.00255}
 }
 
@@ -91,6 +94,7 @@
   volume = {114},
   number = {13},
   pages = {3521--3526},
+  doi = {10.1073/pnas.1611835114},
   url = {http://arxiv.org/abs/1612.00796},
   abstract = {The ability to learn tasks in a sequential fashion is crucial to the development of artificial intelligence. Neural networks are not, in general, capable of this and it has been widely thought that catastrophic forgetting is an inevitable feature of connectionist models. We show that it is possible to overcome this limitation and train networks that can maintain expertise on tasks which they have not experienced for a long time. Our approach remembers old tasks by selectively slowing down learning on the weights important for those tasks. We demonstrate our approach is scalable and effective by solving a set of classification tasks based on the MNIST hand written digit dataset and by learning several Atari 2600 games sequentially.},
   keywords = {[mnist],annotated,Computer Science - Artificial Intelligence,Computer Science - Machine Learning,ewc,Statistics - Machine Learning},
@@ -101,7 +105,7 @@ arXiv: 1612.00796}
 
 @inproceedings{kobayashi2019,
   title = {Continual {{Learning Exploiting Structure}} of {{Fractal Reservoir Computing}}},
-  booktitle = {Artificial {{Neural Networks}} and {{Machine Learning}} \textendash{} {{ICANN}} 2019: {{Workshop}} and {{Special Sessions}}},
+  booktitle = {Artificial {{Neural Networks}} and {{Machine Learning}} \textendash{} {{ICANN}} 2019: Workshop and {{Special Sessions}}},
   author = {Kobayashi, Taisuke and Sugino, Toshiki},
   editor = {Tetko, Igor V and K{\r{u}}rkov{\'a}, V{\v e}ra and Karpov, Pavel and Theis, Fabian},
   year = {2019},
@@ -113,7 +117,7 @@ arXiv: 1612.00796}
   url = {http://link.springer.com/10.1007/978-3-030-30493-5_4},
   abstract = {Neural network has a critical problem, called catastrophic forgetting, where memories for tasks already learned are easily overwritten with memories for a task additionally learned. This problem interferes with continual learning required for autonomous robots, which learn many tasks incrementally from daily activities. To mitigate the catastrophic forgetting, it is important for especially reservoir computing to clarify which neurons should be fired corresponding to each task, since only readout weights are updated according to the degree of firing of neurons. We therefore propose the way to design reservoir computing such that the firing neurons are clearly distinguished from others according to the task to be performed. As a key design feature, we employ fractal network, which has modularity and scalability, to be reservoir layer. In particular, its modularity is fully utilized by designing input layer. As a result, simulations of control tasks using reinforcement learning show that our design mitigates the catastrophic forgetting even when random actions from reinforcement learning prompt parameters to be overwritten. Furthermore, learning multiple tasks with a single network suggests that knowledge for the other tasks can facilitate to learn a new task, unlike the case using completely different networks.},
   isbn = {978-3-030-30492-8 978-3-030-30493-5},
-  language = {en},
+  langid = {english},
   keywords = {[rnn],fractals,rc,reinforcement,reservoir computing},
   note = {A reservoir computing approach with Echo State Networks is implemented in order to learn multiple tasks in reinforcement learning environments.}
 }
@@ -124,7 +128,8 @@ arXiv: 1612.00796}
   author = {Luders, Benno and Schlager, Mikkel and Risi, Sebastian},
   year = {2016},
   url = {https://core.ac.uk/reader/84859350},
-  abstract = {Continual learning, i.e. the ability to sequentially learn tasks without catastrophicforgetting of previously learned ones, is an important open challenge in machinelearning. In this paper we take a step in this direction by showing that the recentlyproposedEvolving Neural Turing Machine(ENTM) approach is able to performone-shot learningin a reinforcement learning task without catastrophic forgettingof previously stored associations.}
+  abstract = {Continual learning, i.e. the ability to sequentially learn tasks without catastrophicforgetting of previously learned ones, is an important open challenge in machinelearning. In this paper we take a step in this direction by showing that the recentlyproposedEvolving Neural Turing Machine(ENTM) approach is able to performone-shot learningin a reinforcement learning task without catastrophic forgettingof previously stored associations.},
+  keywords = {⛔ No DOI found}
 }
 
 @inproceedings{luders2017,
@@ -141,18 +146,19 @@ arXiv: 1612.00796}
   url = {https://link.springer.com/chapter/10.1007/978-3-319-55849-3_57},
   abstract = {Training neural networks to quickly learn new skills without forgetting previously learned skills is an important open challenge in machine learning. A common problem for adaptive networks that can learn during their lifetime is that the weights encoding a particular task are often overridden when a new task is learned. This paper takes a step in overcoming this limitation by building on the recently proposed Evolving Neural Turing Machine (ENTM) approach. In the ENTM, neural networks are augmented with an external memory component that they can write to and read from, which allows them to store associations quickly and over long periods of time. The results in this paper demonstrate that the ENTM is able to perform one-shot learning in reinforcement learning tasks without catastrophic forgetting of previously stored associations. Additionally, we introduce a new ENTM default jump mechanism that makes it easier to find unused memory location and therefor facilitates the evolution of continual learning networks. Our results suggest that augmenting evolving networks with an external memory component is not only a viable mechanism for adaptive behaviors in neuroevolution but also allows these networks to perform continual and one-shot learning at the same time.},
   isbn = {978-3-319-55849-3},
-  language = {en},
+  langid = {english},
   keywords = {Adaptive neural networks,Continual learning,Memory,Neural Turing Machine,Neuroevolution,Plasticity}
 }
 
 @article{mankowitz2018,
-  title = {Unicorn: {{Continual Learning}} with a {{Universal}}, {{Off}}-Policy {{Agent}}},
+  title = {Unicorn: Continual {{Learning}} with a {{Universal}}, {{Off}}-Policy {{Agent}}},
   author = {Mankowitz, Daniel J and {\v Z}{\'i}dek, Augustin and Barreto, Andr{\'e} and Horgan, Dan and Hessel, Matteo and Quan, John and Oh, Junhyuk and {van Hasselt}, Hado and Silver, David and Schaul, Tom},
   year = {2018},
   journal = {arXiv},
   pages = {1--17},
   url = {http://arxiv.org/abs/1802.08294},
   abstract = {Some real-world domains are best characterized as a single task, but for others this perspective is limiting. Instead, some tasks continually grow in complexity, in tandem with the agent's competence. In continual learning, also referred to as lifelong learning, there are no explicit task boundaries or curricula. As learning agents have become more powerful, continual learning remains one of the frontiers that has resisted quick progress. To test continual learning capabilities we consider a challenging 3D domain with an implicit sequence of tasks and sparse rewards. We propose a novel agent architecture called Unicorn, which demonstrates strong continual learning and outperforms several baseline agents on the proposed domain. The agent achieves this by jointly representing and learning multiple policies efficiently, using a parallel off-policy learning setup.},
+  keywords = {⛔ No DOI found},
   annotation = {\_eprint: 1802.08294}
 }
 
@@ -163,16 +169,18 @@ arXiv: 1612.00796}
   year = {2018},
   pages = {4502--4513},
   url = {http://papers.nips.cc/paper/7702-lifelong-inverse-reinforcement-learning.pdf},
-  abstract = {Methods for learning from demonstration (LfD) have shown success in acquiring behavior policies by imitating a user. However, even for a single task, LfD may require numerous demonstrations. For versatile agents that must learn many tasks via demonstration, this process would substantially burden the user if each task were learned in isolation. To address this challenge, we introduce the novel problem of lifelong learning from demonstration, which allows the agent to continually build upon knowledge learned from previously demonstrated tasks to accelerate the learning of new tasks, reducing the amount of demonstrations required. As one solution to this problem, we propose the first lifelong learning approach to inverse reinforcement learning, which learns consecutive tasks via demonstration, continually transferring knowledge between tasks to improve performance.}
+  abstract = {Methods for learning from demonstration (LfD) have shown success in acquiring behavior policies by imitating a user. However, even for a single task, LfD may require numerous demonstrations. For versatile agents that must learn many tasks via demonstration, this process would substantially burden the user if each task were learned in isolation. To address this challenge, we introduce the novel problem of lifelong learning from demonstration, which allows the agent to continually build upon knowledge learned from previously demonstrated tasks to accelerate the learning of new tasks, reducing the amount of demonstrations required. As one solution to this problem, we propose the first lifelong learning approach to inverse reinforcement learning, which learns consecutive tasks via demonstration, continually transferring knowledge between tasks to improve performance.},
+  keywords = {⛔ No DOI found}
 }
 
 @article{nagabandi2019,
-  title = {Deep Online Learning via Meta-Learning: {{Continual}} Adaptation for Model-Based {{RL}}},
+  title = {Deep Online Learning via Meta-Learning: Continual Adaptation for Model-Based {{RL}}},
   author = {Nagabandi, Anusha and Finn, Chelsea and Levine, Sergey},
   year = {2019},
   journal = {7th International Conference on Learning Representations, ICLR 2019},
   url = {https://arxiv.org/abs/1812.07671},
   abstract = {Humans and animals can learn complex predictive models that allow them to accurately and reliably reason about real-world phenomena, and they can adapt such models extremely quickly in the face of unexpected changes. Deep neural network models allow us to represent very complex functions, but lack this capacity for rapid online adaptation. The goal in this paper is to develop a method for continual online learning from an incoming stream of data, using deep neural network models. We formulate an online learning procedure that uses stochastic gradient descent to update model parameters, and an expectation maximization algorithm with a Chinese restaurant process prior to develop and maintain a mixture of models to handle non-stationary task distributions. This allows for all models to be adapted as necessary, with new models instantiated for task changes and old models recalled when previously seen tasks are encountered again. Furthermore, we observe that meta-learning can be used to meta-train a model such that this direct online adaptation with SGD is effective, which is otherwise not the case for large function approximators. In this work, we apply our meta-learning for online learning (MOLe) approach to model-based reinforcement learning, where adapting the predictive model is critical for control; we demonstrate that MOLe outperforms alternative prior methods, and enables effective continuous adaptation in non-stationary task distributions such as varying terrains, motor failures, and unexpected disturbances. Videos available at: https://sites.google.com/Berkeley.edu/onlineviameta.},
+  keywords = {⛔ No DOI found},
   annotation = {\_eprint: 1812.07671}
 }
 
@@ -187,17 +195,17 @@ arXiv: 1612.00796}
   url = {http://proceedings.mlr.press/v139/nekoei21a.html},
   urldate = {2021-07-13},
   abstract = {Current deep reinforcement learning (RL) algorithms are still highly task-specific and lack the ability to generalize to new environments. Lifelong learning (LLL), however, aims at solving multiple...},
-  language = {en}
+  langid = {english}
 }
 
 @article{pan2019,
-  title = {Leaky {{Tiling Activations}}: {{A Simple Approach}} to {{Learning Sparse Representations Online}}},
+  title = {Leaky {{Tiling Activations}}: A {{Simple Approach}} to {{Learning Sparse Representations Online}}},
   author = {Pan, Yangchen and Banman, Kirby and White, Martha},
   year = {2019},
   journal = {arXiv},
   url = {http://arxiv.org/abs/1911.08068},
   abstract = {Interference is a known problem when learning in online settings, such as continual learning or reinforcement learning. Interference occurs when updates, to improve performance for some inputs, degrades performance for others. Recent work has shown that sparse representations\textemdash where only a small percentage of units are active\textemdash can significantly reduce interference. Those works, however, relied on relatively complex regularization or meta-learning approaches, that have only been used offline in a pre-training phase. In our approach, we design an activation function that naturally produces sparse representations, and so is much more amenable to online training. The idea relies on the simple approach of binning, but overcomes the two key limitations of binning: zero gradients for the flat regions almost everywhere, and lost precision\textemdash reduced discrimination\textemdash due to coarse aggregation. We introduce a Leaky Tiling Activation (LTA) that provides non-negligible gradients and produces overlap between bins that improves discrimination. We empirically investigate both value-based and policy gradient reinforcement learning algorithms that use neural networks with LTAs, in classic discrete-action control environments and Mujoco continuous-action environments. We show that, with LTAs, learning is faster, with more stable policies, without needing target networks.},
-  keywords = {[sparsity]},
+  keywords = {[sparsity],⛔ No DOI found},
   annotation = {\_eprint: 1911.08068}
 }
 
@@ -212,7 +220,7 @@ arXiv: 1612.00796}
 }
 
 @article{ring1997,
-  title = {{{CHILD}}: {{A First Step Towards Continual Learning}}},
+  title = {{{CHILD}}: A {{First Step Towards Continual Learning}}},
   shorttitle = {{{CHILD}}},
   author = {Ring, Mark B},
   year = {1997},
@@ -224,7 +232,7 @@ arXiv: 1612.00796}
   doi = {10.1023/A:1007331723572},
   url = {https://doi.org/10.1023/A:1007331723572},
   abstract = {Continual learning is the constant development of increasingly complex behaviors; the process of building more complicated skills on top of those already developed. A continual-learning agent should therefore learn incrementally and hierarchically. This paper describes CHILD, an agent capable of Continual, Hierarchical, Incremental Learning and Development. CHILD can quickly solve complicated non-Markovian reinforcement-learning tasks and can then transfer its skills to similar but even more complicated tasks, learning these faster still.},
-  language = {en},
+  langid = {english},
   keywords = {cl,continual learner,Continual learning,definition,hierarchical neural networks,reinforcement learning,sequence learning,transfer}
 }
 
@@ -235,7 +243,8 @@ arXiv: 1612.00796}
   year = {2019},
   pages = {350--360},
   url = {http://papers.nips.cc/paper/8327-experience-replay-for-continual-learning.pdf},
-  abstract = {Interacting with a complex world involves continual learning, in which tasks and data distributions change over time. A continual learning system should demonstrate both plasticity (acquisition of new knowledge) and stability (preservation of old knowledge). Catastrophic forgetting is the failure of stability, in which new experience overwrites previous experience. In the brain, replay of past experience is widely believed to reduce forgetting, yet it has been largely overlooked as a solution to forgetting in deep reinforcement learning. Here, we introduce CLEAR, a replay-based method that greatly reduces catastrophic forgetting in multi-task reinforcement learning. CLEAR leverages off-policy learning and behavioral cloning from replay to enhance stability, as well as on-policy learning to preserve plasticity. We show that CLEAR performs better than state-of-the-art deep learning techniques for mitigating forgetting, despite being significantly less complicated and not requiring any knowledge of the individual tasks being learned.}
+  abstract = {Interacting with a complex world involves continual learning, in which tasks and data distributions change over time. A continual learning system should demonstrate both plasticity (acquisition of new knowledge) and stability (preservation of old knowledge). Catastrophic forgetting is the failure of stability, in which new experience overwrites previous experience. In the brain, replay of past experience is widely believed to reduce forgetting, yet it has been largely overlooked as a solution to forgetting in deep reinforcement learning. Here, we introduce CLEAR, a replay-based method that greatly reduces catastrophic forgetting in multi-task reinforcement learning. CLEAR leverages off-policy learning and behavioral cloning from replay to enhance stability, as well as on-policy learning to preserve plasticity. We show that CLEAR performs better than state-of-the-art deep learning techniques for mitigating forgetting, despite being significantly less complicated and not requiring any knowledge of the individual tasks being learned.},
+  keywords = {⛔ No DOI found}
 }
 
 @article{rusu2016,
@@ -245,8 +254,8 @@ arXiv: 1612.00796}
   journal = {arXiv},
   url = {http://arxiv.org/abs/1606.04671},
   abstract = {Learning to solve complex sequences of tasks\textemdash while both leveraging transfer and avoiding catastrophic forgetting\textemdash remains a key obstacle to achieving human-level intelligence. The progressive networks approach represents a step forward in this direction: they are immune to forgetting and can leverage prior knowledge via lateral connections to previously learned features. We evaluate this architecture extensively on a wide variety of reinforcement learning tasks (Atari and 3D maze games), and show that it outperforms common baselines based on pretraining and finetuning. Using a novel sensitivity measure, we demonstrate that transfer occurs at both low-level sensory and high-level control layers of the learned policy.},
-  language = {en},
-  keywords = {[mnist],Computer Science - Machine Learning,lifelong learning,modular,progressive},
+  langid = {english},
+  keywords = {[mnist],⛔ No DOI found,Computer Science - Machine Learning,lifelong learning,modular,progressive},
   note = {The authors rely on a separate feedforward network (column) for each task the model is trained on. Each column is connected through adaptive connections to all the previous ones. The weights of previous columns are frozen once trained. At inference time, given a known task label, the network choose the appropriate column to produce the output, thus preventing forgetting by design.
 \par
 The authors rely on a separate feedforward network (column) for each task the model is trained on. Each column is connected through adaptive connections to all the previous ones. The weights of previous columns are frozen once trained. At inference time, given a known task label, the network choose the appropriate column to produce the output, thus preventing forgetting by design.}
@@ -258,11 +267,12 @@ The authors rely on a separate feedforward network (column) for each task the mo
   author = {Schlegel, Matthew and White, Adam and White, Martha},
   year = {2017},
   url = {https://sites.ualberta.ca/ amw8/cldl.pdf},
-  abstract = {The objective of continual learning is to build agents that continually learn about their world, building on prior learning. In this paper, we explore an approach to continual learning based on making and updating many predictions formalized as general value functions (GVFs). The idea behind GVFs is simple: if we can cast the task of representing predictive knowledge as a prediction of future reward, then computationally efficient policy evaluation methods from reinforcement learning can be used to learn a large collection of predictions while the agent interacts with the world. We explore this idea further by analyzing how GVF predictions can be used as predictive features, and introduce two algorithmic techniques to ensure the stability of continual prediction learning. We illustrate these ideas with a small experiment in the cycle world domain.}
+  abstract = {The objective of continual learning is to build agents that continually learn about their world, building on prior learning. In this paper, we explore an approach to continual learning based on making and updating many predictions formalized as general value functions (GVFs). The idea behind GVFs is simple: if we can cast the task of representing predictive knowledge as a prediction of future reward, then computationally efficient policy evaluation methods from reinforcement learning can be used to learn a large collection of predictions while the agent interacts with the world. We explore this idea further by analyzing how GVF predictions can be used as predictive features, and introduce two algorithmic techniques to ensure the stability of continual prediction learning. We illustrate these ideas with a small experiment in the cycle world domain.},
+  keywords = {⛔ No DOI found}
 }
 
 @inproceedings{schwarz2018,
-  title = {Progress \& {{Compress}}: {{A}} Scalable Framework for Continual Learning},
+  title = {Progress \& {{Compress}}: A Scalable Framework for Continual Learning},
   shorttitle = {Progress \& {{Compress}}},
   booktitle = {International {{Conference}} on {{Machine Learning}}},
   author = {Schwarz, Jonathan and Czarnecki, Wojciech and Luketina, Jelena and {Grabska-Barwinska}, Agnieszka and Teh, Yee Whye and Pascanu, Razvan and Hadsell, Raia},
@@ -270,12 +280,12 @@ The authors rely on a separate feedforward network (column) for each task the mo
   pages = {4528--4537},
   url = {http://proceedings.mlr.press/v80/schwarz18a.html},
   abstract = {We introduce a conceptually simple and scalable framework for continual learning domains where tasks are learned sequentially. Our method is constant in the number of parameters and is designed to ...},
-  language = {en},
+  langid = {english},
   keywords = {[vision],ewc,normalized ewc,online ewc}
 }
 
 @inproceedings{shu2016,
-  title = {Lifelong-{{RL}}: {{Lifelong Relaxation Labeling}} for {{Separating Entities}} and {{Aspects}} in {{Opinion Targets}}.},
+  title = {Lifelong-{{RL}}: Lifelong {{Relaxation Labeling}} for {{Separating Entities}} and {{Aspects}} in {{Opinion Targets}}.},
   booktitle = {Proceedings of the {{Conference}} on {{Empirical Methods}} in {{Natural Language Processing}}. {{Conference}} on {{Empirical Methods}} in {{Natural Language Processing}}},
   author = {Shu, Lei and Liu, Bing and Xu, Hu and Kim, Annice},
   year = {2016},
@@ -287,7 +297,7 @@ The authors rely on a separate feedforward network (column) for each task the mo
   abstract = {It is well-known that opinions have targets. Extracting such targets is an important problem of opinion mining because without knowing the target of an opinion, the opinion is of limited use. So far many algorithms have been proposed to extract opinion targets. However, an opinion target can be an entity or an aspect (part or attribute) of an entity. An opinion about an entity is an opinion about the entity as a whole, while an opinion about an aspect is just an opinion about that specific attribute or aspect of an entity. Thus, opinion targets should be separated into entities and aspects before use because they represent very different things about opinions. This paper proposes a novel algorithm, called Lifelong-RL, to solve the problem based on lifelong machine learning and relaxation labeling. Extensive experiments show that the proposed algorithm Lifelong-RL outperforms baseline methods markedly.},
   isbn = {978-1-4939-7371-2},
   pmid = {29756130},
-  keywords = {[nlp]},
+  keywords = {[nlp],⚠️ Invalid DOI},
   annotation = {\_eprint: 15334406}
 }
 
