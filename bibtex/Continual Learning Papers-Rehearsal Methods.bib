@@ -80,10 +80,10 @@
   note = {Definition of the data-incremental continual learning scenario}
 }
 
-@article{hayes2018,
+@article{hayes2019,
   title = {Memory {{Efficient Experience Replay}} for {{Streaming Learning}}},
   author = {Hayes, Tyler L and Cahill, Nathan D and Kanan, Christopher},
-  year = {2018},
+  year = {2019},
   journal = {IEEE International Conference on Robotics and Automation (ICRA)},
   url = {https://github.com/tyler-hayes/ExStream. http://arxiv.org/abs/1809.05922},
   abstract = {In supervised machine learning, an agent is typically trained once and then deployed. While this works well for static settings, robots often operate in changing environments and must quickly learn new things from data streams. In this paradigm, known as streaming learning, a learner is trained online, in a single pass, from a data stream that cannot be assumed to be independent and identically distributed (iid). Streaming learning will cause conventional deep neural networks (DNNs) to fail for two reasons: 1) they need multiple passes through the entire dataset; and 2) non-iid data will cause catastrophic forgetting. An old fix to both of these issues is rehearsal. To learn a new example, rehearsal mixes it with previous examples, and then this mixture is used to update the DNN. Full rehearsal is slow and memory intensive because it stores all previously observed examples, and its effectiveness for preventing catastrophic forgetting has not been studied in modern DNNs. Here, we describe the ExStream algorithm for memory efficient rehearsal and compare it to alternatives. We find that full rehearsal can eliminate catastrophic forgetting in a variety of streaming learning settings, with ExStream performing well using far less memory and computation.},
