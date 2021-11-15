@@ -4,7 +4,7 @@
   <img src="https://www.continualai.org/images/continualai_logo_name_black.png" alt="ContinualAI logo"/ width="300px" align="center">
 </p>
 
-Continual Learning papers list, curated by ContinualAI. **Search among 284 papers!**
+Continual Learning papers list, curated by ContinualAI. **Search among 288 papers!**
  
 You can browse the list in this file or interactively on the [ContinualAI website](https://www.continualai.org/papers/).
 
@@ -203,13 +203,15 @@ In this section we list all the papers related to bioinspired continual learning
 
 ### Catastrophic Forgetting Studies
 
-**14 papers**
+**16 papers**
 
 In this section we list all the major contributions trying to understand catastrophic forgetting and its implication in machines that learn continually.
 
 - [Continual Learning in the Teacher-Student Setup: Impact of Task Similarity](http://proceedings.mlr.press/v139/lee21e.html) by Sebastian Lee, Sebastian Goldt and Andrew Saxe. *International Conference on Machine Learning*, 6109--6119, 2021. 
 - [Continual Learning in Deep Networks: An Analysis of the Last Layer](http://arxiv.org/abs/2106.01834) by Timothée Lesort, Thomas George and Irina Rish. *arXiv*, 2021. 
 - [Understanding Continual Learning Settings with Data Distribution Drift Analysis](http://arxiv.org/abs/2104.01678) by Timothée Lesort, Massimo Caccia and Irina Rish. *arXiv*, 2021. 
+- [Wide Neural Networks Forget Less Catastrophically](http://arxiv.org/abs/2110.11526) by Seyed Iman Mirzadeh, Arslan Chaudhry, Huiyi Hu, Razvan Pascanu, Dilan Gorur and Mehrdad Farajtabar. *arXiv*, 2021. 
+- [Does Continual Learning = Catastrophic Forgetting?](http://arxiv.org/abs/2101.07295) by Anh Thai, Stefan Stojanov, Isaac Rehg and James M. Rehg. *arXiv*, 2021. 
 - [Sequential Mastery of Multiple Visual Tasks: Networks Naturally Learn to Learn and Forget to Forget](https://openaccess.thecvf.com/content_CVPR_2020/papers/Davidson_Sequential_Mastery_of_Multiple_Visual_Tasks_Networks_Naturally_Learn_to_CVPR_2020_paper.pdf) by Guy Davidson and Michael C Mozer. *CVPR*, 9282--9293, 2020. [vision] 
 - [Understanding the Role of Training Regimes in Continual Learning](http://arxiv.org/abs/2006.06958) by Seyed Iman Mirzadeh, Mehrdad Farajtabar, Razvan Pascanu and Hassan Ghasemzadeh. *arXiv*, 2020. 
 - [Dissecting Catastrophic Forgetting in Continual Learning by Deep Visualization](http://arxiv.org/abs/2001.01578) by Giang Nguyen, Shuan Chen, Thao Do, Tae Joon Jun, Ho-Jin Choi and Daeyoung Kim. *arXiv*, 2020. [vision] 
@@ -295,7 +297,7 @@ In this section we list all the papers related to the continual Reinforcement Le
 
 ### Continual Sequential Learning
 
-**11 papers**
+**12 papers**
 
 Here we maintain a list of all the papers related to the continual learning at the intersection with sequential learning.
 
@@ -308,6 +310,7 @@ Here we maintain a list of all the papers related to the continual learning at t
 - [Online Continual Learning on Sequences](http://arxiv.org/abs/2003.09114) by German I Parisi and Vincenzo Lomonaco. *Studies in Computational Intelligence*, 2020. [framework] 
 - [Unsupervised Progressive Learning and the STAM Architecture](http://arxiv.org/abs/1904.02021) by James Smith, Seth Baer, Cameron Taylor and Constantine Dovrolis. *arXiv*, 2019. [mnist] 
 - [Toward Training Recurrent Neural Networks for Lifelong Learning](https://doi.org/10.1162/neco_a_01246) by Shagun Sodhani, Sarath Chandar and Yoshua Bengio. *Neural Computation*, 1--35, 2019. [rnn] 
+- [Semi-Supervised Tuning from Temporal Coherence](https://ieeexplore.ieee.org/document/7900013) by Davide Maltoni and Vincenzo Lomonaco. *2016 23rd International Conference on Pattern Recognition (ICPR)*, 2509--2514, 2016. 
 - [Self-Refreshing Memory in Artificial Neural Networks: Learning Temporal Sequences without Catastrophic Forgetting](https://doi.org/10.1080/09540090412331271199) by Bernard Ans, Stéphane Rousset, Robert M. French and Serban Musca. *Connection Science*, 71--99, 2004. [rnn] 
 - [Using Pseudo-Recurrent Connectionist Networks to Solve the Problem of Sequential Learning](http://leadserv.u-bourgogne.fr/IMG/pdf/psdnet1.pdf) by  and Robert French. *Proceedings of the 19th Annual Cognitive Science Society Conference*, 1997. [dual] 
 
@@ -399,7 +402,7 @@ In this section we maintain a list of all Neuroscience papers that can be relate
 
 ### Others
 
-**39 papers**
+**40 papers**
 
 In this section we list all the other papers not appearing in at least one of the above sections.
 
@@ -436,6 +439,7 @@ In this section we list all the other papers not appearing in at least one of th
 - [Life-Long Disentangled Representation Learning with Cross-Domain Latent Homologies](http://arxiv.org/abs/1808.06508) by Alessandro Achille, Tom Eccles, Loic Matthey, Christopher P. Burgess, Nick Watters, Alexander Lerchner and Irina Higgins. *Neural Information Processing Systems (NeurIPS)*, 2018. 
 - [A Unifying Bayesian View of Continual Learning](http://bayesiandeeplearning.org/2018/papers/74.pdf) by Sebastian Farquhar and Yarin Gal. *NeurIPS Bayesian Deep Learning Workshop*, 2018. [bayes] [cifar] [mnist] 
 - [Overcoming Catastrophic Interference Using Conceptor-Aided Backpropagation](https://openreview.net/pdf?id=B1al7jg0b) by Xu He and Herbert Jaeger. *ICLR*, 2018. [mnist] 
+- [Less-Forgetful Learning for Domain Expansion in Deep Neural Networks](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17073) by Heechul Jung, Jeongwoo Ju, Minju Jung and Junmo Kim. *Thirty-Second AAAI Conference on Artificial Intelligence*, 2018. 
 - [Piggyback: Adapting a Single Network to Multiple Tasks by Learning to Mask Weights](https://doi.org/10.1007/978-3-030-01225-0_5) by Arun Mallya, Dillon Davis and Svetlana Lazebnik. *ECCV*, 72--88, 2018. [imagenet] 
 - [Adding New Tasks to a Single Network with Weight Transformations Using Binary Masks](http://arxiv.org/abs/1805.11119) by Massimiliano Mancini, Elisa Ricci, Barbara Caputo and Samuel Rota Bulò. *Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)*, 180--189, 2018. [sparsity] [vision] 
 - [Variational Continual Learning](https://openreview.net/forum?id=BkQqq0gRb) by Cuong V Nguyen, Yingzhen Li, Thang D Bui and Richard E Turner. *ICLR*, 2018. [bayes] 
