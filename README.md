@@ -6,8 +6,6 @@
 
 Continual Learning papers list, curated by ContinualAI. **Search among 295 papers!**
  
-You can browse the list in this file or interactively on the [ContinualAI website](https://www.continualai.org/papers/).
-
 [Join our community](https://continualai.herokuapp.com/) on Slack to stay updated with the latest Continual Learning news.  
 Visit the Continua AI wiki &rarr; http://wiki.continualai.org/
 
