@@ -41,7 +41,7 @@
   title = {A {{Comparative Study}} of {{Calibration Methods}} for {{Imbalanced Class Incremental Learning}}},
   author = {Aggarwal, Umang and Popescu, Adrian and Belouadah, Eden and Hudelot, C{\'e}line},
   year = {2022},
-  journal = {CoRR},
+  journal = {arXiv},
   volume = {abs/2202.00386},
   eprint = {2202.00386},
   eprinttype = {arxiv},
@@ -1436,10 +1436,9 @@ An evaluation of RNNs (LSTM and LMN) inspired by Progressive networks, leading t
   title = {Online {{Continual Learning}} for {{Embedded Devices}}},
   author = {Hayes, Tyler L. and Kanan, Christopher},
   year = {2022},
-  journal = {arXiv:2203.10681 [cs]},
+  journal = {arXiv},
   eprint = {2203.10681},
   eprinttype = {arxiv},
-  primaryclass = {cs},
   url = {http://arxiv.org/abs/2203.10681},
   urldate = {2022-03-26},
   abstract = {Real-time on-device continual learning is needed for new applications such as home robots, user personalization on smartphones, and augmented/virtual reality headsets. However, this setting poses unique challenges: embedded devices have limited memory and compute capacity and conventional machine learning models suffer from catastrophic forgetting when updated on non-stationary data streams. While several online continual learning models have been developed, their effectiveness for embedded applications has not been rigorously studied. In this paper, we first identify criteria that online continual learners must meet to effectively perform real-time, on-device learning. We then study the efficacy of several online continual learning methods when used with mobile neural networks. We measure their performance, memory usage, compute requirements, and ability to generalize to out-of-domain inputs.},
@@ -1506,11 +1505,16 @@ arXiv: 1906.05201}
   keywords = {[hebbian],\#nosource,Psychology / Cognitive Psychology \& Cognition,Psychology / General,Psychology / Neuropsychology,Psychology / Physiological Psychology}
 }
 
-@article{henning,
+@inproceedings{henning2021,
   title = {Posterior {{Meta-Replay}} for {{Continual Learning}}},
-  author = {Henning, Christian},
-  url = {https://proceedings.neurips.cc/paper/2021/file/761b42cfff120aac30045f7a110d0256-Paper.pdf},
-  keywords = {⛔ No DOI found}
+  booktitle = {Advances in {{Neural Information Processing Systems}}},
+  author = {Henning, Christian and Cervera, Maria and D'Angelo, Francesco and Oswald, Johannes Von and Traber, Regina and Ehret, Benjamin and Kobayashi, Seijin and Grewe, Benjamin F. and Sacramento, Joao},
+  year = {2021},
+  url = {https://openreview.net/forum?id=AhuVLaYp6gn},
+  urldate = {2022-03-28},
+  abstract = {Learning task-specific posteriors continually in a shared meta-model and studying the properties of predictive uncertainty for task inference.},
+  langid = {english},
+  keywords = {[bayes]}
 }
 
 @phdthesis{henning2022,
@@ -2291,6 +2295,7 @@ arXiv: 1612.00796}
   publisher = {{Springer International Publishing}},
   address = {{Cham}},
   doi = {10.1007/978-3-319-55849-3_57},
+  url = {https://link.springer.com/chapter/10.1007/978-3-319-55849-3_57},
   abstract = {Training neural networks to quickly learn new skills without forgetting previously learned skills is an important open challenge in machine learning. A common problem for adaptive networks that can learn during their lifetime is that the weights encoding a particular task are often overridden when a new task is learned. This paper takes a step in overcoming this limitation by building on the recently proposed Evolving Neural Turing Machine (ENTM) approach. In the ENTM, neural networks are augmented with an external memory component that they can write to and read from, which allows them to store associations quickly and over long periods of time. The results in this paper demonstrate that the ENTM is able to perform one-shot learning in reinforcement learning tasks without catastrophic forgetting of previously stored associations. Additionally, we introduce a new ENTM default jump mechanism that makes it easier to find unused memory location and therefor facilitates the evolution of continual learning networks. Our results suggest that augmenting evolving networks with an external memory component is not only a viable mechanism for adaptive behaviors in neuroevolution but also allows these networks to perform continual and one-shot learning at the same time.},
   isbn = {978-3-319-55849-3},
   langid = {english}
@@ -2596,22 +2601,6 @@ The authors observe how minima of CL and Multitask algorithms lie in a linear su
   note = {Comment: preprint}
 }
 
-@article{mirzadeh2022a,
-  title = {Architecture {{Matters}} in {{Continual Learning}}},
-  author = {Mirzadeh, Seyed Iman and Chaudhry, Arslan and Yin, Dong and Nguyen, Timothy and Pascanu, Razvan and Gorur, Dilan and Farajtabar, Mehrdad},
-  year = {2022},
-  journal = {arXiv:2202.00275 [cs]},
-  eprint = {2202.00275},
-  eprinttype = {arxiv},
-  primaryclass = {cs},
-  url = {http://arxiv.org/abs/2202.00275},
-  urldate = {2022-02-02},
-  abstract = {A large body of research in continual learning is devoted to overcoming the catastrophic forgetting of neural networks by designing new algorithms that are robust to the distribution shifts. However, the majority of these works are strictly focused on the "algorithmic" part of continual learning for a "fixed neural network architecture", and the implications of using different architectures are mostly neglected. Even the few existing continual learning methods that modify the model assume a fixed architecture and aim to develop an algorithm that efficiently uses the model throughout the learning experience. However, in this work, we show that the choice of architecture can significantly impact the continual learning performance, and different architectures lead to different trade-offs between the ability to remember previous tasks and learning new ones. Moreover, we study the impact of various architectural decisions, and our findings entail best practices and recommendations that can improve the continual learning performance.},
-  archiveprefix = {arXiv},
-  keywords = {⛔ No DOI found,Computer Science - Artificial Intelligence,Computer Science - Machine Learning},
-  annotation = {ZSCC: 0000000}
-}
-
 @inproceedings{mitchell1993,
   title = {Explanation-{{Based Neural Network Learning}} for {{Robot Control}}},
   booktitle = {Advances in {{Neural Information Processing Systems}} 5},
@@ -2674,21 +2663,6 @@ The authors observe how minima of CL and Multitask algorithms lie in a linear su
   urldate = {2021-10-09},
   langid = {english},
   keywords = {\#nosource}
-}
-
-@article{mundt2021a,
-  title = {{{CLEVA-Compass}}: {{A Continual Learning EValuation Assessment Compass}} to {{Promote Research Transparency}} and {{Comparability}}},
-  shorttitle = {{{CLEVA-Compass}}},
-  author = {Mundt, Martin and Lang, Steven and Delfosse, Quentin and Kersting, Kristian},
-  year = {2021},
-  journal = {arXiv},
-  eprint = {2110.03331},
-  eprinttype = {arxiv},
-  url = {http://arxiv.org/abs/2110.03331},
-  urldate = {2021-12-04},
-  abstract = {What is the state of the art in continual machine learning? Although a natural question for predominant static benchmarks, the notion to train systems in a lifelong manner entails a plethora of additional challenges with respect to set-up and evaluation. The latter have recently sparked a growing amount of critiques on prominent algorithm-centric perspectives and evaluation protocols being too narrow, resulting in several attempts at constructing guidelines in favor of specific desiderata or arguing against the validity of prevalent assumptions. In this work, we depart from this mindset and argue that the goal of a precise formulation of desiderata is an ill-posed one, as diverse applications may always warrant distinct scenarios. Instead, we introduce the Continual Learning EValuation Assessment Compass, CLEVA-Compass for short. The compass provides the visual means to both identify how approaches are practically reported and how works can simultaneously be contextualized in the broader literature landscape. In addition to promoting compact specification in the spirit of recent replication trends, the CLEVA-Compass thus provides an intuitive chart to understand the priorities of individual systems, where they resemble each other, and what elements are missing towards a fair comparison.},
-  archiveprefix = {arXiv},
-  keywords = {\#nosource,⛔ No DOI found,Computer Science - Machine Learning}
 }
 
 @inproceedings{mundt2021b,
@@ -2951,22 +2925,6 @@ The authors observe how minima of CL and Multitask algorithms lie in a linear su
   keywords = {[cifar],[mnist],\#nosource,Catastrophic forgetting,Continual learning,Embedding,Regularization,Trainable activation functions}
 }
 
-@article{pomponi2020a,
-  title = {Efficient Continual Learning in Neural Networks with Embedding Regularization},
-  author = {Pomponi, Jary and Scardapane, Simone and Lomonaco, Vincenzo and Uncini, Aurelio},
-  year = {2020},
-  journal = {Neurocomputing},
-  volume = {397},
-  pages = {139--148},
-  issn = {09252312},
-  doi = {10/gnq325},
-  url = {https://linkinghub.elsevier.com/retrieve/pii/S092523122030151X},
-  urldate = {2022-01-26},
-  abstract = {Continual learning of deep neural networks is a key requirement for scaling them up to more complex applicative scenarios and for achieving real lifelong learning of these architectures. Previous approaches to the problem have considered either the progressive increase in the size of the networks, or have tried to regularize the network behavior to equalize it with respect to previously observed tasks. In the latter case, it is essential to understand what type of information best represents this past behavior. Common techniques include regularizing the past outputs, gradients, or individual weights. In this work, we propose a new, relatively simple and efficient method to perform continual learning by regularizing instead the network internal embeddings. To make the approach scalable, we also propose a dynamic sampling strategy to reduce the memory footprint of the required external storage. We show that our method performs favorably with respect to state-of-the-art approaches in the literature, while requiring significantly less space in memory and computational time. In addition, inspired by to recent works, we evaluate the impact of selecting a more flexible model for the activation functions inside the network, evaluating the impact of catastrophic forgetting on the activation functions themselves.},
-  langid = {english},
-  annotation = {ZSCC: 0000022}
-}
-
 @article{pomponi2020b,
   title = {Efficient Continual Learning in Neural Networks with Embedding Regularization},
   author = {Pomponi, Jary and Scardapane, Simone and Lomonaco, Vincenzo and Uncini, Aurelio},
@@ -2979,21 +2937,6 @@ The authors observe how minima of CL and Multitask algorithms lie in a linear su
   url = {https://linkinghub.elsevier.com/retrieve/pii/S092523122030151X},
   urldate = {2022-01-26},
   abstract = {Continual learning of deep neural networks is a key requirement for scaling them up to more complex applicative scenarios and for achieving real lifelong learning of these architectures. Previous approaches to the problem have considered either the progressive increase in the size of the networks, or have tried to regularize the network behavior to equalize it with respect to previously observed tasks. In the latter case, it is essential to understand what type of information best represents this past behavior. Common techniques include regularizing the past outputs, gradients, or individual weights. In this work, we propose a new, relatively simple and efficient method to perform continual learning by regularizing instead the network internal embeddings. To make the approach scalable, we also propose a dynamic sampling strategy to reduce the memory footprint of the required external storage. We show that our method performs favorably with respect to state-of-the-art approaches in the literature, while requiring significantly less space in memory and computational time. In addition, inspired by to recent works, we evaluate the impact of selecting a more flexible model for the activation functions inside the network, evaluating the impact of catastrophic forgetting on the activation functions themselves.},
-  langid = {english},
-  annotation = {ZSCC: 0000022}
-}
-
-@article{pomponi2020c,
-  title = {Efficient Continual Learning in Neural Networks with Embedding Regularization},
-  author = {Pomponi, Jary and Scardapane, Simone and Lomonaco, Vincenzo and Uncini, Aurelio},
-  year = {2020},
-  journal = {Neurocomputing},
-  volume = {397},
-  pages = {139--148},
-  issn = {09252312},
-  doi = {10/gnq325},
-  url = {https://linkinghub.elsevier.com/retrieve/pii/S092523122030151X},
-  urldate = {2022-01-26},
   langid = {english},
   annotation = {ZSCC: 0000022}
 }
@@ -3105,6 +3048,7 @@ The authors observe how minima of CL and Multitask algorithms lie in a linear su
   pages = {285--308},
   issn = {0033-295X},
   doi = {10.1037/0033-295x.97.2.285},
+  url = {https://europepmc.org/article/MED/2186426},
   abstract = {Multilayer connectionist models of memory based on the encoder model using the backpropagation learning rule are evaluated. The models are applied to standard recognition memory procedures in which items are studied sequentially and then tested for retention. Sequential learning in these models leads to 2 major problems. First, well-learned information is forgotten rapidly as new information is learned. Second, discrimination between studied items and new items either decreases or is nonmonotonic as a function of learning. To address these problems, manipulations of the network within the multilayer model and several variants of the multilayer model were examined, including a model with prelearned memory and a context model, but none solved the problems. The problems discussed provide limitations on connectionist models applied to human memory and in tasks where information to be learned is not all available during learning.},
   langid = {english},
   pmid = {2186426},
@@ -3255,6 +3199,7 @@ The authors observe how minima of CL and Multitask algorithms lie in a linear su
   title = {Complementary {{Learning}} for {{Overcoming Catastrophic Forgetting Using Experience Replay}}},
   author = {Rostami, Mohammad and Kolouri, Soheil and Pilly, Praveen K.},
   year = {2019},
+  journal = {arXiv},
   doi = {10.48550/arXiv.1903.04566},
   url = {https://arxiv.org/abs/1903.04566v2},
   urldate = {2022-03-22},
@@ -3967,6 +3912,8 @@ arXiv: 1906.00654}
   author = {Wang, Liyuan and Li, Qian and Zhong, Yi and Zhu, Jun},
   year = {2021},
   journal = {arXiv},
+  url = {https://arxiv.org/abs/2104.09034},
+  abstract = {It is an important yet challenging setting to continually learn new tasks from a few examples. Although numerous efforts have been devoted to either continual learning or few-shot learning, little work has considered this new setting of few-shot continual learning (FSCL), which needs to minimize the catastrophic forgetting to the old tasks and gradually improve the ability of few-shot generalization. In this paper, we provide a first systematic study on FSCL and present an effective solution with deep neural networks. Our solution is based on the observation that continual learning of a task sequence inevitably interferes few-shot generalization, which makes it highly nontrivial to extend few-shot learning strategies to continual learning scenarios. We draw inspirations from the robust brain system and develop a method that (1) interdependently updates a pair of fast / slow weights for continual learning and few-shot learning to disentangle their divergent objectives, inspired by the biological model of meta-plasticity and fast / slow synapse; and (2) applies a brain-inspired two-step consolidation strategy to learn a task sequence without forgetting in the fast weights while improve generalization without overfitting in the slow weights. Extensive results on various benchmarks show that our method achieves a better performance than joint training of all the tasks ever seen. The ability of few-shot generalization is also substantially improved from incoming tasks and examples.},
   keywords = {⛔ No DOI found,continual learning}
 }
 
