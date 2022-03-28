@@ -1,7 +1,7 @@
 # Continual Learning Papers
 
 <p align="center">
-  <img src="https://www.continualai.org/images/continualai_logo_name_black.png" alt="ContinualAI logo"/ width="300px" align="center">
+  <img src="https://github.com/ContinualAI/continual-learning-papers/blob/main/logo.png" alt="ContinualAI logo"/ width="300px" align="center">
 </p>
 
 Continual Learning papers list, curated by ContinualAI. <PAPER_COUNT>
