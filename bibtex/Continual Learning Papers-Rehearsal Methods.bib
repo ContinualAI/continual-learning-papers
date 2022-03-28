@@ -1,5 +1,17 @@
 
 @inproceedings{aljundi2019a,
+  title = {Gradient Based Sample Selection for Online Continual Learning},
+  booktitle = {Advances in {{Neural Information Processing Systems}} 32},
+  author = {Aljundi, Rahaf and Lin, Min and Goujaud, Baptiste and Bengio, Yoshua},
+  editor = {Wallach, H and Larochelle, H and Beygelzimer, A and {d\${\textbackslash}backslash\$textquotesingle Alch{\'e}-Buc}, F and Fox, E and Garnett, R},
+  year = {2019},
+  pages = {11816--11825},
+  publisher = {{Curran Associates, Inc.}},
+  url = {http://papers.nips.cc/paper/9354-gradient-based-sample-selection-for-online-continual-learning.pdf},
+  keywords = {[cifar],[mnist],\#nosource,⛔ No DOI found}
+}
+
+@inproceedings{aljundi2019b,
   title = {Online {{Continual Learning}} with {{Maximal Interfered Retrieval}}},
   booktitle = {Advances in {{Neural Information Processing Systems}} 32},
   author = {Aljundi, Rahaf and Belilovsky, Eugene and Tuytelaars, Tinne and Charlin, Laurent and Caccia, Massimo and Lin, Min and {Page-Caccia}, Lucas},
@@ -9,18 +21,6 @@
   publisher = {{Curran Associates, Inc.}},
   url = {http://papers.nips.cc/paper/9357-online-continual-learning-with-maximal-interfered-retrieval.pdf},
   abstract = {Continual learning, the setting where a learning agent is faced with a never ending stream of data, continues to be a great challenge for modern machine learning systems. In particular the online or "single-pass through the data" setting has gained attention recently as a natural setting that is difficult to tackle. Methods based on replay, either generative or from a stored memory, have been shown to be effective approaches for continual learning, matching or exceeding the state of the art in a number of standard benchmarks. These approaches typically rely on randomly selecting samples from the replay memory or from a generative model, which is suboptimal. In this work we consider a controlled sampling of memories for replay. We retrieve the samples which are most interfered, i.e. whose prediction will be most negatively impacted by the foreseen parameters update. We show a formulation for this sampling criterion in both the generative replay and the experience replay setting, producing consistent gains in performance and greatly reduced forgetting. We release an implementation of our method at https://github.com/optimass/Maximally\_Interfered\_Retrieval},
-  keywords = {[cifar],[mnist],\#nosource,⛔ No DOI found}
-}
-
-@inproceedings{aljundi2019c,
-  title = {Gradient Based Sample Selection for Online Continual Learning},
-  booktitle = {Advances in {{Neural Information Processing Systems}} 32},
-  author = {Aljundi, Rahaf and Lin, Min and Goujaud, Baptiste and Bengio, Yoshua},
-  editor = {Wallach, H and Larochelle, H and Beygelzimer, A and {d\${\textbackslash}backslash\$textquotesingle Alch{\'e}-Buc}, F and Fox, E and Garnett, R},
-  year = {2019},
-  pages = {11816--11825},
-  publisher = {{Curran Associates, Inc.}},
-  url = {http://papers.nips.cc/paper/9354-gradient-based-sample-selection-for-online-continual-learning.pdf},
   keywords = {[cifar],[mnist],\#nosource,⛔ No DOI found}
 }
 
@@ -45,7 +45,29 @@
   annotation = {\_eprint: 2004.03794}
 }
 
-@article{chaudhry2019,
+@inproceedings{belouadah2019,
+  title = {{{IL2M}}: {{Class Incremental Learning With Dual Memory}}},
+  booktitle = {2019 {{IEEE}}/{{CVF International Conference}} on {{Computer Vision}}, {{ICCV}} 2019, {{Seoul}}, {{Korea}} ({{South}}), {{October}} 27 - {{November}} 2, 2019},
+  author = {Belouadah, Eden and Popescu, Adrian},
+  year = {2019},
+  pages = {583--592},
+  publisher = {{IEEE}},
+  doi = {10.1109/ICCV.2019.00067},
+  url = {https://doi.org/10.1109/ICCV.2019.00067}
+}
+
+@inproceedings{belouadah2020,
+  title = {{{ScaIL}}: {{Classifier Weights Scaling}} for {{Class Incremental Learning}}},
+  booktitle = {{{IEEE Winter Conference}} on {{Applications}} of {{Computer Vision}}, {{WACV}} 2020, {{Snowmass Village}}, {{CO}}, {{USA}}, {{March}} 1-5, 2020},
+  author = {Belouadah, Eden and Popescu, Adrian},
+  year = {2020},
+  pages = {1255--1264},
+  publisher = {{IEEE}},
+  doi = {10.1109/WACV45572.2020.9093562},
+  url = {https://doi.org/10.1109/WACV45572.2020.9093562}
+}
+
+@article{chaudhry2019a,
   title = {On {{Tiny Episodic Memories}} in {{Continual Learning}}},
   author = {Chaudhry, Arslan and Rohrbach, Marcus and Elhoseiny, Mohamed and Ajanthan, Thalaiyasingam and Dokania, Puneet K and Torr, Philip H S and Ranzato, Marc'Aurelio},
   year = {2019},
@@ -93,7 +115,7 @@
   note = {The replay memory is of very small size due to the online update of class-representative centroids.}
 }
 
-@inproceedings{hayes2020,
+@inproceedings{hayes2020a,
   title = {{{REMIND Your Neural Network}} to {{Prevent Catastrophic Forgetting}}},
   booktitle = {Proceedings of the 2020 {{ECCV}}},
   author = {Hayes, Tyler L. and Kafle, Kushal and Shrestha, Robik and Acharya, Manoj and Kanan, Christopher},
@@ -163,6 +185,22 @@
   keywords = {[bayes],\#nosource,⛔ No DOI found}
 }
 
+@article{pomponi2020a,
+  title = {Efficient Continual Learning in Neural Networks with Embedding Regularization},
+  author = {Pomponi, Jary and Scardapane, Simone and Lomonaco, Vincenzo and Uncini, Aurelio},
+  year = {2020},
+  journal = {Neurocomputing},
+  volume = {397},
+  pages = {139--148},
+  issn = {09252312},
+  doi = {10/gnq325},
+  url = {https://linkinghub.elsevier.com/retrieve/pii/S092523122030151X},
+  urldate = {2022-01-26},
+  abstract = {Continual learning of deep neural networks is a key requirement for scaling them up to more complex applicative scenarios and for achieving real lifelong learning of these architectures. Previous approaches to the problem have considered either the progressive increase in the size of the networks, or have tried to regularize the network behavior to equalize it with respect to previously observed tasks. In the latter case, it is essential to understand what type of information best represents this past behavior. Common techniques include regularizing the past outputs, gradients, or individual weights. In this work, we propose a new, relatively simple and efficient method to perform continual learning by regularizing instead the network internal embeddings. To make the approach scalable, we also propose a dynamic sampling strategy to reduce the memory footprint of the required external storage. We show that our method performs favorably with respect to state-of-the-art approaches in the literature, while requiring significantly less space in memory and computational time. In addition, inspired by to recent works, we evaluate the impact of selecting a more flexible model for the activation functions inside the network, evaluating the impact of catastrophic forgetting on the activation functions themselves.},
+  langid = {english},
+  annotation = {ZSCC: 0000022}
+}
+
 @inproceedings{prabhu2020,
   title = {{{GDumb}}: {{A Simple Approach}} That {{Questions Our Progress}} in {{Continual Learning}}},
   shorttitle = {{{GDumb}}},
@@ -188,7 +226,9 @@
   author = {Rebuffi, Sylvestre-Alvise and Kolesnikov, Alexander and Sperl, Georg and Lampert, Christoph H},
   year = {2017},
   url = {http://openaccess.thecvf.com/content_cvpr_2017/papers/Rebuffi_iCaRL_Incremental_Classifier_CVPR_2017_paper.pdf},
-  keywords = {[cifar],\#nosource}
+  keywords = {[cifar],\#nosource},
+  note = {Official Code\\
+\href{https://github.com/srebuffi/iCaRL}{https://github.com/srebuffi/iCaRL}}
 }
 
 @inproceedings{rolnick2019,
@@ -230,7 +270,7 @@
   keywords = {\#nosource}
 }
 
-@article{vandeven2020a,
+@article{vandeven2020,
   title = {Brain-Inspired Replay for Continual Learning with Artificial Neural Networks},
   author = {{van de Ven}, Gido M. and Siegelmann, Hava T. and Tolias, Andreas S.},
   year = {2020},
@@ -250,7 +290,8 @@
   author = {Verwimp, Eli and De Lange, Matthias and Tuytelaars, Tinne},
   year = {2021},
   pages = {9385--9394},
-  url = {https://openaccess.thecvf.com/content/ICCV2021/html/Verwimp_Rehearsal_Revealed_The_Limits_and_Merits_of_Revisiting_Samples_in_ICCV_2021_paper.html}
+  url = {https://openaccess.thecvf.com/content/ICCV2021/html/Verwimp_Rehearsal_Revealed_The_Limits_and_Merits_of_Revisiting_Samples_in_ICCV_2021_paper.html},
+  keywords = {\#nosource}
 }
 
 @inproceedings{vonoswald2020,

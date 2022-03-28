@@ -116,6 +116,23 @@ An evaluation of RNNs (LSTM and LMN) inspired by Progressive networks, leading t
   annotation = {\_eprint: 1804.09458}
 }
 
+@article{heuillet2020,
+  title = {Explainability in {{Deep Reinforcement Learning}}},
+  author = {Heuillet, Alexandre and Couthouis, Fabien and {D{\'i}az-Rodr{\'i}guez}, Natalia},
+  year = {2020},
+  journal = {arXiv:2008.06693 [cs]},
+  eprint = {2008.06693},
+  eprinttype = {arxiv},
+  primaryclass = {cs},
+  url = {http://arxiv.org/abs/2008.06693},
+  urldate = {2021-10-22},
+  abstract = {A large set of the explainable Artificial Intelligence (XAI) literature is emerging on feature relevance techniques to explain a deep neural network (DNN) output or explaining models that ingest image source data. However, assessing how XAI techniques can help understand models beyond classification tasks, e.g. for reinforcement learning (RL), has not been extensively studied. We review recent works in the direction to attain Explainable Reinforcement Learning (XRL), a relatively new subfield of Explainable Artificial Intelligence, intended to be used in general public applications, with diverse audiences, requiring ethical, responsible and trustable algorithms. In critical situations where it is essential to justify and explain the agent's behaviour, better explainability and interpretability of RL models could help gain scientific insight on the inner workings of what is still considered a black box. We evaluate mainly studies directly linking explainability to RL, and split these into two categories according to the way the explanations are generated: transparent algorithms and post-hoc explainaility. We also review the most prominent XAI works from the lenses of how they could potentially enlighten the further deployment of the latest advances in RL, in the demanding present and future of everyday problems.},
+  archiveprefix = {arXiv},
+  keywords = {⛔ No DOI found,Computer Science - Artificial Intelligence},
+  annotation = {ZSCC: NoCitationData[s0]},
+  note = {Comment: Article accepted at Knowledge-Based Systems}
+}
+
 @inproceedings{hung2019,
   title = {Compacting, {{Picking}} and {{Growing}} for {{Unforgetting Continual Learning}}},
   booktitle = {{{NeurIPS}}},
@@ -133,7 +150,8 @@ An evaluation of RNNs (LSTM and LMN) inspired by Progressive networks, leading t
   author = {Lee, Soochan and Ha, Junsoo and Zhang, Dongsu and Kim, Gunhee},
   year = {2020},
   url = {https://openreview.net/forum?id=SJxSOJStPr},
-  keywords = {\#nosource}
+  keywords = {\#nosource,⛔ No DOI found},
+  annotation = {ZSCC: 0000058}
 }
 
 @article{li2019a,
@@ -194,6 +212,39 @@ An evaluation of RNNs (LSTM and LMN) inspired by Progressive networks, leading t
   abstract = {Naively trained neural networks tend to experience catastrophic forgetting in sequential task settings, where data from previous tasks are unavailable. A number of methods, using various model expansion strategies, have been proposed recently as possible solutions. However, determining how much to expand the model is left to the practitioner, and typically a constant schedule is chosen for simplicity, regardless of how complex the incoming task is. Instead, we propose a principled Bayesian nonparametric approach based on the Indian Buffet Process (IBP) prior, letting the data determine how much to expand the model complexity. We pair this with a factorization of the neural network's weight matrices. Such an approach allows us to scale the number of factors of each weight matrix to the complexity of the task, while the IBP prior imposes weight factor sparsity and encourages factor reuse, promoting positive knowledge transfer between tasks. We demonstrate the effectiveness of our method on a number of continual learning benchmarks and analyze how weight factors are allocated and reused throughout the training.},
   keywords = {[bayes],[cifar],[mnist],[sparsity],\#nosource,⛔ No DOI found},
   annotation = {\_eprint: 2004.10098}
+}
+
+@article{mirzadeh2022,
+  title = {Architecture {{Matters}} in {{Continual Learning}}},
+  author = {Mirzadeh, Seyed Iman and Chaudhry, Arslan and Yin, Dong and Nguyen, Timothy and Pascanu, Razvan and Gorur, Dilan and Farajtabar, Mehrdad},
+  year = {2022},
+  journal = {arXiv},
+  eprint = {2202.00275},
+  eprinttype = {arxiv},
+  url = {http://arxiv.org/abs/2202.00275},
+  urldate = {2022-02-02},
+  abstract = {A large body of research in continual learning is devoted to overcoming the catastrophic forgetting of neural networks by designing new algorithms that are robust to the distribution shifts. However, the majority of these works are strictly focused on the "algorithmic" part of continual learning for a "fixed neural network architecture", and the implications of using different architectures are mostly neglected. Even the few existing continual learning methods that modify the model assume a fixed architecture and aim to develop an algorithm that efficiently uses the model throughout the learning experience. However, in this work, we show that the choice of architecture can significantly impact the continual learning performance, and different architectures lead to different trade-offs between the ability to remember previous tasks and learning new ones. Moreover, we study the impact of various architectural decisions, and our findings entail best practices and recommendations that can improve the continual learning performance.},
+  archiveprefix = {arXiv},
+  keywords = {⛔ No DOI found,Computer Science - Artificial Intelligence,Computer Science - Machine Learning},
+  annotation = {ZSCC: 0000000},
+  note = {Comment: preprint}
+}
+
+@article{pomponi2021,
+  title = {Structured {{Ensembles}}: {{An}} Approach to Reduce the Memory Footprint of Ensemble Methods},
+  shorttitle = {Structured {{Ensembles}}},
+  author = {Pomponi, Jary and Scardapane, Simone and Uncini, Aurelio},
+  year = {2021},
+  journal = {Neural Networks},
+  volume = {144},
+  pages = {407--418},
+  issn = {08936080},
+  doi = {10/gn9qm3},
+  url = {https://linkinghub.elsevier.com/retrieve/pii/S0893608021003579},
+  urldate = {2022-01-26},
+  abstract = {In this paper, we propose a novel ensembling technique for deep neural networks, which is able to drastically reduce the required memory compared to alternative approaches. In particular, we propose to extract multiple sub-networks from a single, untrained neural network by solving an end-to-end optimization task combining differentiable scaling over the original architecture, with multiple regularization terms favouring the diversity of the ensemble. Since our proposal aims to detect and extract sub-structures, we call it Structured Ensemble. On a large experimental evaluation, we show that our method can achieve higher or comparable accuracy to competing methods while requiring significantly less storage. In addition, we evaluate our ensembles in terms of predictive calibration and uncertainty, showing they compare favourably with the state-of-the-art. Finally, we draw a link with the continual learning literature, and we propose a modification of our framework to handle continuous streams of tasks with a sub-linear memory cost. We compare with a number of alternative strategies to mitigate catastrophic forgetting, highlighting advantages in terms of average accuracy and memory.},
+  langid = {english},
+  annotation = {ZSCC: 0000000}
 }
 
 @inproceedings{rao2019,
