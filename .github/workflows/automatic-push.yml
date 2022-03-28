@@ -9,7 +9,7 @@
 # Website: avalanche.continualai.org                                           #
 ################################################################################
 
-name: automaticpush
+name: automaticupdate
 
 on: 
   push:
@@ -54,28 +54,28 @@ jobs:
         with:
           branch: main
           github_token: ${{ secrets.GITHUB_TOKEN }}
-      - name: clone website repository
-        uses: actions/checkout@v2
-        with:
-          repository: ContinualAI/website
-          path: website
-          token: ${{ secrets.REPORT_TOKEN }}
-          persist-credentials: false
-          fetch-depth: 0
-      - name: commit changes
-        run: |
-          cp embedding-plot.html website/_includes
-          cp papers.md website/
-          cd website/
-          git config --local user.email ${{ secrets.EMAIL }}
-          git config --local user.name ${{ secrets.NAME }}
-          git pull
-          git add .
-          git commit -m "Update papers files" -a || true
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          repository: ContinualAI/website
-          branch: master
-          directory: website
-          github_token: ${{ secrets.REPORT_TOKEN }} 
+      #- name: clone website repository
+      #  uses: actions/checkout@v2
+      #  with:
+      #    repository: ContinualAI/website
+      #    path: website
+      #    token: ${{ secrets.REPORT_TOKEN }}
+      #    persist-credentials: false
+      #    fetch-depth: 0
+      #- name: commit changes
+      #  run: |
+      #    cp embedding-plot.html website/_includes
+      #    cp papers.md website/
+      #    cd website/
+      #    git config --local user.email ${{ secrets.EMAIL }}
+      #    git config --local user.name ${{ secrets.NAME }}
+      #    git pull
+      #    git add .
+      #    git commit -m "Update papers files" -a || true
+      #- name: Push changes
+      #  uses: ad-m/github-push-action@master
+      #  with:
+      #    repository: ContinualAI/website
+      #    branch: master
+      #    directory: website
+      #    github_token: ${{ secrets.REPORT_TOKEN }} 
