@@ -26,6 +26,20 @@
   keywords = {[sparsity],\#nosource,biology,Catastrophic forgetting,Connectionism,Connectionist networks,Interference,Learning,Memory,Neuroscience}
 }
 
+@article{goodfellow2015,
+  title = {An {{Empirical Investigation}} of {{Catastrophic Forgetting}} in {{Gradient-Based Neural Networks}}},
+  author = {Goodfellow, Ian J. and Mirza, Mehdi and Xiao, Da and Courville, Aaron and Bengio, Yoshua},
+  year = {2015},
+  journal = {arXiv},
+  eprint = {1312.6211},
+  eprinttype = {arxiv},
+  url = {http://arxiv.org/abs/1312.6211},
+  urldate = {2022-03-28},
+  abstract = {Catastrophic forgetting is a problem faced by many machine learning models and algorithms. When trained on one task, then trained on a second task, many machine learning models "forget" how to perform the first task. This is widely believed to be a serious problem for neural networks. Here, we investigate the extent to which the catastrophic forgetting problem occurs for modern neural networks, comparing both established and recent gradient-based training algorithms and activation functions. We also examine the effect of the relationship between the first task and the second task on catastrophic forgetting. We find that it is always best to train using the dropout algorithm--the dropout algorithm is consistently best at adapting to the new task, remembering the old task, and has the best tradeoff curve between these two extremes. We find that different tasks and relationships between tasks result in very different rankings of activation function performance. This suggests the choice of activation function should always be cross-validated.},
+  archiveprefix = {arXiv},
+  keywords = {/unread,⛔ No DOI found,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing,Statistics - Machine Learning}
+}
+
 @article{grossberg1980,
   title = {How Does a Brain Build a Cognitive Code?},
   author = {Grossberg, Stephen},
@@ -60,20 +74,6 @@
 }
 
 @article{lesort2021,
-  title = {Understanding {{Continual Learning Settings}} with {{Data Distribution Drift Analysis}}},
-  author = {Lesort, Timoth{\'e}e and Caccia, Massimo and Rish, Irina},
-  year = {2021},
-  journal = {arXiv},
-  eprint = {2104.01678},
-  eprinttype = {arxiv},
-  url = {http://arxiv.org/abs/2104.01678},
-  urldate = {2021-04-11},
-  abstract = {Classical machine learning algorithms often assume that the data are drawn i.i.d. from a stationary probability distribution. Recently, continual learning emerged as a rapidly growing area of machine learning where this assumption is relaxed, namely, where the data distribution is non-stationary, i.e., changes over time. However, data distribution drifts may interfere with the learning process and erase previously learned knowledge; thus, continual learning algorithms must include specialized mechanisms to deal with such distribution drifts. A distribution drift may change the class labels distribution, the input distribution, or both. Moreover, distribution drifts might be abrupt or gradual. In this paper, we aim to identify and categorize different types of data distribution drifts and potential assumptions about them, to better characterize various continual-learning scenarios. Moreover, we propose to use the distribution drift framework to provide more precise definitions of several terms commonly used in the continual learning field.},
-  archiveprefix = {arXiv},
-  keywords = {\#nosource,⛔ No DOI found,Computer Science - Artificial Intelligence,Computer Science - Machine Learning}
-}
-
-@article{lesort2021a,
   ids = {lesort2021b},
   title = {Continual {{Learning}} in {{Deep Networks}}: An {{Analysis}} of the {{Last Layer}}},
   shorttitle = {Continual {{Learning}} in {{Deep Networks}}},
@@ -85,6 +85,20 @@
   url = {http://arxiv.org/abs/2106.01834},
   urldate = {2021-06-04},
   abstract = {We study how different output layer types of a deep neural network learn and forget in continual learning settings. We describe the three factors affecting catastrophic forgetting in the output layer: (1) weights modifications, (2) interferences, and (3) projection drift. Our goal is to provide more insights into how different types of output layers can address (1) and (2). We also propose potential solutions and evaluate them on several benchmarks. We show that the best-performing output layer type depends on the data distribution drifts or the amount of data available. In particular, in some cases where a standard linear layer would fail, it is sufficient to change the parametrization and get significantly better performance while still training with SGD. Our results and analysis shed light on the dynamics of the output layer in continual learning scenarios and help select the best-suited output layer for a given scenario.},
+  archiveprefix = {arXiv},
+  keywords = {\#nosource,⛔ No DOI found,Computer Science - Artificial Intelligence,Computer Science - Machine Learning}
+}
+
+@article{lesort2021a,
+  title = {Understanding {{Continual Learning Settings}} with {{Data Distribution Drift Analysis}}},
+  author = {Lesort, Timoth{\'e}e and Caccia, Massimo and Rish, Irina},
+  year = {2021},
+  journal = {arXiv},
+  eprint = {2104.01678},
+  eprinttype = {arxiv},
+  url = {http://arxiv.org/abs/2104.01678},
+  urldate = {2021-04-11},
+  abstract = {Classical machine learning algorithms often assume that the data are drawn i.i.d. from a stationary probability distribution. Recently, continual learning emerged as a rapidly growing area of machine learning where this assumption is relaxed, namely, where the data distribution is non-stationary, i.e., changes over time. However, data distribution drifts may interfere with the learning process and erase previously learned knowledge; thus, continual learning algorithms must include specialized mechanisms to deal with such distribution drifts. A distribution drift may change the class labels distribution, the input distribution, or both. Moreover, distribution drifts might be abrupt or gradual. In this paper, we aim to identify and categorize different types of data distribution drifts and potential assumptions about them, to better characterize various continual-learning scenarios. Moreover, we propose to use the distribution drift framework to provide more precise definitions of several terms commonly used in the continual learning field.},
   archiveprefix = {arXiv},
   keywords = {\#nosource,⛔ No DOI found,Computer Science - Artificial Intelligence,Computer Science - Machine Learning}
 }
@@ -104,7 +118,7 @@
   keywords = {\#nosource,Mermillod2013a}
 }
 
-@article{mirzadeh2020a,
+@article{mirzadeh2020,
   title = {Understanding the {{Role}} of {{Training Regimes}} in {{Continual Learning}}},
   author = {Mirzadeh, Seyed Iman and Farajtabar, Mehrdad and Pascanu, Razvan and Ghasemzadeh, Hassan},
   year = {2020},

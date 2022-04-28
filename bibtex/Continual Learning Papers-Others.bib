@@ -34,11 +34,12 @@
   volume = {11130},
   pages = {151--157},
   publisher = {{Springer}},
-  doi = {10.1007/978-3-030-11012-3_11},
-  url = {https://doi.org/10.1007/978-3-030-11012-3\_11}
+  doi = {10/gpt3cs},
+  url = {https://doi.org/10.1007/978-3-030-11012-3\_11},
+  keywords = {/unread}
 }
 
-@inproceedings{belouadah2020a,
+@inproceedings{belouadah2020,
   title = {Active {{Class Incremental Learning}} for {{Imbalanced Datasets}}},
   booktitle = {Computer {{Vision}} - {{ECCV}} 2020 {{Workshops}} - {{Glasgow}}, {{UK}}, {{August}} 23-28, 2020, {{Proceedings}}, {{Part VI}}},
   author = {Belouadah, Eden and Popescu, Adrian and Aggarwal, Umang and Saci, L{\'e}o},
@@ -48,8 +49,9 @@
   volume = {12540},
   pages = {146--162},
   publisher = {{Springer}},
-  doi = {10.1007/978-3-030-65414-6_12},
-  url = {https://doi.org/10.1007/978-3-030-65414-6\_12}
+  doi = {10/gpt3cv},
+  url = {https://doi.org/10.1007/978-3-030-65414-6\_12},
+  keywords = {/unread}
 }
 
 @inproceedings{belouadah2020b,
@@ -59,7 +61,7 @@
   year = {2020},
   publisher = {{BMVA Press}},
   url = {https://www.bmvc2020-conference.com/assets/papers/0743.pdf},
-  keywords = {⛔ No DOI found}
+  keywords = {/unread,⛔ No DOI found}
 }
 
 @article{cha2021,
@@ -108,10 +110,11 @@
   author = {Cossu, Andrea and Ziosi, Marta and Lomonaco, Vincenzo},
   year = {2021},
   publisher = {{EAI CORE}},
+  doi = {10/gpt3cw},
   url = {https://arxiv.org/abs/2111.09437},
   abstract = {The increasing attention on Artificial Intelligence (AI) regulamentation has led to the definition of a set of ethical principles grouped into the Sustainable AI framework. In this article, we identify Continual Learning, an active area of AI research, as a promising approach towards the design of systems compliant with the Sustainable AI principles. While Sustainable AI outlines general desiderata for ethical applications, Continual Learning provides means to put such desiderata into practice.},
   copyright = {All rights reserved},
-  keywords = {\#nosource,⛔ No DOI found}
+  keywords = {\#nosource}
 }
 
 @article{diethe2019,
@@ -188,7 +191,7 @@
   note = {Comment: 12 pages, 5 figures, 3 tables arXiv: 1903.04476}
 }
 
-@inproceedings{hayes2020,
+@inproceedings{hayes2020a,
   title = {Lifelong {{Machine Learning}} with {{Deep Streaming Linear Discriminant Analysis}}},
   booktitle = {{{CLVision Workshop}} at {{CVPR}} 2020},
   author = {Hayes, Tyler L and Kanan, Christopher},
@@ -219,7 +222,7 @@
   urldate = {2022-03-28},
   abstract = {Learning task-specific posteriors continually in a shared meta-model and studying the properties of predictive uncertainty for task inference.},
   langid = {english},
-  keywords = {[bayes]}
+  keywords = {[bayes],/unread}
 }
 
 @inproceedings{jung2018,
@@ -299,17 +302,6 @@
   annotation = {\_eprint: 1910.04112}
 }
 
-@article{li2020,
-  title = {Continual {{Learning Using Task Conditional Neural Networks}}},
-  author = {Li, Honglin and Barnaghi, Payam and Enshaeifar, Shirin and Ganz, Frieder},
-  year = {2020},
-  journal = {arXiv},
-  url = {http://arxiv.org/abs/2005.05080},
-  abstract = {Conventional deep learning models have limited capacity in learning multiple tasks sequentially. The issue of forgetting the previously learned tasks in continual learning is known as catastrophic forgetting or interference. When the input data or the goal of learning change, a continual model will learn and adapt to the new status. However, the model will not remember or recognise any revisits to the previous states. This causes performance reduction and re-training curves in dealing with periodic or irregularly reoccurring changes in the data or goals. The changes in goals or data are referred to as new tasks in a continual learning model. Most of the continual learning methods have a task-known setup in which the task identities are known in advance to the learning model. We propose Task Conditional Neural Networks (TCNN) that does not require to known the reoccurring tasks in advance. We evaluate our model on standard datasets using MNIST and CIFAR10, and also a real-world dataset that we have collected in a remote healthcare monitoring study (i.e. TIHM dataset). The proposed model outperforms the state-of-the-art solutions in continual learning and adapting to new tasks that are not defined in advance.},
-  keywords = {[cifar],[mnist],\#nosource,⛔ No DOI found},
-  annotation = {\_eprint: 2005.05080}
-}
-
 @article{li2020a,
   title = {Energy-{{Based Models}} for {{Continual Learning}}},
   author = {Li, Shuang and Du, Yilun and {van de Ven}, Gido M. and Torralba, Antonio and Mordatch, Igor},
@@ -322,18 +314,18 @@
   note = {The paper introduces Energy-Based models for classification in single incremental task + new classes (i.e. class incremental) scenarios. The model does not require task labels at test time, nor task boundaries at training time. It does not make use of replay.}
 }
 
-@article{liu2020,
-  title = {Continual {{Universal Object Detection}}},
-  author = {Liu, Xialei and Yang, Hao and Ravichandran, Avinash and Bhotika, Rahul and Soatto, Stefano},
+@article{li2020b,
+  title = {Continual {{Learning Using Task Conditional Neural Networks}}},
+  author = {Li, Honglin and Barnaghi, Payam and Enshaeifar, Shirin and Ganz, Frieder},
   year = {2020},
   journal = {arXiv},
-  url = {http://arxiv.org/abs/2002.05347},
-  abstract = {Object detection has improved significantly in recent years on multiple challenging benchmarks. However, most existing detectors are still domain-specific, where the models are trained and tested on a single domain. When adapting these detectors to new domains, they often suffer from catastrophic forgetting of previous knowledge. In this paper, we propose a continual object detector that can learn sequentially from different domains without forgetting. First, we explore learning the object detector continually in different scenarios across various domains and categories. Learning from the analysis, we propose attentive feature distillation leveraging both bottom-up and top-down attentions to mitigate forgetting. It takes advantage of attention to ignore the noisy background information and feature distillation to provide strong supervision. Finally, for the most challenging scenarios, we propose an adaptive exemplar sampling method to leverage exemplars from previous tasks for less forgetting effectively. The experimental results show the excellent performance of our proposed method in three different scenarios across seven different object detection datasets.},
-  keywords = {\#nosource,⛔ No DOI found},
-  annotation = {\_eprint: 2002.05347}
+  url = {http://arxiv.org/abs/2005.05080},
+  abstract = {Conventional deep learning models have limited capacity in learning multiple tasks sequentially. The issue of forgetting the previously learned tasks in continual learning is known as catastrophic forgetting or interference. When the input data or the goal of learning change, a continual model will learn and adapt to the new status. However, the model will not remember or recognise any revisits to the previous states. This causes performance reduction and re-training curves in dealing with periodic or irregularly reoccurring changes in the data or goals. The changes in goals or data are referred to as new tasks in a continual learning model. Most of the continual learning methods have a task-known setup in which the task identities are known in advance to the learning model. We propose Task Conditional Neural Networks (TCNN) that does not require to known the reoccurring tasks in advance. We evaluate our model on standard datasets using MNIST and CIFAR10, and also a real-world dataset that we have collected in a remote healthcare monitoring study (i.e. TIHM dataset). The proposed model outperforms the state-of-the-art solutions in continual learning and adapting to new tasks that are not defined in advance.},
+  keywords = {[cifar],[mnist],\#nosource,⛔ No DOI found},
+  annotation = {\_eprint: 2005.05080}
 }
 
-@article{liu2020a,
+@article{liu2020,
   title = {Mnemonics {{Training}}: {{Multi-Class Incremental Learning}} without {{Forgetting}}},
   author = {Liu, Yaoyao and Liu, An-An and Su, Yuting and Schiele, Bernt and Sun, Qianru},
   year = {2020},
@@ -342,6 +334,17 @@
   abstract = {Multi-Class Incremental Learning (MCIL) aims to learn new concepts by incrementally updating a model trained on previous concepts. However, there is an inherent trade-off to effectively learning new concepts without catastrophic forgetting of previous ones. To alleviate this issue, it has been proposed to keep around a few examples of the previous concepts but the effectiveness of this approach heavily depends on the representativeness of these examples. This paper proposes a novel and automatic framework we call mnemonics, where we parameterize exemplars and make them optimizable in an end-to-end manner. We train the framework through bilevel optimizations, i.e., model-level and exemplar-level. We conduct extensive experiments on three MCIL benchmarks, CIFAR-100, ImageNet-Subset and ImageNet, and show that using mnemonics exemplars can surpass the state-of-the-art by a large margin. Interestingly and quite intriguingly, the mnemonics exemplars tend to be on the boundaries between different classes.},
   keywords = {[cifar],[imagenet],\#nosource,⛔ No DOI found},
   annotation = {\_eprint: 2002.10211}
+}
+
+@article{liu2020a,
+  title = {Continual {{Universal Object Detection}}},
+  author = {Liu, Xialei and Yang, Hao and Ravichandran, Avinash and Bhotika, Rahul and Soatto, Stefano},
+  year = {2020},
+  journal = {arXiv},
+  url = {http://arxiv.org/abs/2002.05347},
+  abstract = {Object detection has improved significantly in recent years on multiple challenging benchmarks. However, most existing detectors are still domain-specific, where the models are trained and tested on a single domain. When adapting these detectors to new domains, they often suffer from catastrophic forgetting of previous knowledge. In this paper, we propose a continual object detector that can learn sequentially from different domains without forgetting. First, we explore learning the object detector continually in different scenarios across various domains and categories. Learning from the analysis, we propose attentive feature distillation leveraging both bottom-up and top-down attentions to mitigate forgetting. It takes advantage of attention to ignore the noisy background information and feature distillation to provide strong supervision. Finally, for the most challenging scenarios, we propose an adaptive exemplar sampling method to leverage exemplars from previous tasks for less forgetting effectively. The experimental results show the excellent performance of our proposed method in three different scenarios across seven different object detection datasets.},
+  keywords = {\#nosource,⛔ No DOI found},
+  annotation = {\_eprint: 2002.05347}
 }
 
 @inproceedings{madaan2021,
@@ -458,18 +461,7 @@
   keywords = {[cifar],[imagenet],[mnist],\#nosource,⛔ No DOI found}
 }
 
-@article{saha2020,
-  title = {Structured {{Compression}} and {{Sharing}} of {{Representational Space}} for {{Continual Learning}}},
-  author = {Saha, Gobinda and Garg, Isha and Ankit, Aayush and Roy, Kaushik},
-  year = {2020},
-  journal = {arXiv},
-  url = {http://arxiv.org/abs/2001.08650},
-  abstract = {Humans are skilled at learning adaptively and efficiently throughout their lives, but learning tasks incrementally causes artificial neural networks to overwrite relevant information learned about older tasks, resulting in 'Catastrophic Forgetting'. Efforts to overcome this phenomenon suffer from poor utilization of resources in many ways, such as through the need to save older data or parametric importance scores, or to grow the network architecture. We propose an algorithm that enables a network to learn continually and efficiently by partitioning the representational space into a Core space, that contains the condensed information from previously learned tasks, and a Residual space, which is akin to a scratch space for learning the current task. The information in the Residual space is then compressed using Principal Component Analysis and added to the Core space, freeing up parameters for the next task. We evaluate our algorithm on P-MNIST, CIFAR-10 and CIFAR-100 datasets. We achieve comparable accuracy to state-of-the-art methods while overcoming the problem of catastrophic forgetting completely. Additionally, we get up to 4.5x improvement in energy efficiency during inference due to the structured nature of the resulting architecture.},
-  keywords = {[cifar],[mnist],\#nosource,⛔ No DOI found},
-  annotation = {\_eprint: 2001.08650}
-}
-
-@inproceedings{saha2020a,
+@inproceedings{saha2020,
   title = {Gradient {{Projection Memory}} for {{Continual Learning}}},
   booktitle = {International {{Conference}} on {{Learning Representations}}},
   author = {Saha, Gobinda and Roy, Kaushik},
@@ -481,6 +473,17 @@
   keywords = {\#nosource}
 }
 
+@article{saha2020a,
+  title = {Structured {{Compression}} and {{Sharing}} of {{Representational Space}} for {{Continual Learning}}},
+  author = {Saha, Gobinda and Garg, Isha and Ankit, Aayush and Roy, Kaushik},
+  year = {2020},
+  journal = {arXiv},
+  url = {http://arxiv.org/abs/2001.08650},
+  abstract = {Humans are skilled at learning adaptively and efficiently throughout their lives, but learning tasks incrementally causes artificial neural networks to overwrite relevant information learned about older tasks, resulting in 'Catastrophic Forgetting'. Efforts to overcome this phenomenon suffer from poor utilization of resources in many ways, such as through the need to save older data or parametric importance scores, or to grow the network architecture. We propose an algorithm that enables a network to learn continually and efficiently by partitioning the representational space into a Core space, that contains the condensed information from previously learned tasks, and a Residual space, which is akin to a scratch space for learning the current task. The information in the Residual space is then compressed using Principal Component Analysis and added to the Core space, freeing up parameters for the next task. We evaluate our algorithm on P-MNIST, CIFAR-10 and CIFAR-100 datasets. We achieve comparable accuracy to state-of-the-art methods while overcoming the problem of catastrophic forgetting completely. Additionally, we get up to 4.5x improvement in energy efficiency during inference due to the structured nature of the resulting architecture.},
+  keywords = {[cifar],[mnist],\#nosource,⛔ No DOI found},
+  annotation = {\_eprint: 2001.08650}
+}
+
 @inproceedings{slim2022,
   title = {Dataset {{Knowledge Transfer}} for {{Class-Incremental Learning}} without {{Memory}}},
   booktitle = {{{IEEE}}/{{CVF Winter Conference}} on {{Applications}} of {{Computer Vision}}, {{WACV}} 2022, {{Waikoloa}}, {{HI}}, {{USA}}, {{January}} 3-8, 2022},
@@ -488,8 +491,9 @@
   year = {2022},
   pages = {3311--3320},
   publisher = {{IEEE}},
-  doi = {10.1109/WACV51458.2022.00337},
-  url = {https://doi.org/10.1109/WACV51458.2022.00337}
+  doi = {10/gpt3cr},
+  url = {https://doi.org/10.1109/WACV51458.2022.00337},
+  keywords = {/unread}
 }
 
 @article{swaroop2019,

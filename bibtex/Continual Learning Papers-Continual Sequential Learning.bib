@@ -60,7 +60,7 @@ An evaluation of RNNs (LSTM and LMN) inspired by Progressive networks, leading t
   note = {The hidden state pre-activation and the input are projected during learning in a subspace orthogonal to all the ones of the previous tasks, if new task is dissimilar. Projection on orthogonal subspace avoid interference with previous knowledge.}
 }
 
-@inproceedings{french1997a,
+@inproceedings{french1997,
   title = {Using {{Pseudo-Recurrent Connectionist Networks}} to {{Solve}} the {{Problem}} of {{Sequential Learning}}},
   booktitle = {Proceedings of the 19th {{Annual Cognitive Science Society Conference}}},
   author = {French, Robert},
@@ -84,7 +84,7 @@ An evaluation of RNNs (LSTM and LMN) inspired by Progressive networks, leading t
 The authors leverage a bayesian framework in which the parameters of a model are sampled from a generating distribution. This distribution, parameterized by a task label, is used together with a VAE to consolidate online previous and current knowledge. Inference does not require task labels and exploit an ensemble of model, sampled from the generating distribution.}
 }
 
-@inproceedings{li2020b,
+@inproceedings{li2020,
   title = {Compositional {{Language Continual Learning}}},
   booktitle = {Eighth {{International Conference}} on {{Learning Representations}}},
   author = {Li, Yuanpeng and Zhao, Liang and Church, Kenneth and Elhoseiny, Mohamed},
@@ -161,6 +161,22 @@ The authors leverage a bayesian framework in which the parameters of a model are
   urldate = {2021-01-06},
   abstract = {Catastrophic forgetting and capacity saturation are the central challenges of any parametric lifelong learning system. In this work, we study these challenges in the context of sequential supervised learning with an emphasis on recurrent neural networks. To evaluate the models in the lifelong learning setting, we propose a curriculum-based, simple, and intuitive benchmark where the models are trained on tasks with increasing levels of difficulty. To measure the impact of catastrophic forgetting, the model is tested on all the previous tasks as it completes any task. As a step toward developing true lifelong learning systems, we unify gradient episodic memory (a catastrophic forgetting alleviation approach) and Net2Net (a capacity expansion approach). Both models are proposed in the context of feedforward networks, and we evaluate the feasibility of using them for recurrent networks. Evaluation on the proposed benchmark shows that the unified model is more suitable than the constituent models for lifelong learning setting.},
   keywords = {[rnn],\#nosource}
+}
+
+@article{zhang2022,
+  title = {Continual {{Sequence Generation}} with {{Adaptive Compositional Modules}}},
+  author = {Zhang, Yanzhe and Wang, Xuezhi and Yang, Diyi},
+  year = {2022},
+  journal = {ACL},
+  eprint = {2203.10652},
+  eprinttype = {arxiv},
+  url = {http://arxiv.org/abs/2203.10652},
+  urldate = {2022-04-06},
+  abstract = {Continual learning is essential for real-world deployment when there is a need to quickly adapt the model to new tasks without forgetting knowledge of old tasks. Existing work on continual sequence generation either always reuses existing parameters to learn new tasks, which is vulnerable to catastrophic forgetting on dissimilar tasks, or blindly adds new parameters for every new task, which could prevent knowledge sharing between similar tasks. To get the best of both worlds, in this work, we propose continual sequence generation with adaptive compositional modules to adaptively add modules in transformer architectures and compose both old and new modules for new tasks. We also incorporate pseudo experience replay to facilitate knowledge transfer in those shared modules. Experiment results on various sequences of generation tasks show that our framework can adaptively add modules or reuse modules based on task similarity, outperforming state-of-the-art baselines in terms of both performance and parameter efficiency. We make our code public at https://github.com/GT-SALT/Adaptive-Compositional-Modules.},
+  archiveprefix = {arXiv},
+  keywords = {[nlp],/unread,⛔ No DOI found,Computer Science - Artificial Intelligence,Computer Science - Computation and Language},
+  annotation = {ZSCC:00006},
+  note = {Comment: 15 pages, ACL 2022}
 }
 
 

@@ -25,6 +25,19 @@
   note = {Comment: Under review}
 }
 
+@inproceedings{hayes2018,
+  title = {New {{Metrics}} and {{Experimental Paradigms}} for {{Continual Learning}}},
+  booktitle = {2018 {{IEEE}}/{{CVF Conference}} on {{Computer Vision}} and {{Pattern Recognition Workshops}} ({{CVPRW}})},
+  author = {Hayes, Tyler L. and Kemker, Ronald and Cahill, Nathan D. and Kanan, Christopher},
+  year = {2018},
+  pages = {2112--21123},
+  issn = {2160-7516},
+  doi = {10/gfx42x},
+  url = {https://ieeexplore.ieee.org/document/8575441},
+  abstract = {In order for a robotic agent to learn successfully in an uncontrolled environment, it must be able to immediately alter its behavior. Deep neural networks are the dominant approach for classification tasks in computer vision, but typical algorithms and architectures are incapable of immediately learning new tasks without catastrophically forgetting previously acquired knowledge. There has been renewed interest in solving this problem, but there are limitations to existing solutions, including poor performance compared to offline models, large memory footprints, and learning slowly. In this Abstract, we formalize the continual learning paradigm and propose new benchmarks for assessing continual learning agents.},
+  keywords = {/unread,Computational modeling,Data models,Measurement,Neural networks,Robots,Task analysis,Training}
+}
+
 @article{kruszewski2020,
   title = {Evaluating {{Online Continual Learning}} with {{CALM}}},
   author = {Kruszewski, Germ{\'a}n and Sorodoc, Ionut-Teodor and Mikolov, Tomas},
@@ -52,7 +65,7 @@
   keywords = {[vision],\#nosource}
 }
 
-@inproceedings{lomonaco2020,
+@inproceedings{lomonaco2020a,
   title = {Continual {{Reinforcement Learning}} in {{3D Non-Stationary Environments}}},
   booktitle = {Proceedings of the {{IEEE}}/{{CVF Conference}} on {{Computer Vision}} and {{Pattern Recognition Workshops}}},
   author = {Lomonaco, Vincenzo and Desai, Karan and Culurciello, Eugenio and Maltoni, Davide},
@@ -111,6 +124,23 @@
   abstract = {Existing literature in Continual Learning (CL) has focused on overcoming catastrophic forgetting, the inability of the learner to recall how to perform tasks observed in the past. There are however other desirable properties of a CL system, such as the ability to transfer knowledge from previous tasks and to scale memory and compute sub-linearly with the number of tasks. Since most current benchmarks focus only on forgetting using short streams of tasks, we first propose a new suite of benchmarks to probe CL algorithms across these new axes. Finally, we introduce a new modular architecture, whose modules represent atomic skills that can be composed to perform a certain task. Learning a task reduces to figuring out which past modules to re-use, and which new modules to instantiate to solve the current task. Our learning algorithm leverages a task-driven prior over the exponential search space of all possible ways to combine modules, enabling efficient learning on long streams of tasks. Our experiments show that this modular architecture and learning algorithm perform competitively on widely used CL benchmarks while yielding superior performance on the more challenging benchmarks we introduce in this work.},
   archiveprefix = {arXiv},
   keywords = {\#nosource,⛔ No DOI found,Computer Science - Machine Learning}
+}
+
+@article{villa2022,
+  title = {{{vCLIMB}}: {{A Novel Video Class Incremental Learning Benchmark}}},
+  shorttitle = {{{vCLIMB}}},
+  author = {Villa, Andr{\'e}s and Alhamoud, Kumail and Alc{\'a}zar, Juan Le{\'o}n and Heilbron, Fabian Caba and Escorcia, Victor and Ghanem, Bernard},
+  year = {2022},
+  journal = {arXiv},
+  eprint = {2201.09381},
+  eprinttype = {arxiv},
+  url = {http://arxiv.org/abs/2201.09381},
+  urldate = {2022-04-07},
+  abstract = {Continual learning (CL) is under-explored in the video domain. The few existing works contain splits with imbalanced class distributions over the tasks, or study the problem in unsuitable datasets. We introduce vCLIMB, a novel video continual learning benchmark. vCLIMB is a standardized test-bed to analyze catastrophic forgetting of deep models in video continual learning. In contrast to previous work, we focus on class incremental continual learning with models trained on a sequence of disjoint tasks, and distribute the number of classes uniformly across the tasks. We perform in-depth evaluations of existing CL methods in vCLIMB, and observe two unique challenges in video data. The selection of instances to store in episodic memory is performed at the frame level. Second, untrimmed training data influences the effectiveness of frame sampling strategies. We address these two challenges by proposing a temporal consistency regularization that can be applied on top of memory-based continual learning methods. Our approach significantly improves the baseline, by up to 24\% on the untrimmed continual learning task.},
+  archiveprefix = {arXiv},
+  keywords = {/unread,⛔ No DOI found,Computer Science - Computer Vision and Pattern Recognition},
+  annotation = {ZSCC:00000},
+  note = {Comment: An updated version of our CVPR 2022 paper (oral); v2 adds minor text changes. The code of our benchmark can be found at: https://vclimb.netlify.app/}
 }
 
 
