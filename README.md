@@ -4,7 +4,7 @@
   <img src="https://github.com/ContinualAI/continual-learning-papers/blob/main/logo.png" alt="ContinualAI logo"/ width="300px" align="center">
 </p>
 
-Continual Learning papers list, curated by ContinualAI. **Search among 317 papers!**
+Continual Learning papers list, curated by ContinualAI. **Search among 325 papers!**
  
 You can browse the list in this file or interactively on the [ContinualAI website](https://www.continualai.org/papers/).
 
@@ -90,10 +90,11 @@ We will periodically export the bibtex to keep the list updated. In case we forg
 
 ### Applications
 
-**25 papers**
+**26 papers**
 
 In this section we maintain a list of all applicative papers produced on continual learning and related topics.
 
+- [Continual Learning for Unsupervised Anomaly Detection in Continuous Auditing of Financial Accounting Data](https://arxiv.org/abs/2112.13215) by Hamed Hemati, Marco Schreyer and Damian Borth. *AAAI 2022 Workshop on AI in Financial Services: Adaptiveness, Resilience & Governance*, 2022. 
 - [The Traffic Flow Prediction Method Using the Incremental Learning-Based CNN-LTSM Model: The Solution of Mobile Application](https://www.hindawi.com/journals/misy/2021/5579451/) by Yanli Shao, Yiming Zhao, Feng Yu, Huawei Zhu and Jinglong Fang. *Mobile Information Systems*, e5579451, 2021. [experimental] 
 - [Findings of the First Shared Task on Lifelong Learning Machine Translation](https://www.aclweb.org/anthology/2020.wmt-1.2) by Loïc Barrault, Magdalena Biesialska, Marta R. Costa-jussà, Fethi Bougares and Olivier Galibert. *Proceedings of the Fifth Conference on Machine Translation*, 56--64, 2020. [framework] [nlp] 
 - [Continual Learning of Predictive Models in Video Sequences via Variational Autoencoders](http://arxiv.org/abs/2006.01945) by Damian Campo, Giulia Slavic, Mohamad Baydoun, Lucio Marcenaro and Carlo Regazzoni. *arXiv*, 2020. [vision] 
@@ -161,10 +162,11 @@ In this section we collect all the papers introducing a continual learning strat
 
 ### Benchmarks
 
-**9 papers**
+**11 papers**
 
 In this section we list all the papers related to new benchmarks proposals for continual learning and related topics. 
 
+- [vCLIMB: A Novel Video Class Incremental Learning Benchmark](http://arxiv.org/abs/2201.09381) by Andrés Villa, Kumail Alhamoud, Juan León Alcázar, Fabian Caba Heilbron, Victor Escorcia and Bernard Ghanem. *arXiv*, 2022. 
 - [Is Class-Incremental Enough for Continual Learning?](http://arxiv.org/abs/2112.02925) by Andrea Cossu, Gabriele Graffieti, Lorenzo Pellegrini, Davide Maltoni, Davide Bacciu, Antonio Carta and Vincenzo Lomonaco. *arXiv*, 2021. 
 - [Efficient Continual Learning with Modular Networks and Task-Driven Priors](http://arxiv.org/abs/2012.12631) by Tom Veniat, Ludovic Denoyer and Marc'Aurelio Ranzato. *ICLR*, 2021. 
 - [Defining Benchmarks for Continual Few-Shot Learning](http://arxiv.org/abs/2004.11967) by Antreas Antoniou, Massimiliano Patacchiola, Mateusz Ochal and Amos Storkey. *arXiv*, 2020. [imagenet] 
@@ -173,19 +175,20 @@ In this section we list all the papers related to new benchmarks proposals for c
 - [Stream-51: Streaming Classification and Novelty Detection From Videos](https://openaccess.thecvf.com/content_CVPRW_2020/html/w15/Roady_Stream-51_Streaming_Classification_and_Novelty_Detection_From_Videos_CVPRW_2020_paper.html) by Ryne Roady, Tyler L. Hayes, Hitesh Vaidya and Christopher Kanan. *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops*, 228--229, 2020. 
 - [OpenLORIS-Object: A Robotic Vision Dataset and Benchmark for Lifelong Deep Learning](http://arxiv.org/abs/1911.06487) by Qi She, Fan Feng, Xinyue Hao, Qihan Yang, Chuanlin Lan, Vincenzo Lomonaco, Xuesong Shi, Zhengwei Wang, Yao Guo, Yimin Zhang, Fei Qiao and Rosa H M Chan. *arXiv*, 1--8, 2019. [vision] 
 - [Incremental Object Learning From Contiguous Views](https://openaccess.thecvf.com/content_CVPR_2019/html/Stojanov_Incremental_Object_Learning_From_Contiguous_Views_CVPR_2019_paper.html) by Stefan Stojanov, Samarth Mishra, Ngoc Anh Thai, Nikhil Dhanda, Ahmad Humayun, Chen Yu, Linda B. Smith and James M. Rehg. *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition*, 8777--8786, 2019. 
+- [New Metrics and Experimental Paradigms for Continual Learning](https://ieeexplore.ieee.org/document/8575441) by Tyler L. Hayes, Ronald Kemker, Nathan D. Cahill and Christopher Kanan. *2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)*, 2112--21123, 2018. 
 - [CORe50: A New Dataset and Benchmark for Continuous Object Recognition](http://proceedings.mlr.press/v78/lomonaco17a.html) by Vincenzo Lomonaco and Davide Maltoni. *Proceedings of the 1st Annual Conference on Robot Learning*, 17--26, 2017. [vision] 
 
 ### Bioinspired Methods
 
-**25 papers**
+**24 papers**
 
 In this section we list all the papers related to bioinspired continual learning approaches.
 
 - [A Biologically Plausible Audio-Visual Integration Model for Continual Learning](http://arxiv.org/abs/2007.08855) by Wenjie Chen, Fengtong Du, Ye Wang and Lihong Cao. *IJCNN*, 2021. 
 - [Synaptic Metaplasticity in Binarized Neural Networks](https://www.nature.com/articles/s41467-021-22768-y) by Axel Laborieux, Maxence Ernoult, Tifenn Hirtzlin and Damien Querlioz. *Nature Communications*, 2549, 2021. 
 - [Controlled Forgetting: Targeted Stimulation and Dopaminergic Plasticity Modulation for Unsupervised Lifelong Learning in Spiking Neural Networks](https://www.frontiersin.org/article/10.3389/fnins.2020.00007/full) by Jason M. Allred and Kaushik Roy. *Frontiers in Neuroscience*, 7, 2020. [spiking] 
-- [Cognitively-Inspired Model for Incremental Learning Using a Few Examples](https://openaccess.thecvf.com/content_CVPRW_2020/html/w15/Ayub_Cognitively-Inspired_Model_for_Incremental_Learning_Using_a_Few_Examples_CVPRW_2020_paper.html) by A. Ayub and A. R. Wagner. *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops*, 2020. [cifar] [cubs] [dual] 
 - [Storing Encoded Episodes as Concepts for Continual Learning](https://arxiv.org/abs/2007.06637 http://arxiv.org/abs/2007.06637) by Ali Ayub and Alan R. Wagner. *arXiv*, 2020. [generative] [imagenet] [mnist] 
+- [Cognitively-Inspired Model for Incremental Learning Using a Few Examples](https://openaccess.thecvf.com/content_CVPRW_2020/html/w15/Ayub_Cognitively-Inspired_Model_for_Incremental_Learning_Using_a_Few_Examples_CVPRW_2020_paper.html) by A. Ayub and A. R. Wagner. *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops*, 2020. [cifar] [cubs] [dual] 
 - [Spiking Neural Predictive Coding for Continual Learning from Data Streams](http://arxiv.org/abs/1908.08655) by  and Alexander Ororbia. *arXiv*, 2020. [spiking] 
 - [Brain-like Replay for Continual Learning with Artificial Neural Networks](https://baicsworkshop.github.io/pdf/BAICS_8.pdf) by Gido M. van de Ven, Hava T. Siegelmann and Andreas S. Tolias. *International Conference on Learning Representations (Workshop on Bridging AI and Cognitive Science)*, 2020. [cifar] 
 - [Selfless Sequential Learning](https://openreview.net/forum?id=Bkxbrn0cYX) by Rahaf Aljundi, Marcus Rohrbach and Tinne Tuytelaars. *ICLR*, 2019. [cifar] [mnist] [sparsity] 
@@ -196,7 +199,6 @@ In this section we list all the papers related to bioinspired continual learning
 - [Differentiable Plasticity: Training Plastic Neural Networks with Backpropagation](http://proceedings.mlr.press/v80/miconi18a.html) by Thomas Miconi, Kenneth Stanley and Jeff Clune. *International Conference on Machine Learning*, 3559--3568, 2018. 
 - [Lifelong Learning of Spatiotemporal Representations With Dual-Memory Recurrent Self-Organization](https://www.frontiersin.org/articles/10.3389/fnbot.2018.00078/full) by German I Parisi, Jun Tani, Cornelius Weber and Stefan Wermter. *Frontiers in Neurorobotics*, 2018. [core50] [dual] [rnn] [som] 
 - [SLAYER: Spike Layer Error Reassignment in Time](http://papers.nips.cc/paper/7415-slayer-spike-layer-error-reassignment-in-time.pdf) by Sumit Bam Shrestha and Garrick Orchard. *Advances in Neural Information Processing Systems 31*, 1412--1421, 2018. 
-- [Born to Learn: The Inspiration, Progress, and Future of Evolved Plastic Artificial Neural Networks](https://www.sciencedirect.com/science/article/pii/S0893608018302120) by Andrea Soltoggio, Kenneth O. Stanley and Sebastian Risi. *Neural Networks*, 48--67, 2018. 
 - [Neurogenesis-Inspired Dictionary Learning: Online Model Adaption in a Changing World](https://arxiv.org/abs/1701.06106) by Sahil Garg, Irina Rish, Guillermo Cecchi and Aurelie Lozano. *IJCAI International Joint Conference on Artificial Intelligence*, 1696--1702, 2017. [nlp] [vision] 
 - [Diffusion-Based Neuromodulation Can Eliminate Catastrophic Forgetting in Simple Neural Networks](http://arxiv.org/abs/1705.07241 http://dx.doi.org/10.1371/journal.pone.0187736) by Roby Velez and Jeff Clune. *PLoS ONE*, 1--31, 2017. 
 - [How Do Neurons Operate on Sparse Distributed Representations? A Mathematical Theory of Sparsity, Neurons and Active Dendrites](http://arxiv.org/abs/1601.00720) by Subutai Ahmad and Jeff Hawkins. *arXiv*, 1--23, 2016. [hebbian] [sparsity] 
@@ -209,14 +211,14 @@ In this section we list all the papers related to bioinspired continual learning
 
 ### Catastrophic Forgetting Studies
 
-**16 papers**
+**17 papers**
 
 In this section we list all the major contributions trying to understand catastrophic forgetting and its implication in machines that learn continually.
 
 - [Architecture Matters in Continual Learning](http://arxiv.org/abs/2202.00275) by Seyed Iman Mirzadeh, Arslan Chaudhry, Dong Yin, Timothy Nguyen, Razvan Pascanu, Dilan Gorur and Mehrdad Farajtabar. *arXiv*, 2022. 
 - [Continual Learning in the Teacher-Student Setup: Impact of Task Similarity](http://proceedings.mlr.press/v139/lee21e.html) by Sebastian Lee, Sebastian Goldt and Andrew Saxe. *International Conference on Machine Learning*, 6109--6119, 2021. 
-- [Understanding Continual Learning Settings with Data Distribution Drift Analysis](http://arxiv.org/abs/2104.01678) by Timothée Lesort, Massimo Caccia and Irina Rish. *arXiv*, 2021. 
 - [Continual Learning in Deep Networks: An Analysis of the Last Layer](http://arxiv.org/abs/2106.01834) by Timothée Lesort, Thomas George and Irina Rish. *arXiv*, 2021. 
+- [Understanding Continual Learning Settings with Data Distribution Drift Analysis](http://arxiv.org/abs/2104.01678) by Timothée Lesort, Massimo Caccia and Irina Rish. *arXiv*, 2021. 
 - [Wide Neural Networks Forget Less Catastrophically](http://arxiv.org/abs/2110.11526) by Seyed Iman Mirzadeh, Arslan Chaudhry, Huiyi Hu, Razvan Pascanu, Dilan Gorur and Mehrdad Farajtabar. *arXiv*, 2021. 
 - [Does Continual Learning = Catastrophic Forgetting?](http://arxiv.org/abs/2101.07295) by Anh Thai, Stefan Stojanov, Isaac Rehg and James M. Rehg. *arXiv*, 2021. 
 - [Sequential Mastery of Multiple Visual Tasks: Networks Naturally Learn to Learn and Forget to Forget](https://openaccess.thecvf.com/content_CVPR_2020/papers/Davidson_Sequential_Mastery_of_Multiple_Visual_Tasks_Networks_Naturally_Learn_to_CVPR_2020_paper.pdf) by Guy Davidson and Michael C Mozer. *CVPR*, 9282--9293, 2020. [vision] 
@@ -226,6 +228,7 @@ In this section we list all the major contributions trying to understand catastr
 - [A Study on Catastrophic Forgetting in Deep LSTM Networks](http://link.springer.com/10.1007/978-3-030-30484-3_56) by Monika Schak and Alexander Gepperth. *Artificial Neural Networks and Machine Learning – ICANN 2019: Deep Learning*, 714--728, 2019. [rnn] 
 - [An Empirical Study of Example Forgetting during Deep Neural Network Learning](https://openreview.net/forum?id=BJlxm30cKm) by Mariya Toneva, Alessandro Sordoni, Remi Tachet des Combes, Adam Trischler, Yoshua Bengio and Geoffrey J Gordon. *International Conference on Learning Representations*, 2019. [cifar] [mnist] 
 - [Localizing Catastrophic Forgetting in Neural Networks](http://arxiv.org/abs/1906.02568) by Felix Wiewel and Bin Yang. *arXiv*, 2019. [mnist] 
+- [An Empirical Investigation of Catastrophic Forgetting in Gradient-Based Neural Networks](http://arxiv.org/abs/1312.6211) by Ian J. Goodfellow, Mehdi Mirza, Da Xiao, Aaron Courville and Yoshua Bengio. *arXiv*, 2015. 
 - [The Stability-Plasticity Dilemma: Investigating the Continuum from Catastrophic Forgetting to Age-Limited Learning Effects](http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3732997%7B%5C&%7Dtool=pmcentrez%7B%5C&%7Drendertype=abstract http://journal.frontiersin.org/article/10.3389/fpsyg.2013.00504/abstract) by Martial Mermillod, Aurélia Bugaiska and Patrick Bonin. *Frontiers in Psychology*, 504, 2013. 
 - [Catastrophic Forgetting in Connectionist Networks](https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(99)01294-2) by  and Robert French. *Trends in Cognitive Sciences*, 128--135, 1999. [sparsity] 
 - [How Does a Brain Build a Cognitive Code?](https://psycnet.apa.org/record/1980-06768-001) by  and Stephen Grossberg. *Psychological Review*, 1--51, 1980. 
@@ -305,10 +308,11 @@ In this section we list all the papers related to the continual Reinforcement Le
 
 ### Continual Sequential Learning
 
-**12 papers**
+**13 papers**
 
 Here we maintain a list of all the papers related to the continual learning at the intersection with sequential learning.
 
+- [Continual Sequence Generation with Adaptive Compositional Modules](http://arxiv.org/abs/2203.10652) by Yanzhe Zhang, Xuezhi Wang and Diyi Yang. *ACL*, 2022. [nlp] 
 - [Continual Learning for Recurrent Neural Networks: An Empirical Evaluation](https://www.sciencedirect.com/science/article/pii/S0893608021002847) by Andrea Cossu, Antonio Carta, Vincenzo Lomonaco and Davide Bacciu. *Neural Networks*, 607--627, 2021. [rnn] 
 - [Continual Competitive Memory: A Neural System for Online Task-Free Lifelong Learning](http://arxiv.org/abs/2106.13300) by  and Alexander G. Ororbia. *arXiv*, 2021. 
 - [Continual Learning with Gated Incremental Memories for Sequential Data Processing](http://arxiv.org/abs/2004.04077) by Andrea Cossu, Antonio Carta and Davide Bacciu. *Proceedings of the 2020 International Joint Conference on Neural Networks (IJCNN 2020)*, 2020. [mnist] [rnn] 
@@ -324,13 +328,14 @@ Here we maintain a list of all the papers related to the continual learning at t
 
 ### Dissertation and Theses
 
-**8 papers**
+**9 papers**
 
 In this section we maintain a list of all the dissertation and thesis produced on continual learning and related topics.
 
 - [Knowledge Uncertainty and Lifelong Learning in Neural Systems](https://www.research-collection.ethz.ch/handle/20.500.11850/523790) by  and Christian Henning. , 2022. 
 - [Large-Scale Deep Class-Incremental Learning. (Apprentissage Incrémental Profond à Large ̧́helle)](https://tel.archives-ouvertes.fr/tel-03478553) by  and Eden Belouadah. , 2021. 
 - [Continual Learning: Tackling Catastrophic Forgetting in Deep Neural Networks with Replay Processes](http://arxiv.org/abs/2007.00487) by  and Timoth'ee Lesort. *arXiv*, 2020. [cifar] [framework] [generative] [mnist] [vision] 
+- [Open Set Classification for Deep Learning in Large-Scale and Continual Learning Models](https://scholarworks.rit.edu/theses/10592) by  and Ryne Roady. *Theses*, 2020. 
 - [Continual Learning in Neural Networks](https://arxiv.org/abs/1910.02718) by  and Rahaf Aljundi. *arXiv*, 2019. [cifar] [imagenet] [mnist] [vision] 
 - [Continual Deep Learning via Progressive Learning](http://researchbank.rmit.edu.au/eserv/rmit:162646/Fayek.pdf) by  and Haytham M. Fayek. *RMIT University*, 2019. [audio] [cifar] [imagenet] [sparsity] 
 - [Continual Learning with Deep Architectures](http://amsdottorato.unibo.it/9073/) by  and Vincenzo Lomonaco. *University of Bologna*, 2019. [core50] [framework] 
@@ -437,12 +442,12 @@ In this section we list all the other papers not appearing in at least one of th
 - [Long Live the Lottery: The Existence of Winning Tickets in Lifelong Learning](https://openreview.net/forum?id=LXMSvPmsm0g) by Tianlong Chen, Zhenyu Zhang, Sijia Liu, Shiyu Chang and Zhangyang Wang. *International Conference on Learning Representations*, 2020. 
 - [Lifelong Machine Learning with Deep Streaming Linear Discriminant Analysis](http://arxiv.org/abs/1909.01520) by Tyler L Hayes and Christopher Kanan. *CLVision Workshop at CVPR 2020*, 1--15, 2020. [core50] [imagenet] 
 - [Continual Learning with Bayesian Neural Networks for Non-Stationary Data](https://iclr.cc/virtual_2020/poster_SJlsFpVtDB.html) by Richard Kurle, Botond Cseke, Alexej Klushyn, Patrick van der Smagt and Stephan Günnemann. *Eighth International Conference on Learning Representations*, 2020. [bayes] 
-- [Continual Learning Using Task Conditional Neural Networks](http://arxiv.org/abs/2005.05080) by Honglin Li, Payam Barnaghi, Shirin Enshaeifar and Frieder Ganz. *arXiv*, 2020. [cifar] [mnist] 
 - [Energy-Based Models for Continual Learning](http://arxiv.org/abs/2011.12216) by Shuang Li, Yilun Du, Gido M. van de Ven, Antonio Torralba and Igor Mordatch. *arXiv*, 2020. [cifar] [experimental] [mnist] 
-- [Continual Universal Object Detection](http://arxiv.org/abs/2002.05347) by Xialei Liu, Hao Yang, Avinash Ravichandran, Rahul Bhotika and Stefano Soatto. *arXiv*, 2020. 
+- [Continual Learning Using Task Conditional Neural Networks](http://arxiv.org/abs/2005.05080) by Honglin Li, Payam Barnaghi, Shirin Enshaeifar and Frieder Ganz. *arXiv*, 2020. [cifar] [mnist] 
 - [Mnemonics Training: Multi-Class Incremental Learning without Forgetting](http://arxiv.org/abs/2002.10211) by Yaoyao Liu, An-An Liu, Yuting Su, Bernt Schiele and Qianru Sun. *arXiv*, 2020. [cifar] [imagenet] 
-- [Structured Compression and Sharing of Representational Space for Continual Learning](http://arxiv.org/abs/2001.08650) by Gobinda Saha, Isha Garg, Aayush Ankit and Kaushik Roy. *arXiv*, 2020. [cifar] [mnist] 
+- [Continual Universal Object Detection](http://arxiv.org/abs/2002.05347) by Xialei Liu, Hao Yang, Avinash Ravichandran, Rahul Bhotika and Stefano Soatto. *arXiv*, 2020. 
 - [Gradient Projection Memory for Continual Learning](https://openreview.net/forum?id=3AOj0RCNC2) by Gobinda Saha and Kaushik Roy. *International Conference on Learning Representations*, 2020. 
+- [Structured Compression and Sharing of Representational Space for Continual Learning](http://arxiv.org/abs/2001.08650) by Gobinda Saha, Isha Garg, Aayush Ankit and Kaushik Roy. *arXiv*, 2020. [cifar] [mnist] 
 - [Gated Linear Networks](http://arxiv.org/abs/1910.01526) by Joel Veness, Tor Lattimore, David Budden, Avishkar Bhoopchand, Christopher Mattern, Agnieszka Grabska-Barwinska, Eren Sezener, Jianan Wang, Peter Toth, Simon Schmitt and Marcus Hutter. *arXiv*, 2020. 
 - [Lifelong Graph Learning](http://arxiv.org/abs/2009.00647) by Chen Wang, Yuheng Qiu and Sebastian Scherer. *arXiv*, 2020. [graph] 
 - [Superposition of Many Models into One](http://arxiv.org/abs/1902.05522) by Brian Cheung, Alex Terekhov, Yubei Chen, Pulkit Agrawal and Bruno Olshausen. *arXiv*, 2019. [cifar] [mnist] 
@@ -522,8 +527,8 @@ In this section we collect all the papers introducing a continual learning strat
 - [Graph-Based Continual Learning](https://openreview.net/forum?id=HHSEKOnPvaO) by Binh Tang and David S. Matteson. *International Conference on Learning Representations*, 2020. 
 - [Brain-Inspired Replay for Continual Learning with Artificial Neural Networks](https://www.nature.com/articles/s41467-020-17866-2) by Gido M. van de Ven, Hava T. Siegelmann and Andreas S. Tolias. *Nature Communications*, 2020. [cifar] [framework] [generative] [mnist] 
 - [Continual Learning with Hypernetworks](https://openreview.net/forum?id=SJgwNerKvB) by Johannes von Oswald, Christian Henning, João Sacramento and Benjamin F Grewe. *International Conference on Learning Representations*, 2020. [cifar] [mnist] 
-- [Gradient Based Sample Selection for Online Continual Learning](http://papers.nips.cc/paper/9354-gradient-based-sample-selection-for-online-continual-learning.pdf) by Rahaf Aljundi, Min Lin, Baptiste Goujaud and Yoshua Bengio. *Advances in Neural Information Processing Systems 32*, 11816--11825, 2019. [cifar] [mnist] 
 - [Online Continual Learning with Maximal Interfered Retrieval](http://papers.nips.cc/paper/9357-online-continual-learning-with-maximal-interfered-retrieval.pdf) by Rahaf Aljundi, Eugene Belilovsky, Tinne Tuytelaars, Laurent Charlin, Massimo Caccia, Min Lin and Lucas Page-Caccia. *Advances in Neural Information Processing Systems 32*, 11849--11860, 2019. [cifar] [mnist] 
+- [Gradient Based Sample Selection for Online Continual Learning](http://papers.nips.cc/paper/9354-gradient-based-sample-selection-for-online-continual-learning.pdf) by Rahaf Aljundi, Min Lin, Baptiste Goujaud and Yoshua Bengio. *Advances in Neural Information Processing Systems 32*, 11816--11825, 2019. [cifar] [mnist] 
 - [IL2M: Class Incremental Learning With Dual Memory](https://doi.org/10.1109/ICCV.2019.00067) by Eden Belouadah and Adrian Popescu. *2019 IEEE/CVF International Conference on Computer Vision, ICCV 2019, Seoul, Korea (South), October 27 - November 2, 2019*, 583--592, 2019. 
 - [On Tiny Episodic Memories in Continual Learning](https://github.com/facebookresearch/agem http://arxiv.org/abs/1902.10486) by Arslan Chaudhry, Marcus Rohrbach, Mohamed Elhoseiny, Thalaiyasingam Ajanthan, Puneet K Dokania, Philip H S Torr and Marc'Aurelio Ranzato. *arXiv*, 2019. [cifar] [imagenet] [mnist] 
 - [Facilitating Bayesian Continual Learning by Natural Gradients and Stein Gradients](http://arxiv.org/abs/1904.10644) by Yu Chen, Tom Diethe and Neil Lawrence. *arXiv*, 2019. [bayes] 
@@ -536,7 +541,7 @@ In this section we collect all the papers introducing a continual learning strat
 
 ### Review Papers and Books
 
-**22 papers**
+**23 papers**
 
 In this section we collect all the main review papers and books on continual learning and related subjects. These may constitute a solid starting point for continual learning newcomers.
 
@@ -557,6 +562,7 @@ In this section we collect all the main review papers and books on continual lea
 - [Generative Models from the Perspective of Continual Learning](http://arxiv.org/abs/1812.09111) by Timothée Lesort, Hugo Caselles-Dupré, Michael Garcia-Ortiz, Andrei Stoian and David Filliat. *Proceedings of the International Joint Conference on Neural Networks*, 2018. [cifar] [generative] [mnist] 
 - [Incremental On-Line Learning: A Review and Comparison of State of the Art Algorithms](https://doi.org/10.1016/j.neucom.2017.06.084) by Viktor Losing, Barbara Hammer and Heiko Wersing. *Neurocomputing*, 1261--1274, 2018. 
 - [A Comprehensive, Application-Oriented Study of Catastrophic Forgetting in DNNs](https://openreview.net/pdf?id=BkloRs0qK7) by B Pfülb and A Gepperth. *ICLR*, 2018. [fashion] [mnist] 
+- [Born to Learn: The Inspiration, Progress, and Future of Evolved Plastic Artificial Neural Networks](https://www.sciencedirect.com/science/article/pii/S0893608018302120) by Andrea Soltoggio, Kenneth O. Stanley and Sebastian Risi. *Neural Networks*, 48--67, 2018. 
 - [Avoiding Catastrophic Forgetting](https://linkinghub.elsevier.com/retrieve/pii/S1364661317300736) by  and Michael E. Hasselmo. *Trends in Cognitive Sciences*, 407--408, 2017. 
 - [Lifelong Machine Learning: A Paradigm for Continuous Learning](https://doi.org/10.1007/s11704-016-6903-6) by  and Bing Liu. *Frontiers of Computer Science*, 359--361, 2017. 
 - [Learning in Nonstationary Environments: A Survey](http://ieeexplore.ieee.org/document/7296710/) by Gregory Ditzler, Manuel Roveri, Cesare Alippi and Robi Polikar. *IEEE Computational Intelligence Magazine*, 12--25, 2015. 
