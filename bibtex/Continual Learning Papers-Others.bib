@@ -39,7 +39,7 @@
   keywords = {/unread}
 }
 
-@inproceedings{belouadah2020a,
+@inproceedings{belouadah2020,
   title = {Active {{Class Incremental Learning}} for {{Imbalanced Datasets}}},
   booktitle = {Computer {{Vision}} - {{ECCV}} 2020 {{Workshops}} - {{Glasgow}}, {{UK}}, {{August}} 23-28, 2020, {{Proceedings}}, {{Part VI}}},
   author = {Belouadah, Eden and Popescu, Adrian and Aggarwal, Umang and Saci, L{\'e}o},
@@ -76,7 +76,8 @@
   urldate = {2021-07-01},
   abstract = {Recent breakthroughs in self-supervised learning show that such algorithms learn visual representations that can be transferred better to unseen tasks than joint-training methods relying on task-specific supervision. In this paper, we found that the similar holds in the continual learning con-text: contrastively learned representations are more robust against the catastrophic forgetting than jointly trained representations. Based on this novel observation, we propose a rehearsal-based continual learning algorithm that focuses on continually learning and maintaining transferable representations. More specifically, the proposed scheme (1) learns representations using the contrastive learning objective, and (2) preserves learned representations using a self-supervised distillation step. We conduct extensive experimental validations under popular benchmark image classification datasets, where our method sets the new state-of-the-art performance.},
   archiveprefix = {arXiv},
-  keywords = {\#nosource,⛔ No DOI found,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning}
+  keywords = {\#nosource,⛔ No DOI found,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning},
+  note = {Comment: 14 pages, 5 figures}
 }
 
 @inproceedings{chen2020,
@@ -158,7 +159,8 @@
   author = {Farquhar, Sebastian and Gal, Yarin},
   year = {2018},
   url = {http://bayesiandeeplearning.org/2018/papers/74.pdf},
-  keywords = {[bayes],[cifar],[mnist],\#nosource,⛔ No DOI found}
+  keywords = {[bayes],[cifar],[mnist],\#nosource,⛔ No DOI found},
+  note = {The authors distinguish between prior-focused and likelihood-focused bayesian methods and then combine the two. They carefully analyze the difference between multi-head and single-head approach.}
 }
 
 @incollection{french2019,
@@ -185,10 +187,11 @@
   journal = {arXiv},
   url = {http://arxiv.org/abs/1903.04476},
   abstract = {We introduce Continual Learning via Neural Pruning (CLNP), a new method aimed at lifelong learning in fixed capacity models based on neuronal model sparsification. In this method, subsequent tasks are trained using the inactive neurons and filters of the sparsified network and cause zero deterioration to the performance of previous tasks. In order to deal with the possible compromise between model sparsity and performance, we formalize and incorporate the concept of graceful forgetting: the idea that it is preferable to suffer a small amount of forgetting in a controlled manner if it helps regain network capacity and prevents uncontrolled loss of performance during the training of future tasks. CLNP also provides simple continual learning diagnostic tools in terms of the number of free neurons left for the training of future tasks as well as the number of neurons that are being reused. In particular, we see in experiments that CLNP verifies and automatically takes advantage of the fact that the features of earlier layers are more transferable. We show empirically that CLNP leads to significantly improved results over current weight elasticity based methods.},
-  keywords = {[cifar],[mnist],[sparsity],\#nosource,⛔ No DOI found,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computi,Quantitative Biology - Neurons and Cognition,Statistics - Machine Learning}
+  keywords = {[cifar],[mnist],[sparsity],\#nosource,⛔ No DOI found,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computi,Quantitative Biology - Neurons and Cognition,Statistics - Machine Learning},
+  note = {Comment: 12 pages, 5 figures, 3 tables arXiv: 1903.04476}
 }
 
-@inproceedings{hayes2020,
+@inproceedings{hayes2020a,
   title = {Lifelong {{Machine Learning}} with {{Deep Streaming Linear Discriminant Analysis}}},
   booktitle = {{{CLVision Workshop}} at {{CVPR}} 2020},
   author = {Hayes, Tyler L and Kanan, Christopher},
@@ -299,7 +302,19 @@
   annotation = {\_eprint: 1910.04112}
 }
 
-@article{li2020,
+@article{li2020a,
+  title = {Energy-{{Based Models}} for {{Continual Learning}}},
+  author = {Li, Shuang and Du, Yilun and {van de Ven}, Gido M. and Torralba, Antonio and Mordatch, Igor},
+  year = {2020},
+  journal = {arXiv},
+  url = {http://arxiv.org/abs/2011.12216},
+  abstract = {We motivate Energy-Based Models (EBMs) as a promising model class for continual learning problems. Instead of tackling continual learning via the use of external memory, growing models, or regularization, EBMs have a natural way to support a dynamically-growing number of tasks or classes that causes less interference with previously learned information. We find that EBMs outperform the baseline methods by a large margin on several continual learning benchmarks. We also show that EBMs are adaptable to a more general continual learning setting where the data distribution changes without the notion of explicitly delineated tasks. These observations point towards EBMs as a class of models naturally inclined towards the continual learning regime.},
+  keywords = {[cifar],[experimental],[mnist],\#nosource,⛔ No DOI found},
+  annotation = {\_eprint: 2011.12216},
+  note = {The paper introduces Energy-Based models for classification in single incremental task + new classes (i.e. class incremental) scenarios. The model does not require task labels at test time, nor task boundaries at training time. It does not make use of replay.}
+}
+
+@article{li2020b,
   title = {Continual {{Learning Using Task Conditional Neural Networks}}},
   author = {Li, Honglin and Barnaghi, Payam and Enshaeifar, Shirin and Ganz, Frieder},
   year = {2020},
@@ -310,29 +325,7 @@
   annotation = {\_eprint: 2005.05080}
 }
 
-@article{li2020a,
-  title = {Energy-{{Based Models}} for {{Continual Learning}}},
-  author = {Li, Shuang and Du, Yilun and {van de Ven}, Gido M. and Torralba, Antonio and Mordatch, Igor},
-  year = {2020},
-  journal = {arXiv},
-  url = {http://arxiv.org/abs/2011.12216},
-  abstract = {We motivate Energy-Based Models (EBMs) as a promising model class for continual learning problems. Instead of tackling continual learning via the use of external memory, growing models, or regularization, EBMs have a natural way to support a dynamically-growing number of tasks or classes that causes less interference with previously learned information. We find that EBMs outperform the baseline methods by a large margin on several continual learning benchmarks. We also show that EBMs are adaptable to a more general continual learning setting where the data distribution changes without the notion of explicitly delineated tasks. These observations point towards EBMs as a class of models naturally inclined towards the continual learning regime.},
-  keywords = {[cifar],[experimental],[mnist],\#nosource,⛔ No DOI found},
-  annotation = {\_eprint: 2011.12216}
-}
-
 @article{liu2020,
-  title = {Continual {{Universal Object Detection}}},
-  author = {Liu, Xialei and Yang, Hao and Ravichandran, Avinash and Bhotika, Rahul and Soatto, Stefano},
-  year = {2020},
-  journal = {arXiv},
-  url = {http://arxiv.org/abs/2002.05347},
-  abstract = {Object detection has improved significantly in recent years on multiple challenging benchmarks. However, most existing detectors are still domain-specific, where the models are trained and tested on a single domain. When adapting these detectors to new domains, they often suffer from catastrophic forgetting of previous knowledge. In this paper, we propose a continual object detector that can learn sequentially from different domains without forgetting. First, we explore learning the object detector continually in different scenarios across various domains and categories. Learning from the analysis, we propose attentive feature distillation leveraging both bottom-up and top-down attentions to mitigate forgetting. It takes advantage of attention to ignore the noisy background information and feature distillation to provide strong supervision. Finally, for the most challenging scenarios, we propose an adaptive exemplar sampling method to leverage exemplars from previous tasks for less forgetting effectively. The experimental results show the excellent performance of our proposed method in three different scenarios across seven different object detection datasets.},
-  keywords = {\#nosource,⛔ No DOI found},
-  annotation = {\_eprint: 2002.05347}
-}
-
-@article{liu2020a,
   title = {Mnemonics {{Training}}: {{Multi-Class Incremental Learning}} without {{Forgetting}}},
   author = {Liu, Yaoyao and Liu, An-An and Su, Yuting and Schiele, Bernt and Sun, Qianru},
   year = {2020},
@@ -341,6 +334,17 @@
   abstract = {Multi-Class Incremental Learning (MCIL) aims to learn new concepts by incrementally updating a model trained on previous concepts. However, there is an inherent trade-off to effectively learning new concepts without catastrophic forgetting of previous ones. To alleviate this issue, it has been proposed to keep around a few examples of the previous concepts but the effectiveness of this approach heavily depends on the representativeness of these examples. This paper proposes a novel and automatic framework we call mnemonics, where we parameterize exemplars and make them optimizable in an end-to-end manner. We train the framework through bilevel optimizations, i.e., model-level and exemplar-level. We conduct extensive experiments on three MCIL benchmarks, CIFAR-100, ImageNet-Subset and ImageNet, and show that using mnemonics exemplars can surpass the state-of-the-art by a large margin. Interestingly and quite intriguingly, the mnemonics exemplars tend to be on the boundaries between different classes.},
   keywords = {[cifar],[imagenet],\#nosource,⛔ No DOI found},
   annotation = {\_eprint: 2002.10211}
+}
+
+@article{liu2020a,
+  title = {Continual {{Universal Object Detection}}},
+  author = {Liu, Xialei and Yang, Hao and Ravichandran, Avinash and Bhotika, Rahul and Soatto, Stefano},
+  year = {2020},
+  journal = {arXiv},
+  url = {http://arxiv.org/abs/2002.05347},
+  abstract = {Object detection has improved significantly in recent years on multiple challenging benchmarks. However, most existing detectors are still domain-specific, where the models are trained and tested on a single domain. When adapting these detectors to new domains, they often suffer from catastrophic forgetting of previous knowledge. In this paper, we propose a continual object detector that can learn sequentially from different domains without forgetting. First, we explore learning the object detector continually in different scenarios across various domains and categories. Learning from the analysis, we propose attentive feature distillation leveraging both bottom-up and top-down attentions to mitigate forgetting. It takes advantage of attention to ignore the noisy background information and feature distillation to provide strong supervision. Finally, for the most challenging scenarios, we propose an adaptive exemplar sampling method to leverage exemplars from previous tasks for less forgetting effectively. The experimental results show the excellent performance of our proposed method in three different scenarios across seven different object detection datasets.},
+  keywords = {\#nosource,⛔ No DOI found},
+  annotation = {\_eprint: 2002.05347}
 }
 
 @inproceedings{madaan2021,
@@ -457,18 +461,7 @@
   keywords = {[cifar],[imagenet],[mnist],\#nosource,⛔ No DOI found}
 }
 
-@article{saha2020,
-  title = {Structured {{Compression}} and {{Sharing}} of {{Representational Space}} for {{Continual Learning}}},
-  author = {Saha, Gobinda and Garg, Isha and Ankit, Aayush and Roy, Kaushik},
-  year = {2020},
-  journal = {arXiv},
-  url = {http://arxiv.org/abs/2001.08650},
-  abstract = {Humans are skilled at learning adaptively and efficiently throughout their lives, but learning tasks incrementally causes artificial neural networks to overwrite relevant information learned about older tasks, resulting in 'Catastrophic Forgetting'. Efforts to overcome this phenomenon suffer from poor utilization of resources in many ways, such as through the need to save older data or parametric importance scores, or to grow the network architecture. We propose an algorithm that enables a network to learn continually and efficiently by partitioning the representational space into a Core space, that contains the condensed information from previously learned tasks, and a Residual space, which is akin to a scratch space for learning the current task. The information in the Residual space is then compressed using Principal Component Analysis and added to the Core space, freeing up parameters for the next task. We evaluate our algorithm on P-MNIST, CIFAR-10 and CIFAR-100 datasets. We achieve comparable accuracy to state-of-the-art methods while overcoming the problem of catastrophic forgetting completely. Additionally, we get up to 4.5x improvement in energy efficiency during inference due to the structured nature of the resulting architecture.},
-  keywords = {[cifar],[mnist],\#nosource,⛔ No DOI found},
-  annotation = {\_eprint: 2001.08650}
-}
-
-@inproceedings{saha2020a,
+@inproceedings{saha2020,
   title = {Gradient {{Projection Memory}} for {{Continual Learning}}},
   booktitle = {International {{Conference}} on {{Learning Representations}}},
   author = {Saha, Gobinda and Roy, Kaushik},
@@ -478,6 +471,17 @@
   abstract = {The ability to learn continually without forgetting the past tasks is a desired attribute for artificial learning systems. Existing approaches to enable such learning in artificial neural networks...},
   langid = {english},
   keywords = {\#nosource}
+}
+
+@article{saha2020a,
+  title = {Structured {{Compression}} and {{Sharing}} of {{Representational Space}} for {{Continual Learning}}},
+  author = {Saha, Gobinda and Garg, Isha and Ankit, Aayush and Roy, Kaushik},
+  year = {2020},
+  journal = {arXiv},
+  url = {http://arxiv.org/abs/2001.08650},
+  abstract = {Humans are skilled at learning adaptively and efficiently throughout their lives, but learning tasks incrementally causes artificial neural networks to overwrite relevant information learned about older tasks, resulting in 'Catastrophic Forgetting'. Efforts to overcome this phenomenon suffer from poor utilization of resources in many ways, such as through the need to save older data or parametric importance scores, or to grow the network architecture. We propose an algorithm that enables a network to learn continually and efficiently by partitioning the representational space into a Core space, that contains the condensed information from previously learned tasks, and a Residual space, which is akin to a scratch space for learning the current task. The information in the Residual space is then compressed using Principal Component Analysis and added to the Core space, freeing up parameters for the next task. We evaluate our algorithm on P-MNIST, CIFAR-10 and CIFAR-100 datasets. We achieve comparable accuracy to state-of-the-art methods while overcoming the problem of catastrophic forgetting completely. Additionally, we get up to 4.5x improvement in energy efficiency during inference due to the structured nature of the resulting architecture.},
+  keywords = {[cifar],[mnist],\#nosource,⛔ No DOI found},
+  annotation = {\_eprint: 2001.08650}
 }
 
 @inproceedings{slim2022,
@@ -543,7 +547,8 @@
   urldate = {2021-04-20},
   abstract = {This paper presents a new family of backpropagation-free neural architectures, Gated Linear Networks (GLNs). What distinguishes GLNs from contemporary neural networks is the distributed and local nature of their credit assignment mechanism; each neuron directly predicts the target, forgoing the ability to learn feature representations in favor of rapid online learning. Individual neurons can model nonlinear functions via the use of data-dependent gating in conjunction with online convex optimization. We show that this architecture gives rise to universal learning capabilities in the limit, with effective model capacity increasing as a function of network size in a manner comparable with deep ReLU networks. Furthermore, we demonstrate that the GLN learning mechanism possesses extraordinary resilience to catastrophic forgetting, performing comparably to a MLP with dropout and Elastic Weight Consolidation on standard benchmarks. These desirable theoretical and empirical properties position GLNs as a complementary technique to contemporary offline deep learning methods.},
   archiveprefix = {arXiv},
-  keywords = {\#nosource,⛔ No DOI found,Computer Science - Information Theory,Computer Science - Machine Learning,Statistics - Machine Learning}
+  keywords = {\#nosource,⛔ No DOI found,Computer Science - Information Theory,Computer Science - Machine Learning,Statistics - Machine Learning},
+  note = {Comment: arXiv admin note: substantial text overlap with arXiv:1712.01897}
 }
 
 @article{wang2020,
@@ -579,7 +584,8 @@
   year = {2018},
   url = {http://bayesiandeeplearning.org/2018/papers/58.pdf},
   abstract = {Catastrophic forgetting is the notorious vulnerability of neural networks to the change of the data distribution while learning. This phenomena has long been considered a major obstacle for allowing the use of learning agents in realistic continual learning settings. Although this vulnerability of neural networks is widely investigated, it is currently only mitigated by explicitly reacting to the change of task. We suggest a novel approach for overcoming catastrophic forgetting in neural networks, using an online version of the variational Bayes method. Having a confidence measure of the weights alleviates catastrophic forgetting and, for the first time, succeeds in this even without the knowledge of when the tasks are being switched. 2},
-  keywords = {[bayes],[cifar],[mnist],\#nosource,⛔ No DOI found}
+  keywords = {[bayes],[cifar],[mnist],\#nosource,⛔ No DOI found},
+  note = {Bayesian Gradient Descent allows for Task Agnostic Continual Learning. The posterior on the parameters is updated at every batch, without needing task boundaries or task labels at training time. Experiments are performed with multi-head for Split scenarios.}
 }
 
 

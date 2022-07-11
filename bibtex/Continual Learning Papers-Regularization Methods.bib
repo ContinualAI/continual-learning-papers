@@ -64,7 +64,8 @@
   abstract = {In continual learning, the learner faces a stream of data whose distribution changes over time. Modern neural networks are known to suffer under this setting, as they quickly forget previously acquired knowledge. To address such catastrophic forgetting, many continual learning methods implement different types of experience replay, re-learning on past data stored in a small buffer known as episodic memory. In this work, we complement experience replay with a new objective that we call anchoring, where the learner uses bilevel optimization to update its knowledge on the current task, while keeping intact the predictions on some anchor points of past tasks. These anchor points are learned using gradient-based optimization to maximize forgetting, which is approximated by fine-tuning the currently trained model on the episodic memory of past tasks. Experiments on several supervised learning benchmarks for continual learning demonstrate that our approach improves the standard experience replay in terms of both accuracy and forgetting metrics and for various sizes of episodic memories.},
   archiveprefix = {arXiv},
   keywords = {/unread,⛔ No DOI found,Computer Science - Machine Learning,Statistics - Machine Learning},
-  annotation = {ZSCC:00055}
+  annotation = {ZSCC:00055},
+  note = {Comment: Accepted at AAAI 2021}
 }
 
 @inproceedings{dhar2019,
@@ -105,7 +106,9 @@
   journal = {European Conference on Computer Vision (ECCV)},
   url = {https://arxiv.org/abs/2004.13513},
   abstract = {Lifelong learning has attracted much attention, but existing works still struggle to fight catastrophic forgetting and accumulate knowledge over long stretches of incremental learning. In this work, we propose PODNet, a model inspired by representation learning. By carefully balancing the compromise between remembering the old classes and learning new ones, PODNet fights catastrophic forgetting, even over very long runs of small incremental tasks --a setting so far unexplored by current works. PODNet innovates on existing art with an efficient spatial-based distillation-loss applied throughout the model and a representation comprising multiple proxy vectors for each class. We validate those innovations thoroughly, comparing PODNet with three state-of-the-art models on three datasets: CIFAR100, ImageNet100, and ImageNet1000. Our results showcase a significant advantage of PODNet over existing art, with accuracy gains of 12.10, 6.51, and 2.85 percentage points, respectively. Code is available at this https URL},
-  keywords = {\#nosource,⛔ No DOI found}
+  keywords = {\#nosource,⛔ No DOI found},
+  note = {Official Code\\
+\href{https://github.com/arthurdouillard/incremental_learning.pytorch}{https://github.com/arthurdouillard/incremental\_learning.pytorch}}
 }
 
 @inproceedings{ebrahimi2020,
@@ -145,7 +148,10 @@
   doi = {10/gfvjcp},
   url = {http://arxiv.org/abs/1612.00796},
   abstract = {The ability to learn tasks in a sequential fashion is crucial to the development of artificial intelligence. Neural networks are not, in general, capable of this and it has been widely thought that catastrophic forgetting is an inevitable feature of connectionist models. We show that it is possible to overcome this limitation and train networks that can maintain expertise on tasks which they have not experienced for a long time. Our approach remembers old tasks by selectively slowing down learning on the weights important for those tasks. We demonstrate our approach is scalable and effective by solving a set of classification tasks based on the MNIST hand written digit dataset and by learning several Atari 2600 games sequentially.},
-  keywords = {[mnist],\#nosource,annotated,Computer Science - Artificial Intelligence,Computer Science - Machine Learning,ewc,Statistics - Machine Learning}
+  keywords = {[mnist],\#nosource,annotated,Computer Science - Artificial Intelligence,Computer Science - Machine Learning,ewc,Statistics - Machine Learning},
+  note = {arXiv: 1612.00796
+\par
+arXiv: 1612.00796}
 }
 
 @inproceedings{lee2017,
@@ -159,7 +165,8 @@
   url = {http://arxiv.org/abs/1703.08475},
   abstract = {Catastrophic forgetting is a problem of neural networks that loses the information of the first task after training the second task. Here, we propose a method, i.e. incremental moment matching (IMM), to resolve this problem. IMM incrementally matches the moment of the posterior distribution of the neural network which is trained on the first and the second task, respectively. To make the search space of posterior parameter smooth, the IMM procedure is complemented by various transfer learning techniques including weight transfer, L2-norm of the old and the new parameter, and a variant of dropout with the old parameter. We analyze our approach on a variety of datasets including the MNIST, CIFAR-10, Caltech-UCSD-Birds, and Lifelog datasets. The experimental results show that IMM achieves state-of-the-art performance by balancing the information between an old and a new network.},
   keywords = {[bayes],[cifar],[mnist],\#nosource},
-  annotation = {\_eprint: 1703.08475}
+  annotation = {\_eprint: 1703.08475},
+  note = {IMM is tested on Disjoint MNIST (2 tasks only), and Shuffled (i.e. permuted) MNIST (3 tasks only). The authors show that EWC does not work in Split (Disjoint) settings.}
 }
 
 @inproceedings{li2016,
@@ -172,7 +179,8 @@
   url = {http://arxiv.org/abs/1606.09282},
   abstract = {When building a unified vision system or gradually adding new capabilities to a system, the usual assumption is that training data for all tasks is always available. However, as the number of tasks grows, storing and retraining on such data becomes infeasible. A new problem arises where we add new capabilities to a Convolutional Neural Network (CNN), but the training data for its existing capabilities are unavailable. We propose our Learning without Forgetting method, which uses only new task data to train the network while preserving the original capabilities. Our method performs favorably compared to commonly used feature extraction and fine-tuning adaption techniques and performs similarly to multitask learning that uses original task data we assume unavailable. A more surprising observation is that Learning without Forgetting may be able to replace fine-tuning with similar old and new task datasets for improved new task performance.},
   langid = {english},
-  keywords = {[imagenet],\#nosource,⛔ No DOI found,Computer Science - Computer Vision and Pattern Rec,Computer Science - Machine Learning,Statistics - Machine Learning}
+  keywords = {[imagenet],\#nosource,⛔ No DOI found,Computer Science - Computer Vision and Pattern Rec,Computer Science - Machine Learning,Statistics - Machine Learning},
+  note = {Comment: Conference version appears in ECCV 2016; updated with journal version arXiv: 1606.09282}
 }
 
 @inproceedings{liu2018,
@@ -187,7 +195,8 @@
   url = {https://ieeexplore.ieee.org/document/8545895/},
   abstract = {In this paper we propose an approach to avoiding catastrophic forgetting in sequential task learning scenarios. Our technique is based on a network reparameterization that approximately diagonalizes the Fisher Information Matrix of the network parameters. This reparameterization takes the form of a factorized rotation of parameter space which, when used in conjunction with Elastic Weight Consolidation (which assumes a diagonal Fisher Information Matrix), leads to significantly better performance on lifelong learning of sequential tasks. Experimental results on the MNIST, CIFAR-100, CUB-200 and Stanford-40 datasets demonstrate that we significantly improve the results of standard elastic weight consolidation, and that we obtain competitive results when compared to the state-of-the-art in lifelong learning without forgetting.},
   isbn = {978-1-5386-3788-3},
-  keywords = {[cifar],[mnist],\#nosource,Computer vision,Data models,ewc,fisher,Fisher Information Matrix,image classification,learning (artificial intelligence),matrix algebra,network parameters,network reparameterization,Neural networks,sequential tasks,standard elastic weight consolidation,Standards,Stanford-40 datasets,Task analysis,Training,Training data}
+  keywords = {[cifar],[mnist],\#nosource,Computer vision,Data models,ewc,fisher,Fisher Information Matrix,image classification,learning (artificial intelligence),matrix algebra,network parameters,network reparameterization,Neural networks,sequential tasks,standard elastic weight consolidation,Standards,Stanford-40 datasets,Task analysis,Training,Training data},
+  note = {ISSN: 1051-4651}
 }
 
 @inproceedings{michieli2019,
@@ -267,7 +276,25 @@
   abstract = {The ability to learn continually without forgetting the past tasks is a desired attribute for artificial learning systems. Existing approaches to enable such learning in artificial neural networks usually rely on network growth, importance based weight update or replay of old data from the memory. In contrast, we propose a novel approach where a neural network learns new tasks by taking gradient steps in the orthogonal direction to the gradient subspaces deemed important for the past tasks. We find the bases of these subspaces by analyzing network representations (activations) after learning each task with Singular Value Decomposition (SVD) in a single shot manner and store them in the memory as Gradient Projection Memory (GPM). With qualitative and quantitative analyses, we show that such orthogonal gradient descent induces minimum to no interference with the past tasks, thereby mitigates forgetting. We evaluate our algorithm on diverse image classification datasets with short and long sequences of tasks and report better or on-par performance compared to the state-of-the-art approaches.},
   archiveprefix = {arXiv},
   keywords = {⛔ No DOI found,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning},
-  annotation = {ZSCC:00026}
+  annotation = {ZSCC:00026},
+  note = {Comment: Accepted for Oral Presentation at ICLR 2021 https://openreview.net/forum?id=3AOj0RCNC2}
+}
+
+@misc{saha2021a,
+  title = {Gradient {{Projection Memory}} for {{Continual Learning}}},
+  author = {Saha, Gobinda and Garg, Isha and Roy, Kaushik},
+  year = {2021},
+  number = {arXiv:2103.09762},
+  eprint = {2103.09762},
+  eprinttype = {arxiv},
+  primaryclass = {cs},
+  publisher = {{arXiv}},
+  url = {http://arxiv.org/abs/2103.09762},
+  urldate = {2022-07-08},
+  abstract = {The ability to learn continually without forgetting the past tasks is a desired attribute for artificial learning systems. Existing approaches to enable such learning in artificial neural networks usually rely on network growth, importance based weight update or replay of old data from the memory. In contrast, we propose a novel approach where a neural network learns new tasks by taking gradient steps in the orthogonal direction to the gradient subspaces deemed important for the past tasks. We find the bases of these subspaces by analyzing network representations (activations) after learning each task with Singular Value Decomposition (SVD) in a single shot manner and store them in the memory as Gradient Projection Memory (GPM). With qualitative and quantitative analyses, we show that such orthogonal gradient descent induces minimum to no interference with the past tasks, thereby mitigates forgetting. We evaluate our algorithm on diverse image classification datasets with short and long sequences of tasks and report better or on-par performance compared to the state-of-the-art approaches.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning},
+  note = {Comment: Accepted for Oral Presentation at ICLR 2021 https://openreview.net/forum?id=3AOj0RCNC2}
 }
 
 @article{seff2017,

@@ -21,7 +21,8 @@
   urldate = {2021-12-07},
   abstract = {The ability of a model to learn continually can be empirically assessed in different continual learning scenarios. Each scenario defines the constraints and the opportunities of the learning environment. Here, we challenge the current trend in the continual learning literature to experiment mainly on class-incremental scenarios, where classes present in one experience are never revisited. We posit that an excessive focus on this setting may be limiting for future research on continual learning, since class-incremental scenarios artificially exacerbate catastrophic forgetting, at the expense of other important objectives like forward transfer and computational efficiency. In many real-world environments, in fact, repetition of previously encountered concepts occurs naturally and contributes to softening the disruption of previous knowledge. We advocate for a more in-depth study of alternative continual learning scenarios, in which repetition is integrated by design in the stream of incoming information. Starting from already existing proposals, we describe the advantages such class-incremental with repetition scenarios could offer for a more comprehensive assessment of continual learning models.},
   archiveprefix = {arXiv},
-  keywords = {\#nosource,⛔ No DOI found,Computer Science - Artificial Intelligence,Computer Science - Machine Learning}
+  keywords = {\#nosource,⛔ No DOI found,Computer Science - Artificial Intelligence,Computer Science - Machine Learning},
+  note = {Comment: Under review}
 }
 
 @inproceedings{hayes2018,
@@ -64,7 +65,7 @@
   keywords = {[vision],\#nosource}
 }
 
-@inproceedings{lomonaco2020,
+@inproceedings{lomonaco2020a,
   title = {Continual {{Reinforcement Learning}} in {{3D Non-Stationary Environments}}},
   booktitle = {Proceedings of the {{IEEE}}/{{CVF Conference}} on {{Computer Vision}} and {{Pattern Recognition Workshops}}},
   author = {Lomonaco, Vincenzo and Desai, Karan and Culurciello, Eugenio and Maltoni, Davide},
@@ -107,7 +108,8 @@
   pages = {8777--8786},
   url = {https://openaccess.thecvf.com/content_CVPR_2019/html/Stojanov_Incremental_Object_Learning_From_Contiguous_Views_CVPR_2019_paper.html},
   urldate = {2021-08-26},
-  keywords = {\#nosource}
+  keywords = {\#nosource},
+  note = {The authors introduced the CRIB benchmark}
 }
 
 @inproceedings{veniat2021,
@@ -137,7 +139,8 @@
   abstract = {Continual learning (CL) is under-explored in the video domain. The few existing works contain splits with imbalanced class distributions over the tasks, or study the problem in unsuitable datasets. We introduce vCLIMB, a novel video continual learning benchmark. vCLIMB is a standardized test-bed to analyze catastrophic forgetting of deep models in video continual learning. In contrast to previous work, we focus on class incremental continual learning with models trained on a sequence of disjoint tasks, and distribute the number of classes uniformly across the tasks. We perform in-depth evaluations of existing CL methods in vCLIMB, and observe two unique challenges in video data. The selection of instances to store in episodic memory is performed at the frame level. Second, untrimmed training data influences the effectiveness of frame sampling strategies. We address these two challenges by proposing a temporal consistency regularization that can be applied on top of memory-based continual learning methods. Our approach significantly improves the baseline, by up to 24\% on the untrimmed continual learning task.},
   archiveprefix = {arXiv},
   keywords = {/unread,⛔ No DOI found,Computer Science - Computer Vision and Pattern Recognition},
-  annotation = {ZSCC:00000}
+  annotation = {ZSCC:00000},
+  note = {Comment: An updated version of our CVPR 2022 paper (oral); v2 adds minor text changes. The code of our benchmark can be found at: https://vclimb.netlify.app/}
 }
 
 

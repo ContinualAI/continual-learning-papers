@@ -25,7 +25,10 @@
   year = {2020},
   url = {http://arxiv.org/abs/2004.04077},
   abstract = {The ability to learn in dynamic, nonstationary environments without forgetting previous knowledge, also known as Continual Learning (CL), is a key enabler for scalable and trustworthy deployments of adaptive solutions. While the importance of continual learning is largely acknowledged in machine vision and reinforcement learning problems, this is mostly under-documented for sequence processing tasks. This work proposes a Recurrent Neural Network (RNN) model for CL that is able to deal with concept drift in input distribution without forgetting previously acquired knowledge. We also implement and test a popular CL approach, Elastic Weight Consolidation (EWC), on top of two different types of RNNs. Finally, we compare the performances of our enhanced architecture against EWC and RNNs on a set of standard CL benchmarks, adapted to the sequential data processing scenario. Results show the superior performance of our architecture and highlight the need for special solutions designed to address CL in RNNs.},
-  keywords = {[mnist],[rnn],\#nosource,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computi,Statistics - Machine Learning}
+  keywords = {[mnist],[rnn],\#nosource,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computi,Statistics - Machine Learning},
+  note = {An evaluation of RNNs (LSTM and LMN) inspired by Progressive networks, leading to the Gated Incremental Memory approach to overcome catastrophic forgetting.
+\par
+An evaluation of RNNs (LSTM and LMN) inspired by Progressive networks, leading to the Gated Incremental Memory approach to overcome catastrophic forgetting.}
 }
 
 @article{cossu2021,
@@ -53,10 +56,11 @@
   volume = {33},
   url = {https://proceedings.neurips.cc/paper/2020/file/a576eafbce762079f7d1f77fca1c5cc2-Paper.pdf},
   abstract = {Biological systems face dynamic environments that require continual learning. It is not well understood how these systems balance the tension between flexibility for learning and robustness for memory of previous behaviors. Continual learning without catastrophic interference also remains a challenging problem in machine learning. Here, we develop a novel learning rule designed to minimize interference between sequentially learned tasks in recurrent networks. Our learning rule preserves network dynamics within activity-defined subspaces used for previously learned tasks. It encourages dynamics associated with new tasks that might otherwise interfere to instead explore orthogonal subspaces, and it allows for reuse of previously established dynamical motifs where possible. Employing a set of tasks used in neuroscience, we demonstrate that our approach successfully eliminates catastrophic interference and offers a substantial improvement over previous continual learning algorithms. Using dynamical systems analysis, we show that networks trained using our approach can reuse similar dynamical structures across similar tasks. This possibility for shared computation allows for faster learning during sequential training. Finally, we identify organizational differences that emerge when training tasks sequentially versus simultaneously.},
-  keywords = {[rnn],\#nosource,⛔ No DOI found}
+  keywords = {[rnn],\#nosource,⛔ No DOI found},
+  note = {The hidden state pre-activation and the input are projected during learning in a subspace orthogonal to all the ones of the previous tasks, if new task is dissimilar. Projection on orthogonal subspace avoid interference with previous knowledge.}
 }
 
-@inproceedings{french1997a,
+@inproceedings{french1997,
   title = {Using {{Pseudo-Recurrent Connectionist Networks}} to {{Solve}} the {{Problem}} of {{Sequential Learning}}},
   booktitle = {Proceedings of the 19th {{Annual Cognitive Science Society Conference}}},
   author = {French, Robert},
@@ -74,10 +78,13 @@
   url = {http://arxiv.org/abs/2010.00352},
   abstract = {The ability to continuously learn and adapt itself to new tasks, without losing grasp of already acquired knowledge is a hallmark of biological learning systems, which current deep learning systems fall short of. In this work, we present a novel methodology for continual learning called MERLIN: Meta-Consolidation for Continual Learning. We assume that weights of a neural network \$\textbackslash backslashboldsymbol \textbackslash backslashpsi\$, for solving task \$\textbackslash backslashboldsymbol t\$, come from a meta-distribution \$p(\textbackslash backslashboldsymbol\{\textbackslash backslashpsi|t\})\$. This meta-distribution is learned and consolidated incrementally. We operate in the challenging online continual learning setting, where a data point is seen by the model only once. Our experiments with continual learning benchmarks of MNIST, CIFAR-10, CIFAR-100 and Mini-ImageNet datasets show consistent improvement over five baselines, including a recent state-of-the-art, corroborating the promise of MERLIN.},
   keywords = {[bayes],[cifar],[imagenet],[mnist],\#nosource},
-  annotation = {\_eprint: 2010.00352}
+  annotation = {\_eprint: 2010.00352},
+  note = {The authors leverage a bayesian framework in which the parameters of a model are sampled from a generating distribution. This distribution, parameterized by a task label, is used together with a VAE to consolidate online previous and current knowledge. Inference does not require task labels and exploit an ensemble of model, sampled from the generating distribution.
+\par
+The authors leverage a bayesian framework in which the parameters of a model are sampled from a generating distribution. This distribution, parameterized by a task label, is used together with a VAE to consolidate online previous and current knowledge. Inference does not require task labels and exploit an ensemble of model, sampled from the generating distribution.}
 }
 
-@inproceedings{li2020b,
+@inproceedings{li2020,
   title = {Compositional {{Language Continual Learning}}},
   booktitle = {Eighth {{International Conference}} on {{Learning Representations}}},
   author = {Li, Yuanpeng and Zhao, Liang and Church, Kenneth and Elhoseiny, Mohamed},
@@ -124,7 +131,8 @@
   doi = {10/gnq33q},
   url = {http://arxiv.org/abs/2003.09114},
   abstract = {Online continual learning (OCL) refers to the ability of a system to learn over time from a continuous stream of data without having to revisit previously encountered training samples. Learning continually in a single data pass is crucial for agents and robots operating in changing environments and required to acquire, fine-tune, and transfer increasingly complex representations from non-i.i.d. input distributions. Machine learning models that address OCL must alleviate \$\textbackslash backslash\$textit\{catastrophic forgetting\} in which hidden representations are disrupted or completely overwritten when learning from streams of novel input. In this chapter, we summarize and discuss recent deep learning models that address OCL on sequential input through the use (and combination) of synaptic regularization, structural plasticity, and experience replay. Different implementations of replay have been proposed that alleviate catastrophic forgetting in connectionists architectures via the re-occurrence of (latent representations of) input sequences and that functionally resemble mechanisms of hippocampal replay in the mammalian brain. Empirical evidence shows that architectures endowed with experience replay typically outperform architectures without in (online) incremental learning tasks.},
-  keywords = {[framework],\#nosource,Computer Science - Computer Vision and Pattern Rec,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computi}
+  keywords = {[framework],\#nosource,Computer Science - Computer Vision and Pattern Rec,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computi},
+  note = {Comment: L. Oneto et al. (eds.), Recent Trends in Learning From Data, Studies in Computational Intelligence 896 arXiv: 2003.09114}
 }
 
 @article{smith2019,
@@ -167,7 +175,8 @@
   abstract = {Continual learning is essential for real-world deployment when there is a need to quickly adapt the model to new tasks without forgetting knowledge of old tasks. Existing work on continual sequence generation either always reuses existing parameters to learn new tasks, which is vulnerable to catastrophic forgetting on dissimilar tasks, or blindly adds new parameters for every new task, which could prevent knowledge sharing between similar tasks. To get the best of both worlds, in this work, we propose continual sequence generation with adaptive compositional modules to adaptively add modules in transformer architectures and compose both old and new modules for new tasks. We also incorporate pseudo experience replay to facilitate knowledge transfer in those shared modules. Experiment results on various sequences of generation tasks show that our framework can adaptively add modules or reuse modules based on task similarity, outperforming state-of-the-art baselines in terms of both performance and parameter efficiency. We make our code public at https://github.com/GT-SALT/Adaptive-Compositional-Modules.},
   archiveprefix = {arXiv},
   keywords = {[nlp],/unread,⛔ No DOI found,Computer Science - Artificial Intelligence,Computer Science - Computation and Language},
-  annotation = {ZSCC:00006}
+  annotation = {ZSCC:00006},
+  note = {Comment: 15 pages, ACL 2022}
 }
 
 

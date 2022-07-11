@@ -74,20 +74,6 @@
 }
 
 @article{lesort2021,
-  title = {Understanding {{Continual Learning Settings}} with {{Data Distribution Drift Analysis}}},
-  author = {Lesort, Timoth{\'e}e and Caccia, Massimo and Rish, Irina},
-  year = {2021},
-  journal = {arXiv},
-  eprint = {2104.01678},
-  eprinttype = {arxiv},
-  url = {http://arxiv.org/abs/2104.01678},
-  urldate = {2021-04-11},
-  abstract = {Classical machine learning algorithms often assume that the data are drawn i.i.d. from a stationary probability distribution. Recently, continual learning emerged as a rapidly growing area of machine learning where this assumption is relaxed, namely, where the data distribution is non-stationary, i.e., changes over time. However, data distribution drifts may interfere with the learning process and erase previously learned knowledge; thus, continual learning algorithms must include specialized mechanisms to deal with such distribution drifts. A distribution drift may change the class labels distribution, the input distribution, or both. Moreover, distribution drifts might be abrupt or gradual. In this paper, we aim to identify and categorize different types of data distribution drifts and potential assumptions about them, to better characterize various continual-learning scenarios. Moreover, we propose to use the distribution drift framework to provide more precise definitions of several terms commonly used in the continual learning field.},
-  archiveprefix = {arXiv},
-  keywords = {\#nosource,⛔ No DOI found,Computer Science - Artificial Intelligence,Computer Science - Machine Learning}
-}
-
-@article{lesort2021a,
   ids = {lesort2021b},
   title = {Continual {{Learning}} in {{Deep Networks}}: An {{Analysis}} of the {{Last Layer}}},
   shorttitle = {Continual {{Learning}} in {{Deep Networks}}},
@@ -99,6 +85,20 @@
   url = {http://arxiv.org/abs/2106.01834},
   urldate = {2021-06-04},
   abstract = {We study how different output layer types of a deep neural network learn and forget in continual learning settings. We describe the three factors affecting catastrophic forgetting in the output layer: (1) weights modifications, (2) interferences, and (3) projection drift. Our goal is to provide more insights into how different types of output layers can address (1) and (2). We also propose potential solutions and evaluate them on several benchmarks. We show that the best-performing output layer type depends on the data distribution drifts or the amount of data available. In particular, in some cases where a standard linear layer would fail, it is sufficient to change the parametrization and get significantly better performance while still training with SGD. Our results and analysis shed light on the dynamics of the output layer in continual learning scenarios and help select the best-suited output layer for a given scenario.},
+  archiveprefix = {arXiv},
+  keywords = {\#nosource,⛔ No DOI found,Computer Science - Artificial Intelligence,Computer Science - Machine Learning}
+}
+
+@article{lesort2021a,
+  title = {Understanding {{Continual Learning Settings}} with {{Data Distribution Drift Analysis}}},
+  author = {Lesort, Timoth{\'e}e and Caccia, Massimo and Rish, Irina},
+  year = {2021},
+  journal = {arXiv},
+  eprint = {2104.01678},
+  eprinttype = {arxiv},
+  url = {http://arxiv.org/abs/2104.01678},
+  urldate = {2021-04-11},
+  abstract = {Classical machine learning algorithms often assume that the data are drawn i.i.d. from a stationary probability distribution. Recently, continual learning emerged as a rapidly growing area of machine learning where this assumption is relaxed, namely, where the data distribution is non-stationary, i.e., changes over time. However, data distribution drifts may interfere with the learning process and erase previously learned knowledge; thus, continual learning algorithms must include specialized mechanisms to deal with such distribution drifts. A distribution drift may change the class labels distribution, the input distribution, or both. Moreover, distribution drifts might be abrupt or gradual. In this paper, we aim to identify and categorize different types of data distribution drifts and potential assumptions about them, to better characterize various continual-learning scenarios. Moreover, we propose to use the distribution drift framework to provide more precise definitions of several terms commonly used in the continual learning field.},
   archiveprefix = {arXiv},
   keywords = {\#nosource,⛔ No DOI found,Computer Science - Artificial Intelligence,Computer Science - Machine Learning}
 }
@@ -118,7 +118,7 @@
   keywords = {\#nosource,Mermillod2013a}
 }
 
-@article{mirzadeh2020a,
+@article{mirzadeh2020,
   title = {Understanding the {{Role}} of {{Training Regimes}} in {{Continual Learning}}},
   author = {Mirzadeh, Seyed Iman and Farajtabar, Mehrdad and Pascanu, Razvan and Ghasemzadeh, Hassan},
   year = {2020},
@@ -143,7 +143,8 @@
   urldate = {2021-10-25},
   abstract = {A growing body of research in continual learning is devoted to overcoming the "Catastrophic Forgetting" of neural networks by designing new algorithms that are more robust to the distribution shifts. While the recent progress in continual learning literature is encouraging, our understanding of what properties of neural networks contribute to catastrophic forgetting is still limited. To address this, instead of focusing on continual learning algorithms, in this work, we focus on the model itself and study the impact of "width" of the neural network architecture on catastrophic forgetting, and show that width has a surprisingly significant effect on forgetting. To explain this effect, we study the learning dynamics of the network from various perspectives such as gradient norm and sparsity, orthogonalization, and lazy training regime. We provide potential explanations that are consistent with the empirical results across different architectures and continual learning benchmarks.},
   archiveprefix = {arXiv},
-  keywords = {\#nosource,⛔ No DOI found,Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning}
+  keywords = {\#nosource,⛔ No DOI found,Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning},
+  note = {Comment: preprint}
 }
 
 @article{mirzadeh2022,
@@ -158,7 +159,8 @@
   abstract = {A large body of research in continual learning is devoted to overcoming the catastrophic forgetting of neural networks by designing new algorithms that are robust to the distribution shifts. However, the majority of these works are strictly focused on the "algorithmic" part of continual learning for a "fixed neural network architecture", and the implications of using different architectures are mostly neglected. Even the few existing continual learning methods that modify the model assume a fixed architecture and aim to develop an algorithm that efficiently uses the model throughout the learning experience. However, in this work, we show that the choice of architecture can significantly impact the continual learning performance, and different architectures lead to different trade-offs between the ability to remember previous tasks and learning new ones. Moreover, we study the impact of various architectural decisions, and our findings entail best practices and recommendations that can improve the continual learning performance.},
   archiveprefix = {arXiv},
   keywords = {⛔ No DOI found,Computer Science - Artificial Intelligence,Computer Science - Machine Learning},
-  annotation = {ZSCC: 0000000}
+  annotation = {ZSCC: 0000000},
+  note = {Comment: preprint}
 }
 
 @article{nguyen2019a,
@@ -234,7 +236,8 @@
   year = {2019},
   url = {https://openreview.net/forum?id=BJlxm30cKm},
   abstract = {Inspired by the phenomenon of catastrophic forgetting, we investigate the learning dynamics of neural networks as they train on single classification tasks. Our goal is to understand whether a...},
-  keywords = {[cifar],[mnist],\#nosource}
+  keywords = {[cifar],[mnist],\#nosource},
+  note = {An interesting aspect of this paper is related to the study of unforgettable patterns and how they influence performance in terms of forgetting.}
 }
 
 @article{wiewel2019,

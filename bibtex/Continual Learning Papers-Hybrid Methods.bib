@@ -1,5 +1,5 @@
 
-@inproceedings{chaudhry2019,
+@inproceedings{chaudhry2019a,
   title = {Efficient {{Lifelong Learning}} with {{A-GEM}}},
   booktitle = {{{ICLR}}},
   author = {Chaudhry, Arslan and Ranzato, Marc'Aurelio and Rohrbach, Marcus and Elhoseiny, Mohamed},
@@ -7,7 +7,8 @@
   url = {http://arxiv.org/abs/1812.00420},
   abstract = {In lifelong learning, the learner is presented with a sequence of tasks, incrementally building a data-driven prior which may be leveraged to speed up learning of a new task. In this work, we investigate the efficiency of current lifelong approaches, in terms of sample complexity, computational and memory cost. Towards this end, we first introduce a new and a more realistic evaluation protocol, whereby learners observe each example only once and hyper-parameter selection is done on a small and disjoint set of tasks, which is not used for the actual learning experience and evaluation. Second, we introduce a new metric measuring how quickly a learner acquires a new skill. Third, we propose an improved version of GEM (Lopez-Paz \& Ranzato, 2017), dubbed Averaged GEM (A-GEM), which enjoys the same or even better performance as GEM, while being almost as computationally and memory efficient as EWC (Kirkpatrick et al., 2016) and other regularization-based methods. Finally, we show that all algorithms including A-GEM can learn even more quickly if they are provided with task descriptors specifying the classification tasks under consideration. Our experiments on several standard lifelong learning benchmarks demonstrate that A-GEM has the best trade-off between accuracy and efficiency.},
   langid = {english},
-  keywords = {[cifar],[mnist],\#nosource,⛔ No DOI found,Computer Science - Machine Learning,Statistics - Machine Learning}
+  keywords = {[cifar],[mnist],\#nosource,⛔ No DOI found,Computer Science - Machine Learning,Statistics - Machine Learning},
+  note = {Comment: Published as a conference paper at ICLR 2019 arXiv: 1812.00420}
 }
 
 @article{du2019,
@@ -38,7 +39,7 @@
   keywords = {[imagenet],[vision],\#nosource,Knowledge distillation,Lifelong learning,Retrospection}
 }
 
-@inproceedings{lomonaco2020a,
+@inproceedings{lomonaco2020,
   title = {Rehearsal-{{Free Continual Learning}} over {{Small Non-I}}.{{I}}.{{D}}. {{Batches}}},
   booktitle = {{{CVPR Workshop}} on {{Continual Learning}} for {{Computer Vision}}},
   author = {Lomonaco, Vincenzo and Maltoni, Davide and Pellegrini, Lorenzo},
@@ -56,7 +57,8 @@
   year = {2017},
   url = {https://arxiv.org/abs/1706.08840},
   abstract = {One major obstacle towards AI is the poor ability of models to solve new problems quicker, and without forgetting previously acquired knowledge. To better understand this issue, we study the problem of continual learning, where the model observes, once and one by one, examples concerning a sequence of tasks. First, we propose a set of metrics to evaluate models learning over a continuum of data. These metrics characterize models not only by their test accuracy, but also in terms of their ability to transfer knowledge across tasks. Second, we propose a model for continual learning, called Gradient Episodic Memory (GEM) that alleviates forgetting, while allowing beneficial transfer of knowledge to previous tasks. Our experiments on variants of the MNIST and CIFAR-100 datasets demonstrate the strong performance of GEM when compared to the state-of-the-art.},
-  keywords = {[cifar],[mnist],\#nosource,⛔ No DOI found,Computer Science - Artificial Intelligence,Computer Science - Machine Learning,gem}
+  keywords = {[cifar],[mnist],\#nosource,⛔ No DOI found,Computer Science - Artificial Intelligence,Computer Science - Machine Learning,gem},
+  note = {Comment: Published at NIPS 2017 arXiv: 1706.08840}
 }
 
 @article{maltoni2019,
@@ -70,10 +72,11 @@
   url = {http://arxiv.org/abs/1806.08568},
   abstract = {It was recently shown that architectural, regularization and rehearsal strategies can be used to train deep models sequentially on a number of disjoint tasks without forgetting previously acquired knowledge. However, these strategies are still unsatisfactory if the tasks are not disjoint but constitute a single incremental task (e.g., class-incremental learning). In this paper we point out the differences between multi-task and single-incremental-task scenarios and show that well-known approaches such as LWF, EWC and SI are not ideal for incremental task scenarios. A new approach, denoted as AR1, combining architectural and regularization strategies is then specifically proposed. AR1 overhead (in terms of memory and computation) is very small thus making it suitable for online learning. When tested on CORe50 and iCIFAR-100, AR1 outperformed existing regularization strategies by a good margin.},
   langid = {english},
-  keywords = {[core50],[framework],\#nosource,Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Rec,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computi,Continuous learning,Deep learning,ewc,Incremental class learning,incremental task,Lifelong learning,Object recognition,review,Single-incremental-task,Statistics - Machine Learning}
+  keywords = {[core50],[framework],\#nosource,Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Rec,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computi,Continuous learning,Deep learning,ewc,Incremental class learning,incremental task,Lifelong learning,Object recognition,review,Single-incremental-task,Statistics - Machine Learning},
+  note = {Comment: 26 pages, 13 figures; v3: major revision (e.g. added Sec. 4.4), several typos and minor mistakes corrected arXiv: 1806.08568}
 }
 
-@article{mirzadeh2020,
+@article{mirzadeh2020a,
   title = {Linear {{Mode Connectivity}} in {{Multitask}} and {{Continual Learning}}},
   author = {Mirzadeh, Seyed Iman and Farajtabar, Mehrdad and Gorur, Dilan and Pascanu, Razvan and Ghasemzadeh, Hassan},
   year = {2020},
@@ -81,10 +84,13 @@
   url = {https://arxiv.org/abs/2010.04495},
   abstract = {Continual (sequential) training and multitask (simultaneous) training are often attempting to solve the same overall objective: to find a solution that performs well on all considered tasks. The main difference is in the training regimes, where continual learning can only have access to one task at a time, which for neural networks typically leads to catastrophic forgetting. That is, the solution found for a subsequent task does not perform well on the previous ones anymore. However, the relationship between the different minima that the two training regimes arrive at is not well understood. What sets them apart? Is there a local structure that could explain the difference in performance achieved by the two different schemes? Motivated by recent work showing that different minima of the same task are typically connected by very simple curves of low error, we investigate whether multitask and continual solutions are similarly connected. We empirically find that indeed such connectivity can be reliably achieved and, more interestingly, it can be done by a linear path, conditioned on having the same initialization for both. We thoroughly analyze this observation and discuss its significance for the continual learning process. Furthermore, we exploit this finding to propose an effective algorithm that constrains the sequentially learned minima to behave as the multitask solution. We show that our method outperforms several state of the art continual learning algorithms on various vision benchmarks.},
   keywords = {[cifar],[experimental],[mnist],\#nosource,⛔ No DOI found},
-  annotation = {\_eprint: 2010.04495}
+  annotation = {\_eprint: 2010.04495},
+  note = {The authors observe how minima of CL and Multitask algorithms lie in a linear subspace (when sharing initialization). They use this argumento to build a CL strategy which forces minima to stay on the same subspace, using also small replay memories.
+\par
+The authors observe how minima of CL and Multitask algorithms lie in a linear subspace (when sharing initialization). They use this argumento to build a CL strategy which forces minima to stay on the same subspace, using also small replay memories.}
 }
 
-@article{pomponi2020b,
+@article{pomponi2020c,
   title = {Efficient Continual Learning in Neural Networks with Embedding Regularization},
   author = {Pomponi, Jary and Scardapane, Simone and Lomonaco, Vincenzo and Uncini, Aurelio},
   year = {2020},
@@ -137,7 +143,10 @@
   journal = {arXiv},
   url = {http://arxiv.org/abs/1906.00654},
   abstract = {Continual learning consists in incrementally training a model on a sequence of datasets and testing on the union of all datasets. In this paper, we examine continual learning for the problem of sound classification, in which we wish to refine already trained models to learn new sound classes. In practice one does not want to maintain all past training data and retrain from scratch, but naively updating a model with new data(sets) results in a degradation of already learned tasks, which is referred to as "catastrophic forgetting." We develop a generative replay procedure for generating training audio spectrogram data, in place of keeping older training datasets. We show that by incrementally refining a classifier with generative replay a generator that is 4\% of the size of all previous training data matches the performance of refining the classifier keeping 20\% of all previous training data. We thus conclude that we can extend a trained sound classifier to learn new classes without having to keep previously used datasets.},
-  keywords = {[audio],\#nosource,⛔ No DOI found,audio,Computer Science - Machine Learning,Computer Science - Sound,Electrical Engineering and Systems Science - Audio,sequence,sequences,Statistics - Machine Learning,time series}
+  keywords = {[audio],\#nosource,⛔ No DOI found,audio,Computer Science - Machine Learning,Computer Science - Sound,Electrical Engineering and Systems Science - Audio,sequence,sequences,Statistics - Machine Learning,time series},
+  note = {arXiv: 1906.00654
+\par
+arXiv: 1906.00654}
 }
 
 

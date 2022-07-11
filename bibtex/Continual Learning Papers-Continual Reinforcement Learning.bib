@@ -98,7 +98,10 @@
   doi = {10/gfvjcp},
   url = {http://arxiv.org/abs/1612.00796},
   abstract = {The ability to learn tasks in a sequential fashion is crucial to the development of artificial intelligence. Neural networks are not, in general, capable of this and it has been widely thought that catastrophic forgetting is an inevitable feature of connectionist models. We show that it is possible to overcome this limitation and train networks that can maintain expertise on tasks which they have not experienced for a long time. Our approach remembers old tasks by selectively slowing down learning on the weights important for those tasks. We demonstrate our approach is scalable and effective by solving a set of classification tasks based on the MNIST hand written digit dataset and by learning several Atari 2600 games sequentially.},
-  keywords = {[mnist],\#nosource,annotated,Computer Science - Artificial Intelligence,Computer Science - Machine Learning,ewc,Statistics - Machine Learning}
+  keywords = {[mnist],\#nosource,annotated,Computer Science - Artificial Intelligence,Computer Science - Machine Learning,ewc,Statistics - Machine Learning},
+  note = {arXiv: 1612.00796
+\par
+arXiv: 1612.00796}
 }
 
 @inproceedings{kobayashi2019,
@@ -116,7 +119,8 @@
   abstract = {Neural network has a critical problem, called catastrophic forgetting, where memories for tasks already learned are easily overwritten with memories for a task additionally learned. This problem interferes with continual learning required for autonomous robots, which learn many tasks incrementally from daily activities. To mitigate the catastrophic forgetting, it is important for especially reservoir computing to clarify which neurons should be fired corresponding to each task, since only readout weights are updated according to the degree of firing of neurons. We therefore propose the way to design reservoir computing such that the firing neurons are clearly distinguished from others according to the task to be performed. As a key design feature, we employ fractal network, which has modularity and scalability, to be reservoir layer. In particular, its modularity is fully utilized by designing input layer. As a result, simulations of control tasks using reinforcement learning show that our design mitigates the catastrophic forgetting even when random actions from reinforcement learning prompt parameters to be overwritten. Furthermore, learning multiple tasks with a single network suggests that knowledge for the other tasks can facilitate to learn a new task, unlike the case using completely different networks.},
   isbn = {978-3-030-30492-8 978-3-030-30493-5},
   langid = {english},
-  keywords = {[rnn],\#nosource,fractals,rc,reinforcement,reservoir computing}
+  keywords = {[rnn],\#nosource,fractals,rc,reinforcement,reservoir computing},
+  note = {A reservoir computing approach with Echo State Networks is implemented in order to learn multiple tasks in reinforcement learning environments.}
 }
 
 @inproceedings{luders2016,
@@ -253,7 +257,10 @@
   url = {http://arxiv.org/abs/1606.04671},
   abstract = {Learning to solve complex sequences of tasks\textemdash while both leveraging transfer and avoiding catastrophic forgetting\textemdash remains a key obstacle to achieving human-level intelligence. The progressive networks approach represents a step forward in this direction: they are immune to forgetting and can leverage prior knowledge via lateral connections to previously learned features. We evaluate this architecture extensively on a wide variety of reinforcement learning tasks (Atari and 3D maze games), and show that it outperforms common baselines based on pretraining and finetuning. Using a novel sensitivity measure, we demonstrate that transfer occurs at both low-level sensory and high-level control layers of the learned policy.},
   langid = {english},
-  keywords = {[mnist],\#nosource,⛔ No DOI found,Computer Science - Machine Learning,lifelong learning,modular,progressive}
+  keywords = {[mnist],\#nosource,⛔ No DOI found,Computer Science - Machine Learning,lifelong learning,modular,progressive},
+  note = {The authors rely on a separate feedforward network (column) for each task the model is trained on. Each column is connected through adaptive connections to all the previous ones. The weights of previous columns are frozen once trained. At inference time, given a known task label, the network choose the appropriate column to produce the output, thus preventing forgetting by design.
+\par
+The authors rely on a separate feedforward network (column) for each task the model is trained on. Each column is connected through adaptive connections to all the previous ones. The weights of previous columns are frozen once trained. At inference time, given a known task label, the network choose the appropriate column to produce the output, thus preventing forgetting by design.}
 }
 
 @inproceedings{schlegel2017,
