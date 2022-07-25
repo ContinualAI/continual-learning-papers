@@ -7,7 +7,7 @@
   pages = {4392--4402},
   url = {https://papers.nips.cc/paper/8690-uncertainty-based-continual-learning-with-adaptive-regularization.pdf},
   abstract = {We introduce a new neural network-based continual learning algorithm, dubbed as Uncertainty-regularized Continual Learning (UCL), which builds on traditional Bayesian online learning framework with variational inference. We focus on two significant drawbacks of the recently proposed regularization-based methods: a) considerable additional memory cost for determining the per-weight regularization strengths and b) the absence of gracefully forgetting scheme, which can prevent performance degradation in learning new tasks. In this paper, we show UCL can solve these two problems by introducing a fresh interpretation on the Kullback-Leibler (KL) divergence term of the variational lower bound for Gaussian mean-field approximation. Based on the interpretation, we propose the notion of node-wise uncertainty, which drastically reduces the number of additional parameters for implementing per-weight regularization. Moreover, we devise two additional regularization terms that enforce stability by freezing important parameters for past tasks and allow plasticity by controlling the actively learning parameters for a new task. Through extensive experiments, we show UCL convincingly outperforms most of recent state-of-the-art baselines not only on popular supervised learning benchmarks, but also on challenging lifelong reinforcement learning tasks. The source code of our algorithm is available at https://github.com/csm9493/UCL.},
-  keywords = {[bayes],[cifar],[mnist],\#nosource,⛔ No DOI found}
+  keywords = {[bayes],[cifar],[mnist],/unread,\#nosource,⛔ No DOI found}
 }
 
 @inproceedings{aljundi2018,
@@ -16,7 +16,7 @@
   author = {Aljundi, Rahaf and Babiloni, Francesca and Elhoseiny, Mohamed and Rohrbach, Marcus and Tuytelaars, Tinne},
   year = {2018},
   url = {https://openaccess.thecvf.com/content_ECCV_2018/papers/Rahaf_Aljundi_Memory_Aware_Synapses_ECCV_2018_paper.pdf},
-  keywords = {[vision],\#nosource}
+  keywords = {[vision],/unread,\#nosource}
 }
 
 @inproceedings{aljundi2019d,
@@ -25,7 +25,7 @@
   author = {Aljundi, Rahaf and Kelchtermans, Klaas and Tuytelaars, Tinne},
   year = {2019},
   url = {https://openaccess.thecvf.com/content_CVPR_2019/papers/Aljundi_Task-Free_Continual_Learning_CVPR_2019_paper.pdf},
-  keywords = {[vision],\#nosource}
+  keywords = {[vision],/unread,\#nosource}
 }
 
 @article{cermelli2020,
@@ -36,7 +36,7 @@
   pages = {9233--9242},
   url = {http://arxiv.org/abs/2002.00718},
   abstract = {Despite their effectiveness in a wide range of tasks, deep architectures suffer from some important limitations. In particular, they are vulnerable to catastrophic forgetting, i.e. they perform poorly when they are required to update their model as new classes are available but the original training set is not retained. This paper addresses this problem in the context of semantic segmentation. Current strategies fail on this task because they do not consider a peculiar aspect of semantic segmentation: since each training step provides annotation only for a subset of all possible classes, pixels of the background class (i.e. pixels that do not belong to any other classes) exhibit a semantic distribution shift. In this work we revisit classical incremental learning methods, proposing a new distillation-based framework which explicitly accounts for this shift. Furthermore, we introduce a novel strategy to initialize classifier's parameters, thus preventing biased predictions toward the background class. We demonstrate the effectiveness of our approach with an extensive evaluation on the Pascal-VOC 2012 and ADE20K datasets, significantly outperforming state of the art incremental learning methods.},
-  keywords = {\#nosource,⛔ No DOI found},
+  keywords = {/unread,\#nosource,⛔ No DOI found},
   annotation = {\_eprint: 2002.00718}
 }
 
@@ -49,7 +49,7 @@
   pages = {532--547},
   url = {https://openaccess.thecvf.com/content_ECCV_2018/html/Arslan_Chaudhry__Riemannian_Walk_ECCV_2018_paper.html},
   urldate = {2021-01-05},
-  keywords = {\#nosource}
+  keywords = {/unread,\#nosource}
 }
 
 @article{chaudhry2021,
@@ -76,7 +76,7 @@
   doi = {10/gg2677},
   url = {https://openaccess.thecvf.com/content_CVPR_2019/papers/Dhar_Learning_Without_Memorizing_CVPR_2019_paper.pdf},
   abstract = {Incremental learning (IL) is an important task aimed at increasing the capability of a trained model, in terms of the number of classes recognizable by the model. The key problem in this task is the requirement of storing data (e.g. images) associated with existing classes, while teaching the classifier to learn new classes. However, this is impractical as it increases the memory requirement at every incre-mental step, which makes it impossible to implement IL algorithms on edge devices with limited memory. Hence, we propose a novel approach, called 'Learning without Memorizing (LwM)', to preserve the information about existing (base) classes, without storing any of their data, while making the classifier progressively learn the new classes. In LwM, we present an information preserving penalty: Attention Distillation Loss (L AD), and demonstrate that penalizing the changes in classifiers' attention maps helps to retain information of the base classes, as new classes are added. We show that adding L AD to the distillation loss which is an existing information preserving loss consistently outperforms the state-of-the-art performance in the iILSVRC-small and iCIFAR-100 datasets in terms of the overall accuracy of base and incrementally learned classes.},
-  keywords = {[cifar],\#nosource}
+  keywords = {[cifar],/unread,\#nosource}
 }
 
 @article{douillard2020,
@@ -86,7 +86,7 @@
   journal = {arXiv},
   url = {https://arxiv.org/abs/2011.11390},
   abstract = {Deep learning approaches are nowadays ubiquitously used to tackle computer vision tasks such as semantic segmentation, requiring large datasets and substantial computational power. Continual learning for semantic segmentation (CSS) is an emerging trend that consists in updating an old model by sequentially adding new classes. However, continual learning methods are usually prone to catastrophic forgetting. This issue is further aggravated in CSS where, at each step, old classes from previous iterations are collapsed into the background. In this paper, we propose Local POD, a multi-scale pooling distillation scheme that preserves long- and short-range spatial relationships at feature level. Furthermore, we design an entropy-based pseudo-labelling of the background w.r.t. classes predicted by the old model to deal with background shift and avoid catastrophic forgetting of the old classes. Our approach, called PLOP, significantly outperforms state-of-the-art methods in existing CSS scenarios, as well as in newly proposed challenging benchmarks.},
-  keywords = {\#nosource,⛔ No DOI found}
+  keywords = {/unread,\#nosource,⛔ No DOI found}
 }
 
 @article{douillard2020a,
@@ -96,7 +96,7 @@
   journal = {arXiv},
   url = {https://arxiv.org/abs/2006.13748},
   abstract = {Continual learning aims to learn tasks sequentially, with (often severe) constraints on the storage of old learning samples, without suffering from catastrophic forgetting. In this work, we propose prescient continual learning, a novel experimental setting, to incorporate existing information about the classes, prior to any training data. Usually, each task in a traditional continual learning setting evaluates the model on present and past classes, the latter with a limited number of training samples. Our setting adds future classes, with no training samples at all. We introduce Ghost Model, a representation-learning-based model for continual learning using ideas from zero-shot learning. A generative model of the representation space in concert with a careful adjustment of the losses allows us to exploit insights from future classes to constraint the spatial arrangement of the past and current classes. Quantitative results on the AwA2 and aP\textbackslash\&Y datasets and detailed visualizations showcase the interest of this new setting and the method we propose to address it.},
-  keywords = {\#nosource,⛔ No DOI found}
+  keywords = {/unread,\#nosource,⛔ No DOI found}
 }
 
 @article{douillard2020b,
@@ -106,7 +106,7 @@
   journal = {European Conference on Computer Vision (ECCV)},
   url = {https://arxiv.org/abs/2004.13513},
   abstract = {Lifelong learning has attracted much attention, but existing works still struggle to fight catastrophic forgetting and accumulate knowledge over long stretches of incremental learning. In this work, we propose PODNet, a model inspired by representation learning. By carefully balancing the compromise between remembering the old classes and learning new ones, PODNet fights catastrophic forgetting, even over very long runs of small incremental tasks --a setting so far unexplored by current works. PODNet innovates on existing art with an efficient spatial-based distillation-loss applied throughout the model and a representation comprising multiple proxy vectors for each class. We validate those innovations thoroughly, comparing PODNet with three state-of-the-art models on three datasets: CIFAR100, ImageNet100, and ImageNet1000. Our results showcase a significant advantage of PODNet over existing art, with accuracy gains of 12.10, 6.51, and 2.85 percentage points, respectively. Code is available at this https URL},
-  keywords = {\#nosource,⛔ No DOI found},
+  keywords = {/unread,\#nosource,⛔ No DOI found},
   note = {Official Code\\
 \href{https://github.com/arthurdouillard/incremental_learning.pytorch}{https://github.com/arthurdouillard/incremental\_learning.pytorch}}
 }
@@ -118,7 +118,7 @@
   year = {2020},
   url = {https://openreview.net/pdf?id=HklUCCVKDB},
   abstract = {Continual learning aims to learn new tasks without forgetting previously learned ones. This is especially challenging when one cannot access data from previous tasks and when the model has a fixed capacity. Current regularization-based continual learning algorithms need an external representation and extra computation to measure the parameters' importance. In contrast, we propose Uncertainty-guided Continual Bayesian Neural Networks (UCB), where the learning rate adapts according to the uncertainty defined in the probability distribution of the weights in networks. Uncertainty is a natural way to identify what to remember and what to change as we continually learn, and thus mitigate catastrophic forgetting. We also show a variant of our model, which uses uncertainty for weight pruning and retains task performance after pruning by saving binary masks per tasks. We evaluate our UCB approach extensively on diverse object classification datasets with short and long sequences of tasks and report superior or on-par performance compared to existing approaches. Additionally, we show that our model does not necessarily need task information at test time, i.e. it does not presume knowledge of which task a sample belongs to.},
-  keywords = {[bayes],[cifar],[fashion],[mnist],\#nosource,⛔ No DOI found,capacity,catastrophic forgetting,continual learning,learning rate,pruning,regularization,uncertainty}
+  keywords = {[bayes],[cifar],[fashion],[mnist],/unread,\#nosource,⛔ No DOI found,capacity,catastrophic forgetting,continual learning,learning rate,pruning,regularization,uncertainty}
 }
 
 @article{han2021,
@@ -148,7 +148,7 @@
   doi = {10/gfvjcp},
   url = {http://arxiv.org/abs/1612.00796},
   abstract = {The ability to learn tasks in a sequential fashion is crucial to the development of artificial intelligence. Neural networks are not, in general, capable of this and it has been widely thought that catastrophic forgetting is an inevitable feature of connectionist models. We show that it is possible to overcome this limitation and train networks that can maintain expertise on tasks which they have not experienced for a long time. Our approach remembers old tasks by selectively slowing down learning on the weights important for those tasks. We demonstrate our approach is scalable and effective by solving a set of classification tasks based on the MNIST hand written digit dataset and by learning several Atari 2600 games sequentially.},
-  keywords = {[mnist],\#nosource,annotated,Computer Science - Artificial Intelligence,Computer Science - Machine Learning,ewc,Statistics - Machine Learning},
+  keywords = {[mnist],/unread,\#nosource,annotated,Computer Science - Artificial Intelligence,Computer Science - Machine Learning,ewc,Statistics - Machine Learning},
   note = {arXiv: 1612.00796
 \par
 arXiv: 1612.00796}
@@ -164,7 +164,7 @@ arXiv: 1612.00796}
   publisher = {{Neural information processing systems foundation}},
   url = {http://arxiv.org/abs/1703.08475},
   abstract = {Catastrophic forgetting is a problem of neural networks that loses the information of the first task after training the second task. Here, we propose a method, i.e. incremental moment matching (IMM), to resolve this problem. IMM incrementally matches the moment of the posterior distribution of the neural network which is trained on the first and the second task, respectively. To make the search space of posterior parameter smooth, the IMM procedure is complemented by various transfer learning techniques including weight transfer, L2-norm of the old and the new parameter, and a variant of dropout with the old parameter. We analyze our approach on a variety of datasets including the MNIST, CIFAR-10, Caltech-UCSD-Birds, and Lifelog datasets. The experimental results show that IMM achieves state-of-the-art performance by balancing the information between an old and a new network.},
-  keywords = {[bayes],[cifar],[mnist],\#nosource},
+  keywords = {[bayes],[cifar],[mnist],/unread,\#nosource},
   annotation = {\_eprint: 1703.08475},
   note = {IMM is tested on Disjoint MNIST (2 tasks only), and Shuffled (i.e. permuted) MNIST (3 tasks only). The authors show that EWC does not work in Split (Disjoint) settings.}
 }
@@ -179,7 +179,7 @@ arXiv: 1612.00796}
   url = {http://arxiv.org/abs/1606.09282},
   abstract = {When building a unified vision system or gradually adding new capabilities to a system, the usual assumption is that training data for all tasks is always available. However, as the number of tasks grows, storing and retraining on such data becomes infeasible. A new problem arises where we add new capabilities to a Convolutional Neural Network (CNN), but the training data for its existing capabilities are unavailable. We propose our Learning without Forgetting method, which uses only new task data to train the network while preserving the original capabilities. Our method performs favorably compared to commonly used feature extraction and fine-tuning adaption techniques and performs similarly to multitask learning that uses original task data we assume unavailable. A more surprising observation is that Learning without Forgetting may be able to replace fine-tuning with similar old and new task datasets for improved new task performance.},
   langid = {english},
-  keywords = {[imagenet],\#nosource,⛔ No DOI found,Computer Science - Computer Vision and Pattern Rec,Computer Science - Machine Learning,Statistics - Machine Learning},
+  keywords = {[imagenet],/unread,\#nosource,⛔ No DOI found,Computer Science - Computer Vision and Pattern Rec,Computer Science - Machine Learning,Statistics - Machine Learning},
   note = {Comment: Conference version appears in ECCV 2016; updated with journal version arXiv: 1606.09282}
 }
 
@@ -195,7 +195,7 @@ arXiv: 1612.00796}
   url = {https://ieeexplore.ieee.org/document/8545895/},
   abstract = {In this paper we propose an approach to avoiding catastrophic forgetting in sequential task learning scenarios. Our technique is based on a network reparameterization that approximately diagonalizes the Fisher Information Matrix of the network parameters. This reparameterization takes the form of a factorized rotation of parameter space which, when used in conjunction with Elastic Weight Consolidation (which assumes a diagonal Fisher Information Matrix), leads to significantly better performance on lifelong learning of sequential tasks. Experimental results on the MNIST, CIFAR-100, CUB-200 and Stanford-40 datasets demonstrate that we significantly improve the results of standard elastic weight consolidation, and that we obtain competitive results when compared to the state-of-the-art in lifelong learning without forgetting.},
   isbn = {978-1-5386-3788-3},
-  keywords = {[cifar],[mnist],\#nosource,Computer vision,Data models,ewc,fisher,Fisher Information Matrix,image classification,learning (artificial intelligence),matrix algebra,network parameters,network reparameterization,Neural networks,sequential tasks,standard elastic weight consolidation,Standards,Stanford-40 datasets,Task analysis,Training,Training data},
+  keywords = {[cifar],[mnist],/unread,\#nosource,Computer vision,Data models,ewc,fisher,Fisher Information Matrix,image classification,learning (artificial intelligence),matrix algebra,network parameters,network reparameterization,Neural networks,sequential tasks,standard elastic weight consolidation,Standards,Stanford-40 datasets,Task analysis,Training,Training data},
   note = {ISSN: 1051-4651}
 }
 
@@ -210,7 +210,7 @@ arXiv: 1612.00796}
   url = {http://arxiv.org/abs/1907.13372},
   abstract = {Deep learning architectures exhibit a critical drop of performance due to catastrophic forgetting when they are required to incrementally learn new tasks. Contemporary incremental learning frameworks focus on image classification and object detection while in this work we formally introduce the incremental learning problem for semantic segmentation in which a pixel-wise labeling is considered. To tackle this task we propose to distill the knowledge of the previous model to retain the information about previously learned classes, whilst updating the current model to learn the new ones. We propose various approaches working both on the output logits and on intermediate features. In opposition to some recent frameworks, we do not store any image from previously learned classes and only the last model is needed to preserve high accuracy on these classes. The experimental evaluation on the Pascal VOC2012 dataset shows the effectiveness of the proposed approaches.},
   isbn = {978-1-72815-023-9},
-  keywords = {\#nosource,Catastrophic forgetting,Incremental learning,Knowledge distillation,Knowledge transfer,Semantic segmentation},
+  keywords = {/unread,\#nosource,Catastrophic forgetting,Incremental learning,Knowledge distillation,Knowledge transfer,Semantic segmentation},
   annotation = {\_eprint: 1907.13372}
 }
 
@@ -222,7 +222,7 @@ arXiv: 1612.00796}
   doi = {10/gm8f65},
   url = {http://arxiv.org/abs/2004.10862},
   abstract = {We propose continual instance learning - a method that applies the concept of continual learning to the task of distinguishing instances of the same object category. We specifically focus on the car object, and incrementally learn to distinguish car instances from each other with metric learning. We begin our paper by evaluating current techniques. Establishing that catastrophic forgetting is evident in existing methods, we then propose two remedies. Firstly, we regularise metric learning via Normalised Cross-Entropy. Secondly, we augment existing models with synthetic data transfer. Our extensive experiments on three large-scale datasets, using two different architectures for five different continual learning methods, reveal that Normalised cross-entropy and synthetic transfer leads to less forgetting in existing techniques.},
-  keywords = {[vision],\#nosource},
+  keywords = {[vision],/unread,\#nosource},
   annotation = {\_eprint: 2004.10862}
 }
 
@@ -236,7 +236,7 @@ arXiv: 1612.00796}
   url = {http://www.sciencedirect.com/science/article/pii/S092523122030151X},
   abstract = {Continual learning of deep neural networks is a key requirement for scaling them up to more complex applicative scenarios and for achieving real lifelong learning of these architectures. Previous approaches to the problem have considered either the progressive increase in the size of the networks, or have tried to regularize the network behavior to equalize it with respect to previously observed tasks. In the latter case, it is essential to understand what type of information best represents this past behavior. Common techniques include regularizing the past outputs, gradients, or individual weights. In this work, we propose a new, relatively simple and efficient method to perform continual learning by regularizing instead the network internal embeddings. To make the approach scalable, we also propose a dynamic sampling strategy to reduce the memory footprint of the required external storage. We show that our method performs favorably with respect to state-of-the-art approaches in the literature, while requiring significantly less space in memory and computational time. In addition, inspired by to recent works, we evaluate the impact of selecting a more flexible model for the activation functions inside the network, evaluating the impact of catastrophic forgetting on the activation functions themselves.},
   langid = {english},
-  keywords = {[cifar],[mnist],\#nosource,Catastrophic forgetting,Continual learning,Embedding,Regularization,Trainable activation functions}
+  keywords = {[cifar],[mnist],/unread,\#nosource,Catastrophic forgetting,Continual learning,Embedding,Regularization,Trainable activation functions}
 }
 
 @article{ramapuram2017,
@@ -248,7 +248,7 @@ arXiv: 1612.00796}
   pages = {1--14},
   url = {http://arxiv.org/abs/1705.09847},
   abstract = {Lifelong learning is the problem of learning multiple consecutive tasks in an online manner and is essential towards the development of intelligent machines that can adapt to their surroundings. In this work we focus on learning a lifelong approach to generative modeling whereby we continuously incorporate newly observed distributions into our model representation. We utilize two models, aptly named the student and the teacher, in order to aggregate information about all past distributions without the preservation of any of the past data or previous models. The teacher is utilized as a form of compressed memory in order to allow for the student model to learn over the past as well as present data. We demonstrate why a naive approach to lifelong generative modeling fails and introduce a regularizer with which we demonstrate learning across a long range of distributions.},
-  keywords = {[fashion],[generative],[mnist],\#nosource,⛔ No DOI found},
+  keywords = {[fashion],[generative],[mnist],/unread,\#nosource,⛔ No DOI found},
   annotation = {\_eprint: 1705.09847}
 }
 
@@ -259,7 +259,7 @@ arXiv: 1612.00796}
   journal = {arXiv},
   url = {http://arxiv.org/abs/1805.07810},
   abstract = {We introduce the Kronecker factored online Laplace approximation for overcoming catastrophic forgetting in neural networks. The method is grounded in a Bayesian online learning framework, where we recursively approximate the posterior after every task with a Gaussian, leading to a quadratic penalty on changes to the weights. The Laplace approximation requires calculating the Hessian around a mode, which is typically intractable for modern architectures. In order to make our method scalable, we leverage recent block-diagonal Kronecker factored approximations to the curvature. Our algorithm achieves over 90\{\$\textbackslash backslash\$\%\} test accuracy across a sequence of 50 instantiations of the permuted MNIST dataset, substantially outperforming related methods for overcoming catastrophic forgetting.},
-  keywords = {[bayes],[mnist],\#nosource,⛔ No DOI found},
+  keywords = {[bayes],[mnist],/unread,\#nosource,⛔ No DOI found},
   annotation = {\_eprint: 1805.07810}
 }
 
@@ -275,7 +275,7 @@ arXiv: 1612.00796}
   urldate = {2022-05-03},
   abstract = {The ability to learn continually without forgetting the past tasks is a desired attribute for artificial learning systems. Existing approaches to enable such learning in artificial neural networks usually rely on network growth, importance based weight update or replay of old data from the memory. In contrast, we propose a novel approach where a neural network learns new tasks by taking gradient steps in the orthogonal direction to the gradient subspaces deemed important for the past tasks. We find the bases of these subspaces by analyzing network representations (activations) after learning each task with Singular Value Decomposition (SVD) in a single shot manner and store them in the memory as Gradient Projection Memory (GPM). With qualitative and quantitative analyses, we show that such orthogonal gradient descent induces minimum to no interference with the past tasks, thereby mitigates forgetting. We evaluate our algorithm on diverse image classification datasets with short and long sequences of tasks and report better or on-par performance compared to the state-of-the-art approaches.},
   archiveprefix = {arXiv},
-  keywords = {⛔ No DOI found,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning},
+  keywords = {/unread,⛔ No DOI found,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning},
   annotation = {ZSCC:00026},
   note = {Comment: Accepted for Oral Presentation at ICLR 2021 https://openreview.net/forum?id=3AOj0RCNC2}
 }
@@ -293,7 +293,7 @@ arXiv: 1612.00796}
   urldate = {2022-07-08},
   abstract = {The ability to learn continually without forgetting the past tasks is a desired attribute for artificial learning systems. Existing approaches to enable such learning in artificial neural networks usually rely on network growth, importance based weight update or replay of old data from the memory. In contrast, we propose a novel approach where a neural network learns new tasks by taking gradient steps in the orthogonal direction to the gradient subspaces deemed important for the past tasks. We find the bases of these subspaces by analyzing network representations (activations) after learning each task with Singular Value Decomposition (SVD) in a single shot manner and store them in the memory as Gradient Projection Memory (GPM). With qualitative and quantitative analyses, we show that such orthogonal gradient descent induces minimum to no interference with the past tasks, thereby mitigates forgetting. We evaluate our algorithm on diverse image classification datasets with short and long sequences of tasks and report better or on-par performance compared to the state-of-the-art approaches.},
   archiveprefix = {arXiv},
-  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning},
+  keywords = {/unread,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning},
   note = {Comment: Accepted for Oral Presentation at ICLR 2021 https://openreview.net/forum?id=3AOj0RCNC2}
 }
 
@@ -305,7 +305,7 @@ arXiv: 1612.00796}
   pages = {1--9},
   url = {http://arxiv.org/abs/1705.08395},
   abstract = {Developments in deep generative models have allowed for tractable learning of high-dimensional data distributions. While the employed learning procedures typically assume that training data is drawn i.i.d. from the distribution of interest, it may be desirable to model distinct distributions which are observed sequentially, such as when different classes are encountered over time. Although conditional variations of deep generative models permit multiple distributions to be modeled by a single network in a disentangled fashion, they are susceptible to catastrophic forgetting when the distributions are encountered sequentially. In this paper, we adapt recent work in reducing catastrophic forgetting to the task of training generative adversarial networks on a sequence of distinct distributions, enabling continual generative modeling.},
-  keywords = {[mnist],\#nosource,⛔ No DOI found},
+  keywords = {[mnist],/unread,\#nosource,⛔ No DOI found},
   annotation = {\_eprint: 1705.08395}
 }
 
@@ -316,7 +316,7 @@ arXiv: 1612.00796}
   year = {2018},
   url = {https://arxiv.org/pdf/1801.01423.pdf},
   abstract = {Catastrophic forgetting occurs when a neural network loses the information learned in a previous task after training on subsequent tasks. This problem remains a hurdle for artificial intelligence systems with sequential learning capabilities. In this paper, we propose a task-based hard attention mechanism that preserves previous tasks' information without affecting the current task's learning. A hard attention mask is learned concurrently to every task, through stochastic gradient descent, and previous masks are exploited to condition such learning. We show that the proposed mechanism is effective for reducing catastrophic forgetting , cutting current rates by 45 to 80\%. We also show that it is robust to different hyperparameter choices, and that it offers a number of monitoring capabilities. The approach features the possibility to control both the stability and compactness of the learned knowledge, which we believe makes it also attractive for online learning or network compression applications.},
-  keywords = {[cifar],[fashion],[mnist],\#nosource,⛔ No DOI found,serra2018a}
+  keywords = {[cifar],[fashion],[mnist],/unread,\#nosource,⛔ No DOI found,serra2018a}
 }
 
 @article{shmelkov2017,
@@ -332,7 +332,7 @@ arXiv: 1612.00796}
   url = {http://arxiv.org/abs/1708.06977},
   abstract = {Despite their success for object detection, convolutional neural networks are ill-equipped for incremental learning, i.e., adapting the original model trained on a set of classes to additionally detect objects of new classes, in the absence of the initial training data. They suffer from "catastrophic forgetting" - an abrupt degradation of performance on the original set of classes, when the training objective is adapted to the new classes. We present a method to address this issue, and learn object detectors incrementally, when neither the original training data nor annotations for the original classes in the new training set are available. The core of our proposed solution is a loss function to balance the interplay between predictions on the new classes and a new distillation loss which minimizes the discrepancy between responses for old classes from the original and the updated networks. This incremental learning can be performed multiple times, for a new set of classes in each step, with a moderate drop in performance compared to the baseline network trained on the ensemble of data. We present object detection results on the PASCAL VOC 2007 and COCO datasets, along with a detailed empirical analysis of the approach.},
   isbn = {9781538610329},
-  keywords = {\#nosource},
+  keywords = {/unread,\#nosource},
   annotation = {\_eprint: 1708.06977}
 }
 
@@ -343,7 +343,7 @@ arXiv: 1612.00796}
   journal = {arXiv},
   url = {http://arxiv.org/abs/1901.11356},
   abstract = {We introduce a novel approach for supervised continual learning based on approximate Bayesian inference over function space rather than the parameters of a deep neural network. We use a Gaussian process obtained by treating the weights of the last layer of a neural network as random and Gaussian distributed. Functional regularisation for continual learning naturally arises by applying the variational sparse GP inference method in a sequential fashion as new tasks are encountered. At each step of the process, a summary is constructed for the current task that consists of (i) inducing inputs and (ii) a posterior distribution over the function values at these inputs. This summary then regularises learning of future tasks, through Kullback-Leibler regularisation terms that appear in the variational lower bound, and reduces the effects of catastrophic forgetting. We fully develop the theory of the method and we demonstrate its effectiveness in classification datasets, such as Split-MNIST, Permuted-MNIST and Omniglot.},
-  keywords = {[mnist],[omniglot],\#nosource,⛔ No DOI found},
+  keywords = {[mnist],[omniglot],/unread,\#nosource,⛔ No DOI found},
   annotation = {\_eprint: 1901.11356}
 }
 
@@ -354,7 +354,7 @@ arXiv: 1612.00796}
   year = {2020},
   url = {https://openreview.net/forum?id=SJgwNerKvB},
   abstract = {Artificial neural networks suffer from catastrophic forgetting when they are sequentially trained on multiple tasks. To overcome this problem, we present a novel approach based on task-conditioned...},
-  keywords = {[cifar],[mnist],\#nosource}
+  keywords = {[cifar],[mnist],/unread,\#nosource}
 }
 
 @inproceedings{zenke2017,
@@ -366,7 +366,7 @@ arXiv: 1612.00796}
   url = {http://proceedings.mlr.press/v70/zenke17a.html},
   abstract = {While deep learning has led to remarkable advances across diverse applications, it struggles in domains where the data distribution changes over the course of learning. In stark contrast, biologica...},
   langid = {english},
-  keywords = {[cifar],[mnist],\#nosource,mnist}
+  keywords = {[cifar],[mnist],/unread,\#nosource,mnist}
 }
 
 

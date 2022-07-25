@@ -6,7 +6,7 @@
   journal = {arXiv},
   url = {http://arxiv.org/abs/2004.11967},
   abstract = {Both few-shot and continual learning have seen substantial progress in the last years due to the introduction of proper benchmarks. That being said, the field has still to frame a suite of benchmarks for the highly desirable setting of continual few-shot learning, where the learner is presented a number of few-shot tasks, one after the other, and then asked to perform well on a validation set stemming from all previously seen tasks. Continual few-shot learning has a small computational footprint and is thus an excellent setting for efficient investigation and experimentation. In this paper we first define a theoretical framework for continual few-shot learning, taking into account recent literature, then we propose a range of flexible benchmarks that unify the evaluation criteria and allows exploring the problem from multiple perspectives. As part of the benchmark, we introduce a compact variant of ImageNet, called SlimageNet64, which retains all original 1000 classes but only contains 200 instances of each one (a total of 200K data-points) downscaled to 64 x 64 pixels. We provide baselines for the proposed benchmarks using a number of popular few-shot learning algorithms, as a result, exposing previously unknown strengths and weaknesses of those algorithms in continual and data-limited settings.},
-  keywords = {[imagenet],\#nosource,⛔ No DOI found},
+  keywords = {[imagenet],/unread,\#nosource,⛔ No DOI found},
   annotation = {\_eprint: 2004.11967}
 }
 
@@ -17,7 +17,7 @@
   journal = {arXiv},
   url = {http://arxiv.org/abs/2008.00819},
   abstract = {For many applications, robots will need to be incrementally trained to recognize the specific objects needed for an application. This paper presents a practical system for incrementally training a robot to recognize different object categories using only a small set of visual examples provided by a human. The paper uses a recently developed state-of-the-art method for few-shot incremental learning of objects. After learning the object classes incrementally, the robot performs a table cleaning task organizing objects into categories specified by the human. We also demonstrate the system's ability to learn arrangements of objects and predict missing or incorrectly placed objects. Experimental evaluations demonstrate that our approach achieves nearly the same performance as a system trained with all examples at one time (batch training), which constitutes a theoretical upper bound.},
-  keywords = {\#nosource,⛔ No DOI found,catastrophic forgetting,continual learning,few-shot incremenatl learning,robotics},
+  keywords = {/unread,\#nosource,⛔ No DOI found,catastrophic forgetting,continual learning,few-shot incremenatl learning,robotics},
   annotation = {\_eprint: 2008.00819}
 }
 
@@ -28,7 +28,7 @@
   journal = {arXiv},
   url = {https://arxiv.org/abs/2007.13904},
   abstract = {The continual learning problem involves training models with limited capacity to perform well on a set of an unknown number of sequentially arriving tasks. While meta-learning shows great potential for reducing interference between old and new tasks, the current training procedures tend to be either slow or offline, and sensitive to many hyper-parameters. In this work, we propose Look-ahead MAML (La-MAML), a fast optimisation-based meta-learning algorithm for online-continual learning, aided by a small episodic memory. Our proposed modulation of per-parameter learning rates in our meta-learning update allows us to draw connections to prior work on hypergradients and meta-descent. This provides a more flexible and efficient way to mitigate catastrophic forgetting compared to conventional prior-based methods. La-MAML achieves performance superior to other replay-based, prior-based and meta-learning based approaches for continual learning on real-world visual classification benchmarks.},
-  keywords = {\#nosource,⛔ No DOI found},
+  keywords = {/unread,\#nosource,⛔ No DOI found},
   annotation = {\_eprint: 2007.13904}
 }
 
@@ -40,7 +40,7 @@
   pages = {13588---13597},
   url = {https://openaccess.thecvf.com/content_CVPR_2020/html/Rajasegaran_iTAML_An_Incremental_Task-Agnostic_Meta-learning_Approach_CVPR_2020_paper.html},
   abstract = {Humans can continuously learn new knowledge as their experience grows. In contrast, previous learning in deep neural networks can quickly fade out when they are trained on a new task. In this paper, we hypothesize this problem can be avoided by learning a set of generalized parameters, that are neither specific to old nor new tasks. In this pursuit, we introduce a novel meta-learning approach that seeks to maintain an equilibrium between all the encountered tasks. This is ensured by a new meta-update rule which avoids catastrophic forgetting. In comparison to previous meta-learning techniques, our approach is task-agnostic. When presented with a continuum of data, our model automatically identifies the task and quickly adapts to it with just a single update. We perform extensive experiments on five datasets in a class-incremental setting, leading to significant improvements over the state of the art methods (e.g., a 21.3\% boost on CIFAR100 with 10 incremental tasks). Specifically, on large-scale datasets that generally prove difficult cases for incremental learning, our approach delivers absolute gains as high as 19.1\% and 7.4\% on ImageNet and MS-Celeb datasets, respectively.},
-  keywords = {[cifar],[imagenet],\#nosource,⛔ No DOI found}
+  keywords = {[cifar],[imagenet],/unread,\#nosource,⛔ No DOI found}
 }
 
 @article{ren2020,
@@ -50,7 +50,7 @@
   journal = {arXiv},
   url = {https://arxiv.org/abs/2007.04546},
   abstract = {We aim to bridge the gap between typical human and machine-learning environments by extending the standard framework of few-shot learning to an online, continual setting. In this setting, episodes do not have separate training and testing phases, and instead models are evaluated online while learning novel classes. As in real world, where the presence of spatiotemporal context helps us retrieve learned skills in the past, our online few-shot learning setting also features an underlying context that changes throughout time. Object classes are correlated within a context and inferring the correct context can lead to better performance. Building upon this setting, we propose a new few-shot learning dataset based on large scale indoor imagery that mimics the visual experience of an agent wandering within a world. Furthermore, we convert popular few-shot learning approaches into online versions and we also propose a new model named contextual prototypical memory that can make use of spatiotemporal contextual information from the recent past.},
-  keywords = {[omniglot],\#nosource,⛔ No DOI found},
+  keywords = {[omniglot],/unread,\#nosource,⛔ No DOI found},
   annotation = {\_eprint: 2007.04546}
 }
 
@@ -62,7 +62,7 @@
   doi = {10/ghbbnw},
   url = {https://arxiv.org/abs/2004.10956},
   abstract = {The ability to incrementally learn new classes is crucial to the development of real-world artificial intelligence systems. In this paper, we focus on a challenging but practical few-shot class-incremental learning (FSCIL) problem. FSCIL requires CNN models to incrementally learn new classes from very few labelled samples, without forgetting the previously learned ones. To address this problem, we represent the knowledge using a neural gas (NG) network, which can learn and preserve the topology of the feature manifold formed by different classes. On this basis, we propose the TOpology-Preserving knowledge InCrementer (TOPIC) framework. TOPIC mitigates the forgetting of the old classes by stabilizing NG's topology and improves the representation learning for few-shot new classes by growing and adapting NG to new training samples. Comprehensive experimental results demonstrate that our proposed method significantly outperforms other state-of-the-art class-incremental learning methods on CIFAR100, miniImageNet, and CUB200 datasets.},
-  keywords = {[cifar],\#nosource}
+  keywords = {[cifar],/unread,\#nosource}
 }
 
 @article{wang2021,
@@ -72,7 +72,7 @@
   journal = {arXiv},
   url = {https://arxiv.org/abs/2104.09034},
   abstract = {It is an important yet challenging setting to continually learn new tasks from a few examples. Although numerous efforts have been devoted to either continual learning or few-shot learning, little work has considered this new setting of few-shot continual learning (FSCL), which needs to minimize the catastrophic forgetting to the old tasks and gradually improve the ability of few-shot generalization. In this paper, we provide a first systematic study on FSCL and present an effective solution with deep neural networks. Our solution is based on the observation that continual learning of a task sequence inevitably interferes few-shot generalization, which makes it highly nontrivial to extend few-shot learning strategies to continual learning scenarios. We draw inspirations from the robust brain system and develop a method that (1) interdependently updates a pair of fast / slow weights for continual learning and few-shot learning to disentangle their divergent objectives, inspired by the biological model of meta-plasticity and fast / slow synapse; and (2) applies a brain-inspired two-step consolidation strategy to learn a task sequence without forgetting in the fast weights while improve generalization without overfitting in the slow weights. Extensive results on various benchmarks show that our method achieves a better performance than joint training of all the tasks ever seen. The ability of few-shot generalization is also substantially improved from incoming tasks and examples.},
-  keywords = {⛔ No DOI found,continual learning}
+  keywords = {/unread,⛔ No DOI found,continual learning}
 }
 
 @article{zhao2020,
@@ -82,7 +82,7 @@
   journal = {arXiv},
   url = {https://arxiv.org/abs/2006.15524},
   abstract = {As a challenging problem in machine learning, few-shot class-incremental learning asynchronously learns a sequence of tasks, acquiring the new knowledge from new tasks (with limited new samples) while keeping the learned knowledge from previous tasks (with old samples discarded). In general, existing approaches resort to one unified feature space for balancing old-knowledge preserving and new-knowledge adaptation. With a limited embedding capacity of feature representation, the unified feature space often makes the learner suffer from semantic drift or overfitting as the number of tasks increases. With this motivation, we propose a novel few-shot class-incremental learning pipeline based on a composite representation space, which makes old-knowledge preserving and new-knowledge adaptation mutually compatible by feature space composition (enlarging the embedding capacity). The composite representation space is generated by integrating two space components (i.e. stable base knowledge space and dynamic lifelong-learning knowledge space) in terms of distance metric construction. With the composite feature space, our method performs remarkably well on the CUB200 and CIFAR100 datasets, outperforming the state-of-the-art algorithms by 10.58\% and 14.65\% respectively.},
-  keywords = {[cifar],[cubs],\#nosource,⛔ No DOI found}
+  keywords = {[cifar],[cubs],/unread,\#nosource,⛔ No DOI found}
 }
 
 
