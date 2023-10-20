@@ -185,10 +185,12 @@ In this section we list all the papers related to new benchmarks proposals for c
 
 ### Bioinspired Methods
 
-**24 papers**
+**26 papers**
 
 In this section we list all the papers related to bioinspired continual learning approaches.
 
+- [lpSpikeCon: Enabling Low-Precision Spiking Neural Network Processing for Efficient Unsupervised Continual Learning on Autonomous Agents](https://doi.org/10.1109/IJCNN55064.2022.9892948) by Rachmad Vidya W. Putra and Muhammad Shafique. *IJCNN*, 2022.
+- [SpikeDyn: A Framework for Energy-Efficient Spiking Neural Networks with Continual and Unsupervised Learning Capabilities in Dynamic Environments](https://doi.org/10.1109/DAC18074.2021.9586281) by Rachmad Vidya W. Putra and Muhammad Shafique. *DAC*, 2021.
 - [A Biologically Plausible Audio-Visual Integration Model for Continual Learning](http://arxiv.org/abs/2007.08855) by Wenjie Chen, Fengtong Du, Ye Wang and Lihong Cao. *IJCNN*, 2021. 
 - [Synaptic Metaplasticity in Binarized Neural Networks](https://www.nature.com/articles/s41467-021-22768-y) by Axel Laborieux, Maxence Ernoult, Tifenn Hirtzlin and Damien Querlioz. *Nature Communications*, 2549, 2021. 
 - [Controlled Forgetting: Targeted Stimulation and Dopaminergic Plasticity Modulation for Unsupervised Lifelong Learning in Spiking Neural Networks](https://www.frontiersin.org/article/10.3389/fnins.2020.00007/full) by Jason M. Allred and Kaushik Roy. *Frontiers in Neuroscience*, 7, 2020. [spiking] 
