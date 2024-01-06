@@ -591,10 +591,11 @@ In this section we collect all the main review papers and books on continual lea
 
 ### Robotics
 
-**7 papers**
+**8 papers**
 
 In this section we maintain a list of all Robotics papers that can be related to continual learning.
 
+- [Continual Learning of Unsupervised Monocular Depth From Videos](https://openaccess.thecvf.com/content/WACV2024/html/Chawla_Continual_Learning_of_Unsupervised_Monocular_Depth_From_Videos_WACV_2024_paper.html) by H. Chawla, A. Varma, E. Arani, B. Zonooz. *IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)*, 8419-8429, 2024. 
 - [Online Continual Learning for Embedded Devices](http://arxiv.org/abs/2203.10681) by Tyler L. Hayes and Christopher Kanan. *arXiv*, 2022. 
 - [Controlling Soft Robotic Arms Using Continual Learning](https://ieeexplore.ieee.org/document/9730039) by Francesco Piqué, Hari Teja Kalidindi, Lorenzo Fruzzetti, Cecilia Laschi, Arianna Menciassi and Egidio Falotico. *IEEE Robotics and Automation Letters*, 5469--5476, 2022. 
 - [Tell Me What This Is: Few-Shot Incremental Object Learning by a Robot](http://arxiv.org/abs/2008.00819) by Ali Ayub and Alan R. Wagner. *arXiv*, 2020. 
